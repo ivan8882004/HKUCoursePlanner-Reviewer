@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { coursesReducer, setCourses } from "./slices/coursesSlice";
+import { coursesReducer, setCourses, addCourses } from "./slices/coursesSlice";
 
 const store = configureStore({
     reducer: {
@@ -9,5 +9,5 @@ const store = configureStore({
 
 export {
     store,
-    setCourses
+    setCourses, addCourses
 }

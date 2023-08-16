@@ -1,18 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: Sans-serif;
+    padding: 0;
 }
 
 .TopBar {
-    background-color: aqua;
-    padding: 2.5%;
+    background-color: rgb(235, 235, 235);
+    padding: 1%;
 }
 
 .TopBar a{
     text-decoration: none;
-    margin: 2.5%;
+    margin: 1%;
+    padding: 1%;
     color: black;
+}
+
+.TopBar a:hover{
+    background-color: rgb(192, 192, 192);
+    box-shadow: 0 8px 8px 0 gray;
+    border-style: solid;
+    border-color: rgb(172, 172, 172);
 }
 
 .TopBar a.active{
     font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+.TopBar a.active:hover{
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 0 0 0;
+    border-style: none;
+    border-bottom: 3px solid black;
 }

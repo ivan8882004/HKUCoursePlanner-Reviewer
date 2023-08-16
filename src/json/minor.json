@@ -1,0 +1,15 @@
+{
+    "key": "minor(Math)",
+    "value": {
+        "name": "minor(Math)",
+        "courses": [
+            {"credit": 6, "courses": ["MATH1013"], "types": "Disciplinary Core Course"},
+            [
+                {"credit": 12, "courses": ["MATH2101", "MATH2211"], "types": "Disciplinary Electives"},
+                {"credit": 12, "courses": ["MATH2012", "MATH2014"], "types": "Disciplinary Electives"}
+            ],
+            {"credit": 18, "courses": ["MATH3001", "..."], "types": "Disciplinary Electives"}
+        ]
+    },
+    "doubleCount": []
+}
