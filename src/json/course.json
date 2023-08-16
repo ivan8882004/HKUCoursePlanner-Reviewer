@@ -1,0 +1,8 @@
+{
+    "name": "MATH1853",
+    "pre-reg": [["MATH1011", "M1/M2_2+"]], 
+    "ispre-reg": [{"course": "MATH2014", "with": ["MATH1851"]}],
+    "exclusive": [],
+    "recommendYear": "1",
+    "credit": 6 
+}
