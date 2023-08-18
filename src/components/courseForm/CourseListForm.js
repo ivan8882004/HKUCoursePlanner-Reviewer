@@ -1,9 +1,5 @@
 function CourseListForm({ index, list, setter }) {
-
     
-
-    console.log(list)
-
     const inputsField = list.map((item, index) => {
         let value;
         if (Array.isArray(item)) {

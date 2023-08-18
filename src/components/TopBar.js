@@ -6,7 +6,9 @@ function TopBar (){
             <NavLink to="/">Home</NavLink>
             <NavLink to="/course_planner">Course Planner</NavLink>
             <NavLink to="/view_major_minor">View Major Minor</NavLink>
-            <NavLink to="/add_course_major">Add Course Major</NavLink>
+            <NavLink to="/add_course">Add Course</NavLink>
+            <NavLink to="/add_degree">Add Degree</NavLink>
+            <NavLink to="/add_major_minor">Add Major Minor</NavLink>
         </div>
     )
 }

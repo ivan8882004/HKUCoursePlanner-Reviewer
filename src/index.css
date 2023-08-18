@@ -38,3 +38,60 @@ body {
     border-style: none;
     border-bottom: 3px solid black;
 }
+
+.CourseForm {
+    display: inline-block;
+    border-style: solid;
+    box-sizing: border-box;
+    margin: 1%;
+    margin-top: 5%;
+}
+
+.AddCoursePage {
+    padding: 1%;
+}
+
+.AddMajorMinorPage {
+    padding: 1%;
+}
+
+.AddDegreePage {
+    padding: 1%;
+}
+
+.InfoForm {
+    display: inline-block;
+    border-style: solid;
+    box-sizing: border-box;
+    margin: 1%;
+    padding: 1%;
+    margin-top: 5%;
+}
+
+.InfoFormTitle {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.InfoFormSubTitle {
+    font-size: large;
+    font-weight: 600;
+}
+
+.InfoFormContent {
+    display: flex;
+}
+
+.InfoFormLeft {
+    padding-right: 1%;
+    border-right-style: solid;
+}
+
+.InfoList {
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.InfoList:hover {
+    background-color: rgb(235, 235, 235);
+}

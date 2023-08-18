@@ -1,13 +1,16 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { coursesReducer, setCourses, addCourses } from "./slices/coursesSlice";
+import { coursesReducer, setCourses, addCourses, removeCourses } from "./slices/coursesSlice";
+import { programsReducer, setDegrees, setMajors, setMinors, addDegrees, addMajors, addMinors, removeDegrees, removeMajors, removeMinors } from "./slices/programsSlice";
 
 const store = configureStore({
     reducer: {
-        courses: coursesReducer
+        courses: coursesReducer, 
+        programs: programsReducer
     }
 });
 
 export {
     store,
-    setCourses, addCourses
+    setCourses, addCourses, removeCourses,
+    setDegrees, setMajors, setMinors, addDegrees, addMajors, addMinors, removeDegrees, removeMajors, removeMinors 
 }

@@ -1,10 +1,14 @@
 import { useState } from "react"
 import CourseListForm from "./courseForm/CourseListForm"
-import { useDispatch } from "react-redux"
-import { addCourses } from "../store";
+import { useDispatch, useSelector } from "react-redux"
+import { addCourses, removeCourses } from "../store";
 
 function CourseForm() {
     const dispatch = useDispatch();
+
+    const { courses } = useSelector((state) => {
+        return state.courses
+    })
 
     const [course, setCourse] = useState({
         name: "",
@@ -102,7 +106,7 @@ function CourseForm() {
     const isPreregForm = course.isPrereg.map((cour, index) => {
         return (
             <div key={index}>
-                <input value={cour} onChange={(event) => editCourseIsPreregList(event, index)}/>
+                <input value={cour} onChange={(event) => editCourseIsPreregList(event, index)} />
                 <button type="button" onClick={() => removeCourseIsPreregList(index)}>X</button>
             </div>
         )
@@ -111,7 +115,7 @@ function CourseForm() {
     const exclusiveForm = course.exclusive.map((cour, index) => {
         return (
             <div key={index}>
-                <input value={cour} onChange={(event) => editCourseExclusiveList(event, index)}/>
+                <input value={cour} onChange={(event) => editCourseExclusiveList(event, index)} />
                 <button type="button" onClick={() => removeCourseExclusiveList(index)}>X</button>
             </div>
         )
@@ -119,82 +123,108 @@ function CourseForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        dispatch(addCourses(course));
     }
 
-    console.log(course)
+    const coursesList = courses.map((course, index) => {
+        return <div key={index} className="InfoList">
+            <span onClick={() => setCourse(course)}>{course.name}</span>
+            <button onClick={() => dispatch(removeCourses(index))}>X</button>
+        </div>
+    })
+
+
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <label>
-                                    Course Name:
-                                </label>
-                            </td>
-                            <td>
-                                <input type="text" name="name" value={course.name} onChange={handleFormChange}></input>
-                            </td>
-                        </tr>
-                        {preregForm}
-                        <tr>
-                            <td>
-                                <button type="button" onClick={() => addCoursePreregList([])}>Add pre-reg list</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Is pre reg:
-                            </td>
-                            <td>
-                                {isPreregForm}
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button type="button" onClick={() => addCourseIsPreregList("")}>Add Is pre-reg</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Exclusive:
-                            </td>
-                            <td>
-                                {exclusiveForm}
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button type="button" onClick={() => addCourseExclusiveList("")}>Add exclusive</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>
-                                    Recommend Year:
-                                </label>
-                            </td>
-                            <td>
-                                <input type="number" name="recommendYear" value={course.recommendYear || ""} onChange={handleFormChange}></input>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>
-                                    Credit:
-                                </label>
-                            </td>
-                            <td>
-                                <input type="number" name="credit" value={course.credit || ""} onChange={handleFormChange}></input>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <button type="submit">Submit</button>
-            </form>
+        <div className="InfoForm">
+            <div className="InfoFormTitle">
+                Add/Edit Course:
+            </div>
+            <div className="InfoFormContent">
+                <div className="InfoFormLeft">
+                    <div className="InfoFormSubTitle">
+                        Courses
+                    </div>
+                    {coursesList}
+                </div>
+                <form onSubmit={handleSubmit}>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Course Name:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="text" name="name" value={course.name} onChange={handleFormChange}></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Pre reg:
+                                </td>
+                            </tr>
+                            {preregForm}
+                            <tr>
+                                <td>
+                                    <button type="button" onClick={() => addCoursePreregList([])}>Add pre-reg list</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Is pre reg:
+                                </td>
+                                <td>
+                                    {isPreregForm}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" onClick={() => addCourseIsPreregList("")}>Add Is pre-reg</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Exclusive:
+                                </td>
+                                <td>
+                                    {exclusiveForm}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" onClick={() => addCourseExclusiveList("")}>Add exclusive</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Recommend Year:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="number" name="recommendYear" value={course.recommendYear || ""} onChange={handleFormChange}></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Credit:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="number" name="credit" value={course.credit || ""} onChange={handleFormChange}></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" onClick={() => dispatch(addCourses(course))}>Submit</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
         </div>
     )
 }
