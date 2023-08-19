@@ -63,6 +63,10 @@ body {
     padding: 1%;
 }
 
+.UploadExportFilePage {
+    padding: 1%;
+}
+
 .InfoForm {
     display: inline-block;
     border-style: solid;
@@ -122,6 +126,12 @@ body {
     display: flex;
     padding: 1%;
     align-items: center;
+}
+
+.CourseBoxNames {
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
 }
 
 .CourseBoxName {

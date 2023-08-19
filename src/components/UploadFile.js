@@ -1,8 +1,12 @@
 import { useState } from "react"
+import { setCourses, setDegrees, setMajors, setMinors } from "../store";
+import { useDispatch } from "react-redux";
 
-function InputFile(){
+function UploadFile(){
+    const dispatch = useDispatch();
     const [uploadFile, setUploadFile] = useState(null);
     const [uploadJson, setUploadJson] = useState(null);
+    const [uploaded, setUploaded] = useState(false)
 
     const handleFileInput = (event) => {
         setUploadFile(event.target.files[0])
@@ -14,6 +18,14 @@ function InputFile(){
             setUploadJson(JSON.parse(event.target.result))
         }
         fileReader.readAsText(uploadFile);
+        setUploaded(true)
+    }
+
+    const handleSet = () => {
+        dispatch(setCourses(uploadJson.courses))
+        dispatch(setDegrees(uploadJson.degrees))
+        dispatch(setMajors(uploadJson.majors))
+        dispatch(setMinors(uploadJson.minors))
     }
 
     console.log(uploadJson);
@@ -24,8 +36,11 @@ function InputFile(){
             <div>
                 {uploadFile && <button onClick={handleUpload}>Upload</button>}
             </div>
+            <div>
+                {uploaded && <button onClick={handleSet}>Set value</button>}
+            </div>
         </div>
     )
 }
 
-export default InputFile;
+export default UploadFile;

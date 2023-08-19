@@ -12,10 +12,10 @@ function PreregGraph({ listItem }) {
                     with
                 </div>}
                 <div className="CourseBoxPrereg">
-                    {listItem.extraMessage}
+                    {listItem.extraMessage.map((item) => ("(" + item + ")")).join("&")}
                 </div>
             </div>
-            <div>
+            <div className="CourseBoxNames">
                 <div className="CourseBoxName">
                     {listItem.name}
                 </div>

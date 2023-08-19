@@ -10,6 +10,7 @@ import { setCourses, setDegrees } from "./store/index"
 import AddDegreePage from "./pages/AddDegreePage";
 import AddMajorMinorPage from "./pages/AddMajorMinorPage";
 import ViewProgramPage from "./pages/ViewProgramPage";
+import UploadExportFilePage from "./pages/UploadExportFilePage";
 
 
 function App () {
@@ -44,6 +45,7 @@ function App () {
                 <Route path="/add_course" element={<AddCoursePage />}></Route>
                 <Route path="/add_degree" element={<AddDegreePage />}></Route>
                 <Route path="/add_major_minor" element={<AddMajorMinorPage />}></Route>
+                <Route path="/upload_export_file" element={<UploadExportFilePage />}></Route>
             </Routes>
         </div>
     )

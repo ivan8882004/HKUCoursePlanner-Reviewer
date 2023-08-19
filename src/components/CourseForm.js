@@ -140,7 +140,7 @@ function CourseForm() {
 
     const coursesList = courses.map((course, index) => {
         return <div key={index} className="InfoList">
-            <span onClick={() => setCourse(course)}>{course.name}</span>
+            <span onClick={() => setCourse({...course, prereg: [...course.prereg]})}>{course.name}</span>
             <button onClick={() => dispatch(removeCourses(index))}>X</button>
         </div>
     })

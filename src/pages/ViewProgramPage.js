@@ -61,7 +61,7 @@ function ViewProgramPage() {
     joinCourseList.sort((a, b) => parseInt(a.substring(4)) - parseInt(b.substring(4)))
 
     let toProcessList = joinCourseList.map((item) => {
-        return {name: item, fullName: getCourses(item).fullName, isPrereg: [], extraMessage: ""}
+        return {name: item, fullName: getCourses(item).fullName, isPrereg: [], extraMessage: []}
     })
 
     for (let i = toProcessList.length - 1; i >= 0; i--){
