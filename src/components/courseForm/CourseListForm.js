@@ -13,7 +13,7 @@ function CourseListForm({ index, list, setter }) {
         }
 
         return (
-            <div key={index}>
+            <div key={index} className="InfoList">
                 <input type="text" value={value} onChange={handleInputChange}></input>
                 <button type="button" onClick={() => setter([...list.slice(0, index), ...list.slice(index + 1)])}>X</button>
             </div>

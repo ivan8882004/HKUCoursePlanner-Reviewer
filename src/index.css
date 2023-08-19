@@ -59,6 +59,10 @@ body {
     padding: 1%;
 }
 
+.ViewProgramPage {
+    padding: 1%;
+}
+
 .InfoForm {
     display: inline-block;
     border-style: solid;
@@ -94,4 +98,48 @@ body {
 
 .InfoList:hover {
     background-color: rgb(235, 235, 235);
+}
+
+.ViewPageContent {
+    display: flex;
+}
+
+.ViewPageLeft {
+    padding-right: 1%;
+    border-right-style: solid;
+}
+
+.ViewPageRight {
+    padding-left: 1%;
+}
+
+.ViewPageSubTitle {
+    font-size: large;
+    font-weight: 600;
+}
+
+.CourseBox {
+    display: flex;
+    padding: 1%;
+    align-items: center;
+}
+
+.CourseBoxName {
+    background-color: aqua;
+}
+
+.CourseBoxFullName {
+    background-color: aquamarine;
+}
+
+.CourseBoxSubTitle {
+    background-color: orangered;
+}
+
+.CourseBoxPrereg {
+    background-color: orange;
+}
+
+.CourseBoxIsPrereg {
+    border-style: solid;
 }

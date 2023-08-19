@@ -9,6 +9,7 @@ import { DEGREES, MAJORS, MINORS, setMajors, setMinors } from "./store/slices/pr
 import { setCourses, setDegrees } from "./store/index"
 import AddDegreePage from "./pages/AddDegreePage";
 import AddMajorMinorPage from "./pages/AddMajorMinorPage";
+import ViewProgramPage from "./pages/ViewProgramPage";
 
 
 function App () {
@@ -39,7 +40,7 @@ function App () {
             <Routes>
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/course_planner" element={<div>Course</div>}></Route>
-                <Route path="/view_major_minor" element={<div>Major Minor</div>}></Route>
+                <Route path="/view_program" element={<ViewProgramPage />}></Route>
                 <Route path="/add_course" element={<AddCoursePage />}></Route>
                 <Route path="/add_degree" element={<AddDegreePage />}></Route>
                 <Route path="/add_major_minor" element={<AddMajorMinorPage />}></Route>

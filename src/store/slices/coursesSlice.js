@@ -19,6 +19,7 @@ const coursesSlice = createSlice({
             } else {
                 state.courses.push(action.payload);
             }
+            state.courses.sort((a, b) => a.name.localeCompare(b.name))
             localStorage.setItem(COURSES, JSON.stringify(state.courses));
         },
         mergeCourses(state, action){

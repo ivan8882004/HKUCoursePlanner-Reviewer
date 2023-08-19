@@ -19,6 +19,16 @@ function DegreeForm() {
         focus: []
     })
 
+    const clearForm = () => {
+        setDegree({
+            name: "",
+            ug5cc: 0,
+            ug5leng: [],
+            courseList: [],
+            focus: []
+        })
+    }
+
     const handleFormChange = (event) => {
         const { name, value } = event.target;
         setDegree({
@@ -94,7 +104,7 @@ function DegreeForm() {
 
     const lengList = degree.ug5leng.map((cour, index) => {
         return (
-            <div key={index}>
+            <div key={index} className="InfoList">
                 <input value={cour} onChange={(event) => editLeng(event, index)} />
                 <button type="button" onClick={() => removeLeng(index)}>X</button>
             </div>
@@ -155,7 +165,7 @@ function DegreeForm() {
                                     </label>
                                 </td>
                                 <td>
-                                    <input type="number" value={degree.ug5cc} name="ug5cc" onChange={handleFormChange} />
+                                    <input type="number" value={degree.ug5cc || ""} name="ug5cc" onChange={handleFormChange} />
                                 </td>
                             </tr>
                             <tr>
@@ -196,6 +206,9 @@ function DegreeForm() {
                             <tr>
                                 <td>
                                     <button type="button" onClick={() => dispatch(addDegrees(degree))}>Submit</button>
+                                </td>
+                                <td>
+                                    <button type="button" onClick={clearForm}>Clear Form</button>
                                 </td>
                             </tr>
                         </tbody>

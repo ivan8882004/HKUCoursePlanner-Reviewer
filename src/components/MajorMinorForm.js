@@ -17,6 +17,15 @@ function MajorMinorForm() {
         doubleCount: []
     })
 
+    const clearForm = () => {
+        setMajor({
+            name: "",
+            type: "",
+            courseList: [],
+            doubleCount: []
+        })
+    }
+
     const handleFormChange = (event) => {
         setMajor({
             ...major,
@@ -175,6 +184,9 @@ function MajorMinorForm() {
                             <tr>
                                 <td>
                                     <button type="button" onClick={handleSubmit}>Submit</button>
+                                </td>
+                                <td>
+                                    <button type="button" onClick={clearForm}>Clear Form</button>
                                 </td>
                             </tr>
                         </tbody>

@@ -15,7 +15,7 @@ function CourseList({courseList, setCourseList, index, removeCourseList}) {
         }
 
         return (
-            <div key={subIndex}>
+            <div key={subIndex} className="InfoList">
                 <input type="text" value={course} onChange={(event) => editCourseList(event)} placeholder={"Course " + (subIndex + 1)} />
                 <button type="button" onClick={() => removeCourseList(subIndex)}>X</button>
             </div>

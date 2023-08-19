@@ -12,12 +12,25 @@ function CourseForm() {
 
     const [course, setCourse] = useState({
         name: "",
+        fullName: "",
         prereg: [],
         isPrereg: [],
         exclusive: [],
         recommendYear: 0,
-        credit: 0
+        credit: 6
     })
+
+    const clearForm = () => {
+        setCourse({
+            name: "",
+            fullName: "",
+            prereg: [],
+            isPrereg: [],
+            exclusive: [],
+            recommendYear: 0,
+            credit: 6
+        })
+    }
 
     const addCoursePreregList = (value) => {
         setCourse({
@@ -105,7 +118,7 @@ function CourseForm() {
 
     const isPreregForm = course.isPrereg.map((cour, index) => {
         return (
-            <div key={index}>
+            <div key={index} className="InfoList">
                 <input value={cour} onChange={(event) => editCourseIsPreregList(event, index)} />
                 <button type="button" onClick={() => removeCourseIsPreregList(index)}>X</button>
             </div>
@@ -114,7 +127,7 @@ function CourseForm() {
 
     const exclusiveForm = course.exclusive.map((cour, index) => {
         return (
-            <div key={index}>
+            <div key={index} className="InfoList">
                 <input value={cour} onChange={(event) => editCourseExclusiveList(event, index)} />
                 <button type="button" onClick={() => removeCourseExclusiveList(index)}>X</button>
             </div>
@@ -152,11 +165,21 @@ function CourseForm() {
                             <tr>
                                 <td>
                                     <label>
-                                        Course Name:
+                                        Course Code:
                                     </label>
                                 </td>
                                 <td>
                                     <input type="text" name="name" value={course.name} onChange={handleFormChange}></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        Course Name:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="text" name="fullName" value={course.fullName} onChange={handleFormChange}></input>
                                 </td>
                             </tr>
                             <tr>
@@ -219,6 +242,9 @@ function CourseForm() {
                             <tr>
                                 <td>
                                     <button type="button" onClick={() => dispatch(addCourses(course))}>Submit</button>
+                                </td>
+                                <td>
+                                    <button type="button" onClick={clearForm}>Clear Form</button>
                                 </td>
                             </tr>
                         </tbody>

@@ -31,6 +31,7 @@ const programsSlice = createSlice({
             } else {
                 state.degrees.push(action.payload)
             }
+            state.degrees.sort((a, b) => a.name.localeCompare(b.name));
             localStorage.setItem(DEGREES, JSON.stringify(state.degrees));
         },
         addMajors(state, action) {
@@ -40,6 +41,7 @@ const programsSlice = createSlice({
             } else {
                 state.majors.push(action.payload)
             }
+            state.majors.sort((a, b) => a.name.localeCompare(b.name))
             localStorage.setItem(MAJORS, JSON.stringify(state.majors));
         },
         addMinors(state, action) {
@@ -49,6 +51,7 @@ const programsSlice = createSlice({
             } else {
                 state.minors.push(action.payload)
             }
+            state.minors.sort((a, b) => a.name.localeCompare(b.name))
             localStorage.setItem(MINORS, JSON.stringify(state.minors))
         },
         removeDegrees(state, action) {
