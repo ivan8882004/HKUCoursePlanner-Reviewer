@@ -24,11 +24,9 @@ function ViewProgramPage() {
         }
     }
 
-    console.log(program)
-
     const degreesList = degrees.map((item, index) => {
         return (
-            <div key={index}>
+            <div key={index} className="InfoList">
                 <span onClick={() => setProgram(item)}>{item.name}</span>
             </div>
         )
@@ -36,7 +34,7 @@ function ViewProgramPage() {
 
     const majorsList = majors.map((item, index) => {
         return (
-            <div key={index}>
+            <div key={index} className="InfoList">
                 <span onClick={() => setProgram(item)}>{item.name}</span>
             </div>
         )
@@ -44,7 +42,7 @@ function ViewProgramPage() {
 
     const minorsList = minors.map((item, index) => {
         return (
-            <div key={index}>
+            <div key={index} className="InfoList">
                 <span onClick={() => setProgram(item)}>{item.name}</span>
             </div>
         )
@@ -61,6 +59,9 @@ function ViewProgramPage() {
     joinCourseList.sort((a, b) => parseInt(a.substring(4)) - parseInt(b.substring(4)))
 
     let toProcessList = joinCourseList.map((item) => {
+        if (getCourses(item)?.fullName === undefined) {
+            console.log(item + "not exist")
+        }
         return {name: item, fullName: getCourses(item).fullName, isPrereg: [], extraMessage: []}
     })
 
@@ -74,7 +75,7 @@ function ViewProgramPage() {
             }
         }
         for (let j = 0; j < coursePrereg.length; j++){
-            for (let k = 0; k < toProcessList.length - 1; k++){
+            for (let k = 0; k < toProcessList.length; k++){
                 const name = toProcessList[k].name;
                 if (coursePrereg[j] === toProcessList[k].name) {
                     let extraMessage = [];

@@ -4,7 +4,7 @@ function TopBar (){
     return (
         <div className="TopBar">
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/course_planner">Course Planner</NavLink>
+            <NavLink to="/study_plan">Course Planner</NavLink>
             <NavLink to="/view_program">View Major Minor</NavLink>
             <NavLink to="/add_course">Add Course</NavLink>
             <NavLink to="/add_degree">Add Degree</NavLink>

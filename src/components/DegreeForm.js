@@ -131,6 +131,11 @@ function DegreeForm() {
         </div>
     })
 
+    const handleSubmit = () => {
+        dispatch(addDegrees(degree))
+        setDegree({ ...degree, ug5leng: [...degree.ug5leng] })
+    }
+
     return (
         <div className="InfoForm">
             <div className="InfoFormTitle">
@@ -205,7 +210,7 @@ function DegreeForm() {
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" onClick={() => dispatch(addDegrees(degree))}>Submit</button>
+                                    <button type="button" onClick={handleSubmit}>Submit</button>
                                 </td>
                                 <td>
                                     <button type="button" onClick={clearForm}>Clear Form</button>

@@ -11,6 +11,7 @@ import AddDegreePage from "./pages/AddDegreePage";
 import AddMajorMinorPage from "./pages/AddMajorMinorPage";
 import ViewProgramPage from "./pages/ViewProgramPage";
 import UploadExportFilePage from "./pages/UploadExportFilePage";
+import StudyPlanPage from "./pages/StudyPlanPage";
 
 
 function App () {
@@ -40,7 +41,7 @@ function App () {
             <TopBar />
             <Routes>
                 <Route path="/" element={<HomePage />}></Route>
-                <Route path="/course_planner" element={<div>Course</div>}></Route>
+                <Route path="/study_plan" element={<StudyPlanPage />}></Route>
                 <Route path="/view_program" element={<ViewProgramPage />}></Route>
                 <Route path="/add_course" element={<AddCoursePage />}></Route>
                 <Route path="/add_degree" element={<AddDegreePage />}></Route>

@@ -20,6 +20,10 @@ function CourseForm() {
         credit: 6
     })
 
+    const [searchBar, setSearchBar] = useState("");
+
+    console.log(searchBar)
+
     const clearForm = () => {
         setCourse({
             name: "",
@@ -134,15 +138,27 @@ function CourseForm() {
         )
     })
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    const handleSubmit = () => {
+        dispatch(addCourses(course))
+        setCourse({ ...course, prereg: [...course.prereg] })
     }
 
     const coursesList = courses.map((course, index) => {
-        return <div key={index} className="InfoList">
-            <span onClick={() => setCourse({...course, prereg: [...course.prereg]})}>{course.name}</span>
-            <button onClick={() => dispatch(removeCourses(index))}>X</button>
-        </div>
+        if (searchBar === "") {
+            return <div key={index} className="InfoList">
+                <span onClick={() => setCourse({ ...course, prereg: [...course.prereg] })}>{course.name}</span>
+                <button onClick={() => dispatch(removeCourses(index))}>X</button>
+            </div>
+        } else {
+            if (course.name.includes(searchBar.toUpperCase())) {
+                return <div key={index} className="InfoList">
+                    <span onClick={() => setCourse({ ...course, prereg: [...course.prereg] })}>{course.name}</span>
+                    <button onClick={() => dispatch(removeCourses(index))}>X</button>
+                </div>
+            } else {
+                return <div key={index}></div>
+            }
+        }
     })
 
 
@@ -156,10 +172,13 @@ function CourseForm() {
                 <div className="InfoFormLeft">
                     <div className="InfoFormSubTitle">
                         Courses
+                        <div>
+                            <input type="text" value={searchBar} onChange={(event) => setSearchBar(event.target.value)} placeholder="Search" className="InfoFormSearchBar"/>
+                        </div>
                     </div>
                     {coursesList}
                 </div>
-                <form onSubmit={handleSubmit}>
+                <form>
                     <table>
                         <tbody>
                             <tr>
@@ -241,7 +260,7 @@ function CourseForm() {
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" onClick={() => dispatch(addCourses(course))}>Submit</button>
+                                    <button type="button" onClick={handleSubmit}>Submit</button>
                                 </td>
                                 <td>
                                     <button type="button" onClick={clearForm}>Clear Form</button>

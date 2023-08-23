@@ -47,6 +47,10 @@ body {
     margin-top: 5%;
 }
 
+.StudyPlanPage {
+    padding: 1%;
+}
+
 .AddCoursePage {
     padding: 1%;
 }
@@ -65,6 +69,7 @@ body {
 
 .UploadExportFilePage {
     padding: 1%;
+    display: flex;
 }
 
 .InfoForm {
@@ -91,13 +96,15 @@ body {
 }
 
 .InfoFormLeft {
-    padding-right: 1%;
     border-right-style: solid;
+    max-height: 50vh;
+    overflow: auto;
 }
 
 .InfoList {
     flex-direction: row;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .InfoList:hover {
@@ -128,10 +135,14 @@ body {
     align-items: center;
 }
 
-.CourseBoxNames {
+.CourseBoxCurrentCourse {
     border-style: solid;
     border-color: blue;
     border-radius: 5px;
+}
+
+.CourseBoxCurrentCourse:hover {
+    box-shadow: 0 8px 8px 0 gray;
 }
 
 .CourseBoxName {

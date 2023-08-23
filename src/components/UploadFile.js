@@ -5,8 +5,6 @@ import { useDispatch } from "react-redux";
 function UploadFile(){
     const dispatch = useDispatch();
     const [uploadFile, setUploadFile] = useState(null);
-    const [uploadJson, setUploadJson] = useState(null);
-    const [uploaded, setUploaded] = useState(false)
 
     const handleFileInput = (event) => {
         setUploadFile(event.target.files[0])
@@ -15,29 +13,23 @@ function UploadFile(){
     const handleUpload = () => {
         const fileReader = new FileReader();
         fileReader.onload = (event) => {
-            setUploadJson(JSON.parse(event.target.result))
+            handleSet(JSON.parse(event.target.result))
         }
         fileReader.readAsText(uploadFile);
-        setUploaded(true)
     }
 
-    const handleSet = () => {
+    const handleSet = (uploadJson) => {
         dispatch(setCourses(uploadJson.courses))
         dispatch(setDegrees(uploadJson.degrees))
         dispatch(setMajors(uploadJson.majors))
         dispatch(setMinors(uploadJson.minors))
     }
 
-    console.log(uploadJson);
-
     return (
         <div>
             <input type="file" accept=".json" onChange={handleFileInput} />
             <div>
                 {uploadFile && <button onClick={handleUpload}>Upload</button>}
-            </div>
-            <div>
-                {uploaded && <button onClick={handleSet}>Set value</button>}
             </div>
         </div>
     )
