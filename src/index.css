@@ -13,26 +13,26 @@ body {
     padding: 1%;
 }
 
-.TopBar a{
+.TopBar a {
     text-decoration: none;
     margin: 1%;
     padding: 1%;
     color: black;
 }
 
-.TopBar a:hover{
+.TopBar a:hover {
     background-color: rgb(192, 192, 192);
     box-shadow: 0 8px 8px 0 gray;
     border-style: solid;
     border-color: rgb(172, 172, 172);
 }
 
-.TopBar a.active{
+.TopBar a.active {
     font-weight: bold;
     border-bottom: 3px solid black;
 }
 
-.TopBar a.active:hover{
+.TopBar a.active:hover {
     background-color: rgb(235, 235, 235);
     box-shadow: 0 0 0 0;
     border-style: none;
@@ -47,9 +47,108 @@ body {
     margin-top: 5%;
 }
 
+
+.DropDownBox {
+    padding: 1%;
+    border-style: solid;
+}
+
+.DropDown {
+    overflow: hidden;
+}
+
 .StudyPlanPage {
     padding: 1%;
+    display: flex;
+
+    .CourseList {
+        padding: 1%;
+        border-style: solid;
+        width: max-content;
+        
+        .Title {
+            font-weight: bold;
+            font-size: larger;
+        }
+    }
+
+    .CourseListContent {
+        margin-top: 1%;
+        overflow: auto;
+        max-height: 50vh;
+    }
+
+    .Subtitle {
+        font-weight: bold;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .SubtitleAnnotate {
+        font-weight: normal;
+        float: right;
+    }
 }
+
+.StudyPlanPageLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.StudyPlanSemBox {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.StudyPlanSem {
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-style: solid;
+    width: max-content;
+
+    .Title {
+        padding: 1%;
+        background-color: aqua;
+        border-style: solid;
+        border-color: blue;
+        font-weight: bold;
+    }
+
+    .Courses {
+        height: 35vh;
+        width: 20vh;
+        overflow: auto;
+    }
+
+    .CoursePreregFail {
+        background-color: red;
+        border-style: solid;
+        border-color: brown;
+        color: yellow;
+        margin-top: 1%;
+        padding: 1%;
+    }
+
+    .CourseExclusive {
+        background-color: orange;
+        border-style: solid;
+        border-color: orangered;
+        color: brown;
+        margin-top: 1%;
+        padding: 1%;
+    }
+
+    .NormalCourse {
+        background-color: greenyellow;
+        border-style: solid;
+        border-color: green;
+        margin-top: 1%;
+        padding: 1%;
+    }
+}
+
 
 .AddCoursePage {
     padding: 1%;

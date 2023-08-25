@@ -6,12 +6,13 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { COURSES } from "./store/slices/coursesSlice";
 import { DEGREES, MAJORS, MINORS, setMajors, setMinors } from "./store/slices/programsSlice";
-import { setCourses, setDegrees } from "./store/index"
+import { setCourses, setDegrees, setStudyPlan } from "./store/index"
 import AddDegreePage from "./pages/AddDegreePage";
 import AddMajorMinorPage from "./pages/AddMajorMinorPage";
 import ViewProgramPage from "./pages/ViewProgramPage";
 import UploadExportFilePage from "./pages/UploadExportFilePage";
 import StudyPlanPage from "./pages/StudyPlanPage";
+import { STUDYPLAN } from "./store/slices/studyPlanSlice";
 
 
 function App () {
@@ -33,6 +34,10 @@ function App () {
         const storageMinor = localStorage.getItem(MINORS);
         if (storageMinor !== null) {
             dispatch(setMinors(JSON.parse(storageMinor)))
+        }
+        const storageStudyPlan = localStorage.getItem(STUDYPLAN);
+        if (storageStudyPlan !== null) {
+            dispatch(setStudyPlan(JSON.parse(storageStudyPlan)))
         }
     }, [dispatch])
 
