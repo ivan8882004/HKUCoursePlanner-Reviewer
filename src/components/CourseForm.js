@@ -22,8 +22,6 @@ function CourseForm() {
 
     const [searchBar, setSearchBar] = useState("");
 
-    console.log(searchBar)
-
     const clearForm = () => {
         setCourse({
             name: "",

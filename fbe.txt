@@ -1,0 +1,2238 @@
+ACCT1101. Introduction to financial accounting (6 credits)
+The course will cover the principles of double entry book-keeping, the interpretation of financial
+statements, the issues raised by corporate regulation, and the use of management information for
+decision making.
+ACCT1112. Professional preparation programme (6 credits)
+To prepare students for a career in professional accounting, this optional semester-long course provides
+seminars/workshops on career opportunities, professional ethics, and develop interpersonal,
+communication and time-management skills, as well as social events offering opportunities to interact
+with accounting and business professionals. Pass/Fail grade.
+ECON1210. Introductory microeconomics (6 credits)
+An introduction to the basic concepts and principles of microeconomics – the study of demand and
+supply, consumer theory, cost and production, market structure, incentives, and resource allocation
+efficiency, political economy, and ethics and public policy.
+ECON1220. Introductory macroeconomics (6 credits)
+This course is an introduction to macroeconomics – the study of business cycle fluctuations and longrun economic growth. The course will first introduce students to the measurement of major
+macroeconomic variables and the main issues in macroeconomics. It will then introduce students to
+models that study the trend of the economy in the long run and the cyclical ups and downs of the
+economy in the short run. Empirical evidence and the effects of fiscal and monetary policies will be
+discussed along the way.
+ECON1280. Analysis of economic data (6 credits)
+This course studies the measurement and interpretation of economic variables, and how to model their
+relationships using appropriate empirical methods. Topics include interpretation of headline statistics,
+describing economic aggregates, modeling of economic relationships and drawing conclusions from
+observations.
+Mutually exclusive: IIMT1640 Probability and statistics for business; and
+STAT1601 Elementary statistical methods; and
+STAT1602 Business statistics; and
+STAT1603 Introductory statistics; and
+STAT2901 Probability and statistics: Foundations of actuarial science
+Remarks: Not open to students taking or having taken STAT2601 Probability & statistics I.
+BE143/523 amended
+2
+FINA1310. Corporate finance (6 credits)
+This is an introductory finance course that develops the basic concepts and tools applicable to corporate
+financial decisions. Two main tasks of financial managers are studied: project evaluation and financing
+decisions. Specific topics include present value calculation, valuation of stocks and bonds, investment
+criteria and capital budgeting, risk and return, cost of capital, and capital structure. Corporate ethics is
+also incorporated in the discussions.
+Prerequisite: ACCT1101 Introduction to financial accounting
+Mutually exclusive: STAT3904 Corporate finance for actuarial science
+IIMT1640. Probability and statistics for business (6 credits)
+This course introduces fundamental concepts of probability and statistics. It helps students to understand
+how to evaluate uncertainty using probability and conduct statistical inference. Students will learn how
+to solve real world problems by simple Monte Carlo simulations and linear regressions.
+Mutually exclusive: ECON1280 Analysis of economic data; and
+STAT1602 Business statistics; and
+STAT1603 Introductory statistics
+IIMT2601. Management information systems (6 credits)
+This course covers key concepts associated with management information systems: digital economy, ecommerce, information technology infrastructure, technology-business integration and the impact of
+technology on society. Case studies and lectures will be used to shed light on these topics. Students will
+also acquire hands-on knowledge and techniques using business software to practice formulating and
+solving business solutions.
+Mutually exclusive: BSIM4022 Management information systems
+MGMT2401. Principles of management (6 credits)
+This introductory course traces the evolution of the study and practice of management over this past
+century, with particular focus on the landmark discoveries and lessons learned. The course aims to
+develop students’ awareness of the nature of management processes and focuses on the following topics:
+planning, organising, controlling, leading, communication and change management. The programme's
+pedagogical design combines theoretical conceptualisation with interactive discussions, skill-building
+experiential exercises and students’ presentations.
+MKTG2501. Introduction to marketing (6 credits)
+This course focuses on introducing core principles of marketing and covering key marketing concepts
+and processes such as managing customer relationships, marketing planning, understanding customers,
+competitors and marketplace, and developing marketing strategies (segmentation, innovation, and
+positioning) and marketing programs (products/services/branding, pricing, channel, and marketing
+communications). The course will be delivered via a blend of interactive class discussions, case
+analyses, and a group project on a new product/service development.
+3
+ADVANCED LEVEL COURSES
+ACCT2102. Intermediate financial accounting I (6 credits)
+This course is the first of a series of two intermediate financial accounting subjects. It builds on the
+foundation laid in the introductory accounting course to better equip students with the required
+techniques in preparing and interpreting financial statements. It reviews the fundamental financial
+accounting concepts and focuses on the detailed recording and reporting of important items relating to
+the asset side of the balance sheet. It also examines the conceptual framework of accounting and
+financial statement presentation. This course provides the prerequisite knowledge that will prepare
+students for advanced accounting courses.
+Prerequisite: ACCT1101 Introduction to financial accounting
+ACCT2105. Introduction to management accounting (6 credits)
+The theory and techniques involved in serving the accounting needs of management in decision making,
+control, evaluation and motivational aspects.
+Prerequisite: ACCT1101 Introduction to financial accounting
+ACCT3103. Intermediate financial accounting II (6 credits)
+This course is a continuation of Intermediate Financial Accounting I. Topics examined include debt
+financing, equity financing, income taxes, leases, dilutive securities and earnings per share calculations,
+and derivatives and hedging activities. While the primary emphasis will be on Hong Kong practice,
+we will also discuss the accounting principles and standards based on the Generally Accepted
+Accounting Principles (GAAP), International Financial Reporting Standards (IFRS) and Hong Kong
+Financial Reporting Standards (HKFRS). Since 1993, IFRS have been the basis for all new standards
+adopted in Hong Kong. In addition, IFRS are providing the framework for the development of
+accounting standards in China.
+Prerequisite: ACCT2102 Intermediate financial accounting I
+ACCT3106. Management control (6 credits)
+A course on advanced problems in managerial accounting and management information and reporting
+systems for planning and control of operations. Particular attention will be given to problems associated
+with large decentralised companies – divisional performance control, measurement and evaluation, and
+transfer pricing.
+Prerequisite: ACCT2105 Introduction to management accounting
+ACCT3107. Hong Kong taxation (6 credits)
+This course provides students with a fundamental understanding of the current law, principles and
+practices of Hong Kong taxation. The concepts introduced in the course are heavily used in practice.
+The course is helpful not only for personal tax compliance and planning but also for paving the way for
+students to enter their future profession and the business world.
+Prerequisite: ACCT1101 Introduction to financial accounting
+4
+ACCT3109. Auditing (6 credits)
+Professional ethics and the social and legal responsibilities of auditors will be covered, as will basic
+auditing concepts and principles; evidence; evaluation of internal control; and standard procedures and
+methods of investigation.
+Prerequisite: ACCT3103 Intermediate financial accounting II
+ACCT3111. Corporate governance and social responsibility (6 credits)
+In this course, students learn about the complex responsibilities facing business leaders today. They
+will explore the use of accounting information and internal control in ensuring efficient and effective
+operations, reducing the cost of capital, production and distribution, and complying with legal,
+regulatory and corporate oversight requirements. Students will also learn about ethics and governance
+systems that leaders can use to promote socially responsible conduct by organisations and their
+employees, and how personal values can play a critical role in effective leadership.
+ACCT3112. Accounting data management and analytics (6 credits)
+This course is about descriptive and predictive analysis of data as it pertains to accounting and finance
+professionals.
+In the era of “big data,” the volume, pace, and complexity of data have made it difficult to understand
+and use data. At the same time, the explosion of data has brought many opportunities for firms to get
+deeper insights into many aspects of their businesses. To harness excessive information, data analytics
+has become a must-have skill for all business managers and particularly accountants who often know
+both internal and external data, better than their counterparts in other areas of the business. This course
+will prepare students with fundamental analytics skills focused on accounting applications. Students
+will also gain hands-on experience with data analysis.
+Students should be aware that this is not a computer-skills course. However, it does require extensive
+use of the computer as a tool which is expected for business analytic positions in the industry. Students
+will spend significant portion of their time learning and using computerized information systems and
+data analysis platforms. Some class assignments will involve the use of computer software.
+This course is composed of two parts. In the first part, students will first be exposed to why analytics is
+important in accounting professions and learn about how financial and accounting data is generated and
+stored in modern Accounting Information Systems (AIS). Students will learn to build queries to pull
+data from AIS or databases, learn to perform descriptive analytics using various data visualization
+techniques, and identify potential problems and relevant issues. In the second part, students will learn
+about entry to medium level predictive accounting models and their practical applications such as
+performance forecasting and credit scoring. Students will learn to use a statistical computing software
+(R) to perform the analysis.
+Prerequisites: STAT1602 Business statistics; and
+ACCT3103 Intermediate financial accounting II
+5
+ACCT3113. Accounting for business valuation and financial contracting: theory and application (6 credits)
+This course provides a high-level view of what accounting is about and why and how it is important for
+the real economy and financial markets. Going beyond the rules and procedures that are taught in other
+accounting courses, this course takes the perspective of those who apply accounting information to
+decision-making in business organizations and financial markets (i.e., analysts and investors, lenders,
+the board of directors, regulators). Topics include the use of accounting information in business
+valuation, investment strategies, debt contracts, and executive compensation. The course emphasizes
+both practical techniques for how to properly use accounting information and the theoretical foundation
+for the techniques (the why question).
+Prerequisites: ACCT1101 Introduction to financial accounting; and
+FINA1310 Corporate finance; and
+ECON1280 Analysis of economic data or STAT1602 Business statistics or STAT1603 Introductory statistics
+ACCT3114. Valuation using financial statements (6 credits)
+The purpose of this course is to introduce students to the concepts of financial statement analysis, aiming
+to provide students the basic skills and techniques to analyze financial statements for the application of
+valuation. Students will learn how to evaluate accounting quality, firms’ financial performance, and
+how to evaluate financial statements and perform rudimentary prospective and equity analyses. Students
+will acquire knowledge on how to recast and adjust financial statements to estimate the intrinsic value
+of the firm. Last students apply the knowledge and gain hand-on experience through group projects on
+financial statement analysis.
+Prerequisites: ACCT1101 Introduction to financial accounting; and
+FINA1310 Corporate finance
+ACCT3115. Financial reporting and analysis of financial institutions (6 credits)
+This course focuses on (1) financial reporting and disclosure rules for financial institutions and financial
+instruments they hold (interest rate risk disclosures, loan loss disclosures, fair value accounting for
+financial instruments, securitization accounting, derivatives and hedge accounting, and market risk
+disclosures); and (2) the financial statement analysis of banks and bank-like financial institutions (thrifts,
+mortgage banks, and commercial banks). Analyzing these two aspects of a modern bank reveals much
+about the strategies followed by the bank given the various regulations under which it operates.
+The financial statements of financial institutions are increasingly based on fair value accounting and
+their financial reports include increasingly extensive risk and estimation sensitivity disclosures. Both
+fair value accounting and risk and estimation sensitivity disclosures are necessary ingredients for
+financial reports to convey financial institutions’ risk and performance in today’s world of complex,
+structured, value and risk-partitioning financial instruments and transactions. While financial
+institutions often report imperfect (or worse) fair value measurements and risk and estimation sensitivity
+disclosures, careful joint analysis of the information they do provide invariably yields important clues
+about their risks and performance.
+While this course is most relevant to students interested in financial institutions, much of the accounting
+material also pertains to varying extent to other types of firms. For example, many firms securitize their
+accounts receivable or hedge their commodity, interest rate, or foreign exchange risk using derivatives.
+Prerequisite: ACCT1101 Introduction to financial accounting
+6
+ACCT4104. Advanced financial accounting (6 credits)
+This course looks at the application of accounting theory to the preparation of accounting standards and
+their implications for reporting purposes, particularly those related to the consolidation of group
+accounts, asset valuation and the influence on income determination. Other topics may include current
+cost accounting, income tax allocation, government entities and non-profit organisations.
+Prerequisite: ACCT3103 Intermediate financial accounting II
+ACCT4108. Advanced topics in auditing (6 credits)
+This course extends the first Auditing course to further examine various advanced topics including
+advanced auditing techniques, auditing for operations and efficiency, auditing web based information,
+EDP auditing, environmental auditing, forensic accounting and contemporary issues of auditing.
+Prerequisites: ACCT3109 Auditing; and
+ACCT4104 Advanced financial accounting
+ACCT4110. Advanced topics in taxation (6 credits)
+This course provides students with a thorough and in-depth knowledge of the current law, principles
+and practices of Hong Kong taxation. Students are required to apply tax principles, decided cases and
+legislation to compliance matters and tax planning activities in Hong Kong. The course also covers
+anti-avoidance provisions, cross border activities and international tax planning considerations. The
+concepts introduced in the course are heavily used in practice. The course is helpful not only for tax
+compliance and planning but also for paving the way for students to enter their future profession and
+the business world.
+Prerequisite: ACCT3107 Hong Kong taxation
+ACCT4114. Accounting seminar (6 credits)
+A course on (a) the nature of accounting theory and research and (b) topical accounting issues.
+Prerequisite: ACCT3103 Intermediate financial accounting II
+BUSI1802. Advanced business communication skills (6 credits)
+This course aims at enhancing students’ communication skills and preparing them to meet the
+communication requirements of today’s business world. Students will undertake the following:
+attending lectures, participating in class discussion, reading and analyzing cases, developing a business
+writing piece with good style, and presenting their analysis and research in selected business topics.
+Special topics will be extracted from the following areas: interpersonal communication, organizational
+communication, intercultural communication, conflict management and negotiation, persuasion,
+business writing and presentation.
+7
+BUSI1805. International field trip (6 credits)
+BUSI1805 International Field Trip is a required course for the BBA(IBGM) students aimed at providing
+students with opportunity to gain international exposure and acquire the first-hand knowledge of
+international business and global management. Students will study and explore a country/countries with
+emerging international business opportunities in this course. Cultural activities and firm visits will be
+arranged during the course period to engage students and raise awareness about cultural diversity and
+to enhance an understanding of how culture impacts business practices in a particular country/countries.
+Students will write reflections regarding their new cultural experiences and about what they have
+learned. Based on the research theme of the year, students will work in a group to conduct research
+analyses through literature review, firm visits, and interviews to explore global topics related to the
+selected country/countries and will present their findings/recommendations on the issues related to
+international business and global management.
+Remarks: For BBA(IBGM) students only.
+BUSI1806. Israeli entrepreneurial experience (6 credits)
+Innovation has become one of the most important skills necessary to adapt to, and survive, in the
+changing business environment. Israel values innovation and is a world leader in the number of startups per capita, and the home of dozens of multinational organizations’ R&D centres (like Intel,
+Microsoft, etc.). Therefore, it is the perfect lens through which to study about building innovation.
+This programme will provide a glimpse into the Israeli start-up ecosystem and will provide a sense of
+how to grow such a culture. By understanding the essence of innovation and entrepreneurship, students
+will be able to enhance their current business value proposition and create new business models to
+address escalating human needs.
+BUSI1807. Business consulting practicum (6 credits)
+This course aims to provide an opportunity for students to gain hands-on consulting project experience
+while rendering valuable service to the business community. The course operates on a team basis.
+Students will work in groups on assigned business projects under the guidance of faculty teacher and
+professional mentors. Business projects will mainly engage the SMEs (small and medium sized
+enterprises) in Hong Kong.
+Remarks: Students are selected individually by the instructor.
+BUSI2811. Negotiation and conflict resolution (6 credits)
+This course provides a systematic introduction of concepts, theories and practices, with a focus on
+equipping students with toolkits of handling conflict and negotiation. The course content is composed
+of two intimately related parts. The beginning part introduces the nature and types of conflict, conflict
+escalation, and conflict resolution styles. The rest of the class sessions discuss the characteristics of
+interest-based negotiation and negotiation strategies. Specifically, students will learn the building
+blocks of negotiation, the differences between value-claiming and value-creating negotiation strategies,
+and related topics in trust building, cultural difference in negotiation, emotions, power, persuasion, third
+party intervention, negotiation ethics, etc. To enhance students’ effectiveness in writing and presenting,
+which is a necessary skill of negotiation practice as well as for the quality of course assignments,
+students will learn how to write negotiation planning, how to write reflection essay, and presentation
+skills throughout the semester.
+8
+BUSI2812. Impact lab (6 credits)
+This is a 6-credit experiential learning course that will give students an opportunity to work directly for
+social ventures under the guidance of a faculty instructor and professional mentors. You should have
+opportunities to manage tasks, solve real-life problems, and gain hands-on business experience, which will
+strengthen your soft skills, help you implement academic business concepts in a practical way, and greatly
+improve your ability to compete in the job market. The course will also offer you the opportunity to learn
+about starting an impactful business by sharing theories and methods through short lectures, readings, and
+videos, as well as real-life examples by our guest speakers. This component of the course will help you grasp
+the essence of what building a company, especially in a social impact space, entails.
+BUSI2813. Field experience in China’s business environment (6 credits)
+This course aims to provide experiential learning in China business and the economy for year 1 or year
+2 students in the Faculty of Business and Economics. Students will spend two weeks in Shanghai,
+attending classes and guest lectures as well as visiting representative companies in important industries
+and sectors there. The course will focus in the practical aspects of China business environment covering
+both manufacturing and servicing sectors. By going through topics/issues of recent concern, obtaining
+strategic insights via firm visits and attend sharing by senior management people, students are expected
+to acquire in-depth knowhow of learnt topics. The structure and content of the course is designed to
+align and integrate with other Faculty courses on China business and economy by focusing in the latest
+business environment in China.
+BUSI2814. Business ethics (6 credits)
+The purpose of this course is to help you reach your full potential as an ethical leader in your home,
+workplace, and community. You will likely face a variety of ethical challenges during your life. By
+drawing on articles, readings, cases, our collective experience, lectures, class discussion, guest speakers,
+and other material, we will explore ways to deal with such challenges. Most importantly, you should
+leave this course with a deep belief that you have the ability to influence those around you through your
+ethical leadership and decision-making. As such, this course will require you to reflect on your own
+aspirations as you consider the type of influence you want to have as an ethical leader.
+BUSI2815. Managing communication through social media (6 credits)
+Students will learn current research and theories in the field of social media while honing their
+communication skills in this medium.
+Teaching and learning tools used to achieve better learning outcomes include online discussions
+exploring current research and theories, class lectures and discussions, videos, and student-driven
+communications on Moodle and other “test” sites.
+Students in this class are expected to be prepared for class discussions regarding readings, cases and
+online discussions, and participate both in class and online as is suitable for a social media course. A
+successful learning experience depends on contributions from both the instructor and the students. Full
+and active participation is critical for achieving the optimal learning outcome.
+9
+BUSI2816. Transformative business immersion in developing economies (6 credits)
+This course is a total immersion experience into unfamiliar geography, economy, sociality and
+environment. After a preparation period on campus at HKU, students will travel to a country in the
+developing world. Students will live with local families and work with local small and micro-enterprises.
+Students will work with these enterprises to improve their prospects and outcomes, focusing on basic
+principles in areas such as good record keeping and effective promotion.
+This course is designed to be mutually beneficial to both the students and to the families and
+communities where they live and work. Students will gain experience in the practical application of
+business theory, will forge new friendships with people they would never otherwise meet, will gain a
+greater appreciation for the constraints and limitations in the development of emerging economies, and
+will hopefully make a lasting difference in the lives of newfound friends and colleagues.
+Remarks: Students are selected individually by the instructor.
+BUSI2819. Persuasion and behavioural change (6 credits)
+This course aims at providing a systematic introduction of concepts, theories and practices in persuasion,
+from the perspectives of social psychology and communication, with a focus on equipping students with
+the ability of applying persuasion knowledge in various business and interpersonal contexts. Classic
+theories in persuasion, attitude change, and behavior change, together with practical frameworks will
+be introduced before drawing connection to the business examples. Students will practice persuasion
+via developing strategic planning for business cases and conducting persuasive writings and
+presentations.
+BUSI3711. New business generation – a strategic and operational approach (6 credits)
+“New Business Generation - A Strategic and Operational Approach” is designed to equip students with
+a practical understanding of how to develop a new business under a startup environment or within a
+sizable organization in a real-world situation. The course will cover idea generation, business model
+formulation, strategic planning, financial modelling, resource and operational planning, pitching to
+external investor and/or internal management team, etc.
+The course will integrate what the students have learnt via various business and management courses,
+as well as applying them in a corporate scenario. Application of taught concepts / knowledge of
+entrepreneurship, design thinking, product / service development, strategic planning, financial
+forecasting, and/or marketing and promotion, etc. will be required throughout the course.
+In order to enhance the practical aspects of the course, various senior industry professionals in the areas
+of product development, strategic planning, marketing, finance, operation, venture capital, etc. will be
+invited to conduct lecture, provide coaching and evaluate student presentation / business proposal.
+Knowledge exchange will be a core component to enrich students’ overall learning experience of this
+course.
+BUSI3801. Business law (6 credits)
+This course provides an introductory survey to the fundamentals and general principles of the law as it
+interacts with individuals, business, and other institutions in society. During the course, students will
+learn about different foundational areas of law that are key to being an informed business person and
+more broadly, a contributing member of society. The course also seeks to equip students with a deeper
+understanding of the processes by which laws are made, including both formal and informal, and the
+influence that laws have on different stakeholders in society. Furthermore, this course assists students
+with understanding and analyzing current events through a legal lens.
+10
+BUSI3803. Company law (6 credits)
+The course is designed to help students develop knowledge and understanding of the main concepts,
+principles, and rules of Hong Kong Company Law. Additionally, we will explore the economic and
+business context of Company Law and in particular, the way in which the law seeks to strike a balance
+between the interests of various stakeholders including companies, shareholders, creditors, and the
+public. The course will also explore key principles of corporate governance. More broadly, students will
+evaluate the role of companies in modern society.
+BUSI3808. Global analysis team project (6 credits)
+The primary objective of this course is to develop students’ capacity to understand global strategic issues
+from business, economic, social, political and/or environmental perspectives. Students are also
+expected to devise viable alternatives for dealing with the key issues discussed. They will partner with
+students from overseas universities to work on a global analysis team project in their final year of study.
+Remarks: For BBA(IBGM) students only.
+BUSI3809. Leadership development programme (6 credits)
+This course aims at enabling students to develop themselves as leaders of organisations and to embark
+on paths of personal leadership development. The following concepts will be covered: motivation,
+lifelong leadership development, personal leadership development plan, stress and adversity
+management, peer mentoring, group dynamics, work and life balance as well as purpose-driven
+leadership.
+BUSI3810. Legal and ethical environment of global business (6 credits)
+This course examines how law and ethics coincide with global business transactions today. It is
+specifically designed for students who hope to become leaders and executives in Asia. We will discuss
+broad legal principles and how they affect corporate strategy and operations, analysing several crossborder business transactions and court cases.
+BUSI3811. Reading course (6 credits)
+This course is designed for BBA/BBA(A&F) year 3 or 4 students. It consists of supervised reading and
+written work. Students will specialize in one discipline under supervision of a faculty member of the
+Faculty of Business and Economics. A written paper is required in lieu of examination.
+Prerequisites: ECON1210 Introductory microeconomics; and
+ECON1280 Analysis of economic data or STAT1602 Business statistics or STAT1603
+Introductory statistics
+Remarks: Students intending to take this course shall complete an application form which is
+available at the Faculty Office (Room 1305, K.K. Leung Building) together with the
+approval from the proposed supervisor within the first two weeks of the semester.
+Students are advised to meet with their supervisors at least once per two weeks. A
+written paper must be completed and presented no later than the first day of the
+assessment period for that semester.
+11
+ECON2210. Intermediate microeconomics (6 credits)
+Preference, utility and consumer choices; choices under uncertainty, introduction to game theory;
+theory of the firm; market structures; introduction to economics of information.
+Prerequisites: ECON1210 Introductory microeconomics; and
+a pass in MATH1009 Basic mathematics for business and economics or MATH1011
+University mathematics I or MATH1013 University mathematics II or concurrent
+registration in MATH1009 or MATH1011 or MATH1013
+ECON2214. Games and decisions (6 credits)
+The first part of the course starts with sequential games and introduces the concept of subgame perfect
+equilibrium for solving sequential games. Then it introduces Nash equilibria through a series of
+concepts: dominant strategy, successive elimination of dominated strategies, and the minimax approach
+for simultaneous games. It also discusses the limitations of Nash equilibria and offers rationalizability
+as an alternative equilibrium concept. This forms the basic theory of the course, which is used to analyze
+repeated games and collective-action games in the second part of the course. Additionally, new solution
+(evolutionary stability) and equilibrium concepts (perfect Bayesian equilibrium) are introduced to deal
+with applications that involve imperfect rationality or imperfect information. Strategic moves and
+mechanism design are potential optional topics of the course.
+Prerequisite: ECON1210 Introductory microeconomics
+Mutually exclusive: STRA3709 Applications of strategic thinking in business
+ECON2216. Industrial organization (6 credits)
+This course studies the pricing and output decisions of firms and the performance of the market under
+various market structures. Topics include theories of oligopoly; product differentiation; the effects of
+imperfect and asymmetric information; the examination of pricing practices such as price discrimination,
+tie-in selling, and resale price maintenance; collusion and anti-competitive behaviours, and public
+policies related to the promotion or restriction of competition.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2217. Economics of networks (6 credits)
+The world has become more and more connected since the appearance of the modern Internet in the
+early 1990s. The Internet allows buyers and sellers matched to each other directly or with the help of
+intermediaries. In a more connected world, buyers (sellers) can reach more sellers (buyers) and
+intermediaries can reach more buyers and sellers at the same time. It is not clear whether such change
+strengthens or weakens the bargaining power of the parties involved. Graph theory and (noncooperative and cooperative) game theory are introduced in this course to shed light on these issues.
+Graph theory can also help us understand link analysis and Web search. Building on this, game theory
+is used to provide an analysis of how sponsored search markets work. Other topics covered by the
+course include: information cascades, network effects, power laws and rich-get-richer phenomena.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2220. Intermediate macroeconomics (6 credits)
+Theories of income, employment, and the price level; analysis of secular growth and business
+fluctuations; introduction to monetary and fiscal policy.
+Prerequisites: ECON1210 Introductory microeconomics; and
+ECON1220 Introductory macroeconomics
+12
+ECON2223. Public finance (6 credits)
+Study of the role of government in the economy, using microeconomic theory. The course covers
+public expenditure analysis and methods of financing government expenditures. It explores the
+underlying theory of welfare economics as well as the economic effects of public policy such as public
+sector pricing, expenditure and tax policies.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2225. Economics of population changes (6 credits)
+Fertility and mortality rates changed drastically in many parts of the world. This course examines these
+demographic changes, their causes and consequences, and related policy issues. We first look at trends
+in world population and introduce fundamental demographic concepts of mortality, fertility,
+immigration and age structure. We then discuss economic consequences of demographic changes,
+including the demographic dividend, saving and retirement decisions, and human capital accumulation.
+We also examine economic causes of population changes. Finally, we examine policy issues related to
+demographic changes, such as retirement pension and health care reform.
+Prerequisites: ECON1210 Introductory microeconomics; and
+ECON1220 Introductory macroeconomics
+ECON2226. Chinese economy (6 credits)
+This course provides a general introduction of Chinese economy since 1949 with emphasis on the era
+of transition from a planned economy to a more market driven one. It aims to help students understand
+the development and transition of economy in China, the working of major market mechanism, as well
+as related issues that China encounters. Basic economic principles are used to explain the economic
+issues of modern China.
+Specifically, this course will start from an historical overview of Chinese economy. Then it will talk
+about the economic reform, followed by the reform of firms and household behaviors that are specific
+to China. Next, it will focus on two important markets: financial market and housing market, focusing
+on the market mechanism, function of major players, and issues/concerns that may hinder economic
+development. Besides that, this course will also cover the topic about the interactions between China
+and the world by focusing on the international trade and foreign direct investments. Finally, this course
+will have an in-depth discussion of the development of Chinese economy with specific emphasis on
+driving forces, obstacles, and problems associated.
+ECON2232. Economics of human resources (6 credits)
+This course studies the allocation of human resources through the labour market and the utilisation of
+human resources inside the firm. Issues related to investment in human capital, wage determination,
+labour force participation, worker mobility, hiring decisions and other personnel practices are examined.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2233. The economics of law (6 credits)
+Economic analysis applied to law. Topics may include: efficiency of law, rules of liability, tort rights
+and remedies, criminal sanction, legislative processes as resource allocating and income distributing
+mechanisms.
+Prerequisite: ECON1210 Introductory microeconomics
+13
+ECON2234. Transportation economics (6 credits)
+Microeconomics applied to transportation. The cost-benefit approach to urban transportation includes
+topics such as optimal pricing and infrastructure investment, consumer's surplus and quasi-rents, peak
+load and cost allocation problems, economies of scale and dis-economies of scope, mode choice and
+value of time.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2249. Foreign trade and investment in China (6 credits)
+Built upon contemporary scholarly work on international economics, economics of multinational
+enterprises and international business, this course presents a set of tools, concepts, and perspectives to
+help students comprehend key issues in China's foreign trade and investment and make related business
+decisions. This course contains several major themes, including:
+(a) What opportunities does the emergence of the Chinese economy offer to foreign firms?
+(b) Whether and how should a foreign firm be involved in the Chinese economy?
+(c) How to understand China’s trade?
+(d) How to manage international trade with China?
+(e) How to manage direct investment projects in China and compete successfully in the China
+market?
+Prerequisites: ECON1210 Introductory microeconomics; and
+ECON1220 Introductory macroeconomics
+ECON2252. Theory of international trade (6 credits)
+This course deals with economic issues which are related to many countries. It provides students with
+global perspectives on economic and business decisions. Topics include why countries trade, how they
+trade, who benefits and who loses from trade, and what are the best trade policies. We also discuss
+recent globalization issues in this class.
+Prerequisites: ECON1210 Introductory microeconomics; and
+ECON1220 Introductory macroeconomics
+ECON2253. International macroeconomics (6 credits)
+The course is an introduction to an evolving and growing literature on international finance. Topics
+covered in the course include the international monetary system, the concept of balance of payments,
+theories of balance of payments, parity conditions, models of exchange rate determination, forwardlooking market instruments (forward, futures, and options markets), Eurocurrency markets, and
+financial crises.
+Prerequisites: ECON1210 Introductory microeconomics; and
+ECON1220 Introductory macroeconomics
+14
+ECON2255. The economic system of Hong Kong (6 credits)
+This course provides a basic understanding of the salient aspects of the Hong Kong economy. The
+emphasis will be on both economic analysis and institutional arrangements of the major economic
+sectors and related policies. Attention will be given to topics of recent public concern. The course begins
+with some preliminary discussion on historical development and national income accounting. It then
+goes on to the following topics: the monetary system and exchange rate regime, the banking sector and
+financial markets, the labour market, income distribution, external trade and foreign investment,
+economic relations with the Mainland and the region, public finance, the housing market and
+competition policy. These are all important aspects of the Hong Kong economy, but the extent of
+coverage of each will depend on the amount of time available.
+Prerequisites: ECON1210 Introductory microeconomics; and
+ECON1220 Introductory macroeconomics
+ECON2257. Trade, investment and development in APEC economies (6 credits)
+In this course, students will examine various important and timely issues facing several Asia-Pacific
+Economic Cooperation (APEC) economies. In particular, the international trade and foreign
+investment relationships among APEC members will be studied. Common theories and experiences
+of economic development and growth as well as innovation activities will also be highlighted.
+Particular attention will be paid to the special role of Hong Kong, China in the economic integration of
+APEC. Some of the APEC economies to be studied include Japan, Hong Kong, the Republic of Korea,
+the People’s Republic of China, Chinese Taipei, the United States, Mexico, Russia, and Indonesia.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2262. Economic development (6 credits)
+Why do countries remain poor? This course provides an overview of major topics in the study of
+economic development: the branch of economics which studies the determinants of income growth and
+poverty reduction. Each week, we will focus on a particular barrier to economic development and,
+through a combination of economic theory and empirical evidence, seek to build a better understanding
+of the type of policies and interventions conducive to development. The goal is not to provide an
+exhaustive coverage of all topics but to expose students to current issues and debates in development
+economics.
+Prerequisites: ECON1210 Introductory microeconomics and ECON1220 Introductory
+macroeconomics; or
+GHAD1002 Introductory economics and finance
+ECON2264. Political economy of development in China (6 credits)
+This course is designed to provide a solid understanding of the political forces shaping the outcomes of
+China’s economic development from the early twentieth century up until the present day. Topics
+covered include the fall of the last imperial dynasty, the communist revolution, property institutions
+under socialism, the political determinants of the Great Leap Famine and Cultural Revolution, and not
+the least the institutional foundations and outcomes of economic reforms. To fully benefit from this
+course, students are expected to have acquired a solid background in applied econometrics.
+Prerequisite: ECON1210 Introductory microeconomics; and
+ECON1220 Introductory macroeconomics
+15
+ECON2266. Urban economics (6 credits)
+Urban economics is the study of the location choices of firms and households. It examines the question
+of the where of economic activity, a question largely ignored by the other branches of economics.
+Topics include the growth and development of cities; land use within cities; urban transportation;
+housing and public policy; urban problems such as pollution, poverty and crime; and market forces
+determining the locations of ports and other transshipment points.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2271. Finance in history and society (6 credits)
+This course focuses on the social impact of financial market development from a historical perspective.
+In particular, we will examine how human societies have innovated to deal with the challenges of risk
+events such as natural disasters, climate shocks, epidemic viruses, and wars. Our goal is to develop a
+risk-mitigation perspective on the evolution of human civilizations so that we can better understand
+how human civilizations have evolved the way they did and that as investors and professionals, we can
+better foresee future growth areas in frontier, emerging, and developed markets. The course coverage
+addresses what finance does for society and how it works to liberate the individual and facilitate
+freedom.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2272. History of economic thought (6 credits)
+This course is a survey of fundamental developments in economic thought since the 18th century, with
+emphasis on works in English. The first part of the lectures reviews the writings of classical
+economists like Smith, Ricardo, and Mill, with an aside on Marx. The second part goes on to discuss
+the development of neoclassical theory from Jevons to Marshall and the Cambridge School, and
+mathematical economists like Fisher, Pareto, and Wicksell. If time allows, we will trace the evolution
+of macroeconomics from the time of Keynes.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2273. Economic history of China (6 credits)
+This course introduces the economic history of China between the 10th century and 1949. The main
+topics include Confucianism, imperial examination, gentry, autarky, modern transition, and long-term
+development. Particular attention will be paid to the possible factors underlying the Needham Puzzle—
+why the scientific and industrial revolution did not occur in China. To this end, the course will employ
+the comparative analysis between China and the West, and resort to historical data sets and statistical
+approach for causal inference. In addition to broaden students’ horizon in Chinese economic history,
+the course is also aimed to cultivate sense and skills of examining general economic issues in the
+historical contexts.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2275. The political economy of law and public policy (6 credits)
+The course provides a theoretical and empirical understanding of the political economy of law and
+public policy making, examines how law and regulation affects with policy outcomes, and familiarizes
+students with economic concepts and tools useful for analyzing policy issues. Topic covered include,
+public goods, externalities, monopolies, regulation, rent seeking, law and economics, law enforcement,
+legal systems and public bureaucracy.
+Prerequisite: ECON1210 Introductory microeconomics
+16
+ECON2276. State, law and the economy (6 credits)
+Economic analysis is applied to the study of the evolving relationship between the state, the law and the
+economy. Topics covered include: paradox of voting, collective action, voting and elections, interest
+groups, agenda manipulation, dictator’s dilemma, constitutional commitment, property rights and
+institutional change, and growth and stagnation of backward and modern economies.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2280. Introductory econometrics (6 credits)
+Econometrics is the branch of economics that formulates statistical methodology for use in analyzing
+economic data. Consequently, the objective of this course is to prepare students for basic empirical
+work in economics. In particular, topics will include multiple regression analysis, estimation and
+hypothesis testing, functional form specification, time series models, and limited dependent variable
+models. Students will have the opportunity to use actual economic data to test economic theories.
+Prerequisites: ECON1210 Introductory microeconomics; and
+ECON1280 Analysis of economic data or MATH1853 Linear algebra, probability and
+statistics or STAT1601 Elementary statistical methods or STAT1602 Business statistics
+or STAT1603 Introductory statistics or STAT2601 Probability & statistics I or
+STAT2901 Probability & statistics: Foundations of Actuarial Science
+Mutually exclusive: STAT3614 Business forecasting; and
+STAT3907 Linear models and forecasting
+ECON2284. Mathematical methods in economics (6 credits)
+The main emphasis of the course is to explain the mathematical structure of some undergraduate level
+economic theories, in terms of the way in which each particular mathematical assumption is translated
+into its economic counterpart. The course covers multi-variable unconstrained maximization,
+constrained maximization, comparative statics, and a brief introduction to some dynamic economic
+models.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2285. Mathematical economics (6 credits)
+Modern economic theory treated mathematically. Topics may include: applications of optimization to
+choice theory, applications of the implicit function theorem to comparative statics, applications of
+differential and difference equations to stability of equilibria, applications of linear mathematics and
+fixed point theorems to Leontief and Arrow-Debreu models, and applications of optimal control theory
+and dynamic programming to certainty and stochastic dynamic optimization models.
+Prerequisite: ECON1210 Introductory microeconomics
+ECON2292. Current economic affairs (6 credits)
+This seminar-style course is designed to train students to analyse economic problems of the day,
+particularly those relating to the Hong Kong economy. Students are expected to conduct supervised
+research on current economic problems and to lead and participate in classroom discussions.
+Prerequisite: ECON1210 Introductory microeconomics
+17
+ECON3215. Uncertainty and information (6 credits)
+This course examines the effects of uncertainty and imperfect information on individual decision
+making and on market equilibrium. Topics may include the expected utility hypothesis, risk bearing
+and risk sharing, search, adverse selection, signaling, contract theory, mechanism design, information
+acquisition and information transmission.
+Prerequisite: ECON2210 Intermediate microeconomics
+ECON3219. Selected topics in price theory (6 credits)
+This course acts as a platform to provide an overview of topics that are conceived to be pivotal in
+economics. The topics are essentially micro-based, but have applications in other disciplines like
+macroeconomics and finance. Specific topics are picked by the instructor. Previous examples
+include venture capital and private equity, antitrust, competition policy, property rights, theory of the
+firm, incomplete contracting, financial contracting, bankruptcy, and corporate voting.
+Prerequisite: ECON2210 Intermediate microeconomics
+ECON3220. Research on Chinese economy (6 credits)
+This is an empirical economic research course for undergraduate students. This course provides a
+general introduction to the basic methods and principles for undertaking economic research and
+evaluation on major economic issues in China. In addition to the basic methods, this course also
+provides "the state of the art" in research and analysis through reviewing major studies about the
+business and economy in China. This course is designed to equip students to conduct academic research
+or carry out policy studies on the economic topics related to China.
+ECON3221. Macroeconomic analysis for emerging markets economies (6 credits)
+Compared to industrial countries, emerging market economies have tended to be much more unstable,
+with more severe boom-bust cycles, episodes of high inflation, and balance of payment crises. This
+course applies macroeconomic models to explain the macroeconomic performance of emerging market
+economies and demonstrates how the aforementioned salient features of emerging market economies
+affect their macroeconomic performance.
+Prerequisite: ECON2220 Intermediate macroeconomics
+ECON3222. Monetary economics (6 credits)
+This course discusses the role of money in the economy, including how money affects inflation, interest
+rates and output and employment in both the static and dynamic contexts. Related topics are theories
+of money demand and supply, the conduct of monetary policy, rules vs. discretion, adaptive and rational
+expectations, time inconsistency, origin of money, and electronic means of payments.
+Prerequisite: ECON2220 Intermediate macroeconomics
+18
+ECON3223. Credit, bubbles and the macroeconomy (6 credits)
+The first half of course is about the optimal allocation of resources across different periods. We study
+households’ consumption and saving decisions, and firms’ capital investment. We introduce the
+intertemporal Euler equations to analyze the trade-off. We emphasize the implications of credit market
+imperfections. In the second half, we consider the market equilibrium. We study how changes in one
+market spill over to the others using the general equilibrium framework. We begin with capital
+misallocation due to credit constraints and study its effects on the labor market and productivity. We
+then introduce the overlapping generations framework, in which markets in different periods are interconnected. We discuss why asset bubbles may arise and persist, even though all investors are aware of
+the bubbles. We discuss both theoretical models and empirical evidence along the way.
+Prerequisites: ECON2210 Intermediate microeconomics; and
+ECON2220 Intermediate macroeconomics; and
+ECON2280 Introductory econometrics or ECON3284 Causal inference or concurrent
+registration in ECON2280 or ECON3284
+ECON3224. Health economics (6 credits)
+This course applies the tools of economic analysis to issues about the organization, delivery, and
+financing of health care. Topics include (but are not restricted to) the following: demand for health,
+for health care, and for health insurance; supply of health-care services---physicians, hospitals, drugs,
+medical technology; and health-care policies, systems, and reforms.
+Prerequisite: ECON2210 Intermediate microeconomics
+ECON3225. Big data economics (6 credits)
+This course introduces students to fundamental ideas, important methods and popular techniques in big
+data analysis and machine learning. Combining statistical theory, computational tools, and hands-on
+experience with real data, this course will provide students with a solid basis for handling big data in
+economics, finance, and management.
+The primary focus of this course is on application instead of methodological rigor. Hence, the use of
+mathematics will be limited to an elementary level. However, students are expected to have a strong
+background in statistics and/or econometrics. In particular, the course will assume that participants have
+an understanding of statistical inference using t-tests and have prior experience of interpreting the
+results of multiple linear regression. We will review these topics briefly during the course.
+Because of the emphasis on hands-on experience, students are expected not to be scared by data and
+coding. Previous experience with statistical software and knowledge about computer programming is
+an advantage but not required. Homework assignments are designed to familiarize students with the
+necessary programing language. For programing, we will use the statistical package R via a front-end
+called RStudio. Both R and RStudio are free and open source.
+Prerequisite: ECON2280 Introductory econometrics or ECON3284 Causal inference
+ECON3229. Topics in macroeconomics (6 credits)
+This course provides students with an up-to-date account of the theory and practice of modern
+macroeconomics. The following areas that have shaped modern macroeconomic research will be
+covered: real business cycle theory, endogenous growth theory, and new Keynesian theories of labour
+markets, asset markets and sticky prices. Other selected topics on fiscal and monetary policy will also
+be discussed.
+Prerequisites: ECON2210 Intermediate microeconomics; and
+ECON2220 Intermediate macroeconomics
+19
+ECON3232. Environmental economics (6 credits)
+This course is about environmental economics with an emphasis on policies that seek to mitigate the
+impacts of environmental problems. We will connect microeconomic theories with real world
+environmental policy applications. The course begins with an overview of microeconomic theories that
+are particularly relevant to environmental regulations; then it moves on to the key topics in
+environmental economics and policies. Particular issues include market failure, externality, common
+goods and public goods, valuation of non-market goods, environmental regulations, renewable and
+nonrenewable resource management, air pollution, water pollution, and economics of climate change.
+The objective of this course is to develop an understanding of environmental problems from an
+economist’s point of view.
+Prerequisites: ECON2210 Intermediate microeconomics; and
+ECON2280 Introductory econometrics
+ECON3233. Data analytics in digital economy (6 credits)
+This course will explore the main features of the digital economy, and a number of related e-competition
+and regulatory issues. The digital technologies create or enable radically new business opportunities
+and shape the ways they operate. Such revolution also reshaped the market structures and their dynamics
+of traditional businesses like publishing, entertainment, and banking. Therefore, it is crucial to
+understand how the Internet, sharing economy, social networks, Big Data, and mobile communications
+can work and create values in the digital society. The course aims to introduce the conceptual
+foundations for understanding the relations between various parties and agents in the digital economy.
+The course focuses on two aspects throughout various topics. One views the topics from the policyoriented standpoint - whether business practices and contracts in a digital economy may depart from
+efficient behavior, and in which cases they may be beneficial or detrimental to society. The other focus
+of the course is on how data analytics can help analyze the digital business models and be applied on
+cases, despite the usefulness of concepts, models, and economic principles.
+Prerequisite: ECON2210 Intermediate microeconomics or equivalent
+ECON3234. Behavioural economics (6 credits)
+This course provides students an overview of research in behavioral economics, which incorporates
+insights from psychology on human behavior, with and without social interactions, into economic
+analysis. The topics we will cover include: decision making under uncertainty, prospect theory,
+reference dependence, intertemporal choice, social preferences, and bounded rationality. We will relate
+theories to applications including consumer choice, saving behavior, procrastination, labor supply,
+finance, and policy making.
+Prerequisite: ECON2210 Intermediate microeconomics
+Co-requisite: MATH1013 University mathematics II
+ECON3235. Economics of education and human capital (6 credits)
+Human capital accounts for more than half the world’s savings, wealth, and income. This course
+introduces students to foundational and current literature in three broad areas: First, we consider the
+demand for human capital by parents, children, and adults, the financing of investment, and portfolio
+choice with human capital. Second, we consider the production function for human capital, and the role
+of environmental, household, and classroom inputs. Third, we study the supply side for classroom inputs
+in particular, with a focus on teachers and markets for education. Throughout, we will emphasize
+empirical evidence and methods, and policy examples.
+Prerequisites: ECON1210 Introductory microeconomics; and
+ECON1280 Analysis of economic data or STAT1603 Introductory statistics or
+equivalent
+20
+ECON3243. Capital theory (6 credits)
+General equilibrium theory involving time under certainty conditions. The concepts of full
+information, stationary state, and steady state. Assumptions about information costs, transaction costs
+and complete markets. Fisher's separation theorem. Theory of consumption over discrete and
+continuous time. Theory of production over discrete and continuous time. Determination of general
+equilibrium over time. Intertemporal prices and interest rates.
+Prerequisites: ECON2210 Intermediate microeconomics; and
+ECON2220 Intermediate macroeconomics
+ECON3262. Inequality and growth (6 credits)
+Inequality and growth are always among the most important topics in economics and the most pressing
+issues of our times as well. Widening income and wealth gap between the rich and the poor is not only
+experienced by developed economies like the United States, but also by emerging economies like China.
+Particularly, Hong Kong is one of the most unequal cities in the world, which desperately calls for
+policies to tackle its worsening income and wealth gap. However, policies that reduce the inequality
+can sometimes hurt the efficiency, thus the economic growth. This requires extra painstakingness when
+policy makers are designing the policies. This course focuses on the relationship between inequality
+and growth, which consists of three major parts: data, model, and policy. We will start with empirical
+facts on inequality issues in economies over the world, in particular, U.S., China, and Hong Kong. Then
+we will revisit two-period Solow growth model so that we can build up the infinite-horizon Solow
+growth model and heterogeneous agent model to set up our framework to learn inequality and growth.
+Finally, we will use the model and empirical techniques we learn to provide policy guidance that can
+be used to deal with inequality issues and stimulate economic growth.
+Prerequisites: ECON1280 Analysis of economic data or STAT1601 Elementary statistical methods or
+STAT1602 Business statistics or STAT1603 Introductory statistics or STAT2601
+Probability & statistics I or STAT2901 Probability & statistics: Foundations of
+Actuarial Science or equivalent; and
+ECON2220 Intermediate macroeconomics
+ECON3272. The political economy of globalization (6 credits)
+With the rapid development in international trade, cross-border investment and immigration,
+globalization has profound implications on the international landscape of politics, while the political
+economy in turn affects the making of policies related to globalization. This course provides a
+theoretical framework to analyze the connection between the political economy and globalization. It
+covers topics such as the recent rise in protectionism, the refugee crisis, multinational firm tax avoidance,
+interest group politics and lobbying and many more. Combining economic theories and real-world case
+studies, this course will equip you with the skills to analyze new issues in global political economy and
+new policies related to globalization.
+Prerequisites: ECON1210 Introductory microeconomics or equivalent
+Remarks: ECON2252 Theory of international trade is useful but not required.
+ECON3283. Economic forecasting (6 credits)
+This course introduces basic techniques in forecasting economic structural relationships. Topics
+include smoothing, filters, ARIMA models, unit roots and stochastic trends, vector autoregressions,
+cointegration and error correction, regime switching, volatility, diagnostics, model selection, forecast
+evaluation and combination.
+Prerequisite: ECON2280 Introductory econometrics
+Mutually exclusive: STAT4601 Time series analysis
+21
+ECON3284. Causal inference (6 credits)
+This course introduces students to fundamental ideas and important methods in causal inference.
+Combining statistical theory, scientific principles of research design, and hands-on experience with real
+data, this course will provide students with a solid basis for being good consumers and practitioners of
+empirical research in economics and other quantitative social sciences. The course will draw on
+applications from development, labor, and business economics with particular attention to policy
+evaluation. Other than methodology and computational skills, students will also learn how to think
+critically through guided reading of original academic papers and extensive class discussion.
+The primary focus of this course is on application instead of methodological rigor. Hence, the use of
+mathematics will be limited to elementary algebra and probability. However, students are expected to
+have taken introductory courses in econometrics/statistics and microeconomics. Because of the
+emphasis on hands-on data experience, students are expected not to be scared by data and coding.
+Previous experience with statistical software and knowledge about computer programming is an
+advantage but not required. Homework assignments are designed to familiarize students with the
+necessary programing language.
+We will use the statistical package R via a front-end called RStudio. Both R and RStudio are free and
+open source.
+Prerequisites: ECON1210 Introductory microeconomics; and
+ECON1280 Analysis of economic data or STAT1602 Business statistics or STAT1603
+Introductory statistics or STAT2601 Probability and statistics I or equivalent
+ECON3293. Reading course (6 credits)
+This course consists of supervised reading and written work. Candidates may specialize in one topic
+under the supervision of faculty members. Examples of topics are: the problem of social cost,
+investment in human capital, general equilibrium theory, empirical methods in international trade,
+international monetary relations, theories of saving and the East Asian economies, and current economic
+problems of Hong Kong.
+Candidates must submit the title of their project within the first two weeks of the semester for approval
+by the BEcon/BEcon&Fin Programme Director. An original project paper is required in lieu of a
+written paper in the Examination. The project paper must be completed and presented not later than
+the first day of the assessment period for that semester. Candidates shall submit a statement that the
+project paper represent their own work (or in the case of joint work, a statement countersigned by their
+co-worker(s), which shows the degree of their work) undertaken after the registration in the course.
+Prerequisites: ECON2210 Intermediate microeconomics; and
+ECON2220 Intermediate macroeconomics; and
+ECON2280 Introductory econometrics
+Remarks: Candidates intending to take this course shall complete an application form which is
+available at the Faculty Office (Room 1305, K.K. Leung Building).
+22
+ECON4200. Senior seminar in economics and finance (6 credits)
+This course applies core theoretical knowledge in economics and finance acquired throughout the
+undergraduate curriculum to research a real issue. The student may select and match core theoretical
+concepts with significant applications in the world, which could be of local, regional and global
+relevance, both contemporary and historical. The selection will include an application of these concepts
+to either the making of public policy or the strategic management of the firm. The choice of research
+topic should be selected to help students consolidate and integrate the concepts and tools learned in
+economics and finance through an analysis of the nature of the problem, its causes and consequences,
+the choice of feasible solutions, their tradeoffs, and also normative and political economy considerations.
+Prerequisites: ECON2280 Introductory econometrics; and
+FINA2320 Investments and portfolio analysis and FINA2322 Derivatives; or
+ECON2210 Intermediate microeconomics and ECON2220 Intermediate
+macroeconomics
+Remarks: Open only to Year 4 students majoring in economics or finance.
+ECON4211. Advanced microeconomics (6 credits)
+This course is designed to provide students with the analytical tools required to study economic
+decisions and strategic behavior at an advanced level. It covers decision theory, game theory, and
+mechanism design. The course is particularly recommended for students who are considering graduate
+study in economics.
+The first part of the course covers the theory of individual decision making. Most economic theories
+start from a model of individual decision making and then use it as a building block to model interactions
+between agents, groups of agents and firms, the economy as a whole, etc. In this part, we will study a
+suite of standard models, understand some implicit assumptions behind them, and discuss critiques of
+these models.
+The second part of the course covers game theory, which is concerned with analyzing strategic
+interactions among individuals. Game theory seeks to provide models of conflict and cooperation that
+are relevant in a large class of situations basic to almost all social sciences. It offers insight into
+economic, political or social situations in which individuals have different goals and preferences. The
+basic assumptions of game theory are that decision-makers pursue well defined objectives (they are
+rational) and take into account their knowledge or expectations of other decision-makers' behavior (they
+are strategic).
+The third part of the course covers topics in mechanism design, which explores how to apply gametheoretic concepts studied insofar to design institutions. Mechanism design is the study of how to design
+rules or mechanisms to achieve the social planner’s desired objectives in strategic situations where
+individuals act rationally. This understanding is crucial for designing effective institutions in many areas,
+such as auctions, voting systems, and contracts, which are relevant to real-world situations.
+Prerequisite: ECON2210 Intermediate microeconomics
+23
+ECON4214. Advanced game theory (6 credits)
+Game Theory is the standard tool to analyze the behavior of agents in strategic situation and is widely
+used in many fields including economics, finance, biology, political science, etc. The course is an
+intermediate course in game theory. It builds upon basic knowledge of game theory as in the course
+Games and Decisions (ECON2214), although not all material of ECON2214 is a pre-requisite. To this
+end, it is highly advantageous to be familiar with ideas such as Nash equilibrium, mixed strategies,
+dominated strategies.
+Game theory is a way of thinking about strategic situations whether they occur in economics, in politics,
+in relationships, in evolution, in sports, in war, in law, or in life.
+The first part of the course will delve deeper into the analysis of dynamic (also known as sequential)
+games, and cover topics such as hold-up problems, Stackelberg competition, reputation, bargaining,
+wars of attrition, and repeated games.
+The second part of the course will present further applications of game theory that have been particularly
+influential in the history of economic theory, such as median voter theory, matching, mechanism design,
+and behavioral/psychological game theory. The topics covered in the second part may be adjusted to
+the students’ prior knowledge.
+Prerequisites: ECON1210 Introductory microeconomics; and
+MATH1009 Basic mathematics for business and economics or MATH1011 University
+mathematics I or MATH1013 University mathematics II
+ECON4221. Advanced macroeconomics (6 credits)
+This course provides an introduction to advanced macroeconomics and its application to real-world
+issues. Students will learn to analyze macroeconomic problems from different perspectives and
+understand the tools and techniques used to address them. The emphasis will be on the microeconomic
+foundations and decisions that underlie the behavior of aggregate variables. Additionally, students will
+learn how to connect economic theories to data and become familiar with the latest research topics in
+macroeconomics. Basic knowledge of optimization (ECON2285 or equivalent) and ordinary differential
+equations is recommended but not a pre-requisite.
+Prerequisites: ECON1210 Introductory microeconomics; and
+ECON1220 Introductory macroeconomics; and
+MATH1009 Basic mathematics for business and economics or equivalent
+ECON4294. Dissertation (12 credits)
+Candidates may write a dissertation under the supervision of faculty members. Topics offered may
+vary from year to year, depending on the research interests of the lecturer. A satisfactory dissertation
+may be offered in lieu of two written papers in the Examination.
+Candidates must submit the title and an outline of their dissertation for approval by the
+BEcon/BEcon&Fin Programme Director not later than the last day of the revision period in the first
+semester. The dissertation shall be completed and presented not later than the first day of the
+assessment period for the second semester. (Note: The course extends over two semesters.
+Candidates must enroll in the first semester.)
+Prerequisites: ECON2210 Intermediate microeconomics; and
+ECON2220 Intermediate macroeconomics; and
+ECON2280 Introductory econometrics; and
+Cumulative GPA of 3.0 or above at the time of enrolment
+Remarks: Open only Year 4 students majoring in Economics.
+Candidates intending to take this course shall complete an application form which is
+available at the Faculty Office (Room 1305, K.K. Leung Building).
+24
+FBEC2001. China’s business and marketing (6 credits)
+This course aims to equip students with an in-depth understanding and first-hand experience of the
+current business environment in China, with the focus in two of the foremost international business
+centers in Asia: Hong Kong and Shanghai. Students will have close contact with guest speakers from
+senior management of leading companies in the two cities. They will also acquire personal experience
+of a variety of Chinese culture and society, and develop truly international perspectives with an exposure
+to China market.
+FBEC2002. Field experience in Chinese economy: implications for global business (6 credits)
+As complex as China’s economy, no course can cover all aspects of it. This course will focus on the
+fundamental institutions of the Chinese economy, its reforms and transition towards a market economy,
+and major economic developments since the reforms in 1978. There is no official textbook for this
+course. Every class will feature one topic of the Chinese economy, and students are required to go
+through certain reading materials (mainly sections of academic papers) before class.
+By highlighting several topics, this course aims to help students understand China’s economic reforms,
+opening up, and development since the 1970s. The economic institutions behind the economic
+development will be analyzed in details. After the course, students are expected to come up with their
+own answers to why China can maintain high growth rate in the past 40 years and why the development
+is going to be slowed down in the future. Besides that, this course will guide students to apply basic
+economic theories and tools to analyze contemporary economic issues in China. Finally, through inclass discussion and group presentation, this course aims to improve students’ communication and
+teamwork skills.
+FBEC2003. Creativity, innovation and entrepreneurship in China I (6 credits)
+This course provides students with a comprehensive study of economics, innovation, and
+entrepreneurship in the context of business practices in the Greater Bay Area in China. It aims to build
+up students’ understanding of basic knowledge about innovation and entrepreneurship, the importance
+of innovation in promoting economic development in China, as well as the economic rationales of
+entrepreneurial activities related to innovation. Specific focus is given to (1) general concepts of
+innovation, entrepreneurship and economy in China; (2) the economics behind innovation,
+entrepreneurial activities, as well as the interrelationship in between; (3) the environment and culture
+for effectively promoting the innovation for the firms.
+This course combines lectures, discussions, case studies, and group work on pre-visit preparation.
+Students will be exposed to various opportunities to apply the concept and principles of economics in
+analysing the issues in the innovation economy, exploring the business opportunities and searching for
+best business strategies from the perspective of entrepreneurs and managers. Students who are interested
+about the practical aspects of innovation and entrepreneurship, are recommended to take the course of
+Creativity, innovation and entrepreneurship in China II.
+Workshops, visits and interactive sessions with guest speaker will be arranged during the course period
+to engage students and enhance their understanding about the various topics and issues in related to
+innovation and entrepreneurship.
+25
+FBEC2004. Creativity, innovation and entrepreneurship in China II (6 credits)
+This course is to provide students with a comprehensive study of economics, innovation, and
+entrepreneurship in the context of business practices in the Greater Bay Area in China (Guangdong
+Province, Hong Kong and Macau). It aims at developing students’ understanding of the strategy and
+challenge of the entrepreneurial process in innovation, the practices of innovation and strategic interrelationship among Hong Kong and other cities in Greater Bay Area, as well as the global vision for the
+future of technological economics. Specific focus is given to (1) the strategies and key skillsets of
+entrepreneurship in promoting and managing innovation for successful business; (2) Real-life
+experience and business practices of innovation in China according to different forms of
+entrepreneurship, such as start-ups and corporates; (3) Pioneering technologies, global innovation and
+the sustainability which will shed light to the future of technological economy in the world.
+This course combines lectures, discussions, case studies, group projects and presentations. Students will
+be exposed to various opportunities to apply the principles of strategy and management to solve the
+issues in the innovation-related business, exploring the business opportunities and designing best
+business strategies from the perspective of entrepreneurs and managers. Students who are interested
+about the economics aspects of innovation and entrepreneurship, are recommended to take the course
+of Creativity, innovation and entrepreneurship in China I.
+*This is part of the summer programme (CIEC) where students will spend time in HK, and China (incl.
+2 weeks in Shenzhen, Guangzhou and Macau) for workshops, visits, and interactive sessions with guest
+speakers.
+Co-requisite: FBEC2003 Creativity, innovation and entrepreneurship in China I
+FINA2311. Case studies in corporate finance (6 credits)
+This course is structured around the most important financial decisions made at the firm level in an
+uncertain environment. For example: what capital structure to adopt (financing decision); how to
+value a firm or investment project (investment/valuation decision); how to raise capital in the equity
+market (IPO decision); what mechanisms to put in place to discipline managers and the largest
+shareholder (corporate governance decision); whether to return cash and how to return cash to investors
+(dividend/share repurchase decision); and whether a firm should engage in mergers and acquisitions
+(M&A) activities and how to do an M&A right (M&A decision). This course exposes students to
+some of the most fundamental issues in corporate finance today as well as some of the most important
+advances in corporate finance of the last decade. It will offer students an opportunity to understand
+how the concepts and theories of corporate finance are applied in real world and generate lasting impact
+on firm values, a driving issue faced and constantly asked by CFOs and CEOs. This course will be
+taught using a case-oriented approach.
+Prerequisites: ECON1210 Introductory microeconomics; and
+FINA1310 Corporate finance
+FINA2312. Advanced corporate finance (6 credits)
+The objective of this course is to introduce the theoretical literature on the microeconomics of corporate
+finance in a unified framework. Topics covered include: corporate financing and agency costs,
+corporate financing under asymmetric information, liquidity and risk management, corporate finance
+and product markets, passive and active monitoring in corporate finance, lending relationships and
+investor activism, control rights and corporate governance, and takeovers. Subtle elements of
+information and agency considerations are emphasized.
+Prerequisites: ECON1210 Introductory microeconomics; and
+FINA1310 Corporate finance
+26
+FINA2320. Investments and portfolio analysis (6 credits)
+This course introduces students to the fundamental principles of investments and to major issues
+currently of concern to all investors. The concepts and skills developed from this course enable
+students to conduct a sophisticated assessment of current issues and debates covered by both the popular
+media as well as more-specialized finance journals. We emphasize equity investments and the main
+topics include: portfolio theory, equilibrium in capital markets, equity valuation, portfolio performance
+evaluation, and relevant institutional details.
+Prerequisites: ECON1210 Introductory microeconomics; and
+FINA1310 Corporate finance; andECON1280 Analysis of economic data or 
+STAT1600 Statistics: ideas and concepts or 
+STAT1601 Elementary statistical methods or 
+STAT1602 Business statistics or 
+STAT1603 Introductory statistics or 
+STAT2601 Probability and statistics I or 
+STAT2901 Probability and statistics: foundations of actuarial science or 
+MATH1853 Linear algebra, probability and statistics
+Mutually exclusive: STAT3609 The statistics of investment risk; and
+STAT3952 Investment and asset management
+ECON2262. Economic development (6 credits)
+Why do countries remain poor? This course provides an overview of major topics in the study of
+economic development: the branch of economics which studies the determinants of income growth and
+poverty reduction. Each week, we will focus on a particular barrier to economic development and,
+through a combination of economic theory and empirical evidence, seek to build a better understanding
+of the type of policies and interventions conducive to development. The goal is not to provide an
+exhaustive coverage of all topics but to expose students to current issues and debates in development
+economics.
+Prerequisites: ECON1210 Introductory microeconomics and ECON1220 Introductory
+macroeconomics; or
+GHAD1002 Introductory economics and finance
+FINA2330. Financial markets and institutions (6 credits)
+This course is designed to introduce and analyze the structure, operations and functions of the financial
+system. The course starts with an introduction to financial markets’ role in the economy, and the
+determination of interest rates and valuation of cash flows. The course then discusses various financial
+markets including money markets, bond markets, mortgage markets, stock markets and derivatives
+markets. Financial institutions will be discussed with an emphasis on their major functions and
+operations.
+Prerequisites: ECON1210 Introductory microeconomics; and
+FINA1310 Corporate finance
+27
+FINA2331. Management of commercial banks (6 credits)
+This course introduces basic bank management techniques that include: asset and liability management,
+liquidity and reserve management, credit analysis, loan pricing and off-balance-sheet banking.
+Regulatory issues of commercial banks are also discussed.
+Prerequisite: ECON1210 Introductory microeconomics
+FINA2332. International banking (6 credits)
+Nature of international banking. Comparison with domestic banking. Jurisdiction and regulatory
+framework: the Basel Concordat. Xeno-currency markets and international banking. International
+financing techniques: loan syndication, project finance, NIFs, RUFs etc. Risk exposure and control:
+sovereign risk, country risk, exchange risk, interest risk and credit risk. Management and strategies of
+international banks. “National treatment” and financial centres.
+Prerequisite: ECON1210 Introductory microeconomics
+FINA2334. Banking – strategies, operations and controls (6 credits)
+This course is designed to provide and equip students with solid theoretical and practical knowledge of
+the key processes of a bank in an end-to-end manner, allowing students to develop an integrated and
+holistic understanding of bank management, looking into their strategies, operations and control.
+Problems are rarely resolved in isolation in business, especially in a complex banking environment.
+This course brings together a comprehensive and practical set of theories, disciplines and management
+principles in a coherent process-oriented manner to allow students to gain the necessary knowledge and
+management techniques applicable to different functions of a bank.
+Digitalisation is the key trend in the banking industry. Banks are embracing cyber technology in their
+operations and dealings with clients. Eight virtual banking licenses were granted by the Hong Kong
+Monetary Authority. The course will also address some of the key innovations impacting the banking
+industry.
+Prerequisite: ACCT1101 Introduction to financial accounting
+FINA2342. Insurance: theory and practice (6 credits)
+Insurance is the study of risk financing through risk pooling. The use of insurance to reduce the
+adverse financial impact in case of a loss has become an important element of financial and risk
+management in our society. This course will cover the theories underlying each major type of
+insurance products; the characteristics of the contractual agreements pertaining to insurance products;
+the structure of the insurance industry and its impact on the pricing of insurance products; the operation
+of insurance companies and the need for government regulations of the industry.
+Prerequisite: ECON1210 Introductory microeconomics
+28
+FINA2343. Lending and credit in private banking and corporate banking (1) (6 credits)
+This course covers the key elements of lending and provision of credit facility in banking, including
+corporate clients and high net worth individual (“HNWI”) clients. Lending and leveraging is a key
+component of a banking relationship and an important source of revenues for banks. Lending and
+leverage involves risks to the banks and to the clients. The business of lending and the provision of
+other credit facilities is intrinsically linked to the management of risk for the bank. The use of
+borrowings and entering into leveraged products/transactions is equally a process of risk awareness and
+risk management for the client.
+The course will discuss basic credit analysis and risk evaluation tools, including financial statement
+analysis and cashflow analysis, application of financial ratios, business risk identification/evaluation as
+well as collateral analysis.
+Prerequisite: ACCT1101 Introduction to financial accounting
+Pre/Co-requisite: FINA1310 Corporate finance
+FINA2344. Lending and credit in private banking and corporate banking (2) (6 credits)
+This course is an advance course based on FINA2343 Lending and credit in private banking and
+corporate banking (1).
+The course covers the key elements of lending and provision of credit facility in banking, including
+corporate clients and high networth individual (“HNWI”) clients. Lending and leveraging is a key
+component of a banking relationship and an important source of revenues for banks. Lending and
+leverage involves risks to the banks and to the clients. The business of lending and the provision of
+other credit facilities is intrinsically linked to the management of risk for the bank. The use of
+borrowings and entering into leveraged products/transactions is equally a process of risk awareness and
+risk management for the client.
+The course will discuss the bank’s credit process including purpose of the credit, types of loan/credit
+facility and loan structure; credit analysis and risks evaluation, financial analysis and cashflow
+projections; security and collateral analysis, lending margins, credit monitoring and remedial
+management.
+Student(s) will be assigned a case to work on which form the basis of the final assessment. Students
+will be guided over the course as to writing of this Credit Application applying the analytical tools and
+concepts learnt.
+Pre/Co-requisite: FINA2343 Lending and credit in private banking and corporate banking (1)
+FINA2382. Real estate finance (6 credits)
+An introduction to real estate economics, mortgage markets, real estate auctions in Hong Kong; presale market in Hong Kong; pricing of land and residential/commercial properties; mortgage-backed
+securities and mortgage companies.
+Prerequisite: FINA1310 Corporate finance
+29
+FINA2383. International financial management (6 credits)
+The course studies corporate financial decisions in an international setting. We start with basic concepts
+of international financial markets. These concepts include the global foreign exchange market and its
+operations, the international capital market, the global bond market, the international equity markets,
+and cross-border portfolio investment. Then, we discuss corporate financial decision issues including
+risk management, investment, capital structure, capital budgeting, and cash management in the global
+context.
+Prerequisites: ECON1210 Introductory microeconomics; and
+FINA1310 Corporate finance
+FINA2385. ESG in business and finance (6 credits)
+This course is designed to introduce environmental, social and governance (ESG) topics to students of
+business, finance and policy.
+Students will consider the relationship of corporates to societal objectives such as environmental
+protection and equitable working opportunities, which may not be within their direct operational
+mandates. Students will be introduced to key environmental and social challenges, such as climate
+change, pollution, and social inequality, and evaluate the “value” that preserving nature brings to society
+and to corporates.
+We will review the key elements of an ESG system at the corporate level. What is required, at a
+minimum, and what kinds of advanced investments (beyond compliance) would serve both societal and
+corporate objectives? Students will apply these lessons to analyze specific company ESG programs
+via case studies, assessing strengths and suggesting areas of improvement.
+We will apply the principles of successful ESG management to the field of investment. Is a strategy
+that employs advanced ESG metrics likely to outperform traditional investment benchmarks? What
+are the pitfalls of employing a sustainability-focused public market or private market investment plan?
+ESG experts from Corporates and Investments will be invited to talk to our students as guest speakers.
+They should be helping the students to understand the current trends/practice in ESG.
+Prerequisite: FINA1310 Corporate finance
+FINA2390. Financial programming and databases (6 credits)
+This course provides undergraduate students a foundation in managing and analyzing financial datasets.
+Data analysis is a very important skill for the students to master. The first part of the course focuses on
+building skills – data manipulation using programming languages. The second part introduces various
+financial databases. Through practice on world financial datasets, students will learn methods used to
+warehouse and retrieve data for statistical computing. The course then turns to analytical methods with
+a focus on demonstrating these methods on real-data from various contexts in finance. Methods covered
+include manipulation of time series and panel data, statistical modeling and inference, simple textual
+analysis, classification and alternative datasets, etc. Problem sets and projects will be the primary mode
+of learning. Course learning will be supplemented with exposure to industry speakers from the local
+financial industry.
+30
+FINA3316. Investment banking: valuation, LBOs, and M&A (6 credits)
+This course is designed to develop a solid understanding of commonly discussed and applied issues in
+investment banking, in particular valuation, leveraged buyouts (LBOs), and mergers and acquisitions
+(M&As). The topics covered in this course include the M&A process, methods of valuing a target firm,
+valuing synergies, the form of payment and financing, assessing highly levered transactions (i.e. LBOs),
+governance in M&A, and M&A negotiations. M&A cases will be used in discussing these topics. By
+going through analyses and discussions of real-life M&A, students will gain experience in the
+application of financial theories and techniques to evaluate M&A decisions and transactions commonly
+arising in investment banking.
+FINA3317. Entrepreneurial finance (6 credits)
+This course aims to cover basic information and knowledge about project choice and financing, idea
+implementation, and decision-making in start-up businesses. The majority of such information and
+knowledge is delivered based on the case method (with supplementary lecture notes when appropriate).
+It is noteworthy that we will take two roles interchangeably throughout this course: the entrepreneurs
+who seek funding and the venture capitalists who seek good projects. Understanding the role of both
+important players in the entrepreneurial finance process helps us have an objective evaluation and
+unbiased assessment of potential ideas and projects. Broadly speaking, we can think of entrepreneurial
+activities as a series of decisions and actions based on high potential payoffs of high uncertainty to a
+project that requires substantial time and monetary resources. The decision begins with identifying new
+opportunities, considering available resources and risks, designing a business plan, securing financing,
+gathering and maintaining a team, deciding optimal growth path and innovation strategies. Accordingly,
+the whole course can be decomposed into four distinct sections: (1) Identifying opportunities and
+evaluating the payoff, risk, and resources required: how to define an entrepreneurial opportunity? How
+to evaluate the potential of an idea? What is the necessary condition for this venture to succeed? What
+does it take for this business plan to fly? Do we have any stop-loss point? (2) Seeking funding: How to
+write a business plan? Where to start the fund-seeking? How to negotiate the contracts? This section
+will focus on start-ups’ financial management and the financial contracting between financiers and
+entrepreneurs. (3) Constructing and maintaining a team: Who should we recruit for this venture? How
+to keep the team functioning? How to write a contract to attract and maintain good employees? It is
+important to analyze the dynamics among workers within a start-up and to examine the alignment
+between innovation strategies and human capital. (4) Collaborating with other firms: The collaboration
+with external firms and organizations is another important issue. Spin-offs, joint ventures and strategic
+alliances are three common types of collaborations. It is also important to analyze the costs, benefits,
+and formats of partnering with other firms.
+Prerequisites: FINA2322 Derivatives; and
+FINA2320 Investments and portfolio analysis or STAT3609 The statistics of
+investment risk
+FINA3318. China’s financial system and markets (6 credits)
+This course is to examine and analyse the financial markets in China. The purpose is to help students
+form a comprehensive picture of current state of financial institutions, instruments, and regulations in
+the Chinese financial market. Particular emphasis is placed on the role of the financial system on the
+development and reform of economy in China, as well as the impact of Chinese government on the
+efficiency of the market. The difference between the financial market in China and the markets in the
+mature economies will also be examined, which helps students understand the rationales of the
+development and arrangements of the financial market in China. Debates of current financial issues will
+also be discussed.
+Prerequisite: FINA1310 Corporate finance
+31
+FINA3319. Green finance and impact investing (6 credits)
+Global warming and environmental concerns have become urgent issues and financial solutions are
+being sought after. Green finance is designed to support sustainable, climate friendly growth.
+Institutional investors, corporate managers and government organizations are actively participating
+in this area. Many impact funds are being set up every year. This course introduces the recent
+development in the financial market on green finance such as green bonds. Impact investing such as
+activism will be analyzed. The rising importance and implementation of environmental, social and
+governance (ESG) for investment will be studied. Other related topics are accounting, certification,
+and reporting of green projects.
+Prerequisites: FINA1310 Corporate finance; and
+FINA2320 Investments and portfolio analysis
+FINA3322. Credit risk (6 credits)
+Credit derivatives are the biggest financial innovations in the last 20 years. Credit risk analysis and
+management are of great interest to investment banks, commercial banks, traders, regulators, and rating
+agencies. This course provides an introduction as well as an in-depth understanding of credit risk
+measurement and credit derivatives such as credit default swaps. The objective is to provide a practiceoriented balance between developing a sound conceptual framework and market understanding and
+insight.
+Prerequisite: FINA2322 Derivatives
+Mutually exclusive: STAT4607 Credit risk analysis
+FINA3323. Fixed income securities (6 credits)
+This course is designed to provide a comprehensive introduction to fixed income securities by covering
+the following broad topical areas: (a) the institutions and operations involved in the fixed income
+securities markets; (b) the valuation and hedging of fixed income securities; (c) the term structure of
+interest rate; (d) the use and application of interest rate derivatives in the areas of risk management and
+financial engineering; and (e) the interest rate models.
+Prerequisites: ECON1210 Introductory microeconomics; and
+FINA2322 Derivatives or STAT3905 Introduction to financial derivatives; and
+FINA2320 Investments and portfolio analysis or STAT3609 The statistics of
+investment risk
+FINA3324. Interest rate models (6 credits)
+This course introduces various state-to-the-art techniques in modeling fixed income securities. In
+particular, the course starts with the discount factor approach in pricing all kinds of bonds. Then we
+focus on modeling the discount factors. Models are introduced in two major parts. First, the course
+emphasizes discrete-time models based on binomial trees in order to understand the economic insight
+of the risk-neutral pricing. Second, extensions to continuous-time models are also discussed in detail.
+Calibration and implementation of the models will be studied. Other related topics may include interest
+rate risk management, interest rate derivatives, and monetary policy.
+Prerequisites: FINA3323 Fixed income securities; and
+FINA3350 Mathematical finance
+32
+FINA3325. Alternative investments (6 credits)
+This course provides an overview of various forms of alternative investments that include hedge funds,
+managed futures, private equity, venture capital, real estate, commodities and foreign exchange. The
+purpose of the course is to give students a good understanding of the operation of these investments;
+the benefits and pitfalls associated with them; and strategies to integrate them into the context of
+portfolio management. The current state of research and practice of the industry will be addressed.
+Prerequisites: FINA2322 Derivatives; and
+FINA2320 Investments and portfolio analysis or STAT3609 The statistics of
+investment risk
+Mutually exclusive: FINA3327 Hedge funds: strategies, business management, and institutions
+FINA3326. Equity valuation and investment management (6 credits)
+This course covers the practical applications and issues of financial analysis, valuation, and investment
+of equities. Topics include, but not limited to, the basic analysis of financial statements; valuation
+models-e.g. DCF, free cash flows and other methods commonly used in the market; risk and return
+analysis; equity research and stock selection process; portfolio construction; active vs passive and other
+styles of investment; performance evaluation and appraisal. Students will get hands-on experience using
+most up-to-date market data and industry and company information available.
+Prerequisite: FINA2320 Investments and portfolio analysis
+FINA3327. Hedge funds: strategies, business management, and institutions (6 credits)
+This course is an in-depth study of the hedge fund industry. We will study hedge fund trading strategies,
+the business model of hedge funds, hedge fund investors, as well as the institutional and regulatory
+framework in which hedge funds operate. The course will evaluate and analyze popular hedge fund
+trading strategies, including equity strategies (activist, market-neutral, long/short, event-driven, etc.),
+arbitrage strategies (derivatives, convertible, fixed-income, currency and global macro, etc.), and fund
+of hedge funds. The course will also analyze the hedge fund business model, including: performance
+evaluation and risk management; fund compensation and contractual features; transaction costs and
+market impact; as well as fund raising and marketing. In addition, the course will study the institutional
+relationships hedge funds have with service providers (prime brokers, custodian banks, etc.) and with
+regulators. We will also discuss public policy implications and the value of hedge funds in society. This
+course is designed to provide students with the skills necessary to evaluate hedge fund strategies, and
+to develop, manage, and successfully grow a hedge fund business.
+Prerequisites: FINA2322 Derivatives; and
+FINA2320 Investments and portfolio analysis or STAT3609 The statistics of
+investment risk
+Mutually exclusive: FINA3325 Alternative investments
+FINA3334. Private banking and wealth management (6 credits)
+This course is an introduction to the fundamentals of private banking and wealth management for High
+Net Worth (HNW) individuals. Topics covered include, but are not limited to, an overview of the Asian
+private banking and wealth management industry with particular emphasis on the Greater China market;
+portfolio management, optimization and asset allocation; investment advisory and credit risk functions;
+tax and wealth planning tools for mobility, retirement and estate, including trusts, foundations, and
+insurance; behavioral finance; client relationship management; family office; business ethics and
+professional standards; and laws, regulations and compliance issues.
+Prerequisites: FINA2322 Derivatives; and
+FINA2320 Investments and portfolio analysis
+33
+FINA3335. Current issues in asset management and private banking industry (6 credits)
+This course seeks to cover current development and current issues in the asset management and private
+banking industry. The issues identified may be related to new business opportunities, new risk areas,
+new development affecting the AMPB market/industry.
+Course assessment is based on group research report and the group presentation of the report. Students
+are to pick a topic of current issue and research on the topic. Evaluation is based on the quality of
+the research and the relevancy of the identified opportunity/risk to the development of the AMPB
+industry.
+FINA3336. Investment consulting, institutional business and family office (6 credits)
+The course aims to introduce the investment consulting industry and provides students with practical
+understanding of the industry in its relevance to the asset management and private wealth industry,
+particular in relation to institutional investors and family office. Students would be able to articulate
+and asses the process and methodology employed by the investment consultants in developing
+investment objectives, investment procedures and risk management of institutional clients, and able to
+compare and contrast the difference between sovereign funds, public funds, endowment funds,
+pension/retirement funds, corporate funds and family office managed fund. Students would also be
+able to identify the growing importance and dynamics of family office (single family office and multi
+family office) in managing family funds, wealth planning and succession planning for ultra-high
+networth individuals/families.
+Prerequisite: FINA2320 Investments and portfolio analysis
+FINA3337. Venture capital and private equity (6 credits)
+The course covers the fundamentals of Venture Capital (VC) and Private Equity (PE) as well as the key
+elements within the ecosystem. VC and PE is one of the asset classes of alternative investments and
+is essential for financial investors to evaluate and understand the risk and return of this asset class.
+The course would be beneficial to students who are interested in the financial sector and in particular
+in investment in an alternative asset class including VC and PE in Hong Kong and the region. Hong
+Kong is the second largest Private Equity hub in Asia (outside of China which is a closed market, HK
+is the number one PE hub in the region indeed). As an asset class, alternative investments including
+PE is growing from single digit to double digit within the investors’ portfolio asset allocations.
+The course will cover both academic and practical aspects. Students will learn the foundations of PE/VC
+which encompasses a broad array of knowledge including deal structure, different investment strategies,
+investment evaluation, risk and return analysis, middle and back office on monitoring and control as
+well as investor relations. We will also cover the role VC and PE plays in a given investor’s portfolio
+as well as which types of investors would be open to which types of VC and PE and the rationale behind
+them. The performance of VC / PE and how to evaluate are also areas we will study. In addition, we
+will learn about the future of VC and PE as well as the variations of alternative investments to cover a
+broader scope of relevant knowledge for the student.
+Students will be assigned a case to work on which form the basis of the final assessment. They will be
+guided over the course as to writing of this private equity / VC sample case applying the analytical tools
+and concepts learnt. Industry practitioners in the VC/PE will be invited as guest speaker(s) so the
+students are connected with both the academia and the industry in this course as well.
+Prerequisite: FINA2320 Investments and portfolio analysis
+34
+FINA3338. Multi-asset investing (6 credits)
+In this course, students will learn about the role of different asset classes and the importance of multiasset investing. The course will discuss major asset classes including fixed income, equities, alternative
+investments, derivatives, commodities, FX, digital assets, and ESG. In addition, multi-asset investment
+process including strategic asset allocation, dynamic asset allocation, tactical asset allocation, portfolio
+implementation, performance attribution will be discussed.
+Prerequisites: FINA1310 Corporate finance; and
+FINA2320 Investments and portfolio analysis; and
+FINA2322 Derivatives
+FINA3340. Risk management (6 credits)
+This course covers the advanced techniques for corporate financial risk management. Topics include
+(i) the identification and measurement of financial risk, (ii) risk management for equity portfolios, (iii)
+risk management for fixed income securities portfolios, (iv) risk management for derivative securities
+portfolios, (v) risk management for financial institutions, (vi) Riskmetrics, (vii) credit risk management,
+and (viii) the recent development of risk management tools and techniques in financial markets.
+Prerequisites: FINA2322 Derivatives or STAT3905 Introduction to financial derivatives or
+STAT3910 Financial economics I or MATH3906 Financial calculus; and
+FINA2320 Investments and portfolio analysis or STAT3609 The statistics of
+investment risk
+FINA3350. Mathematical finance (6 credits)
+This course provides students with the necessary mathematical techniques used in continuous-time
+finance. It covers stochastic calculus, partial differential equation and applied probability. After taking
+this course, one should be able to fully understand no-arbitrage theory, the Black-Scholes equation, riskneutral probability and martingales. The purpose of this course is to lay down a solid mathematical
+foundation for students to learn more advanced topics in financial engineering, such as exotic options,
+interest rate derivatives and credit risk models.
+Prerequisite: FINA2322 Derivatives
+Mutually exclusive: MATH3906 Financial calculus
+FINA3351. Spreadsheet financial modeling (6 credits)
+This course studies the design and implementation of computer programs for financial modeling using
+spreadsheets and structured programming techniques. The course will focus on developing skills in
+translating financial models into spreadsheets and programs using Microsoft Excel and Visual Basic for
+Applications (VBA), examining popular financial and investment models, integrating spreadsheet
+functionalities, programming, and interfaces in financial applications, and hands-on experience in
+designing, coding, and debugging computer programs.
+Prerequisites: FINA2322 Derivatives; and
+FINA2320 Investments and portfolio analysis or STAT3609 The statistics of
+investment risk
+35
+FINA3353. Regulatory, operational and valuation issues in finance institutions (6 credits)
+This course examines with students’ practical issues involving financial institutions, with a focus on
+banks. These include how banks shapes and, in the meantime, are bounded by regulations the regulatory
+environment. In turn, how the macro regulatory environment then transformed into operational
+practices in financial markets. The course will also go into how these issues are incorporated into models
+for analysis and valuation purposes. The course will be very practical, putting a blend of classroom
+concepts, theories and frameworks to work, preparing students for real life situations.
+Prerequisite: FINA2320 Investments and portfolio analysis
+FINA3360. Financial practicum (6 credits)
+This course is designed for students who are hired by a reputable company to provide consulting service
+in the fields of Economics or Finance. The main purpose of this course is to help students relate
+economic or finance theories to the practical experience from their employment. They will be
+supervised and assessed jointly by a faculty member and a supervisor/mentor from the participating
+company. Interested students should submit to the BEcon/BEcon&Fin Programme Director a
+proposal of no less than 1,000 words for approval.
+Prerequisites: FINA2322 Derivatives; and
+FINA2320 Investments and portfolio analysis
+Remarks: Only available to FBE students.
+Candidates intending to take this course shall complete an application form which is
+available at the Faculty Office (Room 1305, K.K. Leung Building).
+FINA3381. Behavioural finance (6 credits)
+Behavioral finance is the application of psychology to financial behavior. We will explore various
+behavioral frames, biases and heuristics and examine their implications on the aggregate market,
+individual investors, cross-sections of average returns and corporate decision making in a world of
+limited arbitrage.
+Prerequisites: ECON1210 Introductory microeconomics; and
+FINA1310 Corporate finance; and
+FINA2320 Investments and portfolio analysis or STAT3609 The statistics of
+investment risk
+FINA3382. Structured finance and securitization (6 credits)
+Structured finance refers to more sophisticated, complex financial transaction. With securitization as
+the dominant form of transaction, structure finance is an important tool in today’s financial markets.
+Although there has been an ongoing post-recession decline in the U.S. securitization rate, many other
+international markets are growing. This course is designed to provide a broad, comprehensive
+introduction to structured finance and securitization. The following topics will be covered: (a) building
+blocks of structured finance, (b) mechanics of securitization and various securitized products, especially
+CDOs (collateralized debt obligations), (c) leasing, (d) project financing, and (e) fundamentals of
+structured finance modeling using Microsoft Excel.
+Prerequisites: FINA2322 Derivatives; and
+FINA2320 Investments and portfolio analysis or STAT3609 The statistics of
+investment risk
+36
+FINA3383. Financial regulations and compliance (6 credits)
+This course covers financial regulations and compliance relevant to intermediaries (company and
+individuals) licensed or registered with the Securities and Futures Commission to engage in regulated
+activities. Embedded in regulations and compliance are ethics, professional standards and applicable
+laws. Topics include, but not limited to, ethics, professional standards, and code of conducts and best
+practices, know your clients, sales and suitability, investor protection, anti-money laundering, timely
+and accurate communications, independence and objectivity, fair dealing, compliance issues and
+compliance handling, relevant local rules and regulations, and international best practices for
+investment professionals. Selected cases will be used for discussion in class.
+FINA3384. Behavioural and sociological finance (6 credits)
+This course covers current developments in finance. Possible topics include security trading and
+market making, venture analysis, financial contracting, investment strategies for local markets and other
+current issues in finance. The exact topics to be offered will be determined by the lecturer(s).
+FINA3385. Global sustainable investing and ESG integration (6 credits)
+In this course, how environment, social, and governance (ESG) impacts on risk and return of
+investments and corporate financial performance will be explored. Different ESG investment
+approaches and strategies will be introduced and students will develop an understanding of ESG
+integration and how ESG will be embedded in the investment process and in valuation models. In
+addition, students will learn about sustainable investing across different asset classes and the various
+ESG Reporting frameworks.
+This course will prepare students to sit for the “Certified ESG Analyst (CESGA)” examination offered
+by EFFAS (The European Federation of Financial Analysts Societies).
+Prerequisites: FINA1310 Corporate finance; and
+FINA2320 Investments and portfolio analysis
+FINA3391. Reading course (6 credits)
+The course consists of supervised reading and written work. Candidates may specialize in one topic
+under the supervision of faculty members.
+Candidates must submit the title of their project within the first two weeks of the semester for approval
+by the BEcon/BEcon&Fin Programme Director. An original project paper is required in lieu of a
+written paper in the Examination. The project paper must be completed and presented not later than
+the first day of the assessment period for that semester. Candidates shall submit a statement that the
+project paper represents their own work (or in case of joint work, a statement countersigned by their coworker(s), which shows the degree of their work) undertaken after the registration in the course.
+Prerequisites: ECON2280 Introductory econometrics; and
+FINA2320 Investments and portfolio analysis; and
+FINA2322 Derivatives
+Remarks: Candidates intending to take this course shall complete an application form which is
+available at the Faculty Office (Room 1305, K.K. Leung Building).
+37
+FINA4321. Managing money in asset management and private banking (6 credits)
+This course is a Capstone course and students are expected to apply the core investment, valuation and
+portfolio theories, analytical / advisory tools and asset management knowledge, including risk
+management and regulatory compliance, into analyzing asset and private wealth management business
+cases.
+The classroom lectures will use various case studies to illustrate the different areas of issues identified
+as well as capturing the most contemporary trends of the asset management and private banking industry.
+Students are expected to challenge the dynamics of the cases and form an analytical framework in
+approaching the issues. The classroom lectures aim to provide insights to the students and guide them
+through their thinking and analytical ability in tackling the project assignments.
+As this is a Capstone course focusing on application of essential knowledge of technical and business
+skills, students are expected to do research/analysis on assigned/selected topic, individually for the midterm project and in groups for the final-term project. The project(s) will be based on a case, students
+are expected to come up with recommended investment strategies with strategic asset allocation and
+tactical strategies in light of client’s investment objectives, client’s profile, suitability requirements,
+global investment outlook and risks dynamics. Furthermore, various business aspects (such as product
+development, sales, distribution, marketing and operations) should also be taken into account.
+Pre/Co-requisites: All core courses of the AMPB programme
+Remarks: This course is a required course for BFin(AMPB) and open only to final year students of
+BFin(AMPB) or students taking a second major in Asset Management and Private Banking
+(AMPB).
+FINA4341. Quantitative risk management (6 credits)
+The objective of this course is to introduce concepts, techniques and framework for quantitative risk
+management at financial institutions. Financial firms, with their complicated list of positions in a
+mixture of instruments, are exposed to various sources of financial risk. This class focuses mainly on
+market risk, the risk of unexpected changes in prices and rates. The first part of the course introduces
+basic concepts in risk management and builds the toolkit for measuring risk quantitatively. The second
+part of the course is devoted to studying the widely accepted Value at Risk (VAR) systems, including
+calculations, back testing and flaws of VAR. The course also touches on other aspects of financial risk
+such as liquidity risk, credit risk and operational risk.
+Prerequisite: FINA3350 Mathematical finance
+Mutually exclusive: STAT4608 Market risk analysis
+38
+FINA4350. Text analytics and natural language processing in finance and fintech (6 credits)
+This course covers the main elements of natural language processing (NLP), text analytics, and text
+mining, providing students with a foundation in collecting, managing, and analyzing textual data with
+financial and economic applications in mind, such as FinTech. Examples of potential applications
+include understanding and responding to sentiment in financial newspapers and social media, using
+social media to improve performance in asset/investment management, due diligence, Fed watching,
+monitoring of company events, and detecting insider trading. Although students write their own
+computer programs in this course, they are not required to implement most algorithms from scratch.
+Instead, the focus of this course is on how to use existing state-of-the-art open-source software libraries
+and how to apply them in a financial context. This course consists of three parts. In the first part, we
+work with real-world textual data sets to obtain proficiency in collecting, importing, organizing, and
+cleaning textual data from sources related to finance and economics. Among others, we cover web
+scraping, textual corpora, text processing, tokenization, stemming, and stop word removal. In the second
+part we delve into a more detailed analysis of NLP, text analytics, and machine learning with a particular
+focus on FinTech. For instance, we examine bag-of-words, word weighting schemes, document
+classification, document clustering, sentiment analysis, and topic models. The third part consists of
+summarizing, displaying, and visualizing results obtained from NLP and text analytics for applications
+in finance and economics.
+FINA4354. Financial engineering (6 credits)
+Financial engineering is the process of constructing new instruments by using bonds and individual
+derivatives such as forwards, calls, puts, and exotic options as basic building blocks. The process
+involves designing, pricing and managing the instruments. In this course, we anatomize a few popular
+structural products. We then discuss how to price these products by studying the price of the embedded
+exotic options. We study the risk exposure of the investors and the risk management of the issuer.
+We also discuss some topics on the market for volatility trading, numerical methods for option pricing,
+and models beyond Black-Scholes.
+Prerequisite: FINA3350 Mathematical finance
+FINA4359. Big data analytics applied toward quantitative finance (6 credits)
+This course provides students a foundation in managing and analyzing large datasets for applications in
+finance. The first part of the course focuses on building skills – data custodianship and performance
+computing. Through practice on real-world financial datasets, students will learn methods used to
+warehouse and retrieve data for high-performance statistical computing. The course then turns to
+analytical methods with a focus on demonstrating these methods on real-data from various contexts in
+finance. Methods covered include statistical modeling and inference, machine learning, textual analysis,
+classification and alternative datasets. Problem sets and projects will be the primary mode of learning.
+Course learning will be supplemented with exposure to industry speakers from the local financial
+industry. As for applications, a particular emphasis will be on quantitative trading but course projects
+will enable a student to pursue his or her own interests.
+Prerequisite: ECON1210 Introductory microeconomics; and
+FINA2320 Investments and portfolio analysis; and
+IIMT2602 Business programming or COMP1117 Computer programming or
+ENGG1111 Computer programming and applications or equivalent
+39
+FINA4392. Dissertation (12 credits)
+Candidates may write a dissertation under the supervision of faculty members. A satisfactory
+dissertation may be offered in lieu of two written papers in the Examination.
+Candidates must submit the title and an outline of their dissertation for approval by the
+BEcon/BEcon&Fin Programme Director not later than the last day of the revision period in the first
+semester. The dissertation shall be completed and presented not later than the first day of the
+assessment period for the second semester (Note: The course extends over two semesters. Candidates
+must enroll in the first semester).
+Prerequisites: ECON2280 Introductory econometrics; and
+FINA2320 Investments and portfolio analysis; and
+FINA2322 Derivatives; and
+Cumulative GPA of 3.0 or above at the time of enrolment
+Remarks: Open only to Year 4 students majoring in Finance.
+Candidates intending to take this course shall complete an application form which is
+available at the Faculty Office (Room 1305, K.K. Leung Building).
+IIMT1611. Principles of technology entrepreneurship (6 credits)
+The purpose of this course is to introduce students to the entrepreneurial process of the technology
+industry in general. The introductory course will go through the fundamental aspects of launching a
+technology entrepreneurial venture to complement the research and development activities in science
+and technology. It will expose students to common practices in venture development process such as
+opportunity identification and verification, to technology transfer and commercialization. Topics on
+legal subjects, e.g. intellectual properties & patent laws, and simple financing & strategic approach in
+the business plan will be covered. Sharing sessions by entrepreneurs will be one of the important
+components of this course, in order to further nurture an entrepreneurial mindset via learning from reallife examples in this specific industry of technology.
+IIMT2602. Business programming (6 credits)
+With the proliferation of Web 2.0, individuals, firms and the entire society have generated massive trails
+of data as the by-product of their various activities. In virtually all business sectors, decision-making is
+increasingly data-driven. Business programming is an introductory course that teaches you how to write
+computer programs using Python to collect, analyze, and interpret data from real-world applications.
+This course is designed for absolute beginners and will build the skills from scratch. Therefore, no prior
+knowledge or programming experience is required. However, students are expected to have basic
+computer skills.
+Mutually exclusive: COMP1117 Computer programming; and
+ENGG1330 Computer programming I
+40
+IIMT2628. Innovation and entrepreneurship internship (6 credits)
+The most effective entrepreneurship learning is from the combination of theory, case studies and
+practical experience. This course aims to let students learn from industrial practical experience that
+complements the lecture learning and class activities. It aims at building up students’ own mindset
+and value through real life experience and mentored by the participating companies. It aims at
+developing students’ understanding of the challenge and solution in the entrepreneurial process, the
+practices of innovation, the strategic inter-relationship among Hong Kong and other cities in Greater
+Bay Area, and the global vision in the current economic atmosphere.
+This course combines lectures, discussions, case studies, reporting and sharing. Students will be
+exposed to the entrepreneurship and industry ecosystem, and are expected to observe, or involve in, the
+aspects like financing and business model, branding and marketing, product market adoption, the everchanging circumstances, the related strategic planning and evaluation.
+Remarks: This course is graded as “Pass” or “Fail”. It is open to all FBE students, or non-FBE
+students who has taken any FBE course.
+IIMT2641. Introduction to business analytics (6 credits)
+Online transactions, mobile applications, sensors, video-capturing systems and social media generate
+massive amount of data. In response businesses increasingly rely on quantitative techniques, statistical
+models and data mining methods to gain managerial and strategic insights from such data and thus enhance
+their competitive position. This course covers both technical and managerial aspects to provide a basic
+understanding of business analytics and show how it can be used by businesses to analyze their competitive
+posture more effectively, know their customers better and make better managerial and strategic decisions.
+IIMT3601. Database management (6 credits)
+This course introduces the principles of design, development and administration of database
+management systems in business, considering the user, developer, and administrator points of view.
+Students will learn the basic concepts involved in the design and management of databases in business
+applications, including database architecture, entity-relationship modeling, database normalization,
+structured query language, and database administration. Students will also acquire hands-on experience
+in designing and developing simple databases.
+Mutually exclusive: BSIM3017 Database systems; and
+COMP3278 Introduction to database management systems
+IIMT3602. Information systems analysis and design (6 credits)
+This course aims to develop an understanding of the concepts of systems analysis and design. Various
+system development methodologies will be elaborated and discussed. CASE tools will be used to
+illustrate how to construct a variety of system design documents. The course will use a combination of
+lectures, laboratory sessions, assignments, and projects.
+Prerequisite: IIMT2601 Management information systems
+Mutually exclusive: BSIM3014 User-based systems analysis; and
+COMP3297 Software engineering
+41
+IIMT3603. Project management (6 credits)
+This course focuses on the planning, scheduling, control, and evaluation of project management. The
+basic tools and techniques of project management will be explored, with special emphasis on
+engineering, management, and control of IS/IT related business projects. The evaluation of projects and
+project management will also be addressed, as will scope, time, cost, quality, human resources,
+communications, risk, and procurement.
+Prerequisites: ACCT1101 Introduction to financial accounting; and
+ECON1210 Introductory microeconomics
+Mutually exclusive: BSIM4011 Project management
+IIMT3604. Telecommunications management (6 credits)
+This course introduces telecommunications and computing networks used in the support of business
+activities. Topics include data, voice, image and communication technologies; networking and
+communication architectures; and protocols and standards.
+Prerequisite: IIMT2601 Management information systems
+Mutually exclusive: COMP3234 Computer and communication networks
+IIMT3621. Creativity and business innovation (6 credits)
+Today the efficient and cost-effective provision and deployment of resources no longer guarantee
+sustainable advantage. Instead, a firm’s competitive advantage is increasingly tied to its workforce’s
+ability to think outside the box, and leverage fleeting opportunities to innovate and market high-margin
+products and services.
+This course aims to put students in a lateral mind-set where they can challenge the conventional wisdom
+to think creatively, see the unseen to uncover opportunities, and explore the trade-offs involved in
+managerial decisions to design elegant and articulated solutions.
+Remarks: This course is not open to first-year students.
+IIMT3622. Business transformation (6 credits)
+Managers need to have special skills to survive in today’s volatile, uncertain, complex, chaotic and
+accelerating world. The course builds on chaos theory to provide a roadmap for managers planning to
+transform their companies into an inter-networked enterprise where shared infrastructures are used to
+link customers, suppliers, partners and employees to create superior economic value. It covers business
+strategy, infrastructure, process management, and integration and implementation. The course is based
+on the premise that integrating Internet technologies throughout the value chain is crucial in building
+and managing customer relationships and thus brand equity.
+Prerequisite: IIMT2601 Management information systems
+42
+IIMT3623. Design thinking: concepts and applications (6 credits)
+Design methodology is closely related to the innovation process within different business contexts.
+This course aims to develop students’ design mentality and skillsets through idea conceptualisation,
+concept development, process, implementation, and project planning and management.
+Case studies will be examined to understand where and why creative designs are incorporated in
+different industries, taking into account respective historical backgrounds and theories.
+Studies of innovation will cover architectural and product designs; sales, marketing, and branding; and
+change management. Students will be challenged to take a cross-disciplinary approach to creatively
+achieve business, social and communal goals in their group projects.
+Remarks: This course is available to FBE students only.
+IIMT3624. Design studio (6 credits)
+This is a complementary course to IIMT3623 and offers problem-based studios to mimic the core
+learning process in professional design education. Design topics will serve as the media for students
+to explore concept and project development.
+The aim of the course is to get students to think and work through a comprehensive process in their
+hands-on projects. While striving to achieve business and social goals, students will be trained to
+utilize the hybrid viewpoints of analysts and creative designers to evaluate the nature of projects, their
+functions, and short-term and long-term impacts on different stakeholders.
+Students will also learn to develop solutions through hands-on experiment and staged workshops,
+simulating the professional creative industry. They will develop their own authentic style in leadership
+and problem-solving skills, supported by visual communication and graphical techniques.
+Prerequisite: IIMT3623 Design thinking: concepts and applications
+Remarks: For students in BDI/EDI majors only.
+IIMT3626. Values-driven innovation (6 credits)
+This course provides a platform for critical rethinking of the role of business in creating both business
+value and social values. It examines the business building blocks to explore win-win situations where
+economic success and societal benefits co-exist through innovative thinking and solutions, taking into
+account related trade-offs. Students will learn how to design businesses that can respond to increasing
+demands for a fairer and better society, a greener environment and greater work-life balance, whilst
+reducing costs, building customer loyalty, and attracting and retaining talents, thus creating long-lasting
+value.
+43
+IIMT3627. Venture and entrepreneurship management (6 credits)
+Successful entrepreneurs, including “intrapreneurs”, are those who are starting their new ventures
+because they are able to sense unmet needs better, and able to deliver more solid outcome than their
+current contemporaries. This ability to strategize and execute on the fly is extremely rare. Somehow,
+they have the beliefs that their model can serve these unmet needs better and more effectively. They are
+to turn these beliefs into behaviors and behaviors to habits: leading to being extra-hardworking,
+optimistic, and persistent. They don’t ever quit.
+The great entrepreneurs are special people and they build more than just businesses, they know when
+to seed new businesses, how to find and develop successful leaders who can manage further successes,
+and how to add to the broader ecosystem by giving back and letting others build on their successes.
+This is what venture management is fundamentally about: how to know when to start, maintain, grow,
+split, and close a business.
+This course provides an overview of venture management in innovation development and
+commercialization for those who believe they have what it takes to build new businesses and ventures.
+The students will strengthen their know-how through listening and engaging in discussions, with guest
+speakers, through local and international business cases, and venturing. They will be introduced to
+practical toolkits, applicable to established corporate, social venture and start-up businesses. Under
+entrepreneurship management, the subjects of market analysis and opportunities, business and financial
+model design, intellectual property management, sources of investment and equity/shareholder
+structures, sustainable business operation management and risk management will be covered.
+Students will be asked to experiment and design experiments to validate their assumptions. These
+exercises and learning will allow the students to marry theories with practical knowledge needed to plan
+and implement changes at established businesses and to build a new business as a start-up.
+IIMT3635. Operations management (6 credits)
+Effective operations management involves managing people, equipment and other resources. This
+course covers a set of techniques that were designed to help people understand and improve
+administrative, manufacturing, product design, or service operations processes. Students will learn
+process analysis, management of process variability and its impact, process improvement with statistical
+tools, and applications in lean operations, using case discussion, in-class interactions, and hands-on
+projects.
+IIMT3636. Decision and risk analysis I (6 credits)
+Business decision-making involves considerable complexity and uncertainty. This course introduces the
+basic concepts in quantitative business analysis to help students gain a clear understanding of the key
+elements in the decision making process. This course covers the tools and the skills to analyze and solve
+problems by stressing approaches to 1) understand and question assumptions, 2) consider a richer set
+of solution alternatives, and 3) consider diverse measures of performance. The teaching methods will
+include lectures, skill-building exercises, qualitative class discussions, and a project.
+Prerequisite: ECON1280 Analysis of economic data or STAT1602 Business statistics or STAT1603
+Introductory statistics or STAT2601 Probability & statistics I or equivalent
+44
+IIMT3637. Decision and risk analysis II (6 credits)
+Managers need to understand and promptly react to business risks and uncertainty. This course
+introduces sophisticated quantitative models and advanced tools such as discrete and continuous time
+Markov chains, renewal processes and other stochastic models to capture randomness in business
+processes. Students are expected to learn these mathematical models through lectures, skill-building
+exercises and qualitative class discussions.
+Prerequisite: IIMT3636 Decision and risk analysis I
+IIMT3641. Introduction to financial analytics (6 credits)
+This course provides introduction to analytics used in quantitative finance and aims at equipping
+students with basic analytical knowledge and practical skills in solving investment and risk management
+problems. The course content is organized by main financial instruments: fixed-income securities,
+stocks, and financial derivatives; fundamental analytics for each instrument type will be taught.
+Implementation (e.g., fitting interest rate term structures, portfolio construction, pricing options by
+simulation, etc.) by developing analytics in spreadsheet/VBA or Python with financial data will also be
+emphasized. The main topics include bond mathematics, modern portfolio theory, Black-Litterman
+model, and basic financial derivatives.
+Prerequisites: FINA2320 Investments and portfolio analysis; or
+IIMT2641 Introduction to business analytics; or
+IIMT3636 Decision and risk analysis I; or
+STAT3609 The statistics of investment risk; or
+STAT3952 Investment and asset management
+IIMT3642. Managing and mining big data (6 credits)
+With vast amount of data being available, we are now in the era of “big data”. The knowledge and skills
+on large-scale data management are becoming increasingly important. This course provides a broad
+introduction to big data, including fundamental concepts and basic techniques for data acquisition and
+aggregation, state-of-the-art algorithms for data analysis, and technologies on modern computing
+platforms and systems for handling big data.
+Prerequisites: IIMT2641 Introduction to business analytics; and
+STAT1602 Business statistics or equivalent
+Remarks: Students are expected to have prior knowledge of basic linear algebra, basic statistics
+and probability, and basic programme experiences with R and Python.
+IIMT3643. Data visualization and visual analytics (6 credits)
+Data visualization is an essential skill required in today’s data driven world. With its foundations rooted
+in statistics, psychology, and computer science, practitioners in almost every field use visualization to
+explore and present data. This course shows you how to better understand your data, present clear
+evidence of your findings to your intended audience, and tell engaging data stories that clearly depict
+the points you want to make all through data graphics. The skills learned in this course offer enormous
+value for creatives, educators, entrepreneurs, and business leaders in a variety of industries. Whether
+you are a seasoned visualization designer or just learning about it now, this course will serve as an
+introduction and reference to becoming visual with data.
+45
+IIMT3661. Decision support and expert systems (6 credits)
+This course explores a range of modern technologies used to support business decision making.
+Topics include decision support systems, group support systems, electronic meeting systems, artificial
+intelligence, expert systems, and neural networks. Both technical and managerial issues related to the
+development and implementation of decision support systems will be discussed.
+Prerequisites: IIMT2602 Business programming; and
+IIMT3601 Database management or equivalent
+IIMT3662. Advanced database management (6 credits)
+The course consists of two parts. The first part covers advanced database concepts such as views,
+triggers, stored procedures, SQL*Plus, database administration and performance tuning. The second
+part examines various techniques in data mining such as decision trees, neural networks, and clustering.
+Students will learn about the applications of these techniques in business.
+Prerequisite: IIMT3602 Database management or COMP3278 Introduction to database management
+systems
+Mutually exclusive: BSIM4018 Data warehousing and data mining
+IIMT3663. Internet and mobile applications (6 credits)
+In this course students will learn how to develop Internet-based and mobile business applications using
+the resources, tools and services available on the Internet. Topics include HTML, Java applets, HTTP
+and CGI, JavaScript, Java Servlets and JSP, PHP, ASP, Web spiders and search engines, and mobile
+applications.
+Prerequisites: IIMT2602 Business programming or COMP1117 Computer programming I or
+ENGG1111 Computer programming and applications or equivalent; and
+IIMT3601 Database management or COMP3278 Introduction to database management
+systems or equivalent
+Mutually exclusive: BSIM3021 Web development, users and management; and
+COMP3322 Modern technologies on World Wide Web
+IIMT3664. Telecommunications policy (6 credits)
+This course provides an overview of recent developments of the telecommunications industry in Hong
+Kong and around the Asia-Pacific. Telecommunications infrastructure policies introduced by
+respective governments in the region and the impacts of these policies on business operations will also
+be examined.
+Prerequisite: IIMT2601 Management information systems or equivalent
+IIMT3665. Information systems security management (6 credits)
+This course focuses on key issues related to security management of Internet-based business
+applications. Students will learn how to evaluate and implement measures to protect an organization's
+information systems from various security threats and vulnerabilities. Topics to be covered include
+security policy, information security management, information technology governance, risk assessment
+and management, and security control.
+Prerequisite: IIMT2601 Management information systems or equivalent
+46
+IIMT3666. Current topics in information systems (6 credits)
+This course discusses contemporary issues in information systems, including emerging technologies
+and the ways they affect businesses.
+Prerequisite: IIMT2601 Management information systems or equivalent
+IIMT3667. Information systems strategy (6 credits)
+This course examines various issues related to the management of information systems in organisations.
+The link between information systems planning and business strategy will be explored to see how
+companies can use information systems not only to support their daily operations but also to sustain and
+enhance their strategic advantage.
+Prerequisite: IIMT2601 Management information systems or equivalent
+IIMT3668. Multimedia applications development (6 credits)
+This course introduces various technologies and methods used in the design and development of
+multimedia applications in digital media industry. Students will learn how to develop interactive
+multimedia applications that use audio/video and 2D and 3D graphics. Related concepts including
+human-computer interaction, graphics design, and managing multimedia projects will also be covered.
+Prerequisites: IIMT2602 Business programming; and
+IIMT3601 Database management or equivalent
+IIMT3681. Supply chain management (6 credits)
+The course introduces students to concepts, strategies, and technologies related to supply chain
+management. The course focuses on the systems approach to planning, analysis, design, development,
+and management of supply chain. Using cases and real-life projects, students will learn how to use
+appropriate information technologies to synchronize supply chain processes, thus reduce costs and
+improve service.
+Prerequisite: IIMT2601 Management information systems or equivalent
+IIMT3682. IT and entrepreneurship (6 credits)
+This course introduces students to the core concepts of entrepreneurship with a special emphasis on
+entrepreneurial settings involving the use of information technology. Students will be exposed to the
+key processes, challenges, risks and rewards of starting up an entrepreneurial business. They will also
+learn to apply the concepts and knowledge learned in the course to develop a business plan that could
+be presented to potential investors and venture capitalists.
+Prerequisites: IIMT2601 Management information systems; and
+MGMT2401 Principles of management
+Mutually exclusive: MGMT3415 Principles of entrepreneurship
+IIMT3683. Enterprise resources planning systems (6 credits)
+This course provides an overview of enterprise resource planning systems and their use in the business
+environment. Topics include business processes management, functions and data requirements, and
+systems implementation and integration.
+Prerequisite: IIMT2601 Management information systems
+47
+IIMT3684. Web and social media technology (6 credits)
+This subject explores the emerging and revolutionizing role of the World Wide Web for marketing
+practice. A number of techniques for advertising over the Internet will be introduced. Students will
+explore the potential of advertising through Web technologies such as blog marketing, social media
+marketing and advertising, search engine marketing, search engine optimisation, email marketing,
+usability testing and website measurement. After completing this module, students will be able to
+develop an Internet marketing plan integrating social media tools and search engine use for advertising
+on the Internet.
+IIMT3685. e-Commerce (6 credits)
+This course focuses on business opportunities brought about by the Internet. Students will learn how
+to use web-based technologies to set up a business.
+Prerequisite: IIMT2601 Management information systems
+Mutually exclusive: BSIM4019 Electronic commence
+IIMT3686. Information systems audit and control (6 credits)
+This course is designed to provide an overview of computer information systems auditing and control,
+and their application in the business environment. It is intended for general business students. Topics
+include the information systems audit process, information technology governance, systems and
+infrastructure lifecycle management, information systems auditing methodology and information
+security policy, information technology service delivery and support, computer-assisted audit tools and
+techniques, protection of information assets, as well as disaster recovery and business continuity
+planning.
+Prerequisite: IIMT2601 Management information systems
+IIMT3688. Artificial intelligence in business (6 credits)
+This course focuses on the fundamentals of artificial intelligence (AI), with emphasis on business
+applications. Students will gain hands-on experience in developing and using different AI tools to solve
+real-world business problems. Topics include AI algorithms, intelligent agents, document management,
+expert systems, and data mining.
+Prerequisite: IIMT3601 Database management or COMP3278 Introduction to database management
+systems or equivalent
+Mutually exclusive: COMP3270 Artificial intelligence
+IIMT3689. Cloud computing: essential and application in entrepreneurship (6 credits)
+This pioneering course is delivered via a collaboration between academics and the industry. The training
+partner is professional Alibaba Cloud trainer. Participating students will be eligible to take part and be
+certificated at the industry-recognized cloud computing certification.
+This course introduces students to the use of information technology with special emphasis on the core
+concepts of entrepreneurship. Students will learn the relevant basic cloud computing technique and study
+the key processes, challenges, risks and rewards in entre- and intra-preneurial business. They will also
+learn to apply the concepts and knowledge acquired in the course to develop a digital business project that
+could be presented to key stakeholders which incl. potential investors. Students will be learning from
+real-life examples in this specific industry of technology.
+48
+IIMT3690. Information systems practicum (12 credits)
+This 12-credit experiential course provides a practical platform for students to apply their information
+systems knowledge in the real world. Under the supervision of a company executive and a professor,
+students will work in a company on a full-time basis for a minimum continuous period of six months.
+Prerequisite: IIMT2601 Management information systems
+Remarks: The course is only open to students taking a major or minor in Information Systems.
+Registration in this course is subject to the approval of the course coordinator who will try
+to place students in a company. Alternatively, students can identify a company willing to
+employ them, but they need to seek the approval of the course coordinator beforehand.
+IIMT4601. Information systems project management (6 credits)
+This course examines the concepts, techniques, and activities related to information systems
+development projects. Teams of students will carry out projects that span the entire information
+systems analysis and design life cycle, including planning and scheduling, cost estimation, risk analysis,
+team organisation, process management and quality assurance. In the process students will become
+familiar with the use of computer-based tools and managerial techniques used in information systems
+development projects.
+Mutually exclusive: COMP3404 Software quality and project management
+Remarks: This course is only available to final year students with a major in Information Systems.
+IIMT4602. Digital innovation (6 credits)
+The course will teach students how to create innovation-driven business model through both process
+innovation and product innovation. The focus is on businesses that are technology innovation driven.
+The course contents will cover disruptive technologies, cross-channel business model development,
+mobilization of networked business, canvas drawing, social media-based product and marketing
+innovation, etc. In particular, students will learn how to identify technology innovation opportunities
+and manage innovation process. The students can appreciate the value of IT ecosystems and platformbased business operations.
+Prerequisite: IIMT2601 Management information systems
+MGMT2787. Business case analysis and presentation (6 credits)
+This intensive 6-credit course aims to provide students with the requisite knowledge, skills and tools to
+prepare, present and write up business case studies for both academic and business use. The skills
+gained will also prepare students for participation in (international) case competitions. Students will
+work in rotating groups and will have to prepare and present cases following the format used in various
+global case competitions. Students also will have to submit individual case reports. Senior business
+executives based from around the globe will act as guest speakers and judges during the course.
+Remarks: (i) Students should have a good CGPA, good analytical skills, be intellectually curious
+and keep up to date with global (business) affairs. Students may be required to attend
+interviews before being admitted to the course.
+(ii) Students* who perform well in the course can be selected to represent HKU in
+(international) case competitions.
+* Only students from the Faculty of Business and Economics will be considered for
+(international) case competitions due to resources constraints.
+49
+MGMT3403. Leadership (6 credits)
+This course deals with leadership in organisational contexts. Students will learn about major theoretical
+approaches to studying leadership. Students will also examine leadership in problem situations. Cases
+and assessment exercises will be used to help students develop leadership competencies.
+MGMT3404. Cross-cultural management (6 credits)
+The trend of globalisation in business requires organisational members, especially managers, to work
+effectively with international assignments, to collaborate with cross-cultural teams, and to manage the
+increasingly diverse workforce, business partners, customers and clients. Therefore, managers need to
+acquire unique cultural competencies that go beyond traditional managerial competencies. The main
+objective of this course is to provide students with a solid basis for developing such cultural
+competencies, so they can understand the challenges that might occur while working abroad and the
+principles of effective cross-cultural management. The course aims to develop an understanding of key
+cultural differences, and how these differences influence the management of individuals, teams, and
+organisations.
+MGMT3405. Organisational behaviour (6 credits)
+A course on the concepts and key research findings which can help us to understand human behaviour
+in organisations. Topics include motivation, leadership theory, group dynamics, morale,
+communications, control techniques and organisational culture.
+MGMT3415. Principles of entrepreneurship (6 credits)
+This course equips students with the essential elements of entrepreneurship manifested in the issues,
+challenges and rewards of creating a new business. The process in creating a start-up company, indeed,
+the process of an entrepreneurial undertaking, will be examined, discussed and practiced in class in
+order to provide students with some first-hand knowledge and experience in the subject matter. The
+course also covers social entrepreneurship and corporate entrepreneurship / entrepreneurship within the
+corporation.
+Mutually exclusive: IIMT3682 IT and entrepreneurship
+MGMT3416. Storytelling: global business communication (6 credits)
+Telling stories to make sense of reality—or to shape it—is a human characteristic. We tell stories to
+explain our actions or intentions, to create coherence amongst disparate events. Artists tell a story
+through their works and in doing so, shape reality and our perception of it. Good leaders as well
+commonly use storytelling to inspire, teach, and define their organisation values and culture. However,
+good storytelling has rules and not everybody is a born storyteller. This course aims at developing
+students’ business storytelling skills through the study of speeches, commercials, and other
+organisational narratives from around the world. By reflecting on the importance of storytelling in
+management, this course will help students become better leaders.
+50
+MGMT3417. The European business environment (6 credits)
+In International Business, the study of the European marketplace holds a unique place. Each country
+has its own history, laws, and culture, yet it is possible to look at the European Union as one market.
+This course aims at introducing students to the European business culture through an interdisciplinary
+approach: (1) History and Geopolitics: to understand how the European Union came to be and its
+development; (2) Sociology: to examine different issues, such as cultural identities, politics, and ethics
+in the European context and their impact on business relationships; and (3) Management: to analyse
+practical issues in a European context.
+MGMT3426. Employment and labour relations (6 credits)
+This course intends to give an overview on the fundamentals of labour relations theories pertaining to
+trade unionism, collective bargaining and workplace labour-management relations. Particular
+attention is also given to the development of the labour market, employment pattern and labour law in
+Hong Kong.
+MGMT3429. Strategic human resources management (6 credits)
+This course proposes to look at the basic concepts of human resources management (HRM) and its
+application to Hong Kong. Emphasis will be placed on the strategic linkage between HRM and
+corporate management in the context of business change and re-structuring. Comparative references
+will also be made to practices in other industrial societies.
+MGMT3433. Organisational change and development (6 credits)
+The objective of this course is to explore the problems and issues involved in the management of
+organisational change and development. Major approaches and attempts to conceptualise the
+phenomenon will be examined in a critical manner. Particular attention will be paid to problems
+arising from company formation, entrepreneurial ventures, company expansion and growth, maturity
+and bureaucratisation, corporate failure and recovery. Major strategies for change will be examined.
+MGMT3434. Human resources: theory and practice (6 credits)
+The management of human capital, or human resources, has the potential to be the source of competitive
+advantage in high-performance organizations. This course serves as an overview of the fundamentals
+of human resource management.
+Some of the students in this course may go on to careers in human resources, while many others will
+probably go on to careers in management. Whether you become a human resources practitioner, or a
+manager who works with or even manages human resources practitioners, it will be important in your
+careers to understand the role of human resources in contributing to organizational effectiveness, who
+human resources practitioners are and what they do, and what the state of the art is in human resource
+management.
+MGMT3435. Production and operations (6 credits)
+A course to introduce a systems-oriented view of production and operations management.
+Prerequisites: MGMT3423 Operations and quality management; and
+IIMT3636 Decision and risk analysis I
+51
+MGMT3447. Applied organisation (6 credits)
+This is a course on the design of high performance organisation in the modern world. Topics include
+management structures of control and co-ordination, high-commitment work systems, design of
+compensation systems, virtual organisation and the use of IT, organisational learning, organisational
+change, organisation for cultural synergy, and organisation of international companies.
+MGMT3457. High-performance work systems (6 credits)
+This course examines the principles and practice of designing and operating systems of work that
+combine the optimum use of technology with high performance and motivation. Topics include sociotechnical systems analysis, teamwork and networking.
+MGMT3458. Human resource planning and career management (6 credits)
+This course aims to provide an understanding of how the demand and supply of human resources can
+be brought into balance, and people already in employment can be helped to develop in their work
+careers. Topics covered include appraisal, counselling, development and training, and career planning.
+Ways in which HRM managers can facilitate organisational learning are also examined.
+MGMT3464. Leadership workshop (6 credits)
+This workshop will explore key processes of leadership experientially in a simulated political, social
+and business environment. The purpose is to provide students with knowledge in leadership theories,
+models and frameworks, with opportunities to experiment with natural and new leadership behaviour
+in a simulated context. Having gone through these processes in a collective, multi-staged exercise,
+there will be opportunity for reflection, sharing of experience and integration of practice with theories,
+in the presence of facilitators.
+MGMT3470. Reward and compensation (6 credits)
+This course addresses the design of reward and compensation systems and the contribution they can
+make to the attainment of an organisation’s strategic objectives. Among the specific techniques
+covered are job evaluation, design of incentives, performance-related pay, and non-monetary rewards.
+MGMT3472. Team building programme (6 credits)
+The objective of this workshop is to explore key aspects of group dynamics through a process of
+experiential learning. The aspects that we shall be considering include leadership and communication,
+planning and organising, decision-making and problem solving, and trust and team building in the
+context of business and management. The activities you will undertake consist of a series of problems
+to be resolved through the combined efforts of your group members. The problems are physical in
+nature, rather than hypothetical and cognitive, and require the application of organisational skills for
+successful and efficient solutions.
+MGMT3475. Current topics in human resource management (6 credits)
+This course focuses on current topics in managing a firm's human resource management functions. Indepth classroom discussion, management cases and applied business projects will be emphasised.
+52
+MGMT3476. Managing organisational change (6 credits)
+Business organisations face unprecedented challenges today and managing change has become a crucial
+factor in their survival and performance. This course introduces the specialised topic of organisational
+change management. It provides students with an understanding of how organisational change is
+initiated and sustained.
+MGMT3477. Selections and training (6 credits)
+This course will focus on the basic concepts of selections and recruitment, training and development of
+different employees, and human resources utility analysis. In particular, students will be exposed to
+different recruiting processes and the whole spectrum of training and development techniques, and how
+they can add value to business success.
+MGMT3478. Compensation and benefits (6 credits)
+This course will focus on the basic concepts of pay and compensation policies for different employees.
+In particular, students will be exposed to fundamental pay and benefits administration, along with the
+importance of rewards and their impact on employee attraction, motivation and retention.
+MKTG3501. Consumer behaviour (6 credits)
+This course aims to help students gain an overall understanding of the process of consumer decision
+making and the factors influencing consumer decision and behavior. This course emphasizes on
+theoretical understanding of consumer psychology and applications to the development of marketing
+strategy. Specific consumer trends and new tools for consumer insights will also be integrated in class
+discussion. Students will be provided opportunities to apply the learned concepts and tools to marketing
+situations through class discussions, case studies, and group project.
+Prerequisite: MKTG2501 Introduction to marketing
+MKTG3502. Marketing research (6 credits)
+This course will cover the broad principles of marketing research. Emphasis will be placed on the use
+of marketing research as an aid to decision making. In this spirit, students will be introduced to a
+variety of types of marketing research data. Students will be given the opportunity to engage in
+practical marketing research-based exercises.
+Prerequisite: MKTG2501 Introduction to marketing
+MKTG3511. Advertising management (6 credits)
+This course will cover the theories, applications, and issues related to advertising management.
+Attention will be paid to the process of advertising management, creative and message strategies,
+traditional and digital creative tools, media planning and analysis, and evaluation of advertising
+effectiveness. In order to facilitate the learning process, examples of advertising strategies and
+techniques will be introduced in the course.
+Prerequisite: MKTG2501 Introduction to marketing
+53
+MKTG3512. Brand management (6 credits)
+What are the meanings of brand to organizations and customers? How to develop and manage brands
+that benefit organizations while creating value for customers? What makes a good branding strategy?
+This course will lead the students to go through a journey of brand development process to have an indepth understanding of strategic brand management. Through theories, examples, cases, and class
+discussions, students will learn to think more logically, creatively, and critically about the strategies
+involved in identifying, developing, managing, and growing brand equity.
+Prerequisite: MKTG2501 Introduction to marketing
+MKTG3513. Consumer insights for marketing decisions (6 credits)
+This course focuses on current topics in managing a firm’s marketing functions. Organised along a
+seminar mode, students will explore real life experiences and exposures to firms, together with in-depth
+intellectual challenges, through classroom discussion, the study of management cases and applied
+business projects.
+Prerequisite: MKTG2501 Introduction to marketing
+MKTG3514. Retailing (6 credits)
+The objective of this course is to explore the problems and issues involved in the management of quality
+improvement and market competition. Emphasis will be on the strategic aspects of quality and
+marketing management, in particular customer value, quality improvement tools, quality concepts, and
+the relationship of quality with different aspects of marketing management.
+Prerequisite: MKTG2501 Introduction to marketing
+MKTG3522. Marketing in China (6 credits)
+This course is designed to focus on selected topics that are of salience to managing firm marketing
+strategies and operations in Mainland China or Hong Kong. It may include but is not restricted to
+contemporary marketing issues related to branding, new product development, marketing hightechnology products and customer relationship management.
+Prerequisite: MKTG2501 Introduction to marketing
+MKTG3523. Global marketing (6 credits)
+This course shows how the basic principles of marketing can be applied to marketing problems across
+national boundaries and within foreign countries. Attention is paid to the development of global
+marketing strategies and to the different approaches needed to market consumer items, industrial goods
+and services internationally.
+Prerequisite: MKTG2501 Introduction to marketing
+54
+MKTG3524. Digital marketing (6 credits)
+The digital economy has fundamentally altered the nature of and the scope for understanding human
+behaviour and business practices. In exploring the digital economy, we cover the concepts, theories,
+and applications of big data in marketing, with the overarching goal of understanding how to utilize
+digital data to derive deeper and more meaningful managerial insights. Substantive topics include:
+search advertising, social network analysis, data analytics, and human mobility. Lectures, discussions,
+live data-analysis demonstrations, class data exercises, video pieces, and student-led project
+presentations are major class components.
+Prerequisite: MKTG2501 Introduction to marketing
+MKTG3525. Services marketing (6 credits)
+The course examines the characteristics of service organisations and how this affects their approach to
+marketing. Issues in the three dimensions of internal marketing, transactional marketing and external
+marketing are examined, and the role of research analysed. Attention is paid to service culture and
+service value and problems are illustrated by examples from Asian, American and European service
+firms.
+Prerequisite: MKTG2501 Introduction to marketing
+MKTG3526. Innovation and new product development (6 credits)
+This course aims to help students gain an overall understanding of how to develop and manage
+innovations and new products. The course introduces theories of diffusion of innovations, determinants
+of successful and unsuccessful new products, and consumer perceptions of innovations and new
+products at different levels of innovativeness. Building on these theoretical perspectives, the course
+further introduces a systematic new product development (NPD) process from idea generation to
+commercialization and analyzes how the NPD process should be adapted according to different levels
+of product innovativeness. Students will learn and apply qualitative and quantitative techniques related
+to innovation and new product development and management in this course.
+Prerequisite: MKTG2501 Introduction to marketing
+MKTG3527. Pricing strategies (6 credits)
+Profitable pricing is one of the most critical, but often the least understood managerial decisions.
+Among all the marketing mix, while all other ingredients represent costs, pricing is the only element
+that produces revenue. Firms rely on pricing to harvest its effort to create value for consumers, yet
+managers often make mistakes in their pricing decisions. For example, pricing is too cost-oriented,
+unresponsive to market change, or inconsistent with the product position.
+This course covers both the economic theories of pricing, and the analytical tools for formulating
+effective pricing strategy. This course also discusses commonly used pricing tactics, including some of
+the newest pricing practices. The course is highly applied, and prepares students for pursuing a career
+in marketing, consulting, and finance.
+Prerequisite: MKTG2501 Introduction to marketing
+55
+MKTG3528. Marketing analytics (6 credits)
+This course is about collecting and analyzing secondary data. The focus of this course is on
+understanding the popular data structure, analyzing data and making sense of the results. We will focus
+on understanding data relevant to marketers, the types of data available, different designs or methods
+of data collection and analysis.
+Course participants will learn to summarize, analyze and interpret the widely adopted data structure.
+This course will emphasize on defining a research question and the analytic techniques per se. Lastly,
+students will get a sense of the role state-of-the-art marketing research techniques play in the modern
+organization.
+Prerequisite: MKTG2501 Introduction to marketing
+MKTG3529. Social media marketing (6 credits)
+With the total number of active social media users (spending more than two hours per day on social
+media) reaching several billion worldwide, social media marketing has undoubtedly emerged as one of
+the most important digital marketing tools. This course will help students understand social media
+marketing from three perspectives—principles, applications and strategies. Social media and network
+theory, popular social media strategies, and data analytic tools will be introduced. Upon completing this
+course, students will be equipped with the knowledge and master skills which are essential to analyze,
+build, and manage real-world social media marketing campaigns.
+Prerequisite: MKTG2501 Introduction to marketing
+MKTG3530. Big data marketing (6 credits)
+With marketers poised to be the largest users of data within an organization, there is a need to make
+sense of the variety of consumer data that the organization collects, especially in the era of big data.
+This course exposes students to essential tools including data visualization, exploratory data analysis,
+as well as regression methods that can be used to convert raw data into marketing insights. For example,
+these tools will be used to investigate the impact of marketing activity on aggregate data (e.g., sales)
+and on individual-level choice data (e.g., brand choices). The course also includes a set of assignments
+conducted using Tableau and Microsoft Excel, ensuring that students will acquire the needed
+capabilities and skills to extract information from the big data available to them.
+Prerequisite: MKTG2501 Introduction to marketing
+MKTG3531. Strategic marketing management (6 credits)
+This course is aimed to provide advanced undergraduate students with knowledge and experience for
+the design of effective marketing strategies from a general management perspective. It examines the
+marketing management concepts underlying both consumer and industrial marketing strategy and
+tactics. Strategic marketing focuses on the concepts and processes involved in developing marketdriven strategies. The key challenges in formulating market-driven strategies include: (1) acquiring a
+shared understanding throughout the organization about the current market and how it may change in
+the future, (2) identifying opportunities for delivering superior value to customers, (3) positioning the
+organization and its offerings to best meet the needs of its target markets, and (4) developing a
+coordinated marketing program to deliver superior customer value.
+Prerequisite: MKTG2501 Introduction to marketing
+56
+MKTG3532. Platform business models and the sharing economy (6 credits)
+This course focuses on marketing strategies and emerging issues in platform business models and the
+sharing economy. It covers the special features, pricing, customer acquisition and management, trust
+building, ecosystem and governance of such business models. The course also analyzes the business
+models of representative firms in several key sectors—lodging, ride-hailing, e-commerce, office sharing,
+and online travel—and the future trends of platform business models and the sharing economy. In
+addition to qualitative analysis, this course also discusses how data analytics are applied in these
+businesses and the special skills needed for such business models. This course combines lectures, HBS
+case studies, hands-on exercises, and student group project presentations. There are mainly two parts
+of the course. The first part involves theory and analytics. Students will be provided with real data to
+compute network effects, optimal pricing strategies and demand forecasting. The second part involves
+applications of platform business models in several key sectors, including e-commerce, ride-hailing,
+lodging, and online travel. Students are encouraged to come up with business ideas around platforms
+and the sharing economy in different sectors, and hopefully they can implement these business ideas
+after graduation.
+STRA3702. International business environment (6 credits)
+This course helps you to understand the macroeconomic environments of international businesses. The
+course examines recent issues and trends in globalization through the lens of economic theories in
+international trade, political economy and macroeconomics. In particular, we will explore the origins of
+the recent rise of protectionism and populism in the US and Europe, the macroeconomic consequences
+of financial globalization and crises, and the challenges and opportunities of international migration.
+Combining economic analyses and case studies, we further examine the implications of these issues on
+the aggregate economy as well as on individual companies. The course will equip you with skills to
+independently analyze new issues and policies related to international economics. It also provides you
+background knowledge for formulating better corporate strategies.
+STRA3703. Multinational corporations (6 credits)
+This course studies the multinational enterprise (MNE) and the theoretical approaches that have been
+formulated to explain the growth and operation of this form of business on an international scale.
+Recent general theories will be considered in a critical manner to allow judgments to be made on their
+strengths and limitations.
+STRA3706. China’s business environment (6 credits)
+This course examines Chinese business environment from cultural perspectives and provides a survey
+on significant and complex issues of Chinese business culture.
+The course introduces theoretical frameworks for analysing culture in general and specifically for
+understanding Chinese business culture. Central themes throughout the course include Chinese
+corporate culture, culture factors embedded in business practices, and business culture reflected through
+films and TV shows. The course also includes an introduction to culture comparison and an in-depth
+discussion on exploring similarities and differences in business culture between China and other
+countries.
+STRA3708. A century of business in Hong Kong (6 credits)
+This course, taught in a series of lectures and tutorials, will explore the trajectory of European and
+Chinese business from the opening of Hong Kong as a free port in 1841 until the handover in 1997,
+complementing approaches of economic, social and political history.
+57
+STRA3709. Applications of strategic thinking in business (6 credits)
+Strategic thinking is the science of decision making in a strategic situation, where people’s optimal
+choices are interdependent because a decision’s consequence depends on other people’s choices.
+Almost all human choices are made in strategic situations and are therefore subject to the analysis of
+game theory. This course will introduce basic concepts and principles of game theory and their
+applications to a variety of real life business situations. The major contents include Prisoners’ Dilemma
+and dominant strategies, simultaneous games and Nash equilibrium, randomised strategies, sequential
+games and backward induction, games under imperfect information, and repeated games and
+cooperation. The course emphasises examples and applications and does not involve heavy calculation.
+As business competition shares a lot of similarities with military strategies, the principles of game
+theory will be further applied to shed light on the Chinese classic, The art of war by Sun Tzu.
+Mutually exclusive: ECON2214 Games and decisions
+STRA3716. Competitiveness of Chinese firms (6 credits)
+This course will focus on the competitiveness of the economy and industries of Mainland China and
+examine China’s competitiveness on a regional, industry and activity basis. Globalisation and China’s
+accession to WTO have presented unprecedented opportunities and challenges for China’s economy
+and industries. As such, China’s position in the world economic system and its ability to move up the
+value-added ladder is critical to its sustainable economic development. Given Hong Kong’s close links
+to the economy of the Chinese Mainland, China’s economic future will heavily influence that of every
+industry in Hong Kong. Through detailed analysis of a cross section of Chinese industries, the course
+will help students to gain a better understanding of the current status of China’s competitiveness and
+future dynamics.
+STRA4701. Strategic management (6 credits)
+This Strategic Management course will focus on the analytical and managerial tasks involved in
+developing strategies that create value by satisfying customer demands and stakeholders’ interests in an
+ever-changing competitive landscape. Successful business policies require a detailed understanding
+of the overall environment of which the firm is a part as well as the ability to create value in order to
+serve customers in the face of competition. The course uses business cases in a global context.
+Students will be asked to apply the strategic management concepts and theories to address real life
+business opportunities and challenges.
+Remarks: Open only to students studying a major in the BBA programmes
+STRA4702. Global corporate strategy (6 credits)
+This course provides students with in-depth learning on managing multinational corporations across
+various product, business, and geographic markets. Specifically, the course focuses on three central
+issues that are critical to the successful formulation of corporate strategy: (1) the decisions on which
+businesses to bring together inside the company and how they could create value, (2) how the company
+can grow in different settings through acquisitions, partnerships, or internal development, and (3) how
+the company manage its business portfolio. Overall, this course will highlight the criticality of making
+profound decisions about the right pathways to firm growth. It will provide theoretical framework and
+guiding principles for analysing practical problems at the corporate or group level as experienced by
+managers.
+58
+STRA4703. Business in Latin America (6 credits)
+This course is aimed at providing students with a profound understanding of the Latin American
+business environment, preparing them for a career in international business. The course will address
+the issues, opportunities and complexities that are associated with doing business in Latin America or
+with Latin American firms.

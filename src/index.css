@@ -65,7 +65,7 @@ body {
         padding: 1%;
         border-style: solid;
         width: max-content;
-        
+
         .Title {
             font-weight: bold;
             font-size: larger;
@@ -76,6 +76,19 @@ body {
         margin-top: 1%;
         overflow: auto;
         max-height: 50vh;
+
+        .CourseListItem {
+            border-style: solid;
+            border-color: black;
+            background-color: grey;
+            margin-top: 1%;
+
+            .Content {
+                background-color: white;
+                overflow: auto;
+                max-width: 100%;
+            }
+        }
     }
 
     .Subtitle {
@@ -122,13 +135,21 @@ body {
         overflow: auto;
     }
 
+    .Overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
     .CoursePreregFail {
         background-color: red;
         border-style: solid;
         border-color: brown;
         color: yellow;
         margin-top: 1%;
-        padding: 1%;
     }
 
     .CourseExclusive {
@@ -137,7 +158,6 @@ body {
         border-color: orangered;
         color: brown;
         margin-top: 1%;
-        padding: 1%;
     }
 
     .NormalCourse {
@@ -145,7 +165,17 @@ body {
         border-style: solid;
         border-color: green;
         margin-top: 1%;
-        padding: 1%;
+    }
+
+    .ErrorCourse {
+        font-size: smaller;
+    }
+
+    .Content {
+        background-color: white;
+        color: black;
+        overflow: auto;
+        max-width: 100%;
     }
 }
 

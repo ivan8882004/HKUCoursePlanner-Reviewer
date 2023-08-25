@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addPlanItem, removePlanItem, setDegree, setMajor, setMinor1, setMinor2 } from "../store";
 import { useEffect, useState } from "react";
 import StudyPlanSem from "../components/StudyPlanSem";
+import CourseListItem from "../components/CourseListItem";
 
 function StudyPlanPage() {
 
@@ -32,27 +33,6 @@ function StudyPlanPage() {
             }
         })
     },)
-
-    const getCourses = (name) => {
-        for (let i = 0; i < courses.length; i++) {
-            if (courses[i].name === name) {
-                return courses[i]
-            }
-        }
-    }
-
-    const searchPlan = (name, index) => {
-        const toSearch = [...plan.slice(0, index)]
-
-        for (let i = 0; i < toSearch.length; i++) {
-            for (let j = 0; j < toSearch[i].length; j++) {
-                if (toSearch[i][j].name === name) {
-                    return true
-                }
-            }
-        }
-        return false
-    }
 
     const degreesDropDown = degrees.map((item, index) => {
         return (
@@ -117,32 +97,9 @@ function StudyPlanPage() {
         return courseList;
     }
 
-    const courseListItem = (item, index) => {
-        const noOfButton = plan.length - 1;
-
-        const buttonList = [];
-
-        for (let i = 0; i < noOfButton; i++) {
-            buttonList.push(
-                <button key={i} onClick={() => dispatch(addPlanItem({index: i + 1, course: getCourses(item)}))}>Y{Math.floor(i/2) + 1}S{i%2 + 1}</button>
-            )
-        }
-
-        if ((item.includes(searchBar.toUpperCase()) || searchBar === "") && !searchPlan(item, plan.length - 1)) {
-            return (
-                <div key={index}>
-                    {item}
-                    {buttonList}
-                </div>
-            )
-        } else {
-            return <div key={index}></div>
-        }
-    }
-
     const createCourseListItem = (list, index) => {
         const renderCourseList = joinCourseList(list).map((item, index) => {
-            return courseListItem(item, index)
+            return <CourseListItem name={item} index={index} searchBar={searchBar} key={index} />
         })
 
         return (
@@ -178,14 +135,12 @@ function StudyPlanPage() {
     }
 
     const commonCoreList = toRenderCommonCoreList.map((item, index) => {
-        return courseListItem(item, index)
+        return <CourseListItem name={item} index={index} searchBar={searchBar} key={index} />
     })
 
     const allCourseList = courses.map((item, index) => {
-        return courseListItem(item.name, index)
+        return <CourseListItem name={item.name} index={index} searchBar={searchBar} key={index} />
     })
-
-    console.log(plan)
 
     return (
         <div className="StudyPlanPage">

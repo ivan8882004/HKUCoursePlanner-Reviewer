@@ -116,8 +116,6 @@ function MajorMinorForm() {
         }
     }
 
-    console.log(major)
-
     return (
         <div className="InfoForm">
             <div className="InfoFormTitle">

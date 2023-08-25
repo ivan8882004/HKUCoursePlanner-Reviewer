@@ -105,8 +105,6 @@ function ViewProgramPage() {
         }
     }
 
-    console.log(toProcessList)
-
     const graph = toProcessList.map((item, index) => {
         return <PreregGraph listItem={item} key={index} />
     })
