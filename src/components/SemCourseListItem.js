@@ -1,7 +1,7 @@
 import { useDrag } from "react-dnd";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { removePlanItem } from "../store";
+import { removePlanFyp, removePlanItem } from "../store";
 import checkPrereg from "../functions/checkPrereg";
 import checkExclusive from "../functions/checkExclusive";
 import { itemTypes } from "../DnDTypes";
@@ -48,6 +48,14 @@ function SemCourseListItem({course, ind, index}) {
         setDropDown(!dropDown)
     }
 
+    const handleRemove = () => {
+        if (parseInt(course.credit) === 6) {
+            dispatch(removePlanItem({ index, course }))
+        } else if (parseInt(course.credit) === 12) {
+            dispatch(removePlanFyp({ index, course }))
+        }
+    }
+
     if (!checkPrereg(course, index, plan)) {
         return (
             <div key={ind} className="CoursePreregFail" ref={drag}>
@@ -58,7 +66,7 @@ function SemCourseListItem({course, ind, index}) {
                     </div>
                 </div>
                 <span onClick={handleDropDown}>{course.name}</span>
-                <button onClick={() => dispatch(removePlanItem({ index, course }))}>X</button>
+                <button onClick={handleRemove}>X</button>
                 {courseContent}
             </div>
         )
@@ -72,7 +80,7 @@ function SemCourseListItem({course, ind, index}) {
                     </div>
                 </div>
                 <span onClick={handleDropDown}>{course.name}</span>
-                <button onClick={() => dispatch(removePlanItem({ index, course }))}>X</button>
+                <button onClick={handleRemove}>X</button>
                 {courseContent}
             </div>
         )
@@ -80,7 +88,7 @@ function SemCourseListItem({course, ind, index}) {
     return (
         <div key={ind} className="NormalCourse" ref={drag}>
             <span onClick={handleDropDown}>{course.name}</span>
-            <button onClick={() => dispatch(removePlanItem({ index, course }))}>X</button>
+            <button onClick={handleRemove}>X</button>
             {courseContent}
         </div>
     )

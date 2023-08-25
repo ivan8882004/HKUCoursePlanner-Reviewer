@@ -1,8 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addPlanItem, removePlanItem } from "../store";
+import { addPlanFyp, addPlanItem, removePlanFyp, removePlanItem } from "../store";
 import { useDrop } from "react-dnd";
 import { itemTypes } from "../DnDTypes";
 import SemCourseListItem from "./SemCourseListItem";
+import { useEffect, useRef } from "react";
+import getCourses from "../functions/getCourses";
 
 function StudyPlanSem({ list, index }) {
     const dispatch = useDispatch();
@@ -11,26 +13,34 @@ function StudyPlanSem({ list, index }) {
         return state.courses
     })
 
-    const getCourses = (name) => {
-        for (let i = 0; i < courses.length; i++) {
-            if (courses[i].name === name) {
-                return courses[i]
-            }
-        }
-    }
+    const handleDrop = useRef(null);
 
-    const handleDrop = (item) => {
-        if (item.index !== index) {
-            dispatch(addPlanItem({index, course: getCourses(item.name)}));
-            if (item.index !== -1) {
-                dispatch(removePlanItem({index: item.index, course: getCourses(item.name)}))
+    useEffect(() => {
+        handleDrop.current = (item) => {
+            const course = getCourses(item.name, courses)
+            if (parseInt(course.credit) === 6) {
+                if (item.index !== index) {
+                    dispatch(addPlanItem({index, course}));
+                    if (item.index !== -1) {
+                        dispatch(removePlanItem({index: item.index, course}))
+                    }
+                }
+            } else if (parseInt(course.credit) === 12) {
+                console.log("FYP")
+                if ((index - (1 - index%2) !== item.index && (index - (1 - index%2) + 1 !== item.index))) {
+                    dispatch(addPlanFyp({index, course}));
+                    if (item.index !== -1) {
+                        dispatch(removePlanFyp({index: item.index, course}))
+                    }
+                }
             }
+            
         }
-    }
+    }, [courses, dispatch, index])
 
     const [, drop] = useDrop(() => ({
         accept: itemTypes.COURSE,
-        drop: item => handleDrop(item),
+        drop: item => handleDrop.current(item),
         collect: monitor => ({
             isOver: !!monitor.isOver()
         })
