@@ -58,6 +58,8 @@ function ViewProgramPage() {
 
     joinCourseList.sort((a, b) => parseInt(a.substring(4)) - parseInt(b.substring(4)))
 
+    joinCourseList = [...new Set(joinCourseList)];
+
     let toProcessList = joinCourseList.map((item) => {
         if (getCourses(item)?.fullName === undefined) {
             console.log(item + "not exist")

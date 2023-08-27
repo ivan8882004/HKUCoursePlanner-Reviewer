@@ -101,6 +101,26 @@ body {
         font-weight: normal;
         float: right;
     }
+
+    .CheckerBox {
+        padding-left: 1%;
+
+        .ProgramChecker {
+            border-style: solid;
+            margin-top: 1%;
+            padding: 1%;
+        }
+
+        .CreditCounter {
+            border-style: solid;
+            margin-top: 1%;
+            padding: 1%;
+        }
+    }
+
+    .ClearButton {
+        padding: 1%;
+    }
 }
 
 .StudyPlanPageLeft {
@@ -111,7 +131,6 @@ body {
 
 .StudyPlanSemBox {
     padding-left: 1%;
-    padding-right: 1%;
 }
 
 .StudyPlanSem {
@@ -123,14 +142,14 @@ body {
 
     .Title {
         padding: 1%;
-        background-color: aqua;
+        background-color: #528080;
         border-style: solid;
-        border-color: blue;
+        border-color: #3F5959;
         font-weight: bold;
     }
 
     .Courses {
-        height: 35vh;
+        height: 30vh;
         width: 20vh;
         overflow: auto;
     }
@@ -145,26 +164,52 @@ body {
     }
 
     .CoursePreregFail {
+        background-color: #FF4238;
+        border-style: solid;
+        border-color: #FF1A0E;
+        color: #FFD044;
+        margin-top: 1%;
+    }
+
+    .CoursePreregFail:hover {
         background-color: red;
         border-style: solid;
         border-color: brown;
         color: yellow;
         margin-top: 1%;
+        box-shadow: 0 8px 8px 0 gray;
     }
 
     .CourseExclusive {
-        background-color: orange;
+        background-color: #FF9D1A;
         border-style: solid;
-        border-color: orangered;
+        border-color: #E08000;
         color: brown;
         margin-top: 1%;
     }
 
+    .CourseExclusive:hover {
+        background-color:darkorange;
+        border-style: solid;
+        border-color: orangered;
+        color: brown;
+        margin-top: 1%;
+        box-shadow: 0 8px 8px 0 gray;
+    }
+
     .NormalCourse {
+        background-color: #A0DD72;
+        border-style: solid;
+        border-color: #7A9E5E;
+        margin-top: 1%;
+    }
+
+    .NormalCourse:hover {
         background-color: greenyellow;
         border-style: solid;
         border-color: green;
         margin-top: 1%;
+        box-shadow: 0 8px 8px 0 gray;
     }
 
     .ErrorCourse {
@@ -179,6 +224,13 @@ body {
     }
 }
 
+.StudyPlanSemSum {
+    .Courses {
+        height: 10vh;
+        width: 20vh;
+        overflow: auto;
+    }
+}
 
 .AddCoursePage {
     padding: 1%;
@@ -274,20 +326,20 @@ body {
     box-shadow: 0 8px 8px 0 gray;
 }
 
-.CourseBoxName {
-    background-color: aqua;
+.CourseBoxName { 
+    background-color: #6AABAB;
 }
 
 .CourseBoxFullName {
-    background-color: aquamarine;
+    background-color: #6AD1D1;
 }
 
 .CourseBoxSubTitle {
-    background-color: orangered;
+    background-color: #E08000;
 }
 
 .CourseBoxPrereg {
-    background-color: orange;
+    background-color: #FF9D1A;
 }
 
 .CourseBoxIsPrereg {

@@ -7,7 +7,8 @@ function checkPrereg(course, index, plan) {
             let toCheck;
             let indexToCheck
             if (course.prereg[i][j][0] === "e") {
-                toCheck = course.prereg[i][j].subString(1)
+                console.log(course.prereg[i][j])
+                toCheck = course.prereg[i][j].substring(1)
                 indexToCheck = index + 1
             } else {
                 toCheck = course.prereg[i][j]
@@ -16,7 +17,7 @@ function checkPrereg(course, index, plan) {
             const toProcessList = toCheck.split("&");
             let checker = 0;
             for (let k = 0; k < toProcessList.length; k++) {
-                checker += searchPlan(toProcessList[k], indexToCheck, plan);
+                checker += !!searchPlan(toProcessList[k], indexToCheck, plan);
             }
             if (checker === toProcessList.length) {
                 notFind = false;

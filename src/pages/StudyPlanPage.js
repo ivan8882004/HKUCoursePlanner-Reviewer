@@ -1,14 +1,17 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addPlanItem, removePlanItem, setDegree, setMajor, setMinor1, setMinor2 } from "../store";
-import { useEffect, useState } from "react";
+import { setDegree, setMajor, setMinor1, setMinor2, setPlan } from "../store";
+import { useState } from "react";
 import StudyPlanSem from "../components/StudyPlanSem";
 import CourseListItem from "../components/CourseListItem";
+import DegreeChecker from "../components/DegreeChecker";
+import StudyPlanCheckBoxs from "../components/StudyPlanCheckBoxs";
+import searchPlan from "../functions/searchPlan";
+import ProgramChecker from "../components/ProgramChecker";
+import CreditCounter from "../components/CreditCounter";
 
 function StudyPlanPage() {
 
     const dispatch = useDispatch();
-
-    const [checked, setChecked] = useState(false);
 
     const [searchBar, setSearchBar] = useState("");
 
@@ -23,16 +26,6 @@ function StudyPlanPage() {
     const { courses } = useSelector((state) => {
         return state.courses
     })
-
-    useEffect(() => {
-        plan[0].forEach((item) => {
-            if (item.name === "M1/M2_2+") {
-                setChecked(true)
-            } else {
-                setChecked(false)
-            }
-        })
-    },)
 
     const degreesDropDown = degrees.map((item, index) => {
         return (
@@ -52,25 +45,6 @@ function StudyPlanPage() {
         )
     })
 
-    const handleM1M2CheckBoxChange = () => {
-        const course = {
-            name: "M1/M2_2+",
-            fullName: "",
-            prereg: [],
-            isPrereg: [],
-            exclusive: [],
-            recommendYear: 0,
-            credit: 0
-        }
-
-        if (checked) {
-            dispatch(removePlanItem({ index: 0, course }))
-        } else {
-            dispatch(addPlanItem({ index: 0, course }))
-        }
-        setChecked(!checked)
-    }
-
     const semList = [...plan.slice(1)].map((list, index) => {
         return (
             <StudyPlanSem index={index + 1} list={list} key={index} />
@@ -79,10 +53,10 @@ function StudyPlanPage() {
 
     let orderedSemList = [];
 
-    for (let i = 0; i < semList.length / 2; i++) {
+    for (let i = 0; i < semList.length / 3; i++) {
         orderedSemList.push(
             <div key={i} className="StudyPlanSemBox">
-                {[...semList.slice(i * 2, i * 2 + 2)]}
+                {[...semList.slice(i * 3, i * 3 + 3)]}
             </div>
         )
     }
@@ -130,11 +104,20 @@ function StudyPlanPage() {
 
     const toRenderCommonCoreList = [];
 
-    for (let i = 1; i <= parseInt(degree.ug5cc)/6; i++) {
+    for (let i = 1; i <= parseInt(degree.ug5cc) / 6; i++) {
         toRenderCommonCoreList.push("CCxxXXX" + i)
     }
 
     const commonCoreList = toRenderCommonCoreList.map((item, index) => {
+        return <CourseListItem name={item} index={index} searchBar={searchBar} key={index} />
+    })
+
+    const degreeLengCourseList = degree.ug5leng.map((item, index) => {
+        if (item === "CAES1000") {
+            if (searchPlan("DSEENG5+", 1, plan)) {
+                return <div key={index}></div>
+            }
+        }
         return <CourseListItem name={item} index={index} searchBar={searchBar} key={index} />
     })
 
@@ -191,10 +174,7 @@ function StudyPlanPage() {
                         </div>
                     </div>
                     <div>
-                        <label>
-                            DSE M1 M2 2 or above
-                            <input type="checkbox" checked={checked} onChange={handleM1M2CheckBoxChange} />
-                        </label>
+                        <StudyPlanCheckBoxs />
                     </div>
                     <div className="CourseList">
                         CourseList
@@ -205,11 +185,15 @@ function StudyPlanPage() {
                             <div>
                                 <span className="Title">{degree.name}</span>
                                 <div>
-                                    {degreeCourseLists}
+                                    <div>
+                                        <span className="Subtitle"><span>Leng courses</span><span className="SubtitleAnnotate"> {(!!searchPlan("DSEENG5+", 1, plan)) ? 12 : 18} credits</span></span>
+                                        {degreeLengCourseList}
+                                    </div>
                                     <div>
                                         <span className="Subtitle"><span>Common Core</span><span className="SubtitleAnnotate"> {degree.ug5cc} credits</span></span>
                                         {commonCoreList}
                                     </div>
+                                    {degreeCourseLists}
                                 </div>
                             </div>
                             <div>
@@ -238,9 +222,19 @@ function StudyPlanPage() {
                             </div>
                         </div>
                     </div>
+                    <div className="ClearButton">
+                        <button onClick={() => dispatch(setPlan([[], [], [], [], [], [], [], [], [], [], [], [], []]))}>Clear Plan</button>
+                    </div>
                 </div>
             </div>
             {orderedSemList}
+            <div className="CheckerBox">
+                {degree.name !== "" && <DegreeChecker degree={degree} />}
+                {major.name !== "" && <ProgramChecker program={major} />}
+                {minor1.name !== "" && <ProgramChecker program={minor1} />}
+                {minor2.name !== "" && <ProgramChecker program={minor2} />}
+                <CreditCounter />
+            </div>
         </div>
     )
 }

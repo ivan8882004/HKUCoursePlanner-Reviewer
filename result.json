@@ -1,0 +1,1008 @@
+[
+    {
+        "name": "COMP2119",
+        "fullName": "Introduction to data structures and algorithms",
+        "prereg": [
+            [
+                "ENGG1340",
+                "COMP2113",
+                "COMP2123"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "COMP2121",
+        "fullName": "Discrete mathematics",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [
+            "MATH3600"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "COMP3230",
+        "fullName": "Principles of operating systems",
+        "prereg": [
+            [
+                "ENGG1340",
+                "COMP2113",
+                "COMP2123"
+            ],
+            [
+                "COMP2120",
+                "ELEC2441"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [
+            "ELEC3541"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC2147",
+        "fullName": "Electrical energy technology",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [
+            "MECH2406"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC2243",
+        "fullName": "Introduction to electricity and Magnetism",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC2245",
+        "fullName": "Control systems I",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [
+            "ELEC3245"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC2346",
+        "fullName": "Electric circuit theory",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC2347",
+        "fullName": "Fundamentals of optics",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC2441",
+        "fullName": "Computer organization and microprocessors",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [
+            "COMP2120"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC2543",
+        "fullName": "Object-oriented programming and data structures",
+        "prereg": [
+            [
+                "ENGG1111",
+                "ENGG1112",
+                "ENGG1330"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [
+            "COMP2119"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC2544",
+        "fullName": "Introduction to electronic commerce and financial technology",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC2840",
+        "fullName": "Engineering training",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC2843",
+        "fullName": "Multivariable calculus and elementary partial differential equations",
+        "prereg": [
+            [
+                "MATH1851&MATH1853"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [
+            "MECH2407"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC2844",
+        "fullName": "Probabilistic systems analysis",
+        "prereg": [
+            [
+                "MATH1853"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [
+            "STAT2601"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC2845",
+        "fullName": "Applied optimization and applications",
+        "prereg": [
+            [
+                "MATH1853"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [
+            "COMP3407"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3141",
+        "fullName": "Power transmission and distribution",
+        "prereg": [
+            [
+                "ELEC2147",
+                "eELEC2147"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [
+            "MECH2406"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3142",
+        "fullName": "Electrical energy conversion",
+        "prereg": [
+            [
+                "ELEC2147"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3143",
+        "fullName": "Power electronics",
+        "prereg": [
+            [
+                "ELEC2147&ELEC2346",
+                "eELEC2147&ELEC2346"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3241",
+        "fullName": "Signals and linear systems",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3243",
+        "fullName": "Fundamentals of next-generation communications",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [
+            "ELEC3242"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3244",
+        "fullName": "Digital signal processing",
+        "prereg": [
+            [
+                "MATH1853&ELEC2346"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3248",
+        "fullName": "Engineering electromagnetism and antenna designs",
+        "prereg": [
+            [
+                "ELEC2242",
+                "ELEC2243"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3249",
+        "fullName": "Pattern recognition and machine intelligence",
+        "prereg": [
+            [
+                "MATH1853",
+                "MATH2101"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3255",
+        "fullName": "Control systems II",
+        "prereg": [
+            [
+                "ELEC3245",
+                "ELEC2245"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [
+            "ELEC4250"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3342",
+        "fullName": "Digital system design",
+        "prereg": [
+            [
+                "ELEC2346",
+                "ELEC2441"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3347",
+        "fullName": "Electronic materials and quantum physics",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3349",
+        "fullName": "Optical devices",
+        "prereg": [
+            [
+                "ELEC2346",
+                "ELEC2347"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3350",
+        "fullName": "Electronic circuits and devices I",
+        "prereg": [
+            [
+                "ELEC2346"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3351",
+        "fullName": "Electronic circuits and devices II",
+        "prereg": [
+            [
+                "ELEC3350"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3441",
+        "fullName": "Computer architecture",
+        "prereg": [
+            [
+                "ELEC2441"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [
+            "COMP3231",
+            "ELEC2401"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3442",
+        "fullName": "Embedded systems",
+        "prereg": [
+            [
+                "ELEC3342"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3443",
+        "fullName": "Computer networks",
+        "prereg": [
+            [
+                "ENGG1340",
+                "COMP2113",
+                "ELEC2543"
+            ],
+            [
+                "COMP2120",
+                "ELEC2441"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [
+            "COMP3234"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3541",
+        "fullName": "Software engineering & operating systems",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [
+            "COMP3230",
+            "COMP3297"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3542",
+        "fullName": "Advanced programming and application development",
+        "prereg": [
+            [
+                "ELEC2543",
+                "COMP2119",
+                "eELEC2543",
+                "eCOMP2119"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3543",
+        "fullName": "Advanced systems programming",
+        "prereg": [
+            [
+                "ELEC2543",
+                "COMP2119&COMP2396"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3544",
+        "fullName": "Introduction to data analytics",
+        "prereg": [
+            [
+                "COMP2119",
+                "ELEC2543"
+            ],
+            [
+                "MATH1853",
+                "MATH2014"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3641",
+        "fullName": "Human computer interaction",
+        "prereg": [
+            [
+                "ENGG1111",
+                "ENGG1112",
+                "ENGG1330"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3643",
+        "fullName": "Systems and network programming",
+        "prereg": [
+            [
+                "ELEC2543",
+                "COMP2119&COMP2396"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3644",
+        "fullName": "Advanced mobile apps development",
+        "prereg": [
+            [
+                "ENGG1330",
+                "ENGG1111"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3841",
+        "fullName": "Internship",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [
+            "ELEC3840"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3844",
+        "fullName": "Engineering management and society",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3845",
+        "fullName": "Economics, finance and marketing for engineers",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3846",
+        "fullName": "Numerical methods and optimization",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [
+            "COMP3407"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC3848",
+        "fullName": "Integrated design project",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4141",
+        "fullName": "Electric railway systems",
+        "prereg": [
+            [
+                "ELEC2147"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4142",
+        "fullName": "Power system protection and switchgear",
+        "prereg": [
+            [
+                "ELEC3141"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4144",
+        "fullName": "Electric vehicle technology",
+        "prereg": [
+            [
+                "ELEC3142"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4145",
+        "fullName": "Building services- electrical services",
+        "prereg": [
+            [
+                "ELEC2346"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4146",
+        "fullName": "Building services- electrical installations",
+        "prereg": [
+            [
+                "ELEC2147",
+                "ELEC2346"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4147",
+        "fullName": "Power system analysis and control",
+        "prereg": [
+            [
+                "ELEC3141"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4148",
+        "fullName": "Smart grid and renewable energy systems",
+        "prereg": [
+            [
+                "ELEC3141"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4149",
+        "fullName": "Basic Lighting Engineering",
+        "prereg": [
+            [
+                "ELEC2346"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4151",
+        "fullName": "Hybrid electric propulsion technology",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4241",
+        "fullName": "Communication systems",
+        "prereg": [
+            [
+                "ELEC3242",
+                "ELEC3243"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4244",
+        "fullName": "Multimedia signals and applications",
+        "prereg": [
+            [
+                "ELEC3241"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4245",
+        "fullName": "Digital image processing",
+        "prereg": [
+            [
+                "MATH1853",
+                "MATH2101"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4248",
+        "fullName": "Photonic systems technologies",
+        "prereg": [
+            [
+                "ELEC2346",
+                "ELEC3349"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4251",
+        "fullName": "Microscopy",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4252",
+        "fullName": "Robotic control and vision",
+        "prereg": [
+            [
+                "ELEC3241"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4253",
+        "fullName": "Wireless communications",
+        "prereg": [
+            [
+                "ELEC3242",
+                "ELEC3243"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4254",
+        "fullName": "Microwave and RF engineering",
+        "prereg": [
+            [
+                "ELEC3248"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4256",
+        "fullName": "Wireless networking in the era of machine learning",
+        "prereg": [
+            [
+                "ELEC3243",
+                "ELEC3443"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4342",
+        "fullName": "Embedded machine learning: A software-hardware design flow",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4343",
+        "fullName": "Design of digital integrated circuits",
+        "prereg": [
+            [
+                "ELEC3346",
+                "ELEC3350"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4344",
+        "fullName": "Advanced electronic circuits",
+        "prereg": [
+            [
+                "ELEC3346",
+                "ELEC3350"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4442",
+        "fullName": "Advanced networking technologies",
+        "prereg": [
+            [
+                "ELEC3443",
+                "COMP3234"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4542",
+        "fullName": "Introduction to deep learning for computer vision",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [
+            "COMP3340"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4543",
+        "fullName": "Fuzzy systems and neural networks",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4544",
+        "fullName": "Artificial intelligence and deep learning",
+        "prereg": [
+            [
+                "ELEC3241"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4545",
+        "fullName": "Time series analysis with financial applications",
+        "prereg": [
+            [
+                "ELEC3241"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4546",
+        "fullName": "Investment and trading for engineering students",
+        "prereg": [
+            [
+                "ELEC3241"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4547",
+        "fullName": "Emerging technology for VR/AR",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4640",
+        "fullName": "Distributed computing systems",
+        "prereg": [
+            [
+                "ELEC3541",
+                "COMP3230",
+                "COMP3234"
+            ],
+            [
+                "ELEC3443",
+                "COMP3234"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4641",
+        "fullName": "Computer network security",
+        "prereg": [
+            [
+                "ELEC3443",
+                "COMP3234"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [
+            "COMP3355"
+        ],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4642",
+        "fullName": "VLSI design principles",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4745",
+        "fullName": "Queueing theory",
+        "prereg": [
+            [
+                "ELEC3847",
+                "ELEC2844"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    },
+    {
+        "name": "ELEC4848",
+        "fullName": "Senior design project",
+        "prereg": [],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 12
+    },
+    {
+        "name": "CAES9541",
+        "fullName": "Technical English for Electrical and Electronic Engineering",
+        "prereg": [
+            [
+                "ELEC4848",
+                "ELEC3848",
+                "eELEC4848",
+                "eELEC3848"
+            ]
+        ],
+        "isPrereg": [],
+        "exclusive": [],
+        "recommendYear": 0,
+        "credit": 6
+    }
+]

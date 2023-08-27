@@ -46,7 +46,7 @@ function CourseListItem({ name, index, searchBar }) {
         })
     }))
 
-    if ((name.includes(searchBar.toUpperCase()) || searchBar === "") && !searchPlan(name, plan.length - 1, plan)) {
+    if ((name.includes(searchBar.toUpperCase()) || searchBar === "") && !searchPlan(name, plan.length, plan)) {
         return (
             <div key={index} ref={drag} className="CourseListItem">
                 <div onClick={() => setDropDown(!dropDown)} className="Name">
