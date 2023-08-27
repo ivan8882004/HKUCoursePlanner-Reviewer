@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import searchPlan from "../functions/searchPlan";
+import searchPlan from "../../functions/searchPlan";
 
 function ProgramChecker({ program }) {
     const { plan } = useSelector((state) => {

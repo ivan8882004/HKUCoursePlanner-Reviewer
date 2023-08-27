@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addPlanItem, removePlanItem } from "../store";
-import searchPlan from "../functions/searchPlan";
+import { addPlanItem, removePlanItem } from "../../store";
+import searchPlan from "../../functions/searchPlan";
 
 function StudyPlanCheckBoxs() {
     const dispatch = useDispatch()

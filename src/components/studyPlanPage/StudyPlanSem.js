@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addPlanFyp, addPlanItem, removePlanFyp, removePlanItem } from "../store";
+import { addPlanFyp, addPlanItem, removePlanFyp, removePlanItem } from "../../store";
 import { useDrop } from "react-dnd";
-import { itemTypes } from "../DnDTypes";
+import { itemTypes } from "../../DnDTypes";
 import SemCourseListItem from "./SemCourseListItem";
 import { useEffect, useRef } from "react";
-import getCourses from "../functions/getCourses";
+import getCourses from "../../functions/getCourses";
 
 function StudyPlanSem({ list, index }) {
     const dispatch = useDispatch();

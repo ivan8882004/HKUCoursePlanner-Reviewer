@@ -1,9 +1,9 @@
 import { useDrag } from "react-dnd";
-import { itemTypes } from "../DnDTypes";
+import { itemTypes } from "../../DnDTypes";
 import { useSelector } from "react-redux";
 import { useState } from "react";
-import searchPlan from "../functions/searchPlan";
-import getCourses from "../functions/getCourses";
+import searchPlan from "../../functions/searchPlan";
+import getCourses from "../../functions/getCourses";
 
 function CourseListItem({ name, index, searchBar }) {
     const [dropDown, setDropDown] = useState(false);

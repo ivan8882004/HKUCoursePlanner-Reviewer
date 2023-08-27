@@ -1,10 +1,10 @@
 import { useDrag } from "react-dnd";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { removePlanFyp, removePlanItem } from "../store";
-import checkPrereg from "../functions/checkPrereg";
-import checkExclusive from "../functions/checkExclusive";
-import { itemTypes } from "../DnDTypes";
+import { removePlanFyp, removePlanItem } from "../../store";
+import checkPrereg from "../../functions/checkPrereg";
+import checkExclusive from "../../functions/checkExclusive";
+import { itemTypes } from "../../DnDTypes";
 
 function SemCourseListItem({course, ind, index}) {
     const dispatch = useDispatch();

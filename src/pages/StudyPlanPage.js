@@ -1,13 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
 import { setDegree, setMajor, setMinor1, setMinor2, setPlan } from "../store";
 import { useState } from "react";
-import StudyPlanSem from "../components/StudyPlanSem";
-import CourseListItem from "../components/CourseListItem";
-import DegreeChecker from "../components/DegreeChecker";
-import StudyPlanCheckBoxs from "../components/StudyPlanCheckBoxs";
+import StudyPlanSem from "../components/studyPlanPage/StudyPlanSem";
+import CourseListItem from "../components/studyPlanPage/CourseListItem";
+import DegreeChecker from "../components/studyPlanPage/DegreeChecker";
+import StudyPlanCheckBoxs from "../components/studyPlanPage/StudyPlanCheckBoxs";
 import searchPlan from "../functions/searchPlan";
-import ProgramChecker from "../components/ProgramChecker";
-import CreditCounter from "../components/CreditCounter";
+import ProgramChecker from "../components/studyPlanPage/ProgramChecker";
+import CreditCounter from "../components/studyPlanPage/CreditCounter";
 
 function StudyPlanPage() {
 

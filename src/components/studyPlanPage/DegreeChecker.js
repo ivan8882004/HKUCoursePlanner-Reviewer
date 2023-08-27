@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import searchPlan from "../functions/searchPlan";
+import searchPlan from "../../functions/searchPlan";
 import ProgramChecker from "./ProgramChecker";
 
 function DegreeChecker({ degree }) {
