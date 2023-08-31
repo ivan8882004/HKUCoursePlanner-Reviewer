@@ -264,88 +264,88 @@ body {
     margin: 1%;
     padding: 1%;
     margin-top: 5%;
-}
 
-.InfoFormTitle {
-    font-size: x-large;
-    font-weight: bold;
-}
-
-.InfoFormSubTitle {
-    font-size: large;
-    font-weight: 600;
-}
-
-.InfoFormContent {
-    display: flex;
-}
-
-.InfoFormLeft {
-    border-right-style: solid;
-    max-height: 50vh;
-    overflow: auto;
-}
-
-.InfoList {
-    flex-direction: row;
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-.InfoList:hover {
-    background-color: rgb(235, 235, 235);
+    .InfoFormTitle {
+        font-size: x-large;
+        font-weight: bold;
+    }
+    
+    .InfoFormSubTitle {
+        font-size: large;
+        font-weight: 600;
+    }
+    
+    .InfoFormContent {
+        display: flex;
+    
+        .InfoFormLeft {
+            border-right-style: solid;
+            max-height: 50vh;
+            overflow: auto;
+        }
+        
+        .InfoList {
+            flex-direction: row;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        
+        .InfoList:hover {
+            background-color: rgb(235, 235, 235);
+        }
+    }
 }
 
 .ViewPageContent {
     display: flex;
-}
 
-.ViewPageLeft {
-    padding-right: 1%;
-    border-right-style: solid;
-}
-
-.ViewPageRight {
-    padding-left: 1%;
-}
-
-.ViewPageSubTitle {
-    font-size: large;
-    font-weight: 600;
-}
-
-.CourseBox {
-    display: flex;
-    padding: 1%;
-    align-items: center;
-}
-
-.CourseBoxCurrentCourse {
-    border-style: solid;
-    border-color: blue;
-    border-radius: 5px;
-}
-
-.CourseBoxCurrentCourse:hover {
-    box-shadow: 0 8px 8px 0 gray;
-}
-
-.CourseBoxName { 
-    background-color: #6AABAB;
-}
-
-.CourseBoxFullName {
-    background-color: #6AD1D1;
-}
-
-.CourseBoxSubTitle {
-    background-color: #E08000;
-}
-
-.CourseBoxPrereg {
-    background-color: #FF9D1A;
-}
-
-.CourseBoxIsPrereg {
-    border-style: solid;
+    .ViewPageLeft {
+        padding-right: 1%;
+        border-right-style: solid;
+    }
+    
+    .ViewPageRight {
+        padding-left: 1%;
+    }
+    
+    .ViewPageSubTitle {
+        font-size: large;
+        font-weight: 600;
+    }
+    
+    .CourseBox {
+        display: flex;
+        padding: 1%;
+        align-items: center;
+    }
+    
+    .CourseBoxCurrentCourse {
+        border-style: solid;
+        border-color: blue;
+        border-radius: 5px;
+    }
+    
+    .CourseBoxCurrentCourse:hover {
+        box-shadow: 0 8px 8px 0 gray;
+    }
+    
+    .CourseBoxName { 
+        background-color: #6AABAB;
+    }
+    
+    .CourseBoxFullName {
+        background-color: #6AD1D1;
+    }
+    
+    .CourseBoxSubTitle {
+        background-color: #E08000;
+    }
+    
+    .CourseBoxPrereg {
+        background-color: #FF9D1A;
+    }
+    
+    .CourseBoxIsPrereg {
+        border-style: solid;
+    }
 }
