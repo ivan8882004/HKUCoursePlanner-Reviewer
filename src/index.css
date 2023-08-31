@@ -264,223 +264,88 @@ body {
     margin: 1%;
     padding: 1%;
     margin-top: 5%;
+}
 
-    .InfoFormTitle {
-        font-size: x-large;
-        font-weight: bold;
-    }
-    
-    .InfoFormSubTitle {
-        font-size: large;
-        font-weight: 600;
-    }
-    
-    .InfoFormContent {
-        display: flex;
-    
-        .InfoFormLeft {
-            border-right-style: solid;
-            max-height: 50vh;
-            overflow: auto;
-        }
-        
-        .InfoList {
-            flex-direction: row;
-            white-space: nowrap;
-            cursor: pointer;
-        }
-        
-        .InfoList:hover {
-            background-color: rgb(235, 235, 235);
-        }
-    }
+.InfoFormTitle {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.InfoFormSubTitle {
+    font-size: large;
+    font-weight: 600;
+}
+
+.InfoFormContent {
+    display: flex;
+}
+
+.InfoFormLeft {
+    border-right-style: solid;
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.InfoList {
+    flex-direction: row;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.InfoList:hover {
+    background-color: rgb(235, 235, 235);
 }
 
 .ViewPageContent {
     display: flex;
-
-    .ViewPageLeft {
-        padding-right: 1%;
-        border-right-style: solid;
-    }
-    
-    .ViewPageRight {
-        padding-left: 1%;
-    }
-    
-    .ViewPageSubTitle {
-        font-size: large;
-        font-weight: 600;
-    }
-    
-    .CourseBox {
-        display: flex;
-        padding: 1%;
-        align-items: center;
-    }
-    
-    .CourseBoxCurrentCourse {
-        border-style: solid;
-        border-color: blue;
-        border-radius: 5px;
-    }
-    
-    .CourseBoxCurrentCourse:hover {
-        box-shadow: 0 8px 8px 0 gray;
-    }
-    
-    .CourseBoxName { 
-        background-color: #6AABAB;
-    }
-    
-    .CourseBoxFullName {
-        background-color: #6AD1D1;
-    }
-    
-    .CourseBoxSubTitle {
-        background-color: #E08000;
-    }
-    
-    .CourseBoxPrereg {
-        background-color: #FF9D1A;
-    }
-    
-    .CourseBoxIsPrereg {
-        border-style: solid;
-    }
-=======
-body {
-  font-size: max(12px,.8vw);
-
 }
 
-
-.main {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 0 10px;
-    justify-items: center;
-
+.ViewPageLeft {
+    padding-right: 1%;
+    border-right-style: solid;
 }
 
-.searchTool {  }
-
-.table {
-    display: table;
-    table-layout: fixed;
-    width:100%;
-  }
- 
-
-  .row {
-    display: table-row;
-  }
-  
-  .TimeSlotConflict {
-    background-color: rgb(247, 52, 52);
-    border: 1px solid rgb(38, 221, 221);  
-    width: 75px;
-    height: 25px;
-    display: table-cell;
-    text-align: center
-    
-
-   
-  }
-
-  .TimeSlotEmpty {
-    display: table-cell;
-    border: 1px solid rgb(38, 221, 221);  
-    padding: 1vh;
-    width: 75px;
-    height: 25px;
-    text-align: center
-
-
-  }
-
-  
-
-  .TimeSlotFilled {
-    background-color: deepskyblue;
-    border: 1px solid rgb(38, 221, 221);  
-    padding: 1vh;
-    display: table-cell;
-    width: 75px;
-    height: 25px;
-    text-align: center
-
-
-
-  }
-
-
-  .header { 
-    display: table-cell;
-    text-align: center;
-    padding: 1vh;
-    width: 75px;
-    height: 25px;
+.ViewPageRight {
+    padding-left: 1%;
 }
 
-.showDays {
-  display: flex;
+.ViewPageSubTitle {
+    font-size: large;
+    font-weight: 600;
 }
 
-.showSem {
-  display:flex;
+.CourseBox {
+    display: flex;
+    padding: 1%;
+    align-items: center;
 }
 
-.scroll-container {
-  max-height: 68vh;
-  min-height: 50vh;
-  overflow: auto; 
+.CourseBoxCurrentCourse {
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
 }
 
-.courseCard {
-  border: 1px solid rgb(38, 221, 221);  
-}
-.courseContainer {
-  display: grid;
-  grid-template-columns: 1fr 6fr 
+.CourseBoxCurrentCourse:hover {
+    box-shadow: 0 8px 8px 0 gray;
 }
 
-.checkbox {
-  transform: scale(0.4); 
-  margin-right: 5px; 
+.CourseBoxName { 
+    background-color: #6AABAB;
 }
 
-.cardColumn {
-  display: flex;
-  border: 1px solid rgb(38, 221, 221);  
-
+.CourseBoxFullName {
+    background-color: #6AD1D1;
 }
 
-.listContainer {
-  display: grid;
-  grid-template-columns: 6fr 1fr 
+.CourseBoxSubTitle {
+    background-color: #E08000;
 }
 
-.track {
-  background-color: #a5b7d1;
-  height: 6px;
+.CourseBoxPrereg {
+    background-color: #FF9D1A;
 }
 
-.thumb {
-  width: 16px;
-  height: 16px;
-  background-color: #007bff;
-  border-radius: 50%;
-  cursor: pointer;
-  position: absolute;
-}
-
-.thumb:active {
-  background-color: #0056b3;
-}
-
-.horizontal-slider {
-  width: 300px;
-  margin-bottom: 20px;
->>>>>>> 5c832d015510aba069be38784c3115688808f744
+.CourseBoxIsPrereg {
+    border-style: solid;
 }

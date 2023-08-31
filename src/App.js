@@ -1,76 +1,60 @@
-import React, { useState } from 'react';
-import './index.css'
-import Timetable from './components/Timetable';
-import CourseList from './components/CourseList';
-import SearchTool from './components/SearchTool';
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import TopBar from "./components/TopBar";
+import AddCoursePage from "./pages/AddCoursePage";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { COURSES } from "./store/slices/coursesSlice";
+import { DEGREES, MAJORS, MINORS, setMajors, setMinors } from "./store/slices/programsSlice";
+import { setCourses, setDegrees, setStudyPlan } from "./store/index"
+import AddDegreePage from "./pages/AddDegreePage";
+import AddMajorMinorPage from "./pages/AddMajorMinorPage";
+import ViewProgramPage from "./pages/ViewProgramPage";
+import UploadExportFilePage from "./pages/UploadExportFilePage";
+import StudyPlanPage from "./pages/StudyPlanPage";
+import { STUDYPLAN } from "./store/slices/studyPlanSlice";
 
-const App = () => {
 
-  const [isSemOne, setIsSemOne] = useState(true);
-  const [courseList, setCourseList] = useState([]);
+function App () {
+    const dispatch = useDispatch()
 
-  const [selectedSem1CourseList, setSelectedSem1CourseList] = useState([]);
-  const [selectedSem2CourseList, setSelectedSem2CourseList] = useState([]);
+    useEffect(() => {
+        const storageCourses = localStorage.getItem(COURSES);
+        if (storageCourses !== null) {
+            dispatch(setCourses(JSON.parse(storageCourses)))
+        }
+        const storageDegree = localStorage.getItem(DEGREES);
+        if (storageDegree !== null) {
+            dispatch(setDegrees(JSON.parse(storageDegree)))
+        }
+        const storageMajor = localStorage.getItem(MAJORS);
+        if (storageMajor !== null) {
+            dispatch(setMajors(JSON.parse(storageMajor)))
+        }
+        const storageMinor = localStorage.getItem(MINORS);
+        if (storageMinor !== null) {
+            dispatch(setMinors(JSON.parse(storageMinor)))
+        }
+        const storageStudyPlan = localStorage.getItem(STUDYPLAN);
+        if (storageStudyPlan !== null) {
+            dispatch(setStudyPlan(JSON.parse(storageStudyPlan)))
+        }
+    }, [dispatch])
 
-  let selectedCourseList;
-  let setSelectedCourseList;
-
-  if (isSemOne == true) {
-    selectedCourseList = selectedSem1CourseList;
-    setSelectedCourseList = setSelectedSem1CourseList;}
-
-  else {
-    selectedCourseList = selectedSem2CourseList;
-    setSelectedCourseList = setSelectedSem2CourseList;
-  }
-
-  const deleteCourse = (course_to_be_deleted) => {
-    setSelectedCourseList((prevList) => {
-      return prevList.filter((course) => course.courseName !== course_to_be_deleted.courseName);
-    })
-  };
-
-  const insertCourse = (course_to_be_inserted) => {
-    setSelectedCourseList((prevList) => {
-      return [...prevList, {...course_to_be_inserted, isChecked : true}];
-    })
-  };
-
-  const insertCourseByMouseEnter = (course_to_be_inserted) => {
-    setSelectedCourseList((prevList) => {
-      return [...prevList, {...course_to_be_inserted, isChecked : false}];
-    })
-  };
-
-  const deleteCourseinLists = (course_to_be_deleted) => {
-    console.log('delete',course_to_be_deleted.courseName);
-    if ( selectedSem1CourseList.some(course => course_to_be_deleted.courseName == course.courseName)) {
-      setSelectedSem1CourseList((prevList) => {
-        return prevList.filter((course) => course.courseName !== course_to_be_deleted.courseName);
-      })
-    }
-
-    else {
-      setSelectedSem2CourseList((prevList) => {
-        return prevList.filter((course) => course.courseName !== course_to_be_deleted.courseName);
-      })
-    }
-  };
-
-  return (
-    <div className='main'>
-      <SearchTool deleteCourse={deleteCourse} insertCourse={insertCourse}
-        courseList={courseList} setCourseList={setCourseList}
-        setIsSemOne={setIsSemOne} isSemOne={isSemOne} selectedCourseList={selectedCourseList}
-        deleteCourseinLists={deleteCourseinLists} insertCourseByMouseEnter={insertCourseByMouseEnter}
-      />
-      <Timetable selectedCourseList={selectedCourseList} />
-      <CourseList selectedSem1CourseList={selectedSem1CourseList} selectedSem2CourseList={selectedSem2CourseList} deleteCourse={deleteCourse}
-      deleteCourseinLists={deleteCourseinLists}
-      />
-    </div>
-
-  );
-};
+    return (
+        <div className="App">
+            <TopBar />
+            <Routes>
+                <Route path="/" element={<HomePage />}></Route>
+                <Route path="/study_plan" element={<StudyPlanPage />}></Route>
+                <Route path="/view_program" element={<ViewProgramPage />}></Route>
+                <Route path="/add_course" element={<AddCoursePage />}></Route>
+                <Route path="/add_degree" element={<AddDegreePage />}></Route>
+                <Route path="/add_major_minor" element={<AddMajorMinorPage />}></Route>
+                <Route path="/upload_export_file" element={<UploadExportFilePage />}></Route>
+            </Routes>
+        </div>
+    )
+}
 
 export default App;
