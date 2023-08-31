@@ -13,6 +13,8 @@ import ViewProgramPage from "./pages/ViewProgramPage";
 import UploadExportFilePage from "./pages/UploadExportFilePage";
 import StudyPlanPage from "./pages/StudyPlanPage";
 import { STUDYPLAN } from "./store/slices/studyPlanSlice";
+import { TimeTableProvider } from "./context/SettingsProvider";
+import TimeTablePage from "./pages/TimeTablePage";
 
 
 function App () {
@@ -52,6 +54,7 @@ function App () {
                 <Route path="/add_degree" element={<AddDegreePage />}></Route>
                 <Route path="/add_major_minor" element={<AddMajorMinorPage />}></Route>
                 <Route path="/upload_export_file" element={<UploadExportFilePage />}></Route>
+                <Route path="/time_table" element={<TimeTableProvider><TimeTablePage /></TimeTableProvider>}></Route>
             </Routes>
         </div>
     )

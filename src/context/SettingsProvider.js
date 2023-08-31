@@ -3,11 +3,11 @@ import { createContext, useState } from "react";
 
 const TableContext = createContext();
 
-function Provider({ children }) {
+function TimeTableProvider({ children }) {
 
   const [hour, setHour] = useState([8, 23]);
 
-  
+
 
   const [days, setDays] = useState(new Map([
     ['MON', true],
@@ -35,6 +35,6 @@ function Provider({ children }) {
   </TableContext.Provider>
 }
 
-export { Provider };
+export { TimeTableProvider };
 
 export default TableContext;

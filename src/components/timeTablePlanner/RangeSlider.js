@@ -1,7 +1,6 @@
 import ReactSlider from "react-slider";
-import { useState, useContext } from "react";
-import '../index.css'
-import TableContext from "../context/SettingsProvider";
+import { useContext } from "react";
+import TableContext from "../../context/SettingsProvider";
 
 function RangeSlider () {
 

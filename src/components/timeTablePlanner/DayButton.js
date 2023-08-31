@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useContext } from 'react';
-import TableContext from '../context/SettingsProvider';
+import TableContext from '../../context/SettingsProvider';
 
 function DayButton({ day }) {
 

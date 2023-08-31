@@ -10,6 +10,7 @@ function TopBar (){
             <NavLink to="/add_degree">Add Degree</NavLink>
             <NavLink to="/add_major_minor">Add Major Minor</NavLink>
             <NavLink to="/upload_export_file">Upload Export File</NavLink>
+            <NavLink to="/time_table">Time Table</NavLink>
         </div>
     )
 }

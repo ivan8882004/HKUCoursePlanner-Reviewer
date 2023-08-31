@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import TableContext from '../context/SettingsProvider';
+import TableContext from '../../context/SettingsProvider';
 import TimeSlot from './TimeSlot';
 
 const Timetable = ({ selectedCourseList }) => {

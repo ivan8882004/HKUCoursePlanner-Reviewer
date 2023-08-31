@@ -1,11 +1,11 @@
 import DayButton from "./DayButton";
 import SemButton from "./SemButton";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useCallback } from "react";
 import CourseCard from "./CourseCard.js";
 import RangeSlider from "./RangeSlider";
 
-function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCourseList, 
-    selectedCourseList, courseList,deleteCourseinLists,
+function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCourseList,
+    selectedCourseList, courseList, deleteCourseinLists,
     insertCourseByMouseEnter
 
 
@@ -17,30 +17,25 @@ function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCour
         setInputText(event.target.value);
     }
 
+    const handleCourseListChange = useCallback((list) => {
+        setCourseList(list)
+    }, [setCourseList])
+
     useEffect(() => {
-        if ( isSemOne == true) {
-        fetch("../data/courseDataSem1.json")
-            .then((response) => response.json())
-            .then((data) => {
-                const searchTerm = inputText.trim().toUpperCase();
-                const matchedCourses = data.filter(
-                    (course) => course.courseName.includes(searchTerm));
-                setCourseList(matchedCourses.slice(0, 200));
-            });
+        const data = JSON.parse(localStorage.getItem("timeTable"))
+        if (isSemOne) {
+            const searchTerm = inputText.trim().toUpperCase();
+            const matchedCourses = data[0].filter(
+                (course) => course.courseName.includes(searchTerm));
+            handleCourseListChange(matchedCourses.slice(0, 200))
+        } else {
+            const searchTerm = inputText.trim().toUpperCase();
+            const matchedCourses = data[1].filter(
+                (course) => course.courseName.includes(searchTerm));
+            handleCourseListChange(matchedCourses.slice(0, 200))
         }
 
-        else {
-        fetch("../data/courseDataSem2.json")
-            .then((response) => response.json())
-            .then((data) => {
-                const searchTerm = inputText.trim().toUpperCase();
-                const matchedCourses = data.filter(
-                    (course) => course.courseName.includes(searchTerm));
-                setCourseList(matchedCourses.slice(0, 200));
-            });    
-        }
-
-    }, [inputText, isSemOne]);
+    }, [inputText, isSemOne, handleCourseListChange]);
 
     return (
         <div>
@@ -59,7 +54,7 @@ function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCour
                 <RangeSlider />
             </div>
             <div>Semester shown in Timetable</div>
-            <SemButton isSemOne={isSemOne} setIsSemOne={setIsSemOne}/>
+            <SemButton isSemOne={isSemOne} setIsSemOne={setIsSemOne} />
             <div>
                 <div>Enter Course Code to search</div>
                 <input

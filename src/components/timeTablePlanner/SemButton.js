@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 function SemButton({setIsSemOne,isSemOne}) {
 
     const handleButtonClick = () => {
