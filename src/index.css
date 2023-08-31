@@ -1,351 +1,134 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body {
-    font-family: Sans-serif;
-    padding: 0;
-}
+  font-size: max(12px,.8vw);
 
-.TopBar {
-    background-color: rgb(235, 235, 235);
-    padding: 1%;
-}
-
-.TopBar a {
-    text-decoration: none;
-    margin: 1%;
-    padding: 1%;
-    color: black;
-}
-
-.TopBar a:hover {
-    background-color: rgb(192, 192, 192);
-    box-shadow: 0 8px 8px 0 gray;
-    border-style: solid;
-    border-color: rgb(172, 172, 172);
-}
-
-.TopBar a.active {
-    font-weight: bold;
-    border-bottom: 3px solid black;
-}
-
-.TopBar a.active:hover {
-    background-color: rgb(235, 235, 235);
-    box-shadow: 0 0 0 0;
-    border-style: none;
-    border-bottom: 3px solid black;
-}
-
-.HomePage {
-    padding: 1%;
-}
-
-.CourseForm {
-    display: inline-block;
-    border-style: solid;
-    box-sizing: border-box;
-    margin: 1%;
-    margin-top: 5%;
 }
 
 
-.DropDownBox {
-    padding: 1%;
-    border-style: solid;
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 0 10px;
+    justify-items: center;
+
 }
 
-.DropDown {
-    overflow: hidden;
+.searchTool {  }
+
+.table {
+    display: table;
+    table-layout: fixed;
+    width:100%;
+  }
+ 
+
+  .row {
+    display: table-row;
+  }
+  
+  .TimeSlotConflict {
+    background-color: rgb(247, 52, 52);
+    border: 1px solid rgb(38, 221, 221);  
+    width: 75px;
+    height: 25px;
+    display: table-cell;
+    text-align: center
+    
+
+   
+  }
+
+  .TimeSlotEmpty {
+    display: table-cell;
+    border: 1px solid rgb(38, 221, 221);  
+    padding: 1vh;
+    width: 75px;
+    height: 25px;
+    text-align: center
+
+
+  }
+
+  
+
+  .TimeSlotFilled {
+    background-color: deepskyblue;
+    border: 1px solid rgb(38, 221, 221);  
+    padding: 1vh;
+    display: table-cell;
+    width: 75px;
+    height: 25px;
+    text-align: center
+
+
+
+  }
+
+
+  .header { 
+    display: table-cell;
+    text-align: center;
+    padding: 1vh;
+    width: 75px;
+    height: 25px;
 }
 
-.StudyPlanPage {
-    padding: 1%;
-    display: flex;
-
-    .CourseList {
-        padding: 1%;
-        border-style: solid;
-        width: max-content;
-
-        .Title {
-            font-weight: bold;
-            font-size: larger;
-        }
-    }
-
-    .CourseListContent {
-        margin-top: 1%;
-        overflow: auto;
-        max-height: 50vh;
-
-        .CourseListItem {
-            border-style: solid;
-            border-color: black;
-            background-color: grey;
-            margin-top: 1%;
-
-            .Content {
-                background-color: white;
-                overflow: auto;
-                max-width: 100%;
-            }
-        }
-    }
-
-    .Subtitle {
-        font-weight: bold;
-        width: 100%;
-        white-space: nowrap;
-    }
-
-    .SubtitleAnnotate {
-        font-weight: normal;
-        float: right;
-    }
-
-    .CheckerBox {
-        padding-left: 1%;
-
-        .ProgramChecker {
-            border-style: solid;
-            margin-top: 1%;
-            padding: 1%;
-        }
-
-        .CreditCounter {
-            border-style: solid;
-            margin-top: 1%;
-            padding: 1%;
-        }
-    }
-
-    .ClearButton {
-        padding: 1%;
-    }
+.showDays {
+  display: flex;
 }
 
-.StudyPlanPageLeft {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+.showSem {
+  display:flex;
 }
 
-.StudyPlanSemBox {
-    padding-left: 1%;
+.scroll-container {
+  max-height: 68vh;
+  min-height: 50vh;
+  overflow: auto; 
 }
 
-.StudyPlanSem {
-    padding: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    border-style: solid;
-    width: max-content;
-
-    .Title {
-        padding: 1%;
-        background-color: #528080;
-        border-style: solid;
-        border-color: #3F5959;
-        font-weight: bold;
-    }
-
-    .Courses {
-        height: 30vh;
-        width: 20vh;
-        overflow: auto;
-    }
-
-    .Overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .CoursePreregFail {
-        background-color: #FF4238;
-        border-style: solid;
-        border-color: #FF1A0E;
-        color: #FFD044;
-        margin-top: 1%;
-    }
-
-    .CoursePreregFail:hover {
-        background-color: red;
-        border-style: solid;
-        border-color: brown;
-        color: yellow;
-        margin-top: 1%;
-        box-shadow: 0 8px 8px 0 gray;
-    }
-
-    .CourseExclusive {
-        background-color: #FF9D1A;
-        border-style: solid;
-        border-color: #E08000;
-        color: brown;
-        margin-top: 1%;
-    }
-
-    .CourseExclusive:hover {
-        background-color:darkorange;
-        border-style: solid;
-        border-color: orangered;
-        color: brown;
-        margin-top: 1%;
-        box-shadow: 0 8px 8px 0 gray;
-    }
-
-    .NormalCourse {
-        background-color: #A0DD72;
-        border-style: solid;
-        border-color: #7A9E5E;
-        margin-top: 1%;
-    }
-
-    .NormalCourse:hover {
-        background-color: greenyellow;
-        border-style: solid;
-        border-color: green;
-        margin-top: 1%;
-        box-shadow: 0 8px 8px 0 gray;
-    }
-
-    .ErrorCourse {
-        font-size: smaller;
-    }
-
-    .Content {
-        background-color: white;
-        color: black;
-        overflow: auto;
-        max-width: 100%;
-    }
+.courseCard {
+  border: 1px solid rgb(38, 221, 221);  
+}
+.courseContainer {
+  display: grid;
+  grid-template-columns: 1fr 6fr 
 }
 
-.StudyPlanSemSum {
-    .Courses {
-        height: 10vh;
-        width: 20vh;
-        overflow: auto;
-    }
+.checkbox {
+  transform: scale(0.4); 
+  margin-right: 5px; 
 }
 
-.AddCoursePage {
-    padding: 1%;
+.cardColumn {
+  display: flex;
+  border: 1px solid rgb(38, 221, 221);  
+
 }
 
-.AddMajorMinorPage {
-    padding: 1%;
+.listContainer {
+  display: grid;
+  grid-template-columns: 6fr 1fr 
 }
 
-.AddDegreePage {
-    padding: 1%;
+.track {
+  background-color: #a5b7d1;
+  height: 6px;
 }
 
-.ViewProgramPage {
-    padding: 1%;
+.thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
 }
 
-.UploadExportFilePage {
-    padding: 1%;
-    display: flex;
+.thumb:active {
+  background-color: #0056b3;
 }
 
-.InfoForm {
-    display: inline-block;
-    border-style: solid;
-    box-sizing: border-box;
-    margin: 1%;
-    padding: 1%;
-    margin-top: 5%;
-}
-
-.InfoFormTitle {
-    font-size: x-large;
-    font-weight: bold;
-}
-
-.InfoFormSubTitle {
-    font-size: large;
-    font-weight: 600;
-}
-
-.InfoFormContent {
-    display: flex;
-}
-
-.InfoFormLeft {
-    border-right-style: solid;
-    max-height: 50vh;
-    overflow: auto;
-}
-
-.InfoList {
-    flex-direction: row;
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-.InfoList:hover {
-    background-color: rgb(235, 235, 235);
-}
-
-.ViewPageContent {
-    display: flex;
-}
-
-.ViewPageLeft {
-    padding-right: 1%;
-    border-right-style: solid;
-}
-
-.ViewPageRight {
-    padding-left: 1%;
-}
-
-.ViewPageSubTitle {
-    font-size: large;
-    font-weight: 600;
-}
-
-.CourseBox {
-    display: flex;
-    padding: 1%;
-    align-items: center;
-}
-
-.CourseBoxCurrentCourse {
-    border-style: solid;
-    border-color: blue;
-    border-radius: 5px;
-}
-
-.CourseBoxCurrentCourse:hover {
-    box-shadow: 0 8px 8px 0 gray;
-}
-
-.CourseBoxName { 
-    background-color: #6AABAB;
-}
-
-.CourseBoxFullName {
-    background-color: #6AD1D1;
-}
-
-.CourseBoxSubTitle {
-    background-color: #E08000;
-}
-
-.CourseBoxPrereg {
-    background-color: #FF9D1A;
-}
-
-.CourseBoxIsPrereg {
-    border-style: solid;
+.horizontal-slider {
+  width: 300px;
+  margin-bottom: 20px;
 }
