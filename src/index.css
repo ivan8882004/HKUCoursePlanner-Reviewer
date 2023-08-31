@@ -39,6 +39,10 @@ body {
     border-bottom: 3px solid black;
 }
 
+.HomePage {
+    padding: 1%;
+}
+
 .CourseForm {
     display: inline-block;
     border-style: solid;
