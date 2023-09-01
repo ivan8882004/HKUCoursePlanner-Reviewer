@@ -18,9 +18,7 @@ const TimeTablePage = () => {
   if (isSemOne) {
     selectedCourseList = selectedSem1CourseList;
     setSelectedCourseList = setSelectedSem1CourseList;
-  }
-
-  else {
+  } else {
     selectedCourseList = selectedSem2CourseList;
     setSelectedCourseList = setSelectedSem2CourseList;
   }
@@ -49,9 +47,7 @@ const TimeTablePage = () => {
       setSelectedSem1CourseList((prevList) => {
         return prevList.filter((course) => course.courseName !== course_to_be_deleted.courseName);
       })
-    }
-
-    else {
+    } else {
       setSelectedSem2CourseList((prevList) => {
         return prevList.filter((course) => course.courseName !== course_to_be_deleted.courseName);
       })

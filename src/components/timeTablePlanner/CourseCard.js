@@ -48,7 +48,7 @@ function CourseCard({ course, deleteCourse, insertCourse, selectedCourseList, is
 
     useEffect(() => {
 
-        console.log(selectedCourseList);
+        //console.log(selectedCourseList);
 
         if (selectedCourseList.some(course_in_list => course_in_list.courseName === course.courseName && course_in_list.isChecked)) {
             setIsChecked(true);
@@ -62,7 +62,7 @@ function CourseCard({ course, deleteCourse, insertCourse, selectedCourseList, is
 
 
         const isCheckBoxChecked = event.target.checked
-        console.log("check box is checked?", isCheckBoxChecked)
+        //console.log("check box is checked?", isCheckBoxChecked)
 
         if (isCheckBoxChecked) {
 

@@ -1,8 +1,11 @@
 import DayButton from "./DayButton";
 import SemButton from "./SemButton";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useContext } from "react";
 import CourseCard from "./CourseCard.js";
 import RangeSlider from "./RangeSlider";
+import ImportSettingButton from "./ImportSettingButton";
+import TableContext from "../../context/SettingsProvider";
+import { useSelector } from "react-redux";
 
 function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCourseList,
     selectedCourseList, courseList, deleteCourseinLists,
@@ -11,15 +14,27 @@ function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCour
 
 }) {
 
+    const { importSetting } = useContext(TableContext)
+
     const [inputText, setInputText] = useState('');
+
+    const [importCourseList, setImportCourseList] = useState([]);
+
+    const { plan } = useSelector(state => state.studyPlan)
 
     const handleChange = (event) => {
         setInputText(event.target.value);
+        selectedCourseList.forEach((course) => {
+            if (!course.isChecked) {
+                deleteCourse(course)
+            }
+        })
     }
 
-    const handleCourseListChange = useCallback((list) => {
+    const handleCourseListChange = useCallback((list, list2) => {
         setCourseList(list)
-    }, [setCourseList])
+        setImportCourseList(list2)
+    }, [setCourseList, setImportCourseList])
 
     useEffect(() => {
         const data = JSON.parse(localStorage.getItem("timeTable"))
@@ -27,18 +42,45 @@ function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCour
             const searchTerm = inputText.trim().toUpperCase();
             const matchedCourses = data[0].filter(
                 (course) => course.courseName.includes(searchTerm));
-            handleCourseListChange(matchedCourses.slice(0, 200))
+            const indexToImport = (parseInt(importSetting) - 1) * 3 + 1;
+            const importedList = plan[indexToImport].map((item) => {
+                return item.name
+            })
+            const temp = [];
+            data[0].forEach(element => {
+                importedList.forEach(name => {
+                    if (element.courseName.includes(name) && element.courseName.includes(searchTerm)) {
+                        temp.push(element)
+                    }
+                })
+            });
+            handleCourseListChange(matchedCourses.slice(0, 200), temp)
         } else {
             const searchTerm = inputText.trim().toUpperCase();
             const matchedCourses = data[1].filter(
                 (course) => course.courseName.includes(searchTerm));
-            handleCourseListChange(matchedCourses.slice(0, 200))
+            const indexToImport = (parseInt(importSetting) - 1) * 3 + 2;
+            const importedList = plan[indexToImport].map((item) => {
+                return item.name
+            })
+            const temp = [];
+            data[1].forEach(element => {
+                importedList.forEach(name => {
+                    if (element.courseName.includes(name) && element.courseName.includes(searchTerm)) {
+                        temp.push(element)
+                    }
+                })
+            });
+            handleCourseListChange(matchedCourses.slice(0, 200), temp)
         }
 
-    }, [inputText, isSemOne, handleCourseListChange]);
+    }, [inputText, isSemOne, handleCourseListChange, plan, importSetting]);
+
+    console.log(selectedCourseList)
 
     return (
         <div>
+            <ImportSettingButton />
             <div>Days shown in Timetable</div>
             <div className="showDays">
                 <DayButton day='MON' />
@@ -64,7 +106,25 @@ function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCour
             </div>
             <h3>Filtered Courses (Top 200 results):</h3>
             <div className="scroll-container">
+                { !!importCourseList.length && <>
+                    <div>
+                        Selected course
+                    </div>
+                    <div>
+                        {importCourseList.map((course, index) => (
+                            <CourseCard insertCourseByMouseEnter={insertCourseByMouseEnter}
+                                isSemOne={isSemOne} deleteCourseinLists={deleteCourseinLists}
+                                selectedCourseList={selectedCourseList}
+                                key={index} course={course}
+                                deleteCourse={deleteCourse} insertCourse={insertCourse}
+                            />
+                        ))}
+                    </div>
+                </>}
                 <div>
+                    <div>
+                        All course
+                    </div>
                     {courseList.map((course, index) => (
                         <CourseCard insertCourseByMouseEnter={insertCourseByMouseEnter}
                             isSemOne={isSemOne} deleteCourseinLists={deleteCourseinLists}

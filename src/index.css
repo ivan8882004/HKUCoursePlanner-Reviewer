@@ -355,6 +355,7 @@ body {
     grid-template-columns: 1fr 3fr 1fr;
     gap: 0 10px;
     justify-items: center;
+    padding: 1%;
 
     .table {
         display: table;
