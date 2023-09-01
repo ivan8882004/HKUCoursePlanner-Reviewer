@@ -3,6 +3,7 @@ import Timetable from '../components/timeTablePlanner/Timetable';
 import CourseList from '../components/timeTablePlanner/CourseList';
 import SearchTool from '../components/timeTablePlanner/SearchTool';
 import UploadXlsx from '../components/timeTablePlanner/UploadXlsx';
+import AutoFillForm from '../components/timeTablePlanner/AutoFillForm';
 
 const TimeTablePage = () => {
 
@@ -77,6 +78,9 @@ const TimeTablePage = () => {
         />
         <div>
           <UploadXlsx />
+        </div>
+        <div>
+          <AutoFillForm isSemOne={isSemOne} setter={(isSemOne) ? setSelectedSem1CourseList : setSelectedSem2CourseList} />
         </div>
       </div>
     </div>
