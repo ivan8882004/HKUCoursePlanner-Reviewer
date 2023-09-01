@@ -361,6 +361,13 @@ body {
         display: table;
         table-layout: fixed;
         width: 100%;
+        max-height: 80vh;
+    }
+
+    .scroll-box {
+        border-style: solid;
+        padding: 1%;
+        margin-top: 1%;
     }
 
 
@@ -369,33 +376,48 @@ body {
     }
 
     .TimeSlotConflict {
-        background-color: rgb(247, 52, 52);
-        border: 1px solid rgb(38, 221, 221);
-        width: 75px;
-        height: 25px;
+        background-color: #EB6F7E;
+        color: #52000A;
+        border: solid #67000C;
+        width: 9vh;
+        height: 5vh;
         display: table-cell;
-        text-align: center
+        text-align: center;
+        margin: 1%;
+        font-size: small;
+        border-radius: 10%;
     }
 
     .TimeSlotEmpty {
         display: table-cell;
-        border: 1px solid rgb(38, 221, 221);
+        border: 1px #0F3737;
+        border-style: dashed;
         padding: 1vh;
-        width: 75px;
-        height: 25px;
-        text-align: center
+        width: 9vh;
+        height: 5vh;
+        text-align: center;
+        margin: 1%;
+        font-size: small;
     }
 
 
 
     .TimeSlotFilled {
-        background-color: deepskyblue;
-        border: 1px solid rgb(38, 221, 221);
+        background-color: #9BC7DF;
+        border: solid #186086;
+        color: #022D44;
         padding: 1vh;
         display: table-cell;
-        width: 75px;
-        height: 25px;
-        text-align: center
+        width: 9vh;
+        height: 5vh;
+        text-align: center;
+        margin: 1%;
+        font-size: small;
+        border-radius: 10%;
+    }
+
+    .details {
+        font-size: smaller;
     }
 
 
@@ -403,8 +425,78 @@ body {
         display: table-cell;
         text-align: center;
         padding: 1vh;
-        width: 75px;
-        height: 25px;
+        height: 4vh;
+        box-sizing: border-box;
+
+        .content {
+            background-color: #528080;
+            border-style: solid;
+            border-color: #3F5959;
+            box-sizing: border-box;
+            font-size: small;
+            font-weight: 600;
+        }
+
+        .on:hover {
+            display: none;
+        }
+
+        .hide {
+            display: none;
+            border-style: solid;
+            background-color: #77D5D5;
+            border-color: #168C8C;
+            box-shadow: 0 4px 4px 0 gray;
+        }
+
+        .on:hover+.hide {
+            display: block;
+        }
+
+        .buttons {
+            display: flex;
+
+            .changeHour {
+                width: 3vh;
+                background-color: #7CA9BD;
+                border-style: solid;
+                border-color: #0C425A;
+                box-sizing: border-box;
+                font-weight: 600;
+                margin-left: 1%;
+                margin-right: 1%;
+            }
+
+            .changeHour:hover {
+                border-style: solid;
+                background-color: #99D9F5;
+                border-color: #01A7EF;
+                box-shadow: 0 4px 4px 0 gray;
+            }
+        }
+    }
+
+    .headerOff {
+        display: table-cell;
+        text-align: center;
+        height: 4vh;
+        box-sizing: border-box;
+        padding-left: 1%;
+        width: 3.5vh;
+
+        .off {
+            background-color: #7CA9BD;
+            border-style: solid;
+            border-color: #0C425A;
+            box-sizing: border-box;
+            font-weight: 600;
+        }
+
+        .off:hover {
+            background-color: #99D9F5;
+            border-color: #01A7EF;
+            box-shadow: 0 4px 4px 0 gray;
+        }
     }
 
     .showDays {
@@ -416,8 +508,8 @@ body {
     }
 
     .scroll-container {
-        max-height: 68vh;
-        min-height: 50vh;
+        max-height: 55vh;
+        min-height: 45vh;
         overflow: auto;
     }
 
@@ -427,7 +519,8 @@ body {
 
     .courseContainer {
         display: grid;
-        grid-template-columns: 1fr 6fr
+        grid-template-columns: 1fr 6fr;
+        margin-bottom: 1%;
     }
 
     .checkbox {
@@ -437,13 +530,23 @@ body {
 
     .cardColumn {
         display: flex;
-        border: 1px solid rgb(38, 221, 221);
+        border: solid black;
+        background-color: gray;
 
+        .fullName {
+            font-size: small;
+        }
+    }
+
+    .cardColumn:hover {
+        background-color: #AAA;
+        box-shadow: 0 8px 8px 0 gray;
     }
 
     .listContainer {
         display: grid;
-        grid-template-columns: 6fr 1fr
+        grid-template-columns: 6fr 1fr;
+        margin-bottom: 1%;
     }
 
     .track {
@@ -452,12 +555,16 @@ body {
     }
 
     .thumb {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
         background-color: #007bff;
+        text-align: center;
         border-radius: 50%;
         cursor: pointer;
-        position: absolute;
+    }
+
+    .thumb:hover {
+        box-shadow: 0 2px 2px 0 gray;
     }
 
     .thumb:active {

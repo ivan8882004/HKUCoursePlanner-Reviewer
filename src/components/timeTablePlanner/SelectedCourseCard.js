@@ -8,7 +8,7 @@ function SelectedCourseCard ({course,deleteCourseinLists}) {
     return (
         <div className="listContainer">
             <div className="cardColumn">
-                <p>{course.courseName}<br></br>{course.courseTitle}</p>
+                <p>{course.courseName}<br></br><span className="fullName">{course.courseTitle}</span></p>
             </div>
             <div>
                 <button onClick={handleOnClick}>Delete</button>

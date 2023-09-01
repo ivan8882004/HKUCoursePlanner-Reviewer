@@ -10,6 +10,8 @@ function AutoFillForm({ isSemOne, setter }) {
         gapScore: -10
     })
 
+    const [possibleList, setPossibleList] = useState([]);
+
     const addCourseList = () => {
         setFormContent({
             ...formContent,
@@ -48,6 +50,7 @@ function AutoFillForm({ isSemOne, setter }) {
     })
 
     const handleSubmit = () => {
+        const output = [];
         const data = JSON.parse(localStorage.getItem("timeTable"))[(isSemOne ? 0 : 1)]
         const possibleCourse = formContent.courseList.map(name => {
             return data.filter(course => course.courseName.includes(name))
@@ -122,8 +125,6 @@ function AutoFillForm({ isSemOne, setter }) {
             console.log(gap)
             return gap
         }
-        let highScore = -Infinity;
-        let best = null;
         while (JSON.stringify(endPoint) !== JSON.stringify(indexs)) {
             const courseList = indexs.map((item, index) => {
                 return { ...possibleCourse[index][item], isChecked: true }
@@ -141,11 +142,7 @@ function AutoFillForm({ isSemOne, setter }) {
                 score += getDayOff(copyTable)*parseInt(formContent.dayOffScore) 
                 + getEarlyTime(copyTable, formContent.earlyTime)*parseInt(formContent.earlyScore) 
                 + getGap(copyTable, formContent.gapTime)*parseInt(formContent.gapScore)
-                console.log(score, copyTable)
-                if (score > highScore) {
-                    highScore = score
-                    best = courseList
-                }
+                output.push({score, courseList: JSON.parse(JSON.stringify(courseList))})
             }
             for (let i = indexs.length - 1; i >= 0; i--) {
                 indexs[i]++;
@@ -155,10 +152,18 @@ function AutoFillForm({ isSemOne, setter }) {
                     indexs[i] = 0
                 }
             }
-            setter(best)
         }
-
+        setPossibleList(output.sort((a, b) => b.score - a.score))
+        setter(output[0].courseList)
     }
+
+    const renderPossibleList = possibleList.map((item, index) => {
+        return (
+            <div key={index} onClick={() => setter(item.courseList)}>
+                List {index + 1}: {item.score}
+            </div>
+        )
+    })
 
     return (
         <div>
@@ -236,6 +241,9 @@ function AutoFillForm({ isSemOne, setter }) {
                     </tbody>
                 </table>
             </form>
+            <div>
+                {renderPossibleList}
+            </div>
         </div>
     )
 }

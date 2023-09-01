@@ -5,7 +5,7 @@ const TableContext = createContext();
 
 function TimeTableProvider({ children }) {
 
-  const [hour, setHour] = useState([8, 23]);
+  const [hour, setHour] = useState([8, 19]);
 
   const [importSetting, setImportSetting] = useState(1);
 
@@ -15,8 +15,8 @@ function TimeTableProvider({ children }) {
     ['WED', true],
     ['THU', true],
     ['FRI', true],
-    ['SAT', true],
-    ['SUN', true]
+    ['SAT', false],
+    ['SUN', false]
   ]));
 
   const add_drop_day = (day) => {

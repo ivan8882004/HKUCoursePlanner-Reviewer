@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function CourseCard({ course, deleteCourse, insertCourse, selectedCourseList, isSemOne, insertCourseByMouseEnter }) {
+function CourseCard({ course, deleteCourse, insertCourse, selectedCourseList, isSemOne, index, insertCourseByMouseEnter }) {
 
     const [isChecked, setIsChecked] = useState(false);
 
@@ -52,8 +52,8 @@ function CourseCard({ course, deleteCourse, insertCourse, selectedCourseList, is
 
         if (selectedCourseList.some(course_in_list => course_in_list.courseName === course.courseName && course_in_list.isChecked)) {
             setIsChecked(true);
-        } else { 
-            setIsChecked(false); 
+        } else {
+            setIsChecked(false);
         }
 
     }, [selectedCourseList, course.courseName]);
@@ -68,8 +68,7 @@ function CourseCard({ course, deleteCourse, insertCourse, selectedCourseList, is
 
             insertCourse(course);
 
-        }
-        else {
+        } else {
 
             deleteCourse(course);
 
@@ -92,19 +91,19 @@ function CourseCard({ course, deleteCourse, insertCourse, selectedCourseList, is
     };
 
     return (
-        <div className="courseContainer">
+        <label className={"courseContainer "}>
             <input
                 type="checkbox" className="checkbox"
                 checked={isChecked}
                 onChange={handleChange}
             />
-            <div className="cardColumn"
+            <div className={"cardColumn"}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-                <p>{course.courseName}<br></br>{course.courseTitle}</p>
+                <p>{course.courseName}<br></br><span className="fullName">{course.courseTitle}</span></p>
             </div>
-        </div>
+        </label>
     );
 
 };

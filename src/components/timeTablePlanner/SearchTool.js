@@ -1,8 +1,6 @@
-import DayButton from "./DayButton";
 import SemButton from "./SemButton";
 import { useState, useEffect, useCallback, useContext } from "react";
 import CourseCard from "./CourseCard.js";
-import RangeSlider from "./RangeSlider";
 import ImportSettingButton from "./ImportSettingButton";
 import TableContext from "../../context/SettingsProvider";
 import { useSelector } from "react-redux";
@@ -81,58 +79,46 @@ function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCour
     return (
         <div>
             <ImportSettingButton />
-            <div>Days shown in Timetable</div>
-            <div className="showDays">
-                <DayButton day='MON' />
-                <DayButton day='TUE' />
-                <DayButton day='WED' />
-                <DayButton day='THU' />
-                <DayButton day='FRI' />
-                <DayButton day='SAT' />
-                <DayButton day='SUN' />
-            </div>
-            <div>Time shown in Timetable</div>
-            <div className="showSem">
-                <RangeSlider />
-            </div>
             <div>Semester shown in Timetable</div>
             <SemButton isSemOne={isSemOne} setIsSemOne={setIsSemOne} />
-            <div>
-                <div>Enter Course Code to search</div>
-                <input
-                    type='text' value={inputText} placeholder="Eg. ECON1210-1A"
-                    onChange={handleChange}
-                />
-            </div>
-            <h3>Filtered Courses (Top 200 results):</h3>
-            <div className="scroll-container">
-                { !!importCourseList.length && <>
+            <div className="scroll-box">
+                <h4>Filtered Courses (Top 200 results):</h4>
+                <div>
+                    <div>Enter Course Code to search</div>
+                    <input
+                        type='text' value={inputText} placeholder="Eg. ECON1210-1A"
+                        onChange={handleChange}
+                    />
+                </div>
+                <div className="scroll-container">
+                    {!!importCourseList.length && <>
+                        <div>
+                            Selected course
+                        </div>
+                        <div>
+                            {importCourseList.map((course, index) => (
+                                <CourseCard insertCourseByMouseEnter={insertCourseByMouseEnter}
+                                    isSemOne={isSemOne} deleteCourseinLists={deleteCourseinLists}
+                                    selectedCourseList={selectedCourseList}
+                                    key={index} course={course} index={index}
+                                    deleteCourse={deleteCourse} insertCourse={insertCourse}
+                                />
+                            ))}
+                        </div>
+                    </>}
                     <div>
-                        Selected course
-                    </div>
-                    <div>
-                        {importCourseList.map((course, index) => (
+                        <div>
+                            All course
+                        </div>
+                        {courseList.map((course, index) => (
                             <CourseCard insertCourseByMouseEnter={insertCourseByMouseEnter}
                                 isSemOne={isSemOne} deleteCourseinLists={deleteCourseinLists}
                                 selectedCourseList={selectedCourseList}
-                                key={index} course={course}
+                                key={index} course={course} index={index}
                                 deleteCourse={deleteCourse} insertCourse={insertCourse}
                             />
                         ))}
                     </div>
-                </>}
-                <div>
-                    <div>
-                        All course
-                    </div>
-                    {courseList.map((course, index) => (
-                        <CourseCard insertCourseByMouseEnter={insertCourseByMouseEnter}
-                            isSemOne={isSemOne} deleteCourseinLists={deleteCourseinLists}
-                            selectedCourseList={selectedCourseList}
-                            key={index} course={course}
-                            deleteCourse={deleteCourse} insertCourse={insertCourse}
-                        />
-                    ))}
                 </div>
             </div>
         </div>

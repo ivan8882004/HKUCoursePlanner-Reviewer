@@ -23,7 +23,7 @@ function TimeSlot({ time, day, selectedCourseList }) {
 
             return (
                 <div className="TimeSlotConflict" title={conflicted_course}>
-                    <p>Courses Conflicted<br></br>{conflicted_course}</p>
+                    <p>Courses Conflicted<br></br><span className="details">{conflicted_course}</span></p>
                 </div>
 
             );
@@ -38,7 +38,7 @@ function TimeSlot({ time, day, selectedCourseList }) {
 
             return (
                 <div className="TimeSlotFilled" title={course.courseTitle}>
-                    <p>{course.courseName}<br></br>{venues}</p>
+                    <p>{course.courseName}<br></br><span className="details">{venues}</span></p>
                 </div>
             );
 

@@ -17,7 +17,7 @@ function RangeSlider () {
             className="horizontal-slider"
             thumbClassName="thumb"
             trackClassName="track"
-            defaultValue={[8, 23]}
+            defaultValue={[8, 19]}
             max={23} min={8}
             renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
             pearling

@@ -32,7 +32,7 @@ const TimeTablePage = () => {
 
   const insertCourse = (course_to_be_inserted) => {
     setSelectedCourseList((prevList) => {
-      return [...prevList, { ...course_to_be_inserted, isChecked: true }];
+      return [...prevList.filter((course) => course.courseName !== course_to_be_inserted.courseName), { ...course_to_be_inserted, isChecked: true }];
     })
   };
 
