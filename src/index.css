@@ -444,6 +444,7 @@ body {
         .hide {
             display: none;
             border-style: solid;
+            font-size: large;
             background-color: #77D5D5;
             border-color: #168C8C;
             box-shadow: 0 4px 4px 0 gray;
@@ -505,6 +506,32 @@ body {
 
     .showSem {
         display: flex;
+
+        .off {
+            background-color: #528080;
+            border-style: solid;
+            border-color: #3F5959;
+            box-sizing: border-box;
+            font-weight: 600;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+
+        .off:hover {
+            background-color: #77D5D5;
+            border-color: #168C8C;
+            box-shadow: 0 4px 4px 0 gray;
+        }
+
+        .on {
+            background-color: #7CA9BD;
+            border-style: solid;
+            border-color: #0C425A;
+            box-sizing: border-box;
+            font-weight: 600;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
     }
 
     .scroll-container {
@@ -532,9 +559,19 @@ body {
         display: flex;
         border: solid black;
         background-color: gray;
+        justify-content: space-between;
 
         .fullName {
             font-size: small;
+        }
+
+        .deleteButton {
+            align-self: flex-end;
+            font-size: x-large;
+        }
+
+        .deleteButton:hover {
+            color: #FFF;
         }
     }
 
@@ -547,6 +584,106 @@ body {
         display: grid;
         grid-template-columns: 6fr 1fr;
         margin-bottom: 1%;
+    }
+
+    .courseDetail {
+        border-style: solid;
+        padding: 1%;
+    }
+
+    .selectedCourse {
+        border-style: solid;
+        padding: 1%;
+        margin-top: 1%;
+
+        .dropDownTitle {
+            padding-left: 1%;
+            padding-right: 1%;
+            border-style: solid;
+            background-color: #646464;
+            display: flex;
+            justify-content: space-between;
+
+            .dropDownText {
+                align-self: flex-start;
+            }
+
+            .dropDownArrow {
+                align-self: flex-end;
+            }
+        }
+
+        .dropDownContent {
+            padding: 1%;
+        }
+    }
+
+    .importSettingButton {
+
+        .buttons {
+            display: flex;
+
+            .off {
+                width: 3vh;
+                background-color: #528080;
+                border-style: solid;
+                border-color: #3F5959;
+                box-sizing: border-box;
+                font-weight: 600;
+                margin-left: 1%;
+                margin-right: 1%;
+            }
+
+            .off:hover {
+                background-color: #77D5D5;
+                border-color: #168C8C;
+                box-shadow: 0 4px 4px 0 gray;
+            }
+
+            .on {
+                width: 3vh;
+                background-color: #7CA9BD;
+                border-style: solid;
+                border-color: #0C425A;
+                box-sizing: border-box;
+                font-weight: 600;
+                margin-left: 1%;
+                margin-right: 1%;
+            }
+        }
+    }
+
+    .autoFillForm {
+
+        .formContent {
+            padding: 1%;
+            margin-top: 1%;
+            font-size: smaller;
+            border-style: solid;
+
+            .courseInput {
+                white-space: nowrap;
+            }
+        }
+
+        .possibleList {
+            margin-top: 1%;
+            border-style: solid;
+            padding: 1%;
+            overflow: auto;
+            max-height: 30vh;
+
+            .list:hover {
+                background-color: #CCC;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .uploadXlsx {
+        margin-top: 1%;
+        border-style: solid;
+        padding: 1%;
     }
 
     .track {

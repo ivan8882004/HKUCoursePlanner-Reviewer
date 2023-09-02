@@ -1,11 +1,15 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Timetable from '../components/timeTablePlanner/Timetable';
 import CourseList from '../components/timeTablePlanner/CourseList';
 import SearchTool from '../components/timeTablePlanner/SearchTool';
 import UploadXlsx from '../components/timeTablePlanner/UploadXlsx';
 import AutoFillForm from '../components/timeTablePlanner/AutoFillForm';
+import TableContext from '../context/SettingsProvider';
+import CourseDetail from '../components/timeTablePlanner/CourseDetail';
 
 const TimeTablePage = () => {
+
+  const { detail } = useContext(TableContext)
 
   const [isSemOne, setIsSemOne] = useState(true);
   const [courseList, setCourseList] = useState([]);
@@ -55,29 +59,40 @@ const TimeTablePage = () => {
     }
   };
 
+  let detailContent = <div></div>;
+
+  if (detail) {
+    detailContent = <CourseDetail course={detail} />
+  }
+
   return (
     <div className='TimeTableMain'>
-      <SearchTool
-        deleteCourse={deleteCourse}
-        insertCourse={insertCourse}
-        courseList={courseList}
-        setCourseList={setCourseList}
-        setIsSemOne={setIsSemOne}
-        isSemOne={isSemOne}
-        selectedCourseList={selectedCourseList}
-        deleteCourseinLists={deleteCourseinLists}
-        insertCourseByMouseEnter={insertCourseByMouseEnter}
-      />
-      <Timetable selectedCourseList={selectedCourseList} />
       <div>
-        <CourseList
-          selectedSem1CourseList={selectedSem1CourseList}
-          selectedSem2CourseList={selectedSem2CourseList}
+        <SearchTool
           deleteCourse={deleteCourse}
+          insertCourse={insertCourse}
+          courseList={courseList}
+          setCourseList={setCourseList}
+          setIsSemOne={setIsSemOne}
+          isSemOne={isSemOne}
+          selectedCourseList={selectedCourseList}
           deleteCourseinLists={deleteCourseinLists}
+          insertCourseByMouseEnter={insertCourseByMouseEnter}
         />
         <div>
           <UploadXlsx />
+        </div>
+      </div>
+      <Timetable selectedCourseList={selectedCourseList} />
+      <div>
+        <div>
+          {detailContent}
+          <CourseList
+            selectedSem1CourseList={selectedSem1CourseList}
+            selectedSem2CourseList={selectedSem2CourseList}
+            deleteCourse={deleteCourse}
+            deleteCourseinLists={deleteCourseinLists}
+          />
         </div>
         <div>
           <AutoFillForm isSemOne={isSemOne} setter={(isSemOne) ? setSelectedSem1CourseList : setSelectedSem2CourseList} />

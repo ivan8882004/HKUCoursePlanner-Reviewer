@@ -11,23 +11,24 @@ function ImportSettingButton() {
 
     const numberOfYear = Math.ceil((plan.length - 1)/3)
 
-    let dropDownContent = [];
+    let content = [];
 
     for (let i = 0; i < numberOfYear; i++) {
-        dropDownContent.push(
-            <option value={i + 1} key={i}>{"Year " + (i + 1)}</option>
+        content.push(
+            <div className={((importSetting === i + 1) ? "on" : "off")} onClick={() => setImportSetting(i + 1)}>
+                Y{i + 1}
+            </div>
         )
     }
     
-    console.log(importSetting)
+    
 
     return (
-        <div>
-            Year:
-            <select onChange={(event) => setImportSetting(event.target.value)}>
-                <option value={importSetting}>--</option>
-                {dropDownContent}
-            </select>
+        <div className="importSettingButton">
+            Import Year from Course Planner:
+            <div className="buttons">
+                {content}
+            </div>
         </div>
     )
 }

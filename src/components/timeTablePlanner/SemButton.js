@@ -6,16 +6,12 @@ function SemButton({setIsSemOne,isSemOne}) {
 
     return (
         <div className='showSem'>
-            <button
-                style={{ backgroundColor: isSemOne ? 'yellow' : 'green' }}
-                onClick={handleButtonClick}>
-                Sem 1
-            </button>
-            <button
-                style={{ backgroundColor: isSemOne ? 'green' : 'yellow' }}
-                onClick={handleButtonClick}>
-                Sem 2
-            </button>
+            <div className={(isSemOne ? "on" : "off")} onClick={() => {if(!isSemOne) {handleButtonClick()}}}>
+                Sem1
+            </div>
+            <div className={(!isSemOne ? "on" : "off")} onClick={() => {if(isSemOne) {handleButtonClick()}}}>
+                Sem2
+            </div>
         </div>
     );
 

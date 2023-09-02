@@ -112,9 +112,67 @@ function readXlsx() {
         }
     }
 
-    console.log(output)
+    const pos = {
+        "CB": "Chow Yei Ching Building",
+        "CCT": "Cheng Yu Tung Tower",
+        "CJT": "Jockey Club Tower",
+        "CRT": "Run Run Shaw Tower",
+        "CPD": "Central Podium Levels, Centennial Campus",
+        "CYC": "Chong Yuet Ming Chemistry Building",
+        "CYP": "Chong Yuet Ming Physics Building",
+        "EH": "Eliot Hall",
+        "JL": "James Hsioung Lee Science Building",
+        "JMSCDMLAB": "JMSC Digital Media Lab",
+        "KB": "Knowles Building",
+        "KK": "K.K. Leung Building",
+        "LE": "Library Extension",
+        "MB": "Main Building",
+        "MW": "Meng Wah Complex",
+        "RHT": "Rayson Huang Theatre",
+        "TT": "T.T. Tsui Building",
+        "RM": "Runme Shaw Building",
+        "RR": "Run Run Shaw Building",
+        "TWFINNO": "Tam Wing Fan Innovation Wing",
+        "ONLINE": "online",
+        "HW": "Haking Wong Building",
+        "GH": "Graduate House",
+        "WLGH": "Wang Gungwu Lecture Hall",
+        "TBA": "To be announced",
+    }
 
-    fs.writeFile("./result.json", JSON.stringify(output), (err) => {
+    const notFindList = [];
+
+    output[0].forEach((course) => {
+        course.lectures.forEach((item) => {
+            let find = false
+            Object.entries(pos).forEach(([key, value]) => {
+                if (item.venue.substring(0, key.length) === key) {
+                    find = true
+                }
+            })
+            if (!find) {
+                notFindList.push(item.venue)
+            }
+        })
+    })
+
+    output[1].forEach((course) => {
+        course.lectures.forEach((item) => {
+            let find = false
+            Object.entries(pos).forEach(([key, value]) => {
+                if (item.venue.substring(0, key.length) === key) {
+                    find = true
+                }
+            })
+            if (!find) {
+                notFindList.push(item.venue)
+            }
+        })
+    })
+
+
+
+    fs.writeFile("./result.json", JSON.stringify([...new Set(notFindList.sort())]), (err) => {
         if (err) {
             console.error('Error writing file:', err);
             return;

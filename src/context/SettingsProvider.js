@@ -5,6 +5,8 @@ const TableContext = createContext();
 
 function TimeTableProvider({ children }) {
 
+  const [detail, setDetail] = useState(null)
+
   const [hour, setHour] = useState([8, 19]);
 
   const [importSetting, setImportSetting] = useState(1);
@@ -27,7 +29,7 @@ function TimeTableProvider({ children }) {
 
 
   const valueToShare = {
-    hour, setHour, days, add_drop_day, importSetting, setImportSetting
+    hour, setHour, days, add_drop_day, importSetting, setImportSetting, detail, setDetail
   };
 
   return <TableContext.Provider value={valueToShare}>

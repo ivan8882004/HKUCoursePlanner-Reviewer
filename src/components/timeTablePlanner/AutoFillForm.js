@@ -42,7 +42,7 @@ function AutoFillForm({ isSemOne, setter }) {
 
     const courseListForm = formContent.courseList.map((item, index) => {
         return (
-            <div key={index}>
+            <div key={index} className="courseInput">
                 <input value={item} onChange={(event) => editCourseList(event, index)} />
                 <button type="button" onClick={() => removeCourseList(index)}>X</button>
             </div>
@@ -52,9 +52,18 @@ function AutoFillForm({ isSemOne, setter }) {
     const handleSubmit = () => {
         const output = [];
         const data = JSON.parse(localStorage.getItem("timeTable"))[(isSemOne ? 0 : 1)]
-        const possibleCourse = formContent.courseList.map(name => {
-            return data.filter(course => course.courseName.includes(name))
+        const possibleCourse = formContent.courseList.map(item => {
+            let temp = [];
+            item.split("|").forEach((name) => {
+                temp = [...temp, ...data.filter(course => course.courseName.includes(name))]
+            })
+            return temp
         })
+        for (const i of possibleCourse) {
+            if (i.length === 0) {
+                return
+            }
+        }
         const indexs = possibleCourse.map(() => {
             return 0
         })
@@ -159,15 +168,15 @@ function AutoFillForm({ isSemOne, setter }) {
 
     const renderPossibleList = possibleList.map((item, index) => {
         return (
-            <div key={index} onClick={() => setter(item.courseList)}>
+            <div key={index} onClick={() => setter(item.courseList)} className="list">
                 List {index + 1}: {item.score}
             </div>
         )
     })
 
     return (
-        <div>
-            <form>
+        <div className="autoFillForm">
+            <form className="formContent">
                 <table>
                     <tbody>
                         <tr>
@@ -241,7 +250,10 @@ function AutoFillForm({ isSemOne, setter }) {
                     </tbody>
                 </table>
             </form>
-            <div>
+            <div className="possibleList">
+                <h4>
+                    Possible Course List
+                </h4>
                 {renderPossibleList}
             </div>
         </div>

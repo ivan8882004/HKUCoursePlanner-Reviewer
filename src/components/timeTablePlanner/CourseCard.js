@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import TableContext from "../../context/SettingsProvider";
 
 function CourseCard({ course, deleteCourse, insertCourse, selectedCourseList, isSemOne, index, insertCourseByMouseEnter }) {
 
     const [isChecked, setIsChecked] = useState(false);
+
+    const {setDetail} = useContext(TableContext)
 
     /*useEffect(() => {
         console.log(selectedCourseList);
@@ -87,6 +90,7 @@ function CourseCard({ course, deleteCourse, insertCourse, selectedCourseList, is
     const handleMouseEnter = () => {
         if (!isChecked) {
             insertCourseByMouseEnter(course)
+            setDetail(course)
         };
     };
 

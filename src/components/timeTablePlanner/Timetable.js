@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import TableContext from '../../context/SettingsProvider';
 import TimeSlot from './TimeSlot';
+import { AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
 
 const Timetable = ({ selectedCourseList }) => {
   const { add_drop_day } = useContext(TableContext)
@@ -20,8 +21,8 @@ const Timetable = ({ selectedCourseList }) => {
       <div className="row">
         <div className="header">
           <div className="buttons">
-            {((hour[0] - 8) > 0 && <div className="changeHour" onClick={() => setHour([hour[0] - 1, hour[1]])}>-1</div>)}
-            {((hour[0] - 22) < 0 && <div className="changeHour" onClick={() => setHour([hour[0] + 1, hour[1]])}>+1</div>)}
+            {((hour[0] - 8) > 0 && <div className="changeHour" onClick={() => setHour([hour[0] - 1, hour[1]])}><AiFillCaretDown /></div>)}
+            {(((hour[0] - 22) < 0 && (hour[0] + 1 < hour[1])) && <div className="changeHour" onClick={() => setHour([hour[0] + 1, hour[1]])}><AiFillCaretUp /></div>)}
           </div>
         </div>
         {[...days].map(([day, isActive]) => isActive && <div key={day} className="header" onClick={() => add_drop_day(day)}><div className="content on">{day}</div><div className="hide">-</div></div>)}
@@ -39,8 +40,8 @@ const Timetable = ({ selectedCourseList }) => {
       <div className="row">
         <div className="header">
           <div className="buttons">
-            {((hour[1] - 9) > 0 && <div className="changeHour" onClick={() => setHour([hour[0], hour[1] - 1])}>-1</div>)}
-            {((hour[1] - 23) < 0 && <div className="changeHour" onClick={() => setHour([hour[0], hour[1] + 1])}>+1</div>)}
+            {((hour[1] - 9) > 0 && <div className="changeHour" onClick={() => setHour([hour[0], hour[1] - 1])}><AiFillCaretUp /></div>)}
+            {((hour[1] - 23) < 0 && <div className="changeHour" onClick={() => setHour([hour[0], hour[1] + 1])}><AiFillCaretDown /></div>)}
           </div>
         </div>
       </div>

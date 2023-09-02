@@ -126,7 +126,10 @@ function UploadXlsx() {
     }
 
     return (
-        <div>
+        <div className="uploadXlsx">
+            <h4>
+                Upload Time Table (.xlsx)
+            </h4>
             <input type="file" accept=".xlsx" onChange={handleFileInput} />
         </div>
     )

@@ -1,8 +1,12 @@
 
+import { useContext } from "react";
+import TableContext from "../../context/SettingsProvider";
+
 function TimeSlot({ time, day, selectedCourseList }) {
 
-    const getRenderedTimeSlot = (selectedCourseList) => {
+    const { setDetail } = useContext(TableContext)
 
+    const getRenderedTimeSlot = (selectedCourseList) => {
 
         const courses = selectedCourseList;
 
@@ -37,7 +41,7 @@ function TimeSlot({ time, day, selectedCourseList }) {
             }).map((lecture) => lecture.venue).join('/');
 
             return (
-                <div className="TimeSlotFilled" title={course.courseTitle}>
+                <div className="TimeSlotFilled" title={course.courseTitle} onClick={() => setDetail(course)}>
                     <p>{course.courseName}<br></br><span className="details">{venues}</span></p>
                 </div>
             );
