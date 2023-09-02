@@ -416,6 +416,10 @@ body {
         border-radius: 10%;
     }
 
+    .TimeSlotFilled:hover {
+        box-shadow: 0 10px 10px 0 gray;
+    }
+
     .details {
         font-size: smaller;
     }
