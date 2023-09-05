@@ -36,7 +36,7 @@ function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCour
 
     useEffect(() => {
         const data = JSON.parse(localStorage.getItem("timeTable"))
-        if (isSemOne) {
+        if (isSemOne && data) {
             const searchTerm = inputText.trim().toUpperCase();
             const matchedCourses = data[0].filter(
                 (course) => course.courseName.includes(searchTerm));
@@ -53,7 +53,7 @@ function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCour
                 })
             });
             handleCourseListChange(matchedCourses.slice(0, 200), temp)
-        } else {
+        } else if (data) {
             const searchTerm = inputText.trim().toUpperCase();
             const matchedCourses = data[1].filter(
                 (course) => course.courseName.includes(searchTerm));
