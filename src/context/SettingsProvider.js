@@ -9,6 +9,8 @@ function TimeTableProvider({ children }) {
 
   const [hour, setHour] = useState([8, 19]);
 
+  const [uploaded, setUploaded] = useState(null);
+
   const [importSetting, setImportSetting] = useState(1);
 
   const [days, setDays] = useState(new Map([
@@ -29,7 +31,7 @@ function TimeTableProvider({ children }) {
 
 
   const valueToShare = {
-    hour, setHour, days, add_drop_day, importSetting, setImportSetting, detail, setDetail
+    hour, setHour, days, add_drop_day, importSetting, setImportSetting, detail, setDetail, uploaded, setUploaded
   };
 
   return <TableContext.Provider value={valueToShare}>

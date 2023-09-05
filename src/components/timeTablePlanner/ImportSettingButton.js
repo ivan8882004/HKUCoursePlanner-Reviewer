@@ -15,7 +15,7 @@ function ImportSettingButton() {
 
     for (let i = 0; i < numberOfYear; i++) {
         content.push(
-            <div className={((importSetting === i + 1) ? "on" : "off")} onClick={() => setImportSetting(i + 1)}>
+            <div className={((importSetting === i + 1) ? "on" : "off")} onClick={() => setImportSetting(i + 1)} key={i}>
                 Y{i + 1}
             </div>
         )

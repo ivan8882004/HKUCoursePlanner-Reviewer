@@ -1,5 +1,10 @@
+import { useContext } from 'react';
+import TableContext from '../../context/SettingsProvider';
+
 function UploadXlsx() {
     const XLSX = require('xlsx');
+
+    const {setUploaded} = useContext(TableContext)
 
     const readXlsx = (toProcessSheet) => {
         let output = [[], []];
@@ -118,10 +123,10 @@ function UploadXlsx() {
             const data = new Uint8Array(e.target.result);
             const workbook = XLSX.read(data, { type: "array" });
             const toProcessSheet = workbook.Sheets[workbook.SheetNames[0]]
-
-            localStorage.setItem("timeTable", JSON.stringify(readXlsx(toProcessSheet)))
+            const result = readXlsx(toProcessSheet)
+            localStorage.setItem("timeTable", JSON.stringify(result))
+            setUploaded(result)
         }
-
         reader.readAsArrayBuffer(file)
     }
 

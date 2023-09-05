@@ -12,7 +12,7 @@ function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCour
 
 }) {
 
-    const { importSetting } = useContext(TableContext)
+    const { importSetting, uploaded } = useContext(TableContext)
 
     const [inputText, setInputText] = useState('');
 
@@ -35,7 +35,7 @@ function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCour
     }, [setCourseList, setImportCourseList])
 
     useEffect(() => {
-        const data = JSON.parse(localStorage.getItem("timeTable"))
+        const data = JSON.parse(localStorage.getItem("timeTable")) || uploaded
         if (isSemOne && data) {
             const searchTerm = inputText.trim().toUpperCase();
             const matchedCourses = data[0].filter(
@@ -72,7 +72,7 @@ function SearchTool({ isSemOne, setIsSemOne, deleteCourse, insertCourse, setCour
             handleCourseListChange(matchedCourses.slice(0, 200), temp)
         }
 
-    }, [inputText, isSemOne, handleCourseListChange, plan, importSetting]);
+    }, [inputText, isSemOne, handleCourseListChange, plan, importSetting, uploaded]);
 
     console.log(selectedCourseList)
 
