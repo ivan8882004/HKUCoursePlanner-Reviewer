@@ -7,7 +7,9 @@ import AutoFillForm from '../components/timeTablePlanner/AutoFillForm';
 import TableContext from '../context/SettingsProvider';
 import CourseDetail from '../components/timeTablePlanner/CourseDetail';
 
-const TIMETABLEISSEMONE = "timeTableIsSemOne"
+const TIMETABLEISSEMONE = "timeTableIsSemOne";
+const TIMETABLESEM1 = "timeTableSem1";
+const TIMETABLESEM2 = "timeTableSem2";
 
 const TimeTablePage = () => {
 
@@ -16,18 +18,36 @@ const TimeTablePage = () => {
   const [isSemOne, setIsSemOneWithoutSave] = useState(true);
   const [courseList, setCourseList] = useState([]);
 
-  const [selectedSem1CourseList, setSelectedSem1CourseList] = useState([]);
-  const [selectedSem2CourseList, setSelectedSem2CourseList] = useState([]);
+  const [selectedSem1CourseList, setSelectedSem1CourseListWithoutSave] = useState([]);
+  const [selectedSem2CourseList, setSelectedSem2CourseListWithoutSave] = useState([]);
 
   const setIsSemOne = (value) => {
     setIsSemOneWithoutSave(value)
     localStorage.setItem(TIMETABLEISSEMONE, JSON.stringify(value))
   }
 
+  const setSelectedSem1CourseList = (value) => {
+    setSelectedSem1CourseListWithoutSave(value);
+    localStorage.setItem(TIMETABLESEM1, JSON.stringify(value))
+  }
+
+  const setSelectedSem2CourseList = (value) => {
+    setSelectedSem2CourseListWithoutSave(value);
+    localStorage.setItem(TIMETABLESEM2, JSON.stringify(value))
+  }
+
   useEffect(() => {
     const storageIsSemOne = localStorage.getItem(TIMETABLEISSEMONE)
     if (storageIsSemOne) {
       setIsSemOneWithoutSave(JSON.parse(storageIsSemOne))
+    }
+    const storageSem1 = localStorage.getItem(TIMETABLESEM1)
+    if (storageSem1) {
+      setSelectedSem1CourseListWithoutSave(JSON.parse(storageSem1))
+    }
+    const storageSem2 = localStorage.getItem(TIMETABLESEM2)
+    if (storageSem2) {
+      setSelectedSem2CourseListWithoutSave(JSON.parse(storageSem2))
     }
   }, [])
 
@@ -43,33 +63,33 @@ const TimeTablePage = () => {
   }
 
   const deleteCourse = (course_to_be_deleted) => {
-    setSelectedCourseList((prevList) => {
-      return prevList.filter((course) => course.courseName !== course_to_be_deleted.courseName);
-    })
+    const toSet = selectedCourseList.filter((course) => course.courseName !== course_to_be_deleted.courseName)
+
+    setSelectedCourseList(toSet)
   };
 
   const insertCourse = (course_to_be_inserted) => {
-    setSelectedCourseList((prevList) => {
-      return [...prevList.filter((course) => course.courseName !== course_to_be_inserted.courseName), { ...course_to_be_inserted, isChecked: true }];
-    })
+    const toSet = [...selectedCourseList.filter((course) => course.courseName !== course_to_be_inserted.courseName), { ...course_to_be_inserted, isChecked: true }]
+
+    setSelectedCourseList(toSet)
   };
 
   const insertCourseByMouseEnter = (course_to_be_inserted) => {
-    setSelectedCourseList((prevList) => {
-      return [...prevList, { ...course_to_be_inserted, isChecked: false }];
-    })
+    const toSet = [...selectedCourseList.filter((course) => course.isChecked), { ...course_to_be_inserted, isChecked: false }]
+
+    setSelectedCourseList(toSet)
   };
 
   const deleteCourseinLists = (course_to_be_deleted) => {
     console.log('delete', course_to_be_deleted.courseName);
     if (selectedSem1CourseList.some(course => course_to_be_deleted.courseName === course.courseName)) {
-      setSelectedSem1CourseList((prevList) => {
-        return prevList.filter((course) => course.courseName !== course_to_be_deleted.courseName);
-      })
+      const toSet = selectedSem1CourseList.filter((course) => course.courseName !== course_to_be_deleted.courseName)
+
+      setSelectedSem1CourseList(toSet)
     } else {
-      setSelectedSem2CourseList((prevList) => {
-        return prevList.filter((course) => course.courseName !== course_to_be_deleted.courseName);
-      })
+      const toSet = selectedSem2CourseList.filter((course) => course.courseName !== course_to_be_deleted.courseName)
+
+      setSelectedSem2CourseList(toSet)
     }
   };
 
