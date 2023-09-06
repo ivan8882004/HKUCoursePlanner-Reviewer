@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+const FORMCONTENT = "formContent";
 
 function AutoFillForm({ isSemOne, setter }) {
+
     const [formContent, setFormContent] = useState({
-        courseList: ["COMP2119", "COMP2121", "COMP2396", "MATH2014", "CCST9013", "CCGL9011"],
+        courseList: [""],
         dayOffScore: 30,
         earlyTime: "8:30",
         earlyScore: -10,
@@ -10,40 +13,59 @@ function AutoFillForm({ isSemOne, setter }) {
         gapScore: -10
     })
 
+    useEffect(() => {
+        const storageFormContent = localStorage.getItem(FORMCONTENT);
+        if (storageFormContent) {
+            setFormContent(JSON.parse(storageFormContent))
+        }
+    }, [])
+
     const [possibleList, setPossibleList] = useState([]);
 
     const addCourseList = () => {
-        setFormContent({
+        const toSet = {
             ...formContent,
             courseList: [...formContent.courseList, ""]
-        })
+        }
+
+        setFormContent(toSet)
+        localStorage.setItem(FORMCONTENT, JSON.stringify(toSet))
     }
 
     const editCourseList = (event, index) => {
-        setFormContent({
+        const toSet = {
             ...formContent,
             courseList: [...formContent.courseList.slice(0, index), event.target.value.toUpperCase(), ...formContent.courseList.slice(index + 1)]
-        })
+        }
+
+        setFormContent(toSet)
+        localStorage.setItem(FORMCONTENT, JSON.stringify(toSet))
     }
 
     const removeCourseList = (index) => {
-        setFormContent({
+        const toSet = {
             ...formContent,
             courseList: [...formContent.courseList.slice(0, index), ...formContent.courseList.slice(index + 1)]
-        })
+        }
+
+        setFormContent(toSet)
+        localStorage.setItem(FORMCONTENT, JSON.stringify(toSet))
     }
 
     const handleFormChange = (event) => {
-        setFormContent({
+        const toSet = {
             ...formContent,
             [event.target.name]: event.target.value
-        })
+        }
+
+        setFormContent(toSet)
+        localStorage.setItem(FORMCONTENT, JSON.stringify(toSet))
     }
 
     const courseListForm = formContent.courseList.map((item, index) => {
         return (
             <div key={index} className="courseInput">
-                <input value={item} onChange={(event) => editCourseList(event, index)} />
+                <input value={item} onChange={(event) => editCourseList(event, index)} placeholder="code 1|code 2|code 3"/>
                 <button type="button" onClick={() => removeCourseList(index)}>X</button>
             </div>
         )
@@ -161,6 +183,24 @@ function AutoFillForm({ isSemOne, setter }) {
                     indexs[i] = 0
                 }
             }
+        }
+        const courseList = indexs.map((item, index) => {
+            return { ...possibleCourse[index][item], isChecked: true }
+        })
+        const copyTable = JSON.parse(JSON.stringify(timeTable))
+        let toAdd = true
+        for (let i = 0; i < indexs.length; i++) {
+            if (addToTable(courseList[i], copyTable)) {
+                toAdd = false
+                break
+            }
+        } 
+        let score = 0;
+        if (toAdd) {
+            score += getDayOff(copyTable)*parseInt(formContent.dayOffScore) 
+            + getEarlyTime(copyTable, formContent.earlyTime)*parseInt(formContent.earlyScore) 
+            + getGap(copyTable, formContent.gapTime)*parseInt(formContent.gapScore)
+            output.push({score, courseList: JSON.parse(JSON.stringify(courseList))})
         }
         setPossibleList(output.sort((a, b) => b.score - a.score))
         setter(output[0].courseList)

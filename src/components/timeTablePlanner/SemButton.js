@@ -1,7 +1,7 @@
 function SemButton({setIsSemOne,isSemOne}) {
 
     const handleButtonClick = () => {
-        setIsSemOne((prev) => !prev);
+        setIsSemOne(!isSemOne);
     };
 
     return (

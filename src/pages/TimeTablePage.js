@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import Timetable from '../components/timeTablePlanner/Timetable';
 import CourseList from '../components/timeTablePlanner/CourseList';
 import SearchTool from '../components/timeTablePlanner/SearchTool';
@@ -7,15 +7,29 @@ import AutoFillForm from '../components/timeTablePlanner/AutoFillForm';
 import TableContext from '../context/SettingsProvider';
 import CourseDetail from '../components/timeTablePlanner/CourseDetail';
 
+const TIMETABLEISSEMONE = "timeTableIsSemOne"
+
 const TimeTablePage = () => {
 
   const { detail } = useContext(TableContext)
 
-  const [isSemOne, setIsSemOne] = useState(true);
+  const [isSemOne, setIsSemOneWithoutSave] = useState(true);
   const [courseList, setCourseList] = useState([]);
 
   const [selectedSem1CourseList, setSelectedSem1CourseList] = useState([]);
   const [selectedSem2CourseList, setSelectedSem2CourseList] = useState([]);
+
+  const setIsSemOne = (value) => {
+    setIsSemOneWithoutSave(value)
+    localStorage.setItem(TIMETABLEISSEMONE, JSON.stringify(value))
+  }
+
+  useEffect(() => {
+    const storageIsSemOne = localStorage.getItem(TIMETABLEISSEMONE)
+    if (storageIsSemOne) {
+      setIsSemOneWithoutSave(JSON.parse(storageIsSemOne))
+    }
+  }, [])
 
   let selectedCourseList;
   let setSelectedCourseList;
