@@ -1,0 +1,16 @@
+{
+  "arrowParens": "avoid",
+  "bracketSameLine": true,
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "overrides": [
+    {
+      "files": "*.yml",
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}
