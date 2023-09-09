@@ -241,7 +241,7 @@ function AutoFillForm({ isSemOne, setter }) {
       output.push({ score, courseList: JSON.parse(JSON.stringify(courseList)) })
     }
     setPossibleList(output.sort((a, b) => b.score - a.score))
-    setter(output[0].courseList)
+    setter(output[0]?.courseList || [])
   }
 
   const renderPossibleList = possibleList.map((item, index) => {
