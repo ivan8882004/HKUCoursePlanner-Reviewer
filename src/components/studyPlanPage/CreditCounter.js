@@ -1,5 +1,7 @@
 import { useSelector } from 'react-redux'
 
+//count the total credit taken
+
 function CreditCounter() {
   const { plan } = useSelector(state => {
     return state.studyPlan

@@ -1,6 +1,9 @@
 import { useSelector } from 'react-redux'
 import searchPlan from '../../functions/searchPlan'
 
+//check how many credit user have taken in each course list, bug? will double count if a course show up in more than one course list. i.e. DS&E with major/minor stat
+//so 9 hard to fix, need to design a new algo, ivan and ken add oil
+
 function ProgramChecker({ program }) {
   const { plan } = useSelector(state => {
     return state.studyPlan

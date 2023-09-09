@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addPlanItem, removePlanItem } from '../../store'
 import searchPlan from '../../functions/searchPlan'
 
+//check box for dse pre reg, todo: add for more condition such as m1/m2 >= 5 for sci
+
 function StudyPlanCheckBoxs() {
   const dispatch = useDispatch()
 

@@ -18,7 +18,7 @@ function CourseListItem({ name, index, searchBar }) {
 
   let courseContent
 
-  if (dropDown) {
+  if (dropDown) { //set the drop down content
     const courseInfo = getCourses(name, courses)
 
     courseContent = (
@@ -45,7 +45,7 @@ function CourseListItem({ name, index, searchBar }) {
     }),
   }))
 
-  if (
+  if (  //filter course with search term
     (name.includes(searchBar.toUpperCase()) || searchBar === '') &&
     !searchPlan(name, plan.length, plan)
   ) {

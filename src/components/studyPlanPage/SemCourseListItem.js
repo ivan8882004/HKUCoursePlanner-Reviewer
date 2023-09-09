@@ -6,6 +6,8 @@ import checkPrereg from '../../functions/checkPrereg'
 import checkExclusive from '../../functions/checkExclusive'
 import { itemTypes } from '../../DnDTypes'
 
+//course item in each box for a sem
+
 function SemCourseListItem({ course, ind, index }) {
   const dispatch = useDispatch()
 

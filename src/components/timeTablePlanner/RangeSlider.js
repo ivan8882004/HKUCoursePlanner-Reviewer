@@ -2,6 +2,8 @@ import ReactSlider from 'react-slider'
 import { useContext } from 'react'
 import TableContext from '../../context/SettingsProvider'
 
+//not use
+
 function RangeSlider() {
   const { hour, setHour } = useContext(TableContext)
 

@@ -13,6 +13,9 @@ function HomePage() {
       <div>
         Also please notice the app can not display all requirement of courses
       </div>
+      <div>
+        The idea of the Time Table is inspired by hovergecko
+      </div>
     </div>
   )
 }

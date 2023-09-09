@@ -11,6 +11,8 @@ import SemCourseListItem from './SemCourseListItem'
 import { useEffect, useRef } from 'react'
 import getCourses from '../../functions/getCourses'
 
+//the box for each sem
+
 function StudyPlanSem({ list, index }) {
   const dispatch = useDispatch()
 

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import SelectedCourseCard from './SelectedCourseCard'
 import { IoIosArrowDown, IoIosArrowBack } from 'react-icons/io'
 
-function CourseList({
+function CourseList({ //drop down for the courses in both sem
   selectedSem1CourseList,
   selectedSem2CourseList,
   deleteCourseinLists,

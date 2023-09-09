@@ -2,6 +2,8 @@ import { useSelector } from 'react-redux'
 import searchPlan from '../../functions/searchPlan'
 import ProgramChecker from './ProgramChecker'
 
+//this and extend comp for degree
+
 function DegreeChecker({ degree }) {
   const copyDegree = { ...degree, courseList: [...degree.courseList] }
 

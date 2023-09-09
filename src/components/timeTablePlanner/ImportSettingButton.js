@@ -2,6 +2,8 @@ import { useContext } from 'react'
 import TableContext from '../../context/SettingsProvider'
 import { useSelector } from 'react-redux'
 
+//set to import which year from study plan
+
 function ImportSettingButton() {
   const { importSetting, setImportSetting } = useContext(TableContext)
 

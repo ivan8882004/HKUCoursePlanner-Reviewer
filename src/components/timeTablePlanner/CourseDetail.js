@@ -30,7 +30,7 @@ function CourseDetail({ course }) {
   const lectures = course.lectures.map((item, index) => {
     let venue = item.venue
 
-    Object.entries(pos).forEach(([key, value]) => {
+    Object.entries(pos).forEach(([key, value]) => { //for the venue of each lecture
       if (item.venue.substring(0, key.length) === key) {
         venue = value + item.venue.substring(key.length)
       }
