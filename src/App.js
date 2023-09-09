@@ -52,12 +52,12 @@ function App() {
     <div className="App">
       <TopBar />
       <Routes>
-        <Route path="/Course-Planner-Host-Fork/" element={<HomePage />}></Route>
-        <Route path="/Course-Planner-Host-Fork/study_plan" element={<StudyPlanPage />}></Route>
-        <Route path="/Course-Planner-Host-Fork/view_program" element={<ViewProgramPage />}></Route>
-        <Route path="/Course-Planner-Host-Fork/add_course" element={<AddCoursePage />}></Route>
-        <Route path="/Course-Planner-Host-Fork/add_degree" element={<AddDegreePage />}></Route>
-        <Route path="/Course-Planner-Host-Fork/add_major_minor" element={<AddMajorMinorPage />}></Route>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/study_plan" element={<StudyPlanPage />}></Route>
+        <Route path="/view_program" element={<ViewProgramPage />}></Route>
+        <Route path="/add_course" element={<AddCoursePage />}></Route>
+        <Route path="/add_degree" element={<AddDegreePage />}></Route>
+        <Route path="/add_major_minor" element={<AddMajorMinorPage />}></Route>
         <Route
           path="/upload_export_file"
           element={<UploadExportFilePage />}></Route>
