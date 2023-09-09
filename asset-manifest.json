@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ivan8882004/HKUCoursePlanner-Reviewer/static/css/main.7fd041a9.css",
-    "main.js": "/ivan8882004/HKUCoursePlanner-Reviewer/static/js/main.fea6e94c.js",
-    "index.html": "/ivan8882004/HKUCoursePlanner-Reviewer/index.html",
-    "main.7fd041a9.css.map": "/ivan8882004/HKUCoursePlanner-Reviewer/static/css/main.7fd041a9.css.map",
-    "main.fea6e94c.js.map": "/ivan8882004/HKUCoursePlanner-Reviewer/static/js/main.fea6e94c.js.map"
+    "main.css": "/HKUCoursePlanner-Reviewer/static/css/main.7fd041a9.css",
+    "main.js": "/HKUCoursePlanner-Reviewer/static/js/main.fea6e94c.js",
+    "index.html": "/HKUCoursePlanner-Reviewer/index.html",
+    "main.7fd041a9.css.map": "/HKUCoursePlanner-Reviewer/static/css/main.7fd041a9.css.map",
+    "main.fea6e94c.js.map": "/HKUCoursePlanner-Reviewer/static/js/main.fea6e94c.js.map"
   },
   "entrypoints": [
     "static/css/main.7fd041a9.css",
