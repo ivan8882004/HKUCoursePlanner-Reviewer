@@ -1,14 +1,39 @@
 {
-    "key": "BEng(CompSc)",
-    "value": {
-        "name": "BEng(CompSc)",
-        "ug-5": {"cc": 6, "leng": ["CAES1000", "CENG9001", "CAES9542"]},
+  "key": "BEng(CompSc)",
+  "value": {
+    "name": "BEng(CompSc)",
+    "ug-5": { "cc": 6, "leng": ["CAES1000", "CENG9001", "CAES9542"] },
+    "courses": [
+      {
+        "credit": 42,
+        "courses": ["MATH1853", "..."],
+        "types": "Engineering Core Courses"
+      },
+      {
+        "credit": 24,
+        "courses": ["COMP2119", "..."],
+        "types": "Introductory Courses"
+      },
+      {
+        "credit": 30,
+        "courses": ["COMP3230", ["COMP3251", "COMP3252"], "..."],
+        "types": "Advanced Courses"
+      },
+      {
+        "credit": 36,
+        "courses": ["COMP2501", "..."],
+        "types": "Discipline Elective Courses"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Cyber Security",
         "courses": [
-            {"credit": 42, "courses": ["MATH1853", "..."], "types": "Engineering Core Courses"}, 
-            {"credit": 24, "courses": ["COMP2119", "..."], "types": "Introductory Courses"}, 
-            {"credit": 30, "courses": ["COMP3230", ["COMP3251", "COMP3252"], "..."], "types": "Advanced Courses"}, 
-            {"credit": 36, "courses": ["COMP2501", "..."], "types": "Discipline Elective Courses"}
-        ],
-        "focus":[{"name": "Cyber Security", "courses": [{"credit": 18, "courses": ["COMP3355", "..."]}, {"credit": 6, "courses": ["COMP3316", "..."]}]}, "..."]
-    }
+          { "credit": 18, "courses": ["COMP3355", "..."] },
+          { "credit": 6, "courses": ["COMP3316", "..."] }
+        ]
+      },
+      "..."
+    ]
+  }
 }

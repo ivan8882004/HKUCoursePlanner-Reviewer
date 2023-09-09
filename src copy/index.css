@@ -1,110 +1,97 @@
 .TimeTableMain {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 0 10px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 0 10px;
+  justify-items: center;
 
-    .table {
-      display: table;
-      table-layout: fixed;
-      width:100%;
-    }
-   
-  
-    .row {
-      display: table-row;
-    }
-    
-    .TimeSlotConflict {
-      background-color: rgb(247, 52, 52);
-      border: 1px solid rgb(38, 221, 221);  
-      width: 75px;
-      height: 25px;
-      display: table-cell;
-      text-align: center
-      
-  
-     
-    }
-  
-    .TimeSlotEmpty {
-      display: table-cell;
-      border: 1px solid rgb(38, 221, 221);  
-      padding: 1vh;
-      width: 75px;
-      height: 25px;
-      text-align: center
-  
-  
-    }
-  
-    
-  
-    .TimeSlotFilled {
-      background-color: deepskyblue;
-      border: 1px solid rgb(38, 221, 221);  
-      padding: 1vh;
-      display: table-cell;
-      width: 75px;
-      height: 25px;
-      text-align: center
-  
-  
-  
-    }
-  
-  
-    .header { 
-      display: table-cell;
-      text-align: center;
-      padding: 1vh;
-      width: 75px;
-      height: 25px;
+  .table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
   }
-  
+
+  .row {
+    display: table-row;
+  }
+
+  .TimeSlotConflict {
+    background-color: rgb(247, 52, 52);
+    border: 1px solid rgb(38, 221, 221);
+    width: 75px;
+    height: 25px;
+    display: table-cell;
+    text-align: center;
+  }
+
+  .TimeSlotEmpty {
+    display: table-cell;
+    border: 1px solid rgb(38, 221, 221);
+    padding: 1vh;
+    width: 75px;
+    height: 25px;
+    text-align: center;
+  }
+
+  .TimeSlotFilled {
+    background-color: deepskyblue;
+    border: 1px solid rgb(38, 221, 221);
+    padding: 1vh;
+    display: table-cell;
+    width: 75px;
+    height: 25px;
+    text-align: center;
+  }
+
+  .header {
+    display: table-cell;
+    text-align: center;
+    padding: 1vh;
+    width: 75px;
+    height: 25px;
+  }
+
   .showDays {
     display: flex;
   }
-  
+
   .showSem {
-    display:flex;
+    display: flex;
   }
-  
+
   .scroll-container {
     max-height: 68vh;
     min-height: 50vh;
-    overflow: auto; 
+    overflow: auto;
   }
-  
+
   .courseCard {
-    border: 1px solid rgb(38, 221, 221);  
+    border: 1px solid rgb(38, 221, 221);
   }
   .courseContainer {
     display: grid;
-    grid-template-columns: 1fr 6fr 
+    grid-template-columns: 1fr 6fr;
   }
-  
+
   .checkbox {
-    transform: scale(0.4); 
-    margin-right: 5px; 
+    transform: scale(0.4);
+    margin-right: 5px;
   }
-  
+
   .cardColumn {
     display: flex;
-    border: 1px solid rgb(38, 221, 221);  
-  
+    border: 1px solid rgb(38, 221, 221);
   }
-  
+
   .listContainer {
     display: grid;
-    grid-template-columns: 6fr 1fr 
+    grid-template-columns: 6fr 1fr;
   }
-  
+
   .track {
     background-color: #a5b7d1;
     height: 6px;
   }
-  
+
   .thumb {
     width: 16px;
     height: 16px;
@@ -113,14 +100,13 @@
     cursor: pointer;
     position: absolute;
   }
-  
+
   .thumb:active {
     background-color: #0056b3;
   }
-  
+
   .horizontal-slider {
     width: 300px;
     margin-bottom: 20px;
   }
-
 }
