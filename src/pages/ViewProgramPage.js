@@ -65,78 +65,90 @@ function ViewProgramPage() {
 
   joinCourseList = [...new Set(joinCourseList)]
 
+  let notFind = []
+
   let toProcessList = joinCourseList.map(item => {
     if (getCourses(item)?.fullName === undefined) {
-      console.log(item + 'not exist')
+      notFind.push(item)
     }
     return {
       name: item,
-      fullName: getCourses(item).fullName,
+      fullName: getCourses(item)?.fullName,
       isPrereg: [],
       extraMessage: [],
     }
   })
 
-  for (let i = toProcessList.length - 1; i >= 0; i--) {
-    let coursePrereg = []
-    let placed = false
-    const courseDetail = getCourses(toProcessList[i].name)
-    for (let j = 0; j < courseDetail.prereg.length; j++) {
-      for (let k = 0; k < courseDetail.prereg[j].length; k++) {
-        coursePrereg = [
-          ...coursePrereg,
-          ...courseDetail.prereg[j][k].split('&'),
+  let graph;
+
+  if (!notFind.length) {
+    for (let i = toProcessList.length - 1; i >= 0; i--) {
+      let coursePrereg = []
+      let placed = false
+      const courseDetail = getCourses(toProcessList[i].name)
+      for (let j = 0; j < courseDetail.prereg.length; j++) {
+        for (let k = 0; k < courseDetail.prereg[j].length; k++) {
+          coursePrereg = [
+            ...coursePrereg,
+            ...courseDetail.prereg[j][k].split('&'),
+          ]
+        }
+      }
+      for (let j = 0; j < coursePrereg.length; j++) {
+        for (let k = 0; k < toProcessList.length; k++) {
+          const name = toProcessList[k].name
+          if (coursePrereg[j] === toProcessList[k].name) {
+            let extraMessage = []
+            for (let ii = 0; ii < courseDetail.prereg.length; ii++) {
+              let find = false
+              for (let jj = 0; jj < courseDetail.prereg[ii].length; jj++) {
+                const index = courseDetail.prereg[ii][jj].indexOf(
+                  toProcessList[k].name
+                )
+                if (index !== -1) {
+                  find = true
+                }
+                if (index !== -1 && courseDetail.prereg[ii][jj].length !== 8) {
+                  extraMessage.push(
+                    [
+                      ...courseDetail.prereg[ii][jj]
+                        .split('&')
+                        .filter(item => item !== name),
+                    ].join('and')
+                  )
+                  break
+                }
+              }
+              if (!find) {
+                extraMessage.push([...courseDetail.prereg[ii]].join('or'))
+              }
+            }
+            toProcessList[k].isPrereg.unshift({
+              ...toProcessList[i],
+              extraMessage,
+            })
+            placed = true
+          }
+        }
+      }
+      if (placed) {
+        toProcessList = [
+          ...toProcessList.slice(0, i),
+          ...toProcessList.slice(i + 1),
         ]
       }
     }
-    for (let j = 0; j < coursePrereg.length; j++) {
-      for (let k = 0; k < toProcessList.length; k++) {
-        const name = toProcessList[k].name
-        if (coursePrereg[j] === toProcessList[k].name) {
-          let extraMessage = []
-          for (let ii = 0; ii < courseDetail.prereg.length; ii++) {
-            let find = false
-            for (let jj = 0; jj < courseDetail.prereg[ii].length; jj++) {
-              const index = courseDetail.prereg[ii][jj].indexOf(
-                toProcessList[k].name
-              )
-              if (index !== -1) {
-                find = true
-              }
-              if (index !== -1 && courseDetail.prereg[ii][jj].length !== 8) {
-                extraMessage.push(
-                  [
-                    ...courseDetail.prereg[ii][jj]
-                      .split('&')
-                      .filter(item => item !== name),
-                  ].join('and')
-                )
-                break
-              }
-            }
-            if (!find) {
-              extraMessage.push([...courseDetail.prereg[ii]].join('or'))
-            }
-          }
-          toProcessList[k].isPrereg.unshift({
-            ...toProcessList[i],
-            extraMessage,
-          })
-          placed = true
-        }
-      }
-    }
-    if (placed) {
-      toProcessList = [
-        ...toProcessList.slice(0, i),
-        ...toProcessList.slice(i + 1),
-      ]
-    }
-  }
 
-  const graph = toProcessList.map((item, index) => {
-    return <PreregGraph listItem={item} key={index} />
-  })
+    graph = toProcessList.map((item, index) => {
+      return <PreregGraph listItem={item} key={index} />
+    })
+  } else {
+    graph = notFind.map((item, index) => {
+      return <div key={index}>
+        Not find {item}
+      </div>
+    }) 
+  }
 
   return (
     <div className="ViewProgramPage">
