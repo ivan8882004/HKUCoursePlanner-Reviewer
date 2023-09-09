@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="favicon.ico" width="128" height="128" />
+  <img src="./public/favicon.ico" width="128" height="128" />
   <h3>📚 HKU Course Planner</h3>
   <p>Navigate Your Academic Success with HKU Course Planner</p>
 </div>
