@@ -1,12 +1,11 @@
-import CourseForm from "../components/CourseForm";
+import CourseForm from '../components/CourseForm'
 
 function AddCoursePage() {
-
-    return (
-        <div className="AddCoursePage">
-            <CourseForm />
-        </div>
-    )
+  return (
+    <div className="AddCoursePage">
+      <CourseForm />
+    </div>
+  )
 }
 
-export default AddCoursePage;
+export default AddCoursePage

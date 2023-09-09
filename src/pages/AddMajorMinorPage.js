@@ -1,11 +1,11 @@
-import MajorMinorForm from "../components/MajorMinorForm";
+import MajorMinorForm from '../components/MajorMinorForm'
 
 function AddMajorMinorPage() {
-    return (
-        <div className="AddMajorMinorPage">
-            <MajorMinorForm />
-        </div>
-    )
+  return (
+    <div className="AddMajorMinorPage">
+      <MajorMinorForm />
+    </div>
+  )
 }
 
-export default AddMajorMinorPage;
+export default AddMajorMinorPage

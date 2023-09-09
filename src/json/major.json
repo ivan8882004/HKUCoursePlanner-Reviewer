@@ -1,13 +1,29 @@
 {
-    "key": "major(CompSc)",
-    "value": {
-        "name": "major(CompSc)",
-        "courses": [
-            {"credit": 30, "courses": ["COMP1117", "..."], "types": "Introductory Courses"}, 
-            {"credit": 12, "courses": ["COMP3230", "..."], "types": "Elective courses"}, 
-            {"credit": 36, "courses": ["COMP2396", "..."], "types": "Elective courses"}, 
-            {"credit": 6, "courses": ["COMP3297", "COMP4805"], "types": "Capstone Experience"}
-        ],
-        "doubleCount": []
-    }
+  "key": "major(CompSc)",
+  "value": {
+    "name": "major(CompSc)",
+    "courses": [
+      {
+        "credit": 30,
+        "courses": ["COMP1117", "..."],
+        "types": "Introductory Courses"
+      },
+      {
+        "credit": 12,
+        "courses": ["COMP3230", "..."],
+        "types": "Elective courses"
+      },
+      {
+        "credit": 36,
+        "courses": ["COMP2396", "..."],
+        "types": "Elective courses"
+      },
+      {
+        "credit": 6,
+        "courses": ["COMP3297", "COMP4805"],
+        "types": "Capstone Experience"
+      }
+    ],
+    "doubleCount": []
+  }
 }

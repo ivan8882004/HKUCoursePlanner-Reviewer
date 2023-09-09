@@ -6,7 +6,7 @@
 
 ## :rocket: Features Overview
 
-* TODO
+- TODO
 
 ## :bulb: Start Planning Today
 
@@ -16,4 +16,4 @@
 
 If you find any bugs or have suggestions for improvement, please feel free to create an issue.
 
-*p.s. Star this project & share it with your friends if it helped!* 😉
+_p.s. Star this project & share it with your friends if it helped!_ 😉

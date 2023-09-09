@@ -1,11 +1,11 @@
-import DegreeForm from "../components/DegreeForm";
+import DegreeForm from '../components/DegreeForm'
 
 function AddDegreePage() {
-    return (
-        <div className="AddDegreePage">
-            <DegreeForm />
-        </div>
-    )
+  return (
+    <div className="AddDegreePage">
+      <DegreeForm />
+    </div>
+  )
 }
 
-export default AddDegreePage;
+export default AddDegreePage

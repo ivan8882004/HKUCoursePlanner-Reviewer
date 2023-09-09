@@ -1,13 +1,20 @@
-import { useContext, useEffect, useState } from "react";
-import TableContext from "../../context/SettingsProvider";
+import { useContext, useEffect, useState } from 'react'
+import TableContext from '../../context/SettingsProvider'
 
-function CourseCard({ course, deleteCourse, insertCourse, selectedCourseList, isSemOne, index, insertCourseByMouseEnter }) {
+function CourseCard({
+  course,
+  deleteCourse,
+  insertCourse,
+  selectedCourseList,
+  isSemOne,
+  index,
+  insertCourseByMouseEnter,
+}) {
+  const [isChecked, setIsChecked] = useState(false)
 
-    const [isChecked, setIsChecked] = useState(false);
+  const { setDetail } = useContext(TableContext)
 
-    const {setDetail} = useContext(TableContext)
-
-    /*useEffect(() => {
+  /*useEffect(() => {
         console.log(selectedCourseList);
     
     if (selectedCourseList.some(course_in_list => course_in_list.courseName === course.courseName ) ) { 
@@ -27,8 +34,7 @@ function CourseCard({ course, deleteCourse, insertCourse, selectedCourseList, is
         
     }, [selectedCourseList]); */
 
-
-    /*useEffect(() => {
+  /*useEffect(() => {
     
     if (!selectedCourseList.some(course_in_list => course_in_list.courseName === course.courseName ) ) { 
         course.isChecked = false;
@@ -49,68 +55,68 @@ function CourseCard({ course, deleteCourse, insertCourse, selectedCourseList, is
         
     }, [isSemOne]); */
 
-    useEffect(() => {
+  useEffect(() => {
+    //console.log(selectedCourseList);
 
-        //console.log(selectedCourseList);
+    if (
+      selectedCourseList.some(
+        course_in_list =>
+          course_in_list.courseName === course.courseName &&
+          course_in_list.isChecked
+      )
+    ) {
+      setIsChecked(true)
+    } else {
+      setIsChecked(false)
+    }
+  }, [selectedCourseList, course.courseName])
 
-        if (selectedCourseList.some(course_in_list => course_in_list.courseName === course.courseName && course_in_list.isChecked)) {
-            setIsChecked(true);
-        } else {
-            setIsChecked(false);
-        }
+  const handleChange = event => {
+    const isCheckBoxChecked = event.target.checked
+    //console.log("check box is checked?", isCheckBoxChecked)
 
-    }, [selectedCourseList, course.courseName]);
+    if (isCheckBoxChecked) {
+      insertCourse(course)
+    } else {
+      deleteCourse(course)
+    }
 
-    const handleChange = (event) => {
+    // setIsChecked(!isChecked);
+    setIsChecked(isCheckBoxChecked)
+  }
 
+  const handleMouseLeave = () => {
+    if (!isChecked) {
+      deleteCourse(course)
+    }
+  }
 
-        const isCheckBoxChecked = event.target.checked
-        //console.log("check box is checked?", isCheckBoxChecked)
+  const handleMouseEnter = () => {
+    if (!isChecked) {
+      insertCourseByMouseEnter(course)
+      setDetail(course)
+    }
+  }
 
-        if (isCheckBoxChecked) {
-
-            insertCourse(course);
-
-        } else {
-
-            deleteCourse(course);
-
-        }
-
-        // setIsChecked(!isChecked);
-        setIsChecked(isCheckBoxChecked);
-    };
-
-    const handleMouseLeave = () => {
-        if (!isChecked) {
-            deleteCourse(course)
-        };
-    };
-
-    const handleMouseEnter = () => {
-        if (!isChecked) {
-            insertCourseByMouseEnter(course)
-            setDetail(course)
-        };
-    };
-
-    return (
-        <label className={"courseContainer "}>
-            <input
-                type="checkbox" className="checkbox"
-                checked={isChecked}
-                onChange={handleChange}
-            />
-            <div className={"cardColumn"}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-            >
-                <p>{course.courseName}<br></br><span className="fullName">{course.courseTitle}</span></p>
-            </div>
-        </label>
-    );
-
-};
-export default CourseCard;
-
-
+  return (
+    <label className={'courseContainer '}>
+      <input
+        type="checkbox"
+        className="checkbox"
+        checked={isChecked}
+        onChange={handleChange}
+      />
+      <div
+        className={'cardColumn'}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}>
+        <p>
+          {course.courseName}
+          <br></br>
+          <span className="fullName">{course.courseTitle}</span>
+        </p>
+      </div>
+    </label>
+  )
+}
+export default CourseCard

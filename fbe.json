@@ -1,3018 +1,2132 @@
 [
-    {
-        "name": "ACCT1101",
-        "fullName": "Introduction to financial accounting",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT1112",
-        "fullName": "Professional preparation programme",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON1210",
-        "fullName": "Introductory microeconomics",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON1220",
-        "fullName": "Introductory macroeconomics",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON1280",
-        "fullName": "Analysis of economic data",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [
-            "IIMT1640",
-            "STAT1601",
-            "STAT1602",
-            "STAT1603",
-            "STAT2901"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA1310",
-        "fullName": "Corporate finance",
-        "prereg": [
-            [
-                "ACCT1101"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "STAT3904"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT1640",
-        "fullName": "Probability and statistics for business",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [
-            "ECON1280",
-            "STAT1602",
-            "STAT1603"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT2601",
-        "fullName": "Management information systems",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [
-            "BSIM4022"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT2401",
-        "fullName": "Principles of management",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG2501",
-        "fullName": "Introduction to marketing",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT2102",
-        "fullName": "Intermediate financial accounting I",
-        "prereg": [
-            [
-                "ACCT1101"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT2105",
-        "fullName": "Introduction to management accounting",
-        "prereg": [
-            [
-                "ACCT1101"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT3103",
-        "fullName": "Intermediate financial accounting II",
-        "prereg": [
-            [
-                "ACCT2102"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT3106",
-        "fullName": "Management control",
-        "prereg": [
-            [
-                "ACCT2105"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT3107",
-        "fullName": "Hong Kong taxation",
-        "prereg": [
-            [
-                "ACCT1101"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT3109",
-        "fullName": "Auditing",
-        "prereg": [
-            [
-                "ACCT3103"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT3111",
-        "fullName": "Corporate governance and social responsibility",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT3112",
-        "fullName": "Accounting data management and analytics",
-        "prereg": [
-            [
-                "STAT1602"
-            ],
-            [
-                "ACCT3103"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT3113",
-        "fullName": "Accounting for business valuation and financial contracting: theory and application",
-        "prereg": [
-            [
-                "ACCT1101"
-            ],
-            [
-                "FINA1310"
-            ],
-            [
-                "ECON1280",
-                "STAT1602",
-                "STAT1603"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT3114",
-        "fullName": "Valuation using financial statements",
-        "prereg": [
-            [
-                "ACCT1101"
-            ],
-            [
-                "FINA1310"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT3115",
-        "fullName": "Financial reporting and analysis of financial institutions",
-        "prereg": [
-            [
-                "ACCT1101"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT4104",
-        "fullName": "Advanced financial accounting",
-        "prereg": [
-            [
-                "ACCT3103"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT4108",
-        "fullName": "Advanced topics in auditing",
-        "prereg": [
-            [
-                "ACCT3109"
-            ],
-            [
-                "ACCT4104"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT4110",
-        "fullName": "Advanced topics in taxation",
-        "prereg": [
-            [
-                "ACCT3107"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ACCT4114",
-        "fullName": "Accounting seminar",
-        "prereg": [
-            [
-                "ACCT3103"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI1802",
-        "fullName": "Advanced business communication skills",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI1805",
-        "fullName": "International field trip",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI1806",
-        "fullName": "Israeli entrepreneurial experience",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI1807",
-        "fullName": "Business consulting practicum",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI2811",
-        "fullName": "Negotiation and conflict resolution",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI2812",
-        "fullName": "Impact lab",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI2813",
-        "fullName": "Field experience in China's business environment",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI2814",
-        "fullName": "Business ethics",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI2815",
-        "fullName": "Managing communication through social media",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI2816",
-        "fullName": "Transformative business immersion in developing economies",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI2819",
-        "fullName": "Persuasion and behavioural change",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI3711",
-        "fullName": "New business generation - a strategic and operational approach",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI3801",
-        "fullName": "Business law",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI3803",
-        "fullName": "Company law",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI3808",
-        "fullName": "Global analysis team project",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI3809",
-        "fullName": "Leadership development programme",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI3810",
-        "fullName": "Legal and ethical environment of global business",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "BUSI3811",
-        "fullName": "Reading course",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "ECON1280",
-                "STAT1602",
-                "STAT1603"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2210",
-        "fullName": "Intermediate microeconomics",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "MATH1009",
-                "MATH1011",
-                "MATH1013"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2214",
-        "fullName": "Games and decisions",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "STRA3709"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2216",
-        "fullName": "Industrial organization",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2217",
-        "fullName": "Economics of networks",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2220",
-        "fullName": "Intermediate macroeconomics",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "ECON1220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2223",
-        "fullName": "Public finance",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2225",
-        "fullName": "Economics of population changes",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "ECON1220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2226",
-        "fullName": "Chinese economy",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2232",
-        "fullName": "Economics of human resources",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2233",
-        "fullName": "The economics of law",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2234",
-        "fullName": "Transportation economics",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2249",
-        "fullName": "Foreign trade and investment in China",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "ECON1220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2252",
-        "fullName": "Theory of international trade",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "ECON1220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2253",
-        "fullName": "International macroeconomics",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "ECON1220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2255",
-        "fullName": "The economic system of Hong Kong",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "ECON1220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2257",
-        "fullName": "Trade, investment and development in APEC economies",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2262",
-        "fullName": "Economic development",
-        "prereg": [
-            [
-                "ECON1210&ECON1220",
-                "GHAD1002"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2264",
-        "fullName": "Political economy of development in China",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "ECON1220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2266",
-        "fullName": "Urban economics",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2271",
-        "fullName": "Finance in history and society",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2272",
-        "fullName": "History of economic thought",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2273",
-        "fullName": "Economic history of China",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2275",
-        "fullName": "The political economy of law and public policy",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2276",
-        "fullName": "State, law and the economy",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2280",
-        "fullName": "Introductory econometrics",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "ECON1280",
-                "MATH1853",
-                "STAT1601",
-                "STAT1602",
-                "STAT2601",
-                "STAT2901"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "STAT3614",
-            "STAT3907"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2284",
-        "fullName": "Mathematical methods in economics",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2285",
-        "fullName": "Mathematical economics",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON2292",
-        "fullName": "Current economic affairs",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3215",
-        "fullName": "Uncertainty and information",
-        "prereg": [
-            [
-                "ECON2210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3219",
-        "fullName": "Selected topics in price theory",
-        "prereg": [
-            [
-                "ECON2210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3220",
-        "fullName": "Research on Chinese economy",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3221",
-        "fullName": "Macroeconomic analysis for emerging markets economies",
-        "prereg": [
-            [
-                "ECON2220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3222",
-        "fullName": "Monetary economics",
-        "prereg": [
-            [
-                "ECON2220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3223",
-        "fullName": "Credit, bubbles and the macroeconomy",
-        "prereg": [
-            [
-                "ECON2210"
-            ],
-            [
-                "ECON2220"
-            ],
-            [
-                "ECON2280",
-                "ECON3284"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3224",
-        "fullName": "Health economics",
-        "prereg": [
-            [
-                "ECON2210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3225",
-        "fullName": "Big data economics",
-        "prereg": [
-            [
-                "ECON2280",
-                "ECON3284"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3229",
-        "fullName": "Topics in macroeconomics",
-        "prereg": [
-            [
-                "ECON2210"
-            ],
-            [
-                "ECON2220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3232",
-        "fullName": "Environmental economics",
-        "prereg": [
-            [
-                "ECON2210"
-            ],
-            [
-                "ECON2280"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3233",
-        "fullName": "Data analytics in digital economy",
-        "prereg": [
-            [
-                "ECON2210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3234",
-        "fullName": "Behavioural economics",
-        "prereg": [
-            [
-                "ECON2210"
-            ],
-            [
-                "MATH1013"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3235",
-        "fullName": "Economics of education and human capital",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "ECON1280",
-                "STAT1603"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3243",
-        "fullName": "Capital theory",
-        "prereg": [
-            [
-                "ECON2210"
-            ],
-            [
-                "ECON2220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3262",
-        "fullName": "Inequality and growth",
-        "prereg": [
-            [
-                "ECON1280",
-                "STAT1601",
-                "STAT1602",
-                "STAT1603",
-                "STAT2601",
-                "STAT2901"
-            ],
-            [
-                "ECON2220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3272",
-        "fullName": "The political economy of globalization",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3283",
-        "fullName": "Economic forecasting",
-        "prereg": [
-            [
-                "ECON2280"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "STAT4601"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3284",
-        "fullName": "Causal inference",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "ECON1280",
-                "STAT1602",
-                "STAT1603",
-                "STAT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON3293",
-        "fullName": "Reading course",
-        "prereg": [
-            [
-                "ECON2210"
-            ],
-            [
-                "ECON2220"
-            ],
-            [
-                "ECON2280"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON4200",
-        "fullName": "Senior seminar in economics and finance",
-        "prereg": [
-            [
-                "ECON2280"
-            ],
-            [
-                "FINA2320&FINA2322",
-                "ECON2210&ECON2220"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON4211",
-        "fullName": "Advanced microeconomics",
-        "prereg": [
-            [
-                "ECON2210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON4214",
-        "fullName": "Advanced game theory",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "MATH1009",
-                "MATH1011",
-                "MATH1013"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON4221",
-        "fullName": "Advanced macroeconomics",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "ECON1220"
-            ],
-            [
-                "MATH1009"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "ECON4294",
-        "fullName": "Dissertation",
-        "prereg": [
-            [
-                "ECON2210"
-            ],
-            [
-                "ECON2220"
-            ],
-            [
-                "ECON2280"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 12
-    },
-    {
-        "name": "FBEC2001",
-        "fullName": "China's business and marketing",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FBEC2002",
-        "fullName": "Field experience in Chinese economy: implications for global business",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FBEC2003",
-        "fullName": "Creativity, innovation and entrepreneurship in China I",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FBEC2004",
-        "fullName": "Creativity, innovation and entrepreneurship in China II",
-        "prereg": [["FBEC2003"]],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2311",
-        "fullName": "Case studies in corporate finance",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "FINA1310"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2312",
-        "fullName": "Advanced corporate finance",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "FINA1310"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2320",
-        "fullName": "Investments and portfolio analysis",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "FINA1310"
-            ],
-            [
-                "ECON1280",
-                "STAT1600",
-                "STAT1601",
-                "STAT1602",
-                "STAT1603",
-                "STAT2601",
-                "STAT2901",
-                "MATH1853"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "STAT3609",
-            "STAT3952"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2322",
-        "fullName": "Derivatives",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "FINA1310"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": ["IMSE4110", "STAT3618", "STAT3905", "STAT3910"],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2330",
-        "fullName": "Financial markets and institutions",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "FINA1310"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2331",
-        "fullName": "Management of commercial banks",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2332",
-        "fullName": "International banking",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2334",
-        "fullName": "Banking - strategies, operations and controls",
-        "prereg": [
-            [
-                "ACCT1101"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2342",
-        "fullName": "Insurance: theory and practice",
-        "prereg": [
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2343",
-        "fullName": "Lending and credit in private banking and corporate banking (1)",
-        "prereg": [
-            [
-                "ACCT1101"
-            ],
-            [
-                "FINA1310"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2344",
-        "fullName": "Lending and credit in private banking and corporate banking (2)",
-        "prereg": [["FINA2343"]],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2382",
-        "fullName": "Real estate finance",
-        "prereg": [
-            [
-                "FINA1310"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2383",
-        "fullName": "International financial management",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "FINA1310"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2385",
-        "fullName": "ESG in business and finance",
-        "prereg": [
-            [
-                "FINA1310"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA2390",
-        "fullName": "Financial programming and databases",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3316",
-        "fullName": "Investment banking: valuation, LBOs, and M&A",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3317",
-        "fullName": "Entrepreneurial finance",
-        "prereg": [
-            [
-                "FINA2322"
-            ],
-            [
-                "FINA2320",
-                "STAT3609"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3318",
-        "fullName": "China's financial system and markets",
-        "prereg": [
-            [
-                "FINA1310"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3319",
-        "fullName": "Green finance and impact investing",
-        "prereg": [
-            [
-                "FINA1310"
-            ],
-            [
-                "FINA2320"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3322",
-        "fullName": "Credit risk",
-        "prereg": [
-            [
-                "FINA2322"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "STAT4607"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3323",
-        "fullName": "Fixed income securities",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "FINA2322",
-                "STAT3905"
-            ],
-            [
-                "FINA2320",
-                "STAT3609"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3324",
-        "fullName": "Interest rate models",
-        "prereg": [
-            [
-                "FINA3323"
-            ],
-            [
-                "FINA3350"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3325",
-        "fullName": "Alternative investments",
-        "prereg": [
-            [
-                "FINA2322"
-            ],
-            [
-                "FINA2320",
-                "STAT3609"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "FINA3327"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3326",
-        "fullName": "Equity valuation and investment management",
-        "prereg": [
-            [
-                "FINA2320"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3327",
-        "fullName": "Hedge funds: strategies, business management, and institutions",
-        "prereg": [
-            [
-                "FINA2322"
-            ],
-            [
-                "FINA2320",
-                "STAT3609"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "FINA3325"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3334",
-        "fullName": "Private banking and wealth management",
-        "prereg": [
-            [
-                "FINA2322"
-            ],
-            [
-                "FINA2320"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3335",
-        "fullName": "Current issues in asset management and private banking industry",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3336",
-        "fullName": "Investment consulting, institutional business and family office",
-        "prereg": [
-            [
-                "FINA2320"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3337",
-        "fullName": "Venture capital and private equity",
-        "prereg": [
-            [
-                "FINA2320"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3338",
-        "fullName": "Multi-asset investing",
-        "prereg": [
-            [
-                "FINA1310"
-            ],
-            [
-                "FINA2320"
-            ],
-            [
-                "FINA2322"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3340",
-        "fullName": "Risk management",
-        "prereg": [
-            [
-                "FINA2322",
-                "STAT3905",
-                "STAT3910",
-                "MATH3906"
-            ],
-            [
-                "FINA2320",
-                "STAT3609"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3350",
-        "fullName": "Mathematical finance",
-        "prereg": [
-            [
-                "FINA2322"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "MATH3906"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3351",
-        "fullName": "Spreadsheet financial modeling",
-        "prereg": [
-            [
-                "FINA2322"
-            ],
-            [
-                "FINA2320",
-                "STAT3609"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3353",
-        "fullName": "Regulatory, operational and valuation issues in finance institutions",
-        "prereg": [
-            [
-                "FINA2320"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3360",
-        "fullName": "Financial practicum",
-        "prereg": [
-            [
-                "FINA2322"
-            ],
-            [
-                "FINA2320"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3381",
-        "fullName": "Behavioural finance",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "FINA1310"
-            ],
-            [
-                "FINA2320",
-                "STAT3609"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3382",
-        "fullName": "Structured finance and securitization",
-        "prereg": [
-            [
-                "FINA2322"
-            ],
-            [
-                "FINA2320",
-                "STAT3609"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3383",
-        "fullName": "Financial regulations and compliance",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3384",
-        "fullName": "Behavioural and sociological finance",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3385",
-        "fullName": "Global sustainable investing and ESG integration",
-        "prereg": [
-            [
-                "FINA1310"
-            ],
-            [
-                "FINA2320"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA3391",
-        "fullName": "Reading course",
-        "prereg": [
-            [
-                "ECON2280"
-            ],
-            [
-                "FINA2320"
-            ],
-            [
-                "FINA2322"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA4321",
-        "fullName": "Managing money in asset management and private banking",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA4341",
-        "fullName": "Quantitative risk management",
-        "prereg": [
-            [
-                "FINA3350"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "STAT4608"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA4350",
-        "fullName": "Text analytics and natural language processing in finance and fintech",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA4354",
-        "fullName": "Financial engineering",
-        "prereg": [
-            [
-                "FINA3350"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA4359",
-        "fullName": "Big data analytics applied toward quantitative finance",
-        "prereg": [
-            [
-                "ECON1210"
-            ],
-            [
-                "FINA2320"
-            ],
-            [
-                "IIMT2602",
-                "COMP1117"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "FINA4392",
-        "fullName": "Dissertation ",
-        "prereg": [
-            [
-                "ECON2280"
-            ],
-            [
-                "FINA2320"
-            ],
-            [
-                "FINA2322"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 12
-    },
-    {
-        "name": "IIMT1611",
-        "fullName": "Principles of technology entrepreneurship",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT2602",
-        "fullName": "Business programming",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [
-            "COMP1117",
-            "ENGG1330"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT2628",
-        "fullName": "Innovation and entrepreneurship internship",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT2641",
-        "fullName": "Introduction to business analytics",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3601",
-        "fullName": "Database management",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [
-            "BSIM3017",
-            "COMP3278"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3602",
-        "fullName": "Information systems analysis and design",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "BSIM3014",
-            "COMP3297"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3603",
-        "fullName": "Project management",
-        "prereg": [
-            [
-                "ACCT1101"
-            ],
-            [
-                "ECON1210"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "BSIM4011"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3604",
-        "fullName": "Telecommunications management",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "COMP3234"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3621",
-        "fullName": "Creativity and business innovation",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3622",
-        "fullName": "Business transformation",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3623",
-        "fullName": "Design thinking: concepts and applications",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3624",
-        "fullName": "Design studio",
-        "prereg": [
-            [
-                "IIMT3623"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3626",
-        "fullName": "Values-driven innovation",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3627",
-        "fullName": "Venture and entrepreneurship management",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3635",
-        "fullName": "Operations management",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3636",
-        "fullName": "Decision and risk analysis I",
-        "prereg": [
-            [
-                "ECON1280",
-                "STAT1602",
-                "STAT1603",
-                "STAT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3637",
-        "fullName": "Decision and risk analysis II",
-        "prereg": [
-            [
-                "IIMT3636"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3641",
-        "fullName": "Introduction to financial analytics",
-        "prereg": [
-            [
-                "FINA2320",
-                "IIMT2641",
-                "IIMT3636",
-                "STAT3609",
-                "STAT3952"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3642",
-        "fullName": "Managing and mining big data",
-        "prereg": [
-            [
-                "IIMT2641"
-            ],
-            [
-                "STAT1602"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3643",
-        "fullName": "Data visualization and visual analytics",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3661",
-        "fullName": "Decision support and expert systems",
-        "prereg": [
-            [
-                "IIMT2602"
-            ],
-            [
-                "IIMT3601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3662",
-        "fullName": "Advanced database management",
-        "prereg": [
-            [
-                "IIMT3602",
-                "COMP3278"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "BSIM4018"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3663",
-        "fullName": "Internet and mobile applications",
-        "prereg": [
-            [
-                "IIMT2602",
-                "COMP1117"
-            ],
-            [
-                "IIMT3601",
-                "COMP3278"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "BSIM3021",
-            "COMP3322"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3664",
-        "fullName": "Telecommunications policy",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3665",
-        "fullName": "Information systems security management",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3666",
-        "fullName": "Current topics in information systems",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3667",
-        "fullName": "Information systems strategy",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3668",
-        "fullName": "Multimedia applications development",
-        "prereg": [
-            [
-                "IIMT2602"
-            ],
-            [
-                "IIMT3601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3681",
-        "fullName": "Supply chain management",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3682",
-        "fullName": "IT and entrepreneurship",
-        "prereg": [
-            [
-                "IIMT2601"
-            ],
-            [
-                "MGMT2401"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "MGMT3415"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3683",
-        "fullName": "Enterprise resources planning systems",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3684",
-        "fullName": "Web and social media technology",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3685",
-        "fullName": "e-Commerce",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "BSIM4019"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3686",
-        "fullName": "Information systems audit and control",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3688",
-        "fullName": "Artificial intelligence in business",
-        "prereg": [
-            [
-                "IIMT3601",
-                "COMP3278"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [
-            "COMP3270"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3689",
-        "fullName": "Cloud computing: essential and application in entrepreneurship",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT3690",
-        "fullName": "Information systems practicum",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 12
-    },
-    {
-        "name": "IIMT4601",
-        "fullName": "Information systems project management",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [
-            "COMP3404"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "IIMT4602",
-        "fullName": "Digital innovation",
-        "prereg": [
-            [
-                "IIMT2601"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT2787",
-        "fullName": "Business case analysis and presentation",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3403",
-        "fullName": "Leadership",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3404",
-        "fullName": "Cross-cultural management",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3405",
-        "fullName": "Organisational behaviour",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3415",
-        "fullName": "Principles of entrepreneurship",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [
-            "IIMT3682"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3416",
-        "fullName": "Storytelling: global business communication",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3417",
-        "fullName": "The European business environment",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3426",
-        "fullName": "Employment and labour relations",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3429",
-        "fullName": "Strategic human resources management",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3433",
-        "fullName": "Organisational change and development",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3434",
-        "fullName": "Human resources: theory and practice",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3435",
-        "fullName": "Production and operations",
-        "prereg": [
-            [
-                "MGMT3423"
-            ],
-            [
-                "IIMT3636"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3447",
-        "fullName": "Applied organisation",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3457",
-        "fullName": "High-performance work systems",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3458",
-        "fullName": "Human resource planning and career management",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3464",
-        "fullName": "Leadership workshop",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3470",
-        "fullName": "Reward and compensation",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3472",
-        "fullName": "Team building programme",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3475",
-        "fullName": "Current topics in human resource management",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3476",
-        "fullName": "Managing organisational change",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3477",
-        "fullName": "Selections and training",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MGMT3478",
-        "fullName": "Compensation and benefits",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3501",
-        "fullName": "Consumer behaviour",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3502",
-        "fullName": "Marketing research",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3511",
-        "fullName": "Advertising management",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3512",
-        "fullName": "Brand management",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3513",
-        "fullName": "Consumer insights for marketing decisions",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3514",
-        "fullName": "Retailing",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3522",
-        "fullName": "Marketing in China",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3523",
-        "fullName": "Global marketing",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3524",
-        "fullName": "Digital marketing",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3525",
-        "fullName": "Services marketing",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3526",
-        "fullName": "Innovation and new product development",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3527",
-        "fullName": "Pricing strategies",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3528",
-        "fullName": "Marketing analytics",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3529",
-        "fullName": "Social media marketing",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3530",
-        "fullName": "Big data marketing",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3531",
-        "fullName": "Strategic marketing management",
-        "prereg": [
-            [
-                "MKTG2501"
-            ]
-        ],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "MKTG3532",
-        "fullName": "Platform business models and the sharing economy",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "STRA3702",
-        "fullName": "International business environment",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "STRA3703",
-        "fullName": "Multinational corporations",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "STRA3706",
-        "fullName": "China's business environment",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "STRA3708",
-        "fullName": "A century of business in Hong Kong",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "STRA3709",
-        "fullName": "Applications of strategic thinking in business",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [
-            "ECON2214"
-        ],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "STRA3716",
-        "fullName": "Competitiveness of Chinese firms",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "STRA4701",
-        "fullName": "Strategic management",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "STRA4702",
-        "fullName": "Global corporate strategy",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    },
-    {
-        "name": "STRA4703",
-        "fullName": "Business in Latin America",
-        "prereg": [],
-        "isPrereg": [],
-        "exclusive": [],
-        "recommendYear": 0,
-        "credit": 6
-    }
+  {
+    "name": "ACCT1101",
+    "fullName": "Introduction to financial accounting",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT1112",
+    "fullName": "Professional preparation programme",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON1210",
+    "fullName": "Introductory microeconomics",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON1220",
+    "fullName": "Introductory macroeconomics",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON1280",
+    "fullName": "Analysis of economic data",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": ["IIMT1640", "STAT1601", "STAT1602", "STAT1603", "STAT2901"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA1310",
+    "fullName": "Corporate finance",
+    "prereg": [["ACCT1101"]],
+    "isPrereg": [],
+    "exclusive": ["STAT3904"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT1640",
+    "fullName": "Probability and statistics for business",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": ["ECON1280", "STAT1602", "STAT1603"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT2601",
+    "fullName": "Management information systems",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": ["BSIM4022"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT2401",
+    "fullName": "Principles of management",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG2501",
+    "fullName": "Introduction to marketing",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT2102",
+    "fullName": "Intermediate financial accounting I",
+    "prereg": [["ACCT1101"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT2105",
+    "fullName": "Introduction to management accounting",
+    "prereg": [["ACCT1101"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT3103",
+    "fullName": "Intermediate financial accounting II",
+    "prereg": [["ACCT2102"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT3106",
+    "fullName": "Management control",
+    "prereg": [["ACCT2105"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT3107",
+    "fullName": "Hong Kong taxation",
+    "prereg": [["ACCT1101"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT3109",
+    "fullName": "Auditing",
+    "prereg": [["ACCT3103"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT3111",
+    "fullName": "Corporate governance and social responsibility",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT3112",
+    "fullName": "Accounting data management and analytics",
+    "prereg": [["STAT1602"], ["ACCT3103"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT3113",
+    "fullName": "Accounting for business valuation and financial contracting: theory and application",
+    "prereg": [
+      ["ACCT1101"],
+      ["FINA1310"],
+      ["ECON1280", "STAT1602", "STAT1603"]
+    ],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT3114",
+    "fullName": "Valuation using financial statements",
+    "prereg": [["ACCT1101"], ["FINA1310"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT3115",
+    "fullName": "Financial reporting and analysis of financial institutions",
+    "prereg": [["ACCT1101"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT4104",
+    "fullName": "Advanced financial accounting",
+    "prereg": [["ACCT3103"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT4108",
+    "fullName": "Advanced topics in auditing",
+    "prereg": [["ACCT3109"], ["ACCT4104"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT4110",
+    "fullName": "Advanced topics in taxation",
+    "prereg": [["ACCT3107"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ACCT4114",
+    "fullName": "Accounting seminar",
+    "prereg": [["ACCT3103"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI1802",
+    "fullName": "Advanced business communication skills",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI1805",
+    "fullName": "International field trip",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI1806",
+    "fullName": "Israeli entrepreneurial experience",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI1807",
+    "fullName": "Business consulting practicum",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI2811",
+    "fullName": "Negotiation and conflict resolution",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI2812",
+    "fullName": "Impact lab",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI2813",
+    "fullName": "Field experience in China's business environment",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI2814",
+    "fullName": "Business ethics",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI2815",
+    "fullName": "Managing communication through social media",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI2816",
+    "fullName": "Transformative business immersion in developing economies",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI2819",
+    "fullName": "Persuasion and behavioural change",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI3711",
+    "fullName": "New business generation - a strategic and operational approach",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI3801",
+    "fullName": "Business law",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI3803",
+    "fullName": "Company law",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI3808",
+    "fullName": "Global analysis team project",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI3809",
+    "fullName": "Leadership development programme",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI3810",
+    "fullName": "Legal and ethical environment of global business",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "BUSI3811",
+    "fullName": "Reading course",
+    "prereg": [["ECON1210"], ["ECON1280", "STAT1602", "STAT1603"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2210",
+    "fullName": "Intermediate microeconomics",
+    "prereg": [["ECON1210"], ["MATH1009", "MATH1011", "MATH1013"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2214",
+    "fullName": "Games and decisions",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": ["STRA3709"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2216",
+    "fullName": "Industrial organization",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2217",
+    "fullName": "Economics of networks",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2220",
+    "fullName": "Intermediate macroeconomics",
+    "prereg": [["ECON1210"], ["ECON1220"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2223",
+    "fullName": "Public finance",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2225",
+    "fullName": "Economics of population changes",
+    "prereg": [["ECON1210"], ["ECON1220"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2226",
+    "fullName": "Chinese economy",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2232",
+    "fullName": "Economics of human resources",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2233",
+    "fullName": "The economics of law",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2234",
+    "fullName": "Transportation economics",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2249",
+    "fullName": "Foreign trade and investment in China",
+    "prereg": [["ECON1210"], ["ECON1220"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2252",
+    "fullName": "Theory of international trade",
+    "prereg": [["ECON1210"], ["ECON1220"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2253",
+    "fullName": "International macroeconomics",
+    "prereg": [["ECON1210"], ["ECON1220"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2255",
+    "fullName": "The economic system of Hong Kong",
+    "prereg": [["ECON1210"], ["ECON1220"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2257",
+    "fullName": "Trade, investment and development in APEC economies",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2262",
+    "fullName": "Economic development",
+    "prereg": [["ECON1210&ECON1220", "GHAD1002"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2264",
+    "fullName": "Political economy of development in China",
+    "prereg": [["ECON1210"], ["ECON1220"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2266",
+    "fullName": "Urban economics",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2271",
+    "fullName": "Finance in history and society",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2272",
+    "fullName": "History of economic thought",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2273",
+    "fullName": "Economic history of China",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2275",
+    "fullName": "The political economy of law and public policy",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2276",
+    "fullName": "State, law and the economy",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2280",
+    "fullName": "Introductory econometrics",
+    "prereg": [
+      ["ECON1210"],
+      ["ECON1280", "MATH1853", "STAT1601", "STAT1602", "STAT2601", "STAT2901"]
+    ],
+    "isPrereg": [],
+    "exclusive": ["STAT3614", "STAT3907"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2284",
+    "fullName": "Mathematical methods in economics",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2285",
+    "fullName": "Mathematical economics",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON2292",
+    "fullName": "Current economic affairs",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3215",
+    "fullName": "Uncertainty and information",
+    "prereg": [["ECON2210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3219",
+    "fullName": "Selected topics in price theory",
+    "prereg": [["ECON2210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3220",
+    "fullName": "Research on Chinese economy",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3221",
+    "fullName": "Macroeconomic analysis for emerging markets economies",
+    "prereg": [["ECON2220"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3222",
+    "fullName": "Monetary economics",
+    "prereg": [["ECON2220"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3223",
+    "fullName": "Credit, bubbles and the macroeconomy",
+    "prereg": [["ECON2210"], ["ECON2220"], ["ECON2280", "ECON3284"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3224",
+    "fullName": "Health economics",
+    "prereg": [["ECON2210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3225",
+    "fullName": "Big data economics",
+    "prereg": [["ECON2280", "ECON3284"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3229",
+    "fullName": "Topics in macroeconomics",
+    "prereg": [["ECON2210"], ["ECON2220"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3232",
+    "fullName": "Environmental economics",
+    "prereg": [["ECON2210"], ["ECON2280"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3233",
+    "fullName": "Data analytics in digital economy",
+    "prereg": [["ECON2210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3234",
+    "fullName": "Behavioural economics",
+    "prereg": [["ECON2210"], ["MATH1013"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3235",
+    "fullName": "Economics of education and human capital",
+    "prereg": [["ECON1210"], ["ECON1280", "STAT1603"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3243",
+    "fullName": "Capital theory",
+    "prereg": [["ECON2210"], ["ECON2220"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3262",
+    "fullName": "Inequality and growth",
+    "prereg": [
+      ["ECON1280", "STAT1601", "STAT1602", "STAT1603", "STAT2601", "STAT2901"],
+      ["ECON2220"]
+    ],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3272",
+    "fullName": "The political economy of globalization",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3283",
+    "fullName": "Economic forecasting",
+    "prereg": [["ECON2280"]],
+    "isPrereg": [],
+    "exclusive": ["STAT4601"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3284",
+    "fullName": "Causal inference",
+    "prereg": [["ECON1210"], ["ECON1280", "STAT1602", "STAT1603", "STAT2601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON3293",
+    "fullName": "Reading course",
+    "prereg": [["ECON2210"], ["ECON2220"], ["ECON2280"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON4200",
+    "fullName": "Senior seminar in economics and finance",
+    "prereg": [["ECON2280"], ["FINA2320&FINA2322", "ECON2210&ECON2220"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON4211",
+    "fullName": "Advanced microeconomics",
+    "prereg": [["ECON2210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON4214",
+    "fullName": "Advanced game theory",
+    "prereg": [["ECON1210"], ["MATH1009", "MATH1011", "MATH1013"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON4221",
+    "fullName": "Advanced macroeconomics",
+    "prereg": [["ECON1210"], ["ECON1220"], ["MATH1009"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "ECON4294",
+    "fullName": "Dissertation",
+    "prereg": [["ECON2210"], ["ECON2220"], ["ECON2280"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 12
+  },
+  {
+    "name": "FBEC2001",
+    "fullName": "China's business and marketing",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FBEC2002",
+    "fullName": "Field experience in Chinese economy: implications for global business",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FBEC2003",
+    "fullName": "Creativity, innovation and entrepreneurship in China I",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FBEC2004",
+    "fullName": "Creativity, innovation and entrepreneurship in China II",
+    "prereg": [["FBEC2003"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2311",
+    "fullName": "Case studies in corporate finance",
+    "prereg": [["ECON1210"], ["FINA1310"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2312",
+    "fullName": "Advanced corporate finance",
+    "prereg": [["ECON1210"], ["FINA1310"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2320",
+    "fullName": "Investments and portfolio analysis",
+    "prereg": [
+      ["ECON1210"],
+      ["FINA1310"],
+      [
+        "ECON1280",
+        "STAT1600",
+        "STAT1601",
+        "STAT1602",
+        "STAT1603",
+        "STAT2601",
+        "STAT2901",
+        "MATH1853"
+      ]
+    ],
+    "isPrereg": [],
+    "exclusive": ["STAT3609", "STAT3952"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2322",
+    "fullName": "Derivatives",
+    "prereg": [["ECON1210"], ["FINA1310"]],
+    "isPrereg": [],
+    "exclusive": ["IMSE4110", "STAT3618", "STAT3905", "STAT3910"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2330",
+    "fullName": "Financial markets and institutions",
+    "prereg": [["ECON1210"], ["FINA1310"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2331",
+    "fullName": "Management of commercial banks",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2332",
+    "fullName": "International banking",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2334",
+    "fullName": "Banking - strategies, operations and controls",
+    "prereg": [["ACCT1101"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2342",
+    "fullName": "Insurance: theory and practice",
+    "prereg": [["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2343",
+    "fullName": "Lending and credit in private banking and corporate banking (1)",
+    "prereg": [["ACCT1101"], ["FINA1310"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2344",
+    "fullName": "Lending and credit in private banking and corporate banking (2)",
+    "prereg": [["FINA2343"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2382",
+    "fullName": "Real estate finance",
+    "prereg": [["FINA1310"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2383",
+    "fullName": "International financial management",
+    "prereg": [["ECON1210"], ["FINA1310"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2385",
+    "fullName": "ESG in business and finance",
+    "prereg": [["FINA1310"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA2390",
+    "fullName": "Financial programming and databases",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3316",
+    "fullName": "Investment banking: valuation, LBOs, and M&A",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3317",
+    "fullName": "Entrepreneurial finance",
+    "prereg": [["FINA2322"], ["FINA2320", "STAT3609"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3318",
+    "fullName": "China's financial system and markets",
+    "prereg": [["FINA1310"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3319",
+    "fullName": "Green finance and impact investing",
+    "prereg": [["FINA1310"], ["FINA2320"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3322",
+    "fullName": "Credit risk",
+    "prereg": [["FINA2322"]],
+    "isPrereg": [],
+    "exclusive": ["STAT4607"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3323",
+    "fullName": "Fixed income securities",
+    "prereg": [
+      ["ECON1210"],
+      ["FINA2322", "STAT3905"],
+      ["FINA2320", "STAT3609"]
+    ],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3324",
+    "fullName": "Interest rate models",
+    "prereg": [["FINA3323"], ["FINA3350"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3325",
+    "fullName": "Alternative investments",
+    "prereg": [["FINA2322"], ["FINA2320", "STAT3609"]],
+    "isPrereg": [],
+    "exclusive": ["FINA3327"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3326",
+    "fullName": "Equity valuation and investment management",
+    "prereg": [["FINA2320"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3327",
+    "fullName": "Hedge funds: strategies, business management, and institutions",
+    "prereg": [["FINA2322"], ["FINA2320", "STAT3609"]],
+    "isPrereg": [],
+    "exclusive": ["FINA3325"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3334",
+    "fullName": "Private banking and wealth management",
+    "prereg": [["FINA2322"], ["FINA2320"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3335",
+    "fullName": "Current issues in asset management and private banking industry",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3336",
+    "fullName": "Investment consulting, institutional business and family office",
+    "prereg": [["FINA2320"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3337",
+    "fullName": "Venture capital and private equity",
+    "prereg": [["FINA2320"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3338",
+    "fullName": "Multi-asset investing",
+    "prereg": [["FINA1310"], ["FINA2320"], ["FINA2322"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3340",
+    "fullName": "Risk management",
+    "prereg": [
+      ["FINA2322", "STAT3905", "STAT3910", "MATH3906"],
+      ["FINA2320", "STAT3609"]
+    ],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3350",
+    "fullName": "Mathematical finance",
+    "prereg": [["FINA2322"]],
+    "isPrereg": [],
+    "exclusive": ["MATH3906"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3351",
+    "fullName": "Spreadsheet financial modeling",
+    "prereg": [["FINA2322"], ["FINA2320", "STAT3609"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3353",
+    "fullName": "Regulatory, operational and valuation issues in finance institutions",
+    "prereg": [["FINA2320"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3360",
+    "fullName": "Financial practicum",
+    "prereg": [["FINA2322"], ["FINA2320"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3381",
+    "fullName": "Behavioural finance",
+    "prereg": [["ECON1210"], ["FINA1310"], ["FINA2320", "STAT3609"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3382",
+    "fullName": "Structured finance and securitization",
+    "prereg": [["FINA2322"], ["FINA2320", "STAT3609"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3383",
+    "fullName": "Financial regulations and compliance",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3384",
+    "fullName": "Behavioural and sociological finance",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3385",
+    "fullName": "Global sustainable investing and ESG integration",
+    "prereg": [["FINA1310"], ["FINA2320"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA3391",
+    "fullName": "Reading course",
+    "prereg": [["ECON2280"], ["FINA2320"], ["FINA2322"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA4321",
+    "fullName": "Managing money in asset management and private banking",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA4341",
+    "fullName": "Quantitative risk management",
+    "prereg": [["FINA3350"]],
+    "isPrereg": [],
+    "exclusive": ["STAT4608"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA4350",
+    "fullName": "Text analytics and natural language processing in finance and fintech",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA4354",
+    "fullName": "Financial engineering",
+    "prereg": [["FINA3350"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA4359",
+    "fullName": "Big data analytics applied toward quantitative finance",
+    "prereg": [["ECON1210"], ["FINA2320"], ["IIMT2602", "COMP1117"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "FINA4392",
+    "fullName": "Dissertation ",
+    "prereg": [["ECON2280"], ["FINA2320"], ["FINA2322"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 12
+  },
+  {
+    "name": "IIMT1611",
+    "fullName": "Principles of technology entrepreneurship",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT2602",
+    "fullName": "Business programming",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": ["COMP1117", "ENGG1330"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT2628",
+    "fullName": "Innovation and entrepreneurship internship",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT2641",
+    "fullName": "Introduction to business analytics",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3601",
+    "fullName": "Database management",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": ["BSIM3017", "COMP3278"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3602",
+    "fullName": "Information systems analysis and design",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": ["BSIM3014", "COMP3297"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3603",
+    "fullName": "Project management",
+    "prereg": [["ACCT1101"], ["ECON1210"]],
+    "isPrereg": [],
+    "exclusive": ["BSIM4011"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3604",
+    "fullName": "Telecommunications management",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": ["COMP3234"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3621",
+    "fullName": "Creativity and business innovation",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3622",
+    "fullName": "Business transformation",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3623",
+    "fullName": "Design thinking: concepts and applications",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3624",
+    "fullName": "Design studio",
+    "prereg": [["IIMT3623"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3626",
+    "fullName": "Values-driven innovation",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3627",
+    "fullName": "Venture and entrepreneurship management",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3635",
+    "fullName": "Operations management",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3636",
+    "fullName": "Decision and risk analysis I",
+    "prereg": [["ECON1280", "STAT1602", "STAT1603", "STAT2601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3637",
+    "fullName": "Decision and risk analysis II",
+    "prereg": [["IIMT3636"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3641",
+    "fullName": "Introduction to financial analytics",
+    "prereg": [["FINA2320", "IIMT2641", "IIMT3636", "STAT3609", "STAT3952"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3642",
+    "fullName": "Managing and mining big data",
+    "prereg": [["IIMT2641"], ["STAT1602"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3643",
+    "fullName": "Data visualization and visual analytics",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3661",
+    "fullName": "Decision support and expert systems",
+    "prereg": [["IIMT2602"], ["IIMT3601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3662",
+    "fullName": "Advanced database management",
+    "prereg": [["IIMT3602", "COMP3278"]],
+    "isPrereg": [],
+    "exclusive": ["BSIM4018"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3663",
+    "fullName": "Internet and mobile applications",
+    "prereg": [
+      ["IIMT2602", "COMP1117"],
+      ["IIMT3601", "COMP3278"]
+    ],
+    "isPrereg": [],
+    "exclusive": ["BSIM3021", "COMP3322"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3664",
+    "fullName": "Telecommunications policy",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3665",
+    "fullName": "Information systems security management",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3666",
+    "fullName": "Current topics in information systems",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3667",
+    "fullName": "Information systems strategy",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3668",
+    "fullName": "Multimedia applications development",
+    "prereg": [["IIMT2602"], ["IIMT3601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3681",
+    "fullName": "Supply chain management",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3682",
+    "fullName": "IT and entrepreneurship",
+    "prereg": [["IIMT2601"], ["MGMT2401"]],
+    "isPrereg": [],
+    "exclusive": ["MGMT3415"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3683",
+    "fullName": "Enterprise resources planning systems",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3684",
+    "fullName": "Web and social media technology",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3685",
+    "fullName": "e-Commerce",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": ["BSIM4019"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3686",
+    "fullName": "Information systems audit and control",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3688",
+    "fullName": "Artificial intelligence in business",
+    "prereg": [["IIMT3601", "COMP3278"]],
+    "isPrereg": [],
+    "exclusive": ["COMP3270"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3689",
+    "fullName": "Cloud computing: essential and application in entrepreneurship",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT3690",
+    "fullName": "Information systems practicum",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 12
+  },
+  {
+    "name": "IIMT4601",
+    "fullName": "Information systems project management",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": ["COMP3404"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "IIMT4602",
+    "fullName": "Digital innovation",
+    "prereg": [["IIMT2601"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT2787",
+    "fullName": "Business case analysis and presentation",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3403",
+    "fullName": "Leadership",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3404",
+    "fullName": "Cross-cultural management",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3405",
+    "fullName": "Organisational behaviour",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3415",
+    "fullName": "Principles of entrepreneurship",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": ["IIMT3682"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3416",
+    "fullName": "Storytelling: global business communication",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3417",
+    "fullName": "The European business environment",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3426",
+    "fullName": "Employment and labour relations",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3429",
+    "fullName": "Strategic human resources management",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3433",
+    "fullName": "Organisational change and development",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3434",
+    "fullName": "Human resources: theory and practice",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3435",
+    "fullName": "Production and operations",
+    "prereg": [["MGMT3423"], ["IIMT3636"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3447",
+    "fullName": "Applied organisation",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3457",
+    "fullName": "High-performance work systems",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3458",
+    "fullName": "Human resource planning and career management",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3464",
+    "fullName": "Leadership workshop",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3470",
+    "fullName": "Reward and compensation",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3472",
+    "fullName": "Team building programme",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3475",
+    "fullName": "Current topics in human resource management",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3476",
+    "fullName": "Managing organisational change",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3477",
+    "fullName": "Selections and training",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MGMT3478",
+    "fullName": "Compensation and benefits",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3501",
+    "fullName": "Consumer behaviour",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3502",
+    "fullName": "Marketing research",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3511",
+    "fullName": "Advertising management",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3512",
+    "fullName": "Brand management",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3513",
+    "fullName": "Consumer insights for marketing decisions",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3514",
+    "fullName": "Retailing",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3522",
+    "fullName": "Marketing in China",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3523",
+    "fullName": "Global marketing",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3524",
+    "fullName": "Digital marketing",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3525",
+    "fullName": "Services marketing",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3526",
+    "fullName": "Innovation and new product development",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3527",
+    "fullName": "Pricing strategies",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3528",
+    "fullName": "Marketing analytics",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3529",
+    "fullName": "Social media marketing",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3530",
+    "fullName": "Big data marketing",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3531",
+    "fullName": "Strategic marketing management",
+    "prereg": [["MKTG2501"]],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "MKTG3532",
+    "fullName": "Platform business models and the sharing economy",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "STRA3702",
+    "fullName": "International business environment",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "STRA3703",
+    "fullName": "Multinational corporations",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "STRA3706",
+    "fullName": "China's business environment",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "STRA3708",
+    "fullName": "A century of business in Hong Kong",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "STRA3709",
+    "fullName": "Applications of strategic thinking in business",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": ["ECON2214"],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "STRA3716",
+    "fullName": "Competitiveness of Chinese firms",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "STRA4701",
+    "fullName": "Strategic management",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "STRA4702",
+    "fullName": "Global corporate strategy",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  },
+  {
+    "name": "STRA4703",
+    "fullName": "Business in Latin America",
+    "prereg": [],
+    "isPrereg": [],
+    "exclusive": [],
+    "recommendYear": 0,
+    "credit": 6
+  }
 ]
