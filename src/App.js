@@ -21,6 +21,7 @@ import StudyPlanPage from './pages/StudyPlanPage'
 import { STUDYPLAN } from './store/slices/studyPlanSlice'
 import { TimeTableProvider } from './context/SettingsProvider'
 import TimeTablePage from './pages/TimeTablePage'
+import { redirect } from 'react-router-dom'
 
 function App() {
   const dispatch = useDispatch()
@@ -45,6 +46,11 @@ function App() {
     const storageStudyPlan = localStorage.getItem(STUDYPLAN)
     if (storageStudyPlan !== null) {
       dispatch(setStudyPlan(JSON.parse(storageStudyPlan)))
+    }
+    const toGo = localStorage.getItem("link");
+    if (toGo !== null) {
+      redirect(toGo.slice(1))
+      localStorage.removeItem("link")
     }
   }, [dispatch])
 
