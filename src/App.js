@@ -49,8 +49,7 @@ function App() {
     }
     const toGo = localStorage.getItem("link");
     if (toGo !== null) {
-      redirect(toGo.slice(1))
-      localStorage.removeItem("link")
+      console.log(toGo)
     }
   }, [dispatch])
 
