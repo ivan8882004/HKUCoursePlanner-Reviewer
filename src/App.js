@@ -52,12 +52,12 @@ function App() {
     <div className="App">
       <TopBar />
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/study_plan" element={<StudyPlanPage />}></Route>
-        <Route path="/view_program" element={<ViewProgramPage />}></Route>
-        <Route path="/add_course" element={<AddCoursePage />}></Route>
-        <Route path="/add_degree" element={<AddDegreePage />}></Route>
-        <Route path="/add_major_minor" element={<AddMajorMinorPage />}></Route>
+        <Route path="/HKUCoursePlanner-Reviewer/" element={<HomePage />}></Route>
+        <Route path="/HKUCoursePlanner-Reviewer/vstudy_plan" element={<StudyPlanPage />}></Route>
+        <Route path="/HKUCoursePlanner-Reviewer/view_program" element={<ViewProgramPage />}></Route>
+        <Route path="/HKUCoursePlanner-Reviewer/add_course" element={<AddCoursePage />}></Route>
+        <Route path="/HKUCoursePlanner-Reviewer/add_degree" element={<AddDegreePage />}></Route>
+        <Route path="/HKUCoursePlanner-Reviewer/add_major_minor" element={<AddMajorMinorPage />}></Route>
         <Route
           path="/upload_export_file"
           element={<UploadExportFilePage />}></Route>
