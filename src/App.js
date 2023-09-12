@@ -53,7 +53,7 @@ function App() {
       <TopBar />
       <Routes>
         <Route path="/HKUCoursePlanner-Reviewer/" element={<HomePage />}></Route>
-        <Route path="/HKUCoursePlanner-Reviewer/vstudy_plan" element={<StudyPlanPage />}></Route>
+        <Route path="/HKUCoursePlanner-Reviewer/study_plan" element={<StudyPlanPage />}></Route>
         <Route path="/HKUCoursePlanner-Reviewer/view_program" element={<ViewProgramPage />}></Route>
         <Route path="/HKUCoursePlanner-Reviewer/add_course" element={<AddCoursePage />}></Route>
         <Route path="/HKUCoursePlanner-Reviewer/add_degree" element={<AddDegreePage />}></Route>
