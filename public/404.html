@@ -8,7 +8,10 @@
   <body>
     <div id="root"></div>
     <script>
-        window.location.replace("https://ivan8882004.github.io" + window.location.pathname)
+        window.location.href = "https://ivan8882004.github.io/HKUCoursePlanner-Reviewer/"
+        setTimeout(() => {
+            window.location.replace("https://ivan8882004.github.io/HKUCoursePlanner-Reviewer/" + window.location.pathname.split("/").slice(2).join("/"))
+        }, 500)
     </script>
   </body>
 </html>
