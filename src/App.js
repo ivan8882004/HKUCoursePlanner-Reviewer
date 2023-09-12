@@ -59,10 +59,10 @@ function App() {
         <Route path="/HKUCoursePlanner-Reviewer/add_degree" element={<AddDegreePage />}></Route>
         <Route path="/HKUCoursePlanner-Reviewer/add_major_minor" element={<AddMajorMinorPage />}></Route>
         <Route
-          path="/upload_export_file"
+          path="/HKUCoursePlanner-Reviewer/upload_export_file"
           element={<UploadExportFilePage />}></Route>
         <Route
-          path="/time_table"
+          path="/HKUCoursePlanner-Reviewer/time_table"
           element={
             <TimeTableProvider>
               <TimeTablePage />
