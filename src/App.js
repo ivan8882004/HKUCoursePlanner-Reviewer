@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import TopBar from './components/TopBar'
 import AddCoursePage from './pages/AddCoursePage'
@@ -21,9 +21,11 @@ import StudyPlanPage from './pages/StudyPlanPage'
 import { STUDYPLAN } from './store/slices/studyPlanSlice'
 import { TimeTableProvider } from './context/SettingsProvider'
 import TimeTablePage from './pages/TimeTablePage'
+import { redirect } from 'react-router-dom'
 
 function App() {
   const dispatch = useDispatch()
+  const location = useLocation();
 
   useEffect(() => {
     const storageCourses = localStorage.getItem(COURSES)
@@ -46,7 +48,11 @@ function App() {
     if (storageStudyPlan !== null) {
       dispatch(setStudyPlan(JSON.parse(storageStudyPlan)))
     }
-  }, [dispatch])
+    const toGo = location.search
+    if (toGo) {
+      redirect(toGo)
+    }
+  }, [dispatch, location])
 
   return (
     <div className="App">
