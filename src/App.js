@@ -50,6 +50,7 @@ function App() {
     }
     const toGo = location.search
     if (toGo) {
+      console.log(toGo)
       redirect(toGo)
     }
   }, [dispatch, location])
