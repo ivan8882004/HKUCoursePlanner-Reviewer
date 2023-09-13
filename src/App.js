@@ -21,11 +21,12 @@ import StudyPlanPage from './pages/StudyPlanPage'
 import { STUDYPLAN } from './store/slices/studyPlanSlice'
 import { TimeTableProvider } from './context/SettingsProvider'
 import TimeTablePage from './pages/TimeTablePage'
+import defaultConfig from './config.json'
 
 function App() {
   const dispatch = useDispatch()
   const location = useLocation()
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   useEffect(() => {
     const storageCourses = localStorage.getItem(COURSES)
@@ -48,6 +49,12 @@ function App() {
     if (storageStudyPlan !== null) {
       dispatch(setStudyPlan(JSON.parse(storageStudyPlan)))
     }
+    if (storageCourses + storageDegree + storageMajor + storageMinor === 0) {
+      dispatch(setCourses(defaultConfig.courses))
+      dispatch(setDegrees(defaultConfig.degrees))
+      dispatch(setMajors(defaultConfig.majors))
+      dispatch(setMinors(defaultConfig.minors))
+    }
     const toGo = location.search
     if (toGo) {
       console.log(toGo)
@@ -59,12 +66,24 @@ function App() {
     <div className="App">
       <TopBar />
       <Routes>
-        <Route path="/HKUCoursePlanner-Reviewer/" element={<HomePage />}></Route>
-        <Route path="/HKUCoursePlanner-Reviewer/study_plan" element={<StudyPlanPage />}></Route>
-        <Route path="/HKUCoursePlanner-Reviewer/view_program" element={<ViewProgramPage />}></Route>
-        <Route path="/HKUCoursePlanner-Reviewer/add_course" element={<AddCoursePage />}></Route>
-        <Route path="/HKUCoursePlanner-Reviewer/add_degree" element={<AddDegreePage />}></Route>
-        <Route path="/HKUCoursePlanner-Reviewer/add_major_minor" element={<AddMajorMinorPage />}></Route>
+        <Route
+          path="/HKUCoursePlanner-Reviewer/"
+          element={<HomePage />}></Route>
+        <Route
+          path="/HKUCoursePlanner-Reviewer/study_plan"
+          element={<StudyPlanPage />}></Route>
+        <Route
+          path="/HKUCoursePlanner-Reviewer/view_program"
+          element={<ViewProgramPage />}></Route>
+        <Route
+          path="/HKUCoursePlanner-Reviewer/add_course"
+          element={<AddCoursePage />}></Route>
+        <Route
+          path="/HKUCoursePlanner-Reviewer/add_degree"
+          element={<AddDegreePage />}></Route>
+        <Route
+          path="/HKUCoursePlanner-Reviewer/add_major_minor"
+          element={<AddMajorMinorPage />}></Route>
         <Route
           path="/HKUCoursePlanner-Reviewer/upload_export_file"
           element={<UploadExportFilePage />}></Route>
