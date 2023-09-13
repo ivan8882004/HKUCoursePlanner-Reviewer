@@ -173,15 +173,18 @@ function AutoFillForm({ isSemOne, setter }) {
       for (let i = 0; i < table.length; i++) {
         let startCount = false
         let dayCount = 0
+        let tempGapCount = 0
         for (let j = 0; j < table[i].length; j++) {
           if (table[i][j]) {
-            if (startCount && dayCount >= parseInt(time)) {
-              gap++
-            }
             startCount = true
+            gap += tempGapCount
+            tempGapCount = 0
           } else {
             if (startCount) {
               dayCount++
+              if (dayCount >= parseInt(time)) {
+                tempGapCount++
+              }
             }
           }
         }
