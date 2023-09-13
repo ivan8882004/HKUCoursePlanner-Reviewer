@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Course Planner",
+  "name": "Course Optimization & Management Planner (COMP)",
   "icons": [
     {
       "src": "favicon.ico",
