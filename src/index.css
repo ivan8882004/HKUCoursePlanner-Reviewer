@@ -356,6 +356,11 @@ body {
   justify-items: center;
   padding: 1%;
 
+  .Info {
+    padding: 1%;
+    font-size: large;
+  }
+
   .table {
     display: table;
     table-layout: fixed;

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import courseDataSem1 from './data/courseDataSem1.json'
 import courseDataSem2 from './data/courseDataSem2.json'
+import AutoFillFormInfo from './AutoFillFormInfo'
 
 const FORMCONTENT = 'formContent'
 
@@ -340,6 +341,11 @@ function AutoFillForm({ isSemOne, setter }) {
                 <button type="button" onClick={handleSubmit}>
                   Fill
                 </button>
+              </td>
+              <td>
+                <div className="Info">
+                  <AutoFillFormInfo />
+                </div>
               </td>
             </tr>
           </tbody>
