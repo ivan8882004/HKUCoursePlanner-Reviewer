@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import courseDataSem1 from './data/courseDataSem1.json'
+import courseDataSem2 from './data/courseDataSem2.json'
 
 const FORMCONTENT = 'formContent'
 
@@ -85,7 +87,7 @@ function AutoFillForm({ isSemOne, setter }) {
 
   const handleSubmit = () => {
     const output = []
-    const data = JSON.parse(localStorage.getItem('timeTable'))[isSemOne ? 0 : 1]
+    const data = (JSON.parse(localStorage.getItem('timeTable')) || [courseDataSem1, courseDataSem2])[isSemOne ? 0 : 1]
     const possibleCourse = formContent.courseList.map(item => {
       let temp = []
       item.split('|').forEach(name => {
