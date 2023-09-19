@@ -50,7 +50,7 @@
 
 |Contributors|contribution|
 |--|--|
-|Walter-Tong|View Major Minor, Add Course, Add Degree, Add Major Minor & Upload Export File Page. And auto fill function of time table planner|
+|Walter-Tong|Visualize of pre-reg relationship of courses, Course Planner, Config Edit Form & Auto fill function of time table planner|
 |ivan8882004|Time Table Planner Page|
 |kennethkn|Refractor of UI/UX (in progress)|
 
