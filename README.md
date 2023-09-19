@@ -6,13 +6,13 @@
 
 ## :rocket: Features Overview
 
-# Visualize of pre-reg relationship of courses
+### Visualize of pre-reg relationship of courses
 <div>
   <img src="./screenshot/prereg-graph.png" />
   <p>We visualzied the complex relationship of the complex pre-reg relationship of courses, the graph is rendered in real time when user click on any program in the side bar in the View Major Minor page</p>
 </div>
 
-# Course Planner (experimental)
+### Course Planner (experimental)
 <div>
   <img src="./screenshot/course-planner.gif" />
   <p>This is planner for planning the study plan among the whole unversity studies, the planner allow user to place courses to take by drag and drop. For courses that its pre-reg course is planned to take would show in green, for those pre-reg is not fulfill it will be in red, for those have excludsive course taken, it will be in orange. </p>
@@ -31,7 +31,7 @@
   </ul>
 </div>
 
-# Time Table Planner
+### Time Table Planner
 <div>
   <img src="./screenshot/time-table.gif" />
   <p>
