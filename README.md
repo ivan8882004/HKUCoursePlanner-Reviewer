@@ -46,6 +46,14 @@
   </ul>
 </div>
 
+## :gem: Credits
+
+|Contributors|contribution|
+|--|--|
+|Walter-Tong|View Major Minor, Add Course, Add Degree, Add Major Minor & Upload Export File Page. And auto fill function of time table planner|
+|ivan8882004|Time Table Planner Page|
+|kennethkn|refractor of UI/UX (in progress)|
+
 ## :bulb: Start Planning Today
 
 <https://ivan8882004.github.io/HKUCoursePlanner-Reviewer/>
