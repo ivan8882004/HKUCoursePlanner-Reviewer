@@ -19,16 +19,15 @@
   Current Issue
   <ul>
     <li>For courses with special pre-reg condition, the graph cannot determine if the condition is passed</li>
-    <li>In the above cases, the problem of double count on credit will show up in the credit counter of program/major/minor</li>
     <li>
+      In the below cases, the problem of double count on credit will show up in the credit counter of program/major/minor
       <ul>
-        <li>If a program and major/minor both have the same course as its requirement, the course will be double count, which is not allow in real</li>
-        <li>For some major/minor that the same course could be used to fulfill more than one requirment of the major/minor, i.e. in double major in CS, COMP3297 can be used to count as an elective course or capstone experience, , however, this double counting is not allowed</li>
+        <li>If a program and major/minor both have the same course as its requirement</li>
+        <li>If a major/minor that have the same course could be used to fulfill more than one requirment of the major/minor, i.e. in double major in CS, COMP3297 can be used to count as an elective course or capstone experience, , however, this double counting is not allowed</li>
       </ul>
     </li>
   </ul>
 </div>
-
 
 ## :bulb: Start Planning Today
 
