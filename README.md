@@ -17,7 +17,7 @@
   <img src="./screenshot/course-planner.gif" />
   <p>This is planner for planning the study plan among the whole unversity studies, the planner allow user to place courses to take by drag and drop. For courses that its pre-reg course is planned to take would show in green, for those pre-reg is not fulfill it will be in red, for those have excludsive course taken, it will be in orange. </p>
   Current Issue
-  <ul>
+  <ul style="list-style-type:disc;">
     <li>For courses with special pre-reg condition, the graph cannot determine if the condition is passed, i.e capstone experience for STAT</li>
     <li>
       In the below cases, the problem of double count on credit will show up in the credit counter of program/major/minor, while double count is not allow among most major and minor
@@ -37,7 +37,7 @@
   <p>
     The is time table planner inspired by <a href="https://github.com/hovergecko/timetable">HKU Timetable</a>. And we have added new twists on it:
   </p>
-  <ul>
+  <ul style="list-style-type:disc;">
     <li>Using localstorage to store selected course</li>
     <li>Having default storaged time table storage in the app</li>
     <li>Importing selected course from the course planner</li>
