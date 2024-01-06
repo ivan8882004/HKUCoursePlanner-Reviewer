@@ -43,15 +43,15 @@ function readXlsx() {
         courseName = value.w
       } else if (key[0] === 'D') {
         courseName += '-' + value.w
-      } else if ('IJKLMNO'.includes(key[0])) {
+      } else if ('HIJKLMN'.includes(key[0])) {
         lecture.day += value.w
-      } else if (key[0] === 'P') {
+      } else if (key[0] === 'O') {
         lecture.venue = value.w
+      } else if (key[0] === 'P') {
+        lecture.time = (value.w.length === 4 ? '0' : '') + value.w
       } else if (key[0] === 'Q') {
-        lecture.time = value.w
+        lecture.time += '-' + (value.w.length === 4 ? '0' : '') + value.w
       } else if (key[0] === 'R') {
-        lecture.time += '-' + value.w
-      } else if (key[0] === 'S') {
         fullName = value.w
         if (toAddIn !== null) {
           const indexToAdd = searchOutput()
@@ -185,8 +185,8 @@ function readXlsx() {
   })
 
   fs.writeFile(
-    './result.json',
-    JSON.stringify([...new Set(notFindList.sort())]),
+    './courseDataSem2.json',
+    JSON.stringify(output[1]),
     err => {
       if (err) {
         console.error('Error writing file:', err)

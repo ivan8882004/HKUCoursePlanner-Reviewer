@@ -44,15 +44,15 @@ function UploadXlsx() {
           courseName = value.w
         } else if (key[0] === 'D') {
           courseName += '-' + value.w
-        } else if ('IJKLMNO'.includes(key[0])) {
+        } else if ('HIJKLMN'.includes(key[0])) {
           lecture.day += value.w
-        } else if (key[0] === 'P') {
+        } else if (key[0] === 'O') {
           lecture.venue = value.w
+        } else if (key[0] === 'P') {
+          lecture.time = (value.w.length === 4 ? '0' : '') + value.w
         } else if (key[0] === 'Q') {
-          lecture.time = value.w
+          lecture.time += '-' + (value.w.length === 4 ? '0' : '') + value.w
         } else if (key[0] === 'R') {
-          lecture.time += '-' + value.w
-        } else if (key[0] === 'S') {
           fullName = value.w
           if (toAddIn !== null) {
             const indexToAdd = searchOutput()
@@ -98,18 +98,15 @@ function UploadXlsx() {
                     k++
                   ) {
                     if (
-                      JSON.stringify(
-                        output[toAddIn][indexToAdd].lectures[k]
-                      ) === JSON.stringify(lectures[j])
+                      JSON.stringify(output[toAddIn][indexToAdd].lectures[k]) ===
+                      JSON.stringify(lectures[j])
                     ) {
                       find = true
                       break
                     }
                   }
                   if (!find) {
-                    output[toAddIn][indexToAdd].lectures.push({
-                      ...lectures[j],
-                    })
+                    output[toAddIn][indexToAdd].lectures.push({ ...lectures[j] })
                   }
                 }
               } else {

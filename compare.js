@@ -10,12 +10,12 @@ for (let i = 0; i < data1.length; i++) {
   if (data1[i].courseName !== data2[i].courseName) {
     console.log('Your code sucks, name')
     console.log(data1[i], data2[i])
-    break
+    
   }
   if (data1[i].courseTitle !== data2[i].courseTitle) {
     console.log('Your code sucks, full')
     console.log(data1[i], data2[i])
-    break
+    
   }
 
   const map = new Map()
@@ -36,6 +36,5 @@ for (let i = 0; i < data1.length; i++) {
   if (!isEqual) {
     console.log('Your code sucks, lectures')
     console.log(data1[i], data2[i])
-    break
   }
 }
