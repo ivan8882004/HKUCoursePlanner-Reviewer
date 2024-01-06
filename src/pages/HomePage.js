@@ -14,9 +14,6 @@ function HomePage() {
         Also please notice the app can not display all requirement of courses (mainly the course planner part)
       </div>
       <br />
-      <div>
-        The idea of the Time Table is inspired by hovergecko
-      </div>
       <br />
       <div>
         <a href={"https://github.com/ivan8882004/HKUCoursePlanner-Reviewer"} target="_blank" rel="noreferrer">Our github repo</a>
