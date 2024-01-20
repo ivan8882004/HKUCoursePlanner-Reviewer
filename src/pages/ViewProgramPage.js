@@ -179,7 +179,7 @@ function ViewProgramPage() {
     'border-2 border-accent divide-accent font-light divide-y-2 mb-2 transition-transform'
 
   return (
-    <div className="flex h-full animate-fade-in select-none justify-center p-5 pt-14">
+    <div className="flex h-full animate-fade-in select-none mx-auto p-5 pt-14">
       <div className="mr-5 flex min-w-80 max-w-80 flex-col">
         <div>Degrees</div>
         <div className={listClasses}>{degreesList}</div>
@@ -193,7 +193,7 @@ function ViewProgramPage() {
           </div>
         )}
       </div>
-      <div className="mt-2 w-full min-w-[1128px] overflow-scroll border-2 border-accent text-sm">
+      <div className="mt-2 w-full min-w-96 overflow-scroll border-2 border-accent text-sm">
         {program.name === '' ? (
           <div className="flex h-full items-center justify-center opacity-50">
             Click on a syllabus from the left to view its roadmap

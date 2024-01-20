@@ -21,6 +21,7 @@ function StudyPlanPage() {
     'rounded-none border-2 border-accent outline-none w-full p-0.5 pl-2 focus:bg-accent hover:bg-accent hover:text-white focus:text-white font-light block appearance-none cursor-pointer mb-2'
   const header1Classes = 'sticky -top-1 px-2 font-bold bg-white z-10'
   const header2Classes = 'sticky top-4 px-2 font-medium backdrop-blur-lg'
+  const optionClasses = 'bg-white text-black'
 
   const dispatch = useDispatch()
 
@@ -43,6 +44,7 @@ function StudyPlanPage() {
       <option
         value={JSON.stringify(item)}
         key={index}
+        className={optionClasses}
         selected={item.name === degree.name.replace(/"/g, '')}>
         {item.name}
       </option>
@@ -54,6 +56,7 @@ function StudyPlanPage() {
       <option
         value={JSON.stringify(item)}
         key={index}
+        className={optionClasses}
         selected={item.name === major.name.replace(/"/g, '')}>
         {item.name}
       </option>
@@ -66,6 +69,7 @@ function StudyPlanPage() {
         <option
           value={JSON.stringify(item)}
           key={index}
+          className={optionClasses}
           selected={
             item.name ===
             (minorId === 1 ? minor1 : minor2).name.replace(/"/g, '')
@@ -83,7 +87,7 @@ function StudyPlanPage() {
 
   for (let i = 0; i < semList.length / 3; i++) {
     orderedSemList.push(
-      <div key={i} className="flex h-full min-w-48 basis-1/4 flex-col pt-1">
+      <div key={i} className="flex h-full min-w-40 basis-1/4 flex-col pt-1">
         <div className="px-2 font-bold">Year {i + 1}</div>
         <div className="no-scrollbar flex grow flex-col overflow-scroll overscroll-contain pb-2">
           {[...semList.slice(i * 3, i * 3 + 3)]}
@@ -185,7 +189,7 @@ function StudyPlanPage() {
   })
 
   return (
-    <div className="flex h-full min-w-fit animate-fade-in select-none justify-center p-5 pt-14">
+    <div className="flex h-full animate-fade-in select-none mx-auto p-5 pt-14">
       <div className="flex h-full min-w-80 max-w-80 flex-col">
         <div>
           <div>Degree</div>
@@ -195,7 +199,7 @@ function StudyPlanPage() {
               event.target.blur()
               dispatch(setDegree(JSON.parse(event.target.value)))
             }}>
-            <option value={JSON.stringify(degree)}>Select Degree</option>
+            <option className={optionClasses} value={JSON.stringify(degree)}>Select Degree</option>
             {degreesDropDown}
           </select>
         </div>
@@ -208,7 +212,7 @@ function StudyPlanPage() {
               event.target.blur()
               dispatch(setMajor(JSON.parse(event.target.value)))
             }}>
-            <option value={JSON.stringify(major)}>
+            <option className={optionClasses} value={JSON.stringify(major)}>
               Select 2nd Major (If Any)
             </option>
             {majorsDropDown}
@@ -223,7 +227,7 @@ function StudyPlanPage() {
               event.target.blur()
               dispatch(setMinor1(JSON.parse(event.target.value)))
             }}>
-            <option value={JSON.stringify(minor1)}>
+            <option className={optionClasses} value={JSON.stringify(minor1)}>
               Select Minor 1 (If Any)
             </option>
             {minorsDropDown(1)}
@@ -238,7 +242,7 @@ function StudyPlanPage() {
               event.target.blur()
               dispatch(setMinor2(JSON.parse(event.target.value)))
             }}>
-            <option value={JSON.stringify(minor2)}>
+            <option className={optionClasses} value={JSON.stringify(minor2)}>
               Select Minor 2 (If Any)
             </option>
             {minorsDropDown(2)}

@@ -119,7 +119,7 @@ const TimeTablePage = () => {
   }
 
   return (
-    <div className="TimeTableMain">
+    <div className="flex h-full animate-fade-in select-none mx-auto p-5 pt-14">
       <div>
         <SearchTool
           deleteCourse={deleteCourse}
