@@ -1245,7 +1245,7 @@
         },
         {
             "name": "COMP3231",
-            "fullName": "Principles of operating systems",
+            "fullName": "Computer Architecture",
             "prereg": [
                 [
                     "COMP2120"

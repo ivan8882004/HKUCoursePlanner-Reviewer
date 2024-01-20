@@ -46,7 +46,7 @@ function PreregGraph({ listItem }) {
   const hints = ['>', '×']
 
   return (
-    <div className="m-5 flex w-fit items-center whitespace-nowrap border-2 border-accent p-2">
+    <div className="m-5 flex w-fit items-center whitespace-nowrap border-2 border-dotted border-accent p-2">
       {listItem.extraMessage.length !== 0 && (
         <div className="mr-5">
           <div className="text-xs">with </div>

@@ -189,7 +189,7 @@ function StudyPlanPage() {
   })
 
   return (
-    <div className="flex h-full animate-fade-in select-none mx-auto p-5 pt-14">
+    <div className="flex h-full min-w-fit animate-fade-in select-none justify-center p-5 pt-14">
       <div className="flex h-full min-w-80 max-w-80 flex-col">
         <div>
           <div>Degree</div>
@@ -199,7 +199,9 @@ function StudyPlanPage() {
               event.target.blur()
               dispatch(setDegree(JSON.parse(event.target.value)))
             }}>
-            <option className={optionClasses} value={JSON.stringify(degree)}>Select Degree</option>
+            <option className={optionClasses} value={JSON.stringify(degree)}>
+              Select Degree
+            </option>
             {degreesDropDown}
           </select>
         </div>
