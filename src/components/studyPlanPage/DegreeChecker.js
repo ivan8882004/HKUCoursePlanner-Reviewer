@@ -12,16 +12,16 @@ function DegreeChecker({ degree }) {
   const commonCoreList = {
     credit: degree.ug5cc,
     courses: [],
-    type: 'Common Core',
+    type: 'Common Core Courses',
   }
 
   for (let i = 1; i <= parseInt(degree.ug5cc) / 6; i++) {
-    commonCoreList.courses.push('CCxxXXX' + i)
+    commonCoreList.courses.push('CCXX000' + i)
   }
 
   copyDegree.courseList.unshift(commonCoreList)
 
-  const lengCourseList = { credit: 0, courses: [], type: 'Leng Course' }
+  const lengCourseList = { credit: 0, courses: [], type: 'Language Courses' }
 
   copyDegree.ug5leng.forEach(element => {
     if (element === 'CAES1000') {

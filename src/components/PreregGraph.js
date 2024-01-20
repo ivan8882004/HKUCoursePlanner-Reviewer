@@ -24,45 +24,48 @@ function PreregGraph({ listItem }) {
   })
 
   const dropDownContent = (
-    <div>
-      <div>Name: {courseInfo.name}</div>
-      <div>Full Name: {courseInfo.fullName}</div>
-      <div>
-        Prereg:{' '}
-        {courseInfo.prereg
-          .map(list => '[' + list.map(item => item).join(' or ') + ']')
-          .join(' and ')}
-      </div>
-    </div>
+    <>
+      Prereq:{' '}
+      {courseInfo.prereg
+        .map(
+          list =>
+            '[' +
+            list
+              .map(item => (item === 'M1/M2_2+' ? 'M1/M2>=Lv2' : item))
+              .join(' or ') +
+            ']'
+        )
+        .join(' and ') || 'None'}
+    </>
   )
 
   const handleClick = () => {
     setDropDown(!dropDown)
   }
 
+  const hints = ['>', '×']
+
   return (
-    <div className="CourseBox">
-      <div>
-        {listItem.extraMessage.length !== 0 && (
-          <div className="CourseBoxSubTitle">with</div>
-        )}
-        <div className="CourseBoxPrereg">
-          {listItem.extraMessage.map(item => '(' + item + ')').join('&')}
+    <div className="m-5 flex w-fit items-center whitespace-nowrap border-2 border-accent p-2">
+      {listItem.extraMessage.length !== 0 && (
+        <div className="mr-5">
+          <div className="text-xs">with </div>
+          {listItem.extraMessage.map(item => '[' + item + ']').join(' and ')}
         </div>
-      </div>
-      <div className="CourseBoxCurrentCourse">
-        <div className="CourseBoxName" onClick={handleClick}>
-          {listItem.name}
-        </div>
-        <div className="CourseBoxFullName" onClick={handleClick}>
-          {listItem.fullName}
-        </div>
+      )}
+      <div
+        className="cursor-pointer transition-opacity will-change-transform hover:bg-accent hover:text-white active:opacity-50"
+        onClick={handleClick}>
+        {listItem.name} {hints[dropDown ? 1 : 0]}
+        <div className="font-medium italic">{listItem.fullName}</div>
         {dropDown && dropDownContent}
       </div>
-      <div>{listItem.isPrereg.length !== 0 && <PiArrowFatRightFill />}</div>
       {listItem.isPrereg.length !== 0 && (
-        <div className="CourseBoxIsPrereg">{content}</div>
+        <div className="ml-5">
+          <PiArrowFatRightFill />
+        </div>
       )}
+      {listItem.isPrereg.length !== 0 && <div>{content}</div>}
     </div>
   )
 }

@@ -63,7 +63,7 @@ function App() {
   }, [dispatch, location, navigate])
 
   return (
-    <div className="App">
+    <div className="h-screen min-h-[40rem] w-screen font-poppins">
       <TopBar />
       <Routes>
         <Route

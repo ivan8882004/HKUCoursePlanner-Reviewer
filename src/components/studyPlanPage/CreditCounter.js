@@ -19,7 +19,12 @@ function CreditCounter() {
     })
   })
 
-  return <div className="CreditCounter">Taken {taken}/288 credits</div>
+  return (
+    <>
+      <div className="font-bold">Overall</div>
+      {taken}/288 Credits Planned
+    </>
+  )
 }
 
 export default CreditCounter
