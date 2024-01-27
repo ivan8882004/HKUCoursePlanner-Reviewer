@@ -161,21 +161,18 @@ function StudyPlanPage() {
     )
   })
 
-  const degreeLengCourseList = degree.ug5leng.map((item, index) => {
-    if (item === 'CAES1000') {
-      if (searchPlan('DSEENG5+', 1, plan)) {
-        return <div key={index}></div>
-      }
-    }
-    return (
+  const degreeLengCourseList = degree.ug5leng
+    .filter(item =>
+      item === 'CAES1000' && searchPlan('DSEENG5+', 1, plan) ? false : true
+    )
+    .map((item, index) => (
       <CourseListItem
         name={item}
         index={index}
         searchBar={searchBar}
         key={index}
       />
-    )
-  })
+    ))
 
   const allCourseList = courses.map((item, index) => {
     return (
@@ -189,7 +186,7 @@ function StudyPlanPage() {
   })
 
   return (
-    <div className="flex h-full min-w-fit animate-fade-in select-none justify-center p-5 pt-14">
+    <div className="flex h-full min-w-fit animate-fade-in select-none justify-center p-5 pt-14 animate__animated animate__fadeIn animate__fast">
       <div className="flex h-full min-w-80 max-w-80 flex-col">
         <div>
           <div>Degree</div>
@@ -269,7 +266,6 @@ function StudyPlanPage() {
         <div className="no-scrollbar w-full grow overflow-scroll overscroll-contain border-2 border-t-0 border-accent bg-gradient-to-b from-transparent from-90% to-gray-200 bg-clip-padding py-1 text-sm font-light">
           <div>
             <div className={header1Classes}>{degree.name}</div>
-
             {degree.name !== '' && (
               <>
                 <div>
@@ -277,29 +273,38 @@ function StudyPlanPage() {
                     Language Courses -{' '}
                     {!!searchPlan('DSEENG5+', 1, plan) ? 12 : 18} credits
                   </div>
-                  <div>{degreeLengCourseList}</div>
+                  {degreeLengCourseList}
                 </div>
                 <div>
                   <div className={header2Classes}>
                     Common Core Courses - {degree.ug5cc} credits
                   </div>
-                  <div>{commonCoreList}</div>
+                  {commonCoreList}
                 </div>
               </>
             )}
-
             {degreeCourseLists}
+          </div>
 
+          <div>
             <div className={header1Classes}>{major.name}</div>
             {majorCourseLists}
+          </div>
 
+          <div>
             <div className={header1Classes}>{minor1.name}</div>
             {minor1CourseLists}
+          </div>
 
+          <div>
             <div className={header1Classes}>{minor2.name}</div>
             {minor2CourseLists}
+          </div>
 
-            <div className={header1Classes}>All courses</div>
+          <div>
+            <div className="sticky -top-1 z-10 px-2 font-bold backdrop-blur-lg">
+              All Courses
+            </div>
             {allCourseList}
           </div>
         </div>
@@ -354,7 +359,7 @@ function StudyPlanPage() {
         </div>
       </div>
 
-      <div className="ml-5 mt-2 flex max-w-[80rem] grow divide-x-2 divide-accent border-2 border-accent text-sm">
+      <div className="ml-5 mt-2 flex max-w-[60rem] grow divide-x-2 divide-accent border-2 border-accent text-sm">
         {orderedSemList}
       </div>
 

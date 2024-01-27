@@ -19,9 +19,3 @@
     --color-accent: 22 101 52;
   }
 }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-}

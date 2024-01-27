@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ['./src/**/*.js'],
   theme: {
@@ -9,10 +12,22 @@ module.exports = {
       colors: {
         accent: 'rgb(var(--color-accent) / <alpha-value>)',
       },
-      animation: {
-        'fade-in': 'fade-in 150ms cubic-bezier(0.4, 0, 0.2, 1)',
-      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          'animation-delay': value => {
+            return {
+              'animation-delay': value,
+            }
+          },
+        },
+        {
+          values: theme('transitionDelay'),
+        }
+      )
+    }),
+  ],
 }

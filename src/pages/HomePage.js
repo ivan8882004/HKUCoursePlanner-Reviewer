@@ -5,9 +5,11 @@ function HomePage() {
     'hover:bg-accent hover:text-white focus:bg-accent focus:text-white outline-none'
 
   return (
-    <div className="flex h-full animate-fade-in select-none flex-col items-center justify-center text-center">
-      <div className="text-5xl max-md:text-3xl">Welcome to </div>
-      <div className="mb-7 bg-accent p-3 text-6xl font-bold text-white max-md:text-4xl">
+    <div className="animate__animated animate__fadeIn animate__fast flex h-full select-none flex-col items-center justify-center text-center">
+      <div className="animate__animated animate__slideInDown animate__faster text-5xl max-md:text-3xl">
+        Welcome to{' '}
+      </div>
+      <div className="animate__animated animate__jackInTheBox mb-7 bg-accent p-3 text-6xl font-bold text-white animation-delay-300 max-md:text-4xl">
         <u>
           <i>Course Planner</i>
         </u>{' '}
@@ -19,7 +21,7 @@ function HomePage() {
       <NavLink
         to="/HKUCoursePlanner-Reviewer/study_plan"
         className={
-          'mb-10 w-80 border-2 border-accent p-0.5 text-accent transition-transform active:translate-y-1 ' +
+          'animate__animated animate__pulse animate__infinite mb-10 w-80 border-2 border-accent p-0.5 text-accent transition-opacity animation-delay-[2s] active:opacity-25 ' +
           hoverFocusClasses
         }>
         GET STARTED
@@ -56,7 +58,7 @@ function HomePage() {
         if you find it useful 🚀🚀🚀
       </div>
 
-      <div className="w-[30rem] max-md:w-[26rem] max-md:text-sm">
+      {/* <div className="w-[30rem] max-md:w-[26rem] max-md:text-sm">
         Disclaimer: Degree and course information provided on{' '}
         <i>Course Planner</i> was manually entered and is currently maintained
         as a{' '}
@@ -67,7 +69,7 @@ function HomePage() {
         </a>
         . We recommend double-checking with the official syllabus after creating
         your plan here 😉
-      </div>
+      </div> */}
     </div>
   )
 }

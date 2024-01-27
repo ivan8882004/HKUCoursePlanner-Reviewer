@@ -69,13 +69,13 @@ function CourseListItem({ name, index, searchBar }) {
           setDropDown(!dropDown)
           setIsDropdownActive(!isDropdownActive)
         }}
-        className="mb-1 mx-2 cursor-pointer overflow-hidden hyphens-auto border-2 border-accent py-0.5 px-2 hover:bg-accent hover:text-white transition-opacity active:opacity-50">
+        className="mx-2 mb-1 cursor-pointer overflow-hidden hyphens-auto border-2 border-accent px-2 py-0.5 transition-opacity hover:bg-accent hover:text-white active:opacity-25">
         {name} {hints[isDropdownActive ? 1 : 0]}
         {courseContent}
       </div>
     )
   } else {
-    return <div key={index} ref={drag}></div>
+    return false
   }
 }
 

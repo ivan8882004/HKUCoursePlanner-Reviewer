@@ -179,8 +179,8 @@ function ViewProgramPage() {
     'border-2 border-accent divide-accent font-light divide-y-2 mb-2 transition-transform'
 
   return (
-    <div className="mx-auto flex h-full max-w-[160rem] animate-fade-in select-none p-5 pt-14">
-      <div className="mr-5 flex min-w-80 max-w-80 flex-col">
+    <div className="animate__animated animate__fadeIn animate__fast mx-auto flex h-full max-w-[160rem] select-none pb-5 pt-14">
+      <div className="ml-5 flex min-w-80 max-w-80 flex-col">
         <div>Degrees</div>
         <div className={listClasses}>{degreesList}</div>
         <div>Majors</div>
@@ -193,14 +193,16 @@ function ViewProgramPage() {
           </div>
         )}
       </div>
-      <div className="mt-2 w-full min-w-96 overflow-scroll overscroll-contain border-2 border-accent text-sm">
-        {program.name === '' ? (
-          <div className="flex h-full items-center justify-center opacity-50">
-            Click on a syllabus from the left to view its roadmap
-          </div>
-        ) : (
-          <div className="min-w-fit">{graph}</div>
-        )}
+      <div className="ml-5 mt-2 w-full min-w-[40rem] border-r-[1.25rem] border-white text-sm">
+        <div className="h-full overflow-scroll overscroll-y-contain border-2 border-accent">
+          {program.name === '' ? (
+            <div className="flex h-full items-center justify-center opacity-50">
+              Click on a syllabus from the left to view its roadmap
+            </div>
+          ) : (
+            <div className="min-w-fit">{graph}</div>
+          )}
+        </div>
       </div>
     </div>
   )

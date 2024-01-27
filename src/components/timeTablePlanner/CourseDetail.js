@@ -30,26 +30,28 @@ function CourseDetail({ course }) {
   const lectures = course.lectures.map((item, index) => {
     let venue = item.venue
 
-    Object.entries(pos).forEach(([key, value]) => { //for the venue of each lecture
+    Object.entries(pos).forEach(([key, value]) => {
+      //for the venue of each lecture
       if (item.venue.substring(0, key.length) === key) {
         venue = value + item.venue.substring(key.length)
       }
     })
 
     return (
-      <div key={index}>
-        Day: {item.day} Time: {item.time}
+      <div key={index} className="mb-2">
+        {item.day} {item.time}
         <div>{venue}</div>
       </div>
     )
   })
 
   return (
-    <div className="courseDetail">
-      <h4>Course Detail</h4>
-      {course.courseName}
-      <div>{course.courseTitle}</div>
-      <div>{lectures}</div>
+    <div className="no-scrollbar mb-5 h-1/3 space-y-2 overflow-scroll overscroll-contain border-2 border-accent pb-1">
+      <div className="sticky top-0 px-2 py-1 backdrop-blur-lg">
+        <div className="font-bold">{course.courseName}</div>
+        <div className="font-medium">{course.courseTitle}</div>
+      </div>
+      <div className="px-2"> {lectures}</div>
     </div>
   )
 }

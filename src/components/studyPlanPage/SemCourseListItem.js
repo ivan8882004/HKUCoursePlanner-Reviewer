@@ -56,6 +56,7 @@ function SemCourseListItem({ course, ind, index }) {
     setIsDropdownActive(!isDropdownActive)
   }
 
+  const [isAnimateRemove, setIsAnimateRemove] = useState(false)
   const handleRemove = () => {
     if (parseInt(course.credit) === 6) {
       dispatch(removePlanItem({ index, course }))
@@ -65,7 +66,7 @@ function SemCourseListItem({ course, ind, index }) {
   }
 
   const courseListItemClasses =
-    'mb-1 cursor-pointer overflow-hidden hyphens-auto border-2 border-accent py-0.5 px-2 hover:bg-accent hover:text-white transition-opacity active:opacity-50'
+    'mb-1 cursor-pointer overflow-hidden hyphens-auto border-2 border-accent py-0.5 px-2 hover:bg-accent hover:text-white transition-opacity active:opacity-25'
 
   const [isDropdownActive, setIsDropdownActive] = useState(false)
   const hints = ['>', '×']
@@ -76,9 +77,17 @@ function SemCourseListItem({ course, ind, index }) {
     return (
       <div
         key={ind}
-        className={courseListItemClasses}
+        className={
+          (isAnimateRemove
+            ? 'animate__animated animate__bounceOut animate__faster '
+            : '') + courseListItemClasses
+        }
         ref={drag}
-        onClick={handleDropDown}>
+        onClick={handleDropDown}
+        onAnimationEnd={() => {
+          setIsAnimateRemove(false)
+          handleRemove()
+        }}>
         <div className="flex">
           <div className="grow">
             <div>
@@ -86,7 +95,12 @@ function SemCourseListItem({ course, ind, index }) {
             </div>
             <div>⚠️Prereq Not Met</div>
           </div>
-          <button onClick={handleRemove} className={removeBtnClasses}>
+          <button
+            onClick={e => {
+              e.stopPropagation()
+              setIsAnimateRemove(true)
+            }}
+            className={removeBtnClasses}>
             -
           </button>
         </div>
@@ -97,9 +111,17 @@ function SemCourseListItem({ course, ind, index }) {
     return (
       <div
         key={ind}
-        className={courseListItemClasses}
+        className={
+          (isAnimateRemove
+            ? 'animate__animated animate__bounceOut animate__faster '
+            : '') + courseListItemClasses
+        }
         ref={drag}
-        onClick={handleDropDown}>
+        onClick={handleDropDown}
+        onAnimationEnd={() => {
+          setIsAnimateRemove(false)
+          handleRemove()
+        }}>
         <div className="flex">
           <div className="grow">
             <div>
@@ -107,7 +129,12 @@ function SemCourseListItem({ course, ind, index }) {
             </div>
             <div>⚠️MuEx</div>
           </div>
-          <button onClick={handleRemove} className={removeBtnClasses}>
+          <button
+            onClick={e => {
+              e.stopPropagation()
+              setIsAnimateRemove(true)
+            }}
+            className={removeBtnClasses}>
             -
           </button>
         </div>
@@ -118,14 +145,27 @@ function SemCourseListItem({ course, ind, index }) {
   return (
     <div
       key={ind}
-      className={courseListItemClasses}
+      className={
+        (isAnimateRemove
+          ? 'animate__animated animate__bounceOut animate__faster '
+          : '') + courseListItemClasses
+      }
       ref={drag}
-      onClick={handleDropDown}>
+      onClick={handleDropDown}
+      onAnimationEnd={() => {
+        setIsAnimateRemove(false)
+        handleRemove()
+      }}>
       <div className="flex">
         <div className="grow">
           {course.name} {hints[isDropdownActive ? 1 : 0]}
         </div>
-        <button onClick={handleRemove} className={removeBtnClasses}>
+        <button
+          onClick={e => {
+            e.stopPropagation()
+            setIsAnimateRemove(true)
+          }}
+          className={removeBtnClasses}>
           -
         </button>
       </div>

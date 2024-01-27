@@ -2,12 +2,13 @@ import { NavLink } from 'react-router-dom'
 
 function TopBar() {
   const navLinkClasses =
-    'px-2 py-1 outline-none focus:underline hover:underline underline-offset-[5px] decoration-accent decoration-2 transition-colors'
+    'px-2 py-1 outline-none focus:underline hover:underline underline-offset-[5px] decoration-accent decoration-2 transition active:opacity-25 '
 
-  const activeNavLinkClasses = 'bg-accent text-white decoration-white '
+  const activeNavLinkClasses =
+    'bg-accent text-white decoration-white cursor-default '
 
   return (
-    <div className="no-scrollbar fixed flex w-screen animate-fade-in select-none items-center overflow-scroll border-b bg-white py-2 font-light z-50">
+    <div className="no-scrollbar animate-fade-in fixed z-50 flex w-screen select-none items-center overflow-scroll border-b bg-white py-2 font-light">
       <div className="mx-5 shrink-0 text-base">
         <NavLink
           to="/HKUCoursePlanner-Reviewer/"

@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from 'react'
 import Timetable from '../components/timeTablePlanner/Timetable'
 import CourseList from '../components/timeTablePlanner/CourseList'
 import SearchTool from '../components/timeTablePlanner/SearchTool'
-import UploadXlsx from '../components/timeTablePlanner/UploadXlsx'
+// import UploadXlsx from '../components/timeTablePlanner/UploadXlsx'
 import AutoFillForm from '../components/timeTablePlanner/AutoFillForm'
 import TableContext from '../context/SettingsProvider'
 import CourseDetail from '../components/timeTablePlanner/CourseDetail'
@@ -112,49 +112,49 @@ const TimeTablePage = () => {
     }
   }
 
-  let detailContent = <div></div>
+  let detailContent = (
+    <div className="mb-5 h-1/3 border-2 border-accent">
+      <div className="flex h-full items-center justify-center px-5 text-center font-normal opacity-50">
+        Course details will be displayed here once you hover or click on a
+        course
+      </div>
+    </div>
+  )
 
   if (detail) {
     detailContent = <CourseDetail course={detail} />
   }
 
   return (
-    <div className="flex h-full animate-fade-in select-none mx-auto p-5 pt-14">
-      <div>
-        <SearchTool
-          deleteCourse={deleteCourse}
-          insertCourse={insertCourse}
-          courseList={courseList}
-          setCourseList={setCourseList}
-          setIsSemOne={setIsSemOne}
-          isSemOne={isSemOne}
-          selectedCourseList={selectedCourseList}
-          deleteCourseinLists={deleteCourseinLists}
-          insertCourseByMouseEnter={insertCourseByMouseEnter}
-        />
-        <div>
-          <UploadXlsx />
-        </div>
-      </div>
+    <div className="animate__animated animate__fadeIn animate__fast flex h-full min-w-fit select-none justify-center p-5 pt-14">
+      <SearchTool
+        deleteCourse={deleteCourse}
+        insertCourse={insertCourse}
+        courseList={courseList}
+        setCourseList={setCourseList}
+        setIsSemOne={setIsSemOne}
+        isSemOne={isSemOne}
+        selectedCourseList={selectedCourseList}
+        deleteCourseinLists={deleteCourseinLists}
+        insertCourseByMouseEnter={insertCourseByMouseEnter}
+      />
+
       <Timetable selectedCourseList={selectedCourseList} />
-      <div>
-        <div>
-          {detailContent}
-          <CourseList
-            selectedSem1CourseList={selectedSem1CourseList}
-            selectedSem2CourseList={selectedSem2CourseList}
-            deleteCourse={deleteCourse}
-            deleteCourseinLists={deleteCourseinLists}
-          />
-        </div>
-        <div>
-          <AutoFillForm
-            isSemOne={isSemOne}
-            setter={
-              isSemOne ? setSelectedSem1CourseList : setSelectedSem2CourseList
-            }
-          />
-        </div>
+
+      <div className="no-scrollbar ml-5 mt-2 flex min-w-80 max-w-80 flex-col text-sm font-light">
+        {detailContent}
+        {/* <CourseList
+          selectedSem1CourseList={selectedSem1CourseList}
+          selectedSem2CourseList={selectedSem2CourseList}
+          deleteCourse={deleteCourse}
+          deleteCourseinLists={deleteCourseinLists}
+        /> */}
+        <AutoFillForm
+          isSemOne={isSemOne}
+          setter={
+            isSemOne ? setSelectedSem1CourseList : setSelectedSem2CourseList
+          }
+        />
       </div>
     </div>
   )

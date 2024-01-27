@@ -54,7 +54,7 @@ function PreregGraph({ listItem }) {
         </div>
       )}
       <div
-        className="cursor-pointer transition-opacity will-change-transform hover:bg-accent hover:text-white active:opacity-50"
+        className="cursor-pointer transition-opacity will-change-transform hover:bg-accent hover:text-white active:opacity-25"
         onClick={handleClick}>
         {listItem.name} {hints[dropDown ? 1 : 0]}
         <div className="font-medium italic">{listItem.fullName}</div>

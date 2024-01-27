@@ -48,7 +48,7 @@ function SearchTool({
       let data = JSON.parse(localStorage.getItem('timeTable')) || uploaded
       if (!data) {
         data = [courseDataSem1, courseDataSem2]
-        console.log(data, "load from file")
+        console.log(data, 'load from file')
       }
       if (isSemOne && data) {
         const searchTerm = inputText.trim().toUpperCase()
@@ -106,45 +106,47 @@ function SearchTool({
 
   console.log(selectedCourseList)
 
+  const headerClasses = 'sticky -top-1 px-2 font-bold backdrop-blur-lg z-10'
+
   return (
-    <div>
+    <div className="flex h-full min-w-80 max-w-80 flex-col">
       <ImportSettingButton />
-      <div>Semester shown in Timetable</div>
+
+      <div>Semester</div>
       <SemButton isSemOne={isSemOne} setIsSemOne={setIsSemOne} />
-      <div className="scroll-box">
-        <h4>Filtered Courses (Top 200 results):</h4>
-        <div>
-          <div>Enter Course Code to search</div>
-          <input
-            type="text"
-            value={inputText}
-            placeholder="Eg. ECON1210-1A"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="scroll-container">
-          {!!importCourseList.length && (
-            <>
-              <div>Selected course</div>
-              <div>
-                {importCourseList.map((course, index) => (
-                  <CourseCard
-                    insertCourseByMouseEnter={insertCourseByMouseEnter}
-                    isSemOne={isSemOne}
-                    deleteCourseinLists={deleteCourseinLists}
-                    selectedCourseList={selectedCourseList}
-                    key={index}
-                    course={course}
-                    index={index}
-                    deleteCourse={deleteCourse}
-                    insertCourse={insertCourse}
-                  />
-                ))}
-              </div>
-            </>
-          )}
+
+      <div>Courses</div>
+      <input
+        type="text"
+        value={inputText}
+        placeholder="Search Courses..."
+        onChange={handleChange}
+        className="block w-full cursor-text appearance-none rounded-none border-2 border-accent p-0.5 pl-2 font-light outline-none placeholder:text-black hover:bg-accent hover:text-white placeholder:hover:text-white focus:bg-accent focus:text-white placeholder:focus:text-white"
+      />
+      <div className="no-scrollbar w-full grow overflow-scroll overscroll-contain border-2 border-t-0 border-accent bg-gradient-to-b from-transparent from-90% to-gray-200 bg-clip-padding py-1 text-sm font-light">
+        {!!importCourseList.length && (
           <div>
-            <div>All course</div>
+            <div className={headerClasses}>From Course Planner</div>
+            <div className="divide-y-2 divide-accent">
+              {importCourseList.map((course, index) => (
+                <CourseCard
+                  insertCourseByMouseEnter={insertCourseByMouseEnter}
+                  isSemOne={isSemOne}
+                  deleteCourseinLists={deleteCourseinLists}
+                  selectedCourseList={selectedCourseList}
+                  key={index}
+                  course={course}
+                  index={index}
+                  deleteCourse={deleteCourse}
+                  insertCourse={insertCourse}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+        <div>
+          <div className={headerClasses}>All Courses</div>
+          <div className="divide-y-2 divide-accent">
             {courseList.map((course, index) => (
               <CourseCard
                 insertCourseByMouseEnter={insertCourseByMouseEnter}
