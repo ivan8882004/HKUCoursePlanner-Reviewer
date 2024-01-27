@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { BsInfoCircle } from 'react-icons/bs'
 import ReactModal from 'react-modal'
 
 function AutoFillFormInfo() {
@@ -10,8 +9,8 @@ function AutoFillFormInfo() {
   }
 
   return (
-    <div>
-      <BsInfoCircle onClick={() => setOpen(true)} />
+    <>
+      <div onClick={() => setOpen(true)} className='cursor-pointer'>🛈</div>
       <ReactModal isOpen={open} onRequestClose={handleClose} ariaHideApp={false}>
         <h3>
           Auto fill explain
@@ -29,7 +28,7 @@ function AutoFillFormInfo() {
           You can type the course code with the sub class, i.e. if you are a good CS student, you are supposed to take sub-class A instead of B, then you can type COMP2119-1A to just search with sub-class A
         </div>
         <div>
-          You can also use "|" character to search with more than one course code same time, i.e. COMP3322|COMP3329 possible course will be [COMP3322..., COMP3329...] 
+          You can also use "|" character to search with more than one course code same time, i.e. COMP3322|COMP3329 possible course will be [COMP3322..., COMP3329...]
         </div>
         <div>
           At last you can use just part of the course code to search, i.e. COMP3 stand for all level 3 COMP course
@@ -65,7 +64,7 @@ function AutoFillFormInfo() {
           The score to be added if the total hours of gap in a day is large than or equal to the gap hours, if the gap hour is 3, and there is 4 gap hour in a day, the gap score will be add twice for that day.
         </div>
       </ReactModal>
-    </div>
+    </>
   )
 }
 

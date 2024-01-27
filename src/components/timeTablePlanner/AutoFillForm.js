@@ -261,20 +261,24 @@ function AutoFillForm({ isSemOne, setter }) {
 
   const renderPossibleList = possibleList.map((item, index) => {
     return (
-      <div key={index} onClick={() => setter(item.courseList)} className="list">
-        List {index + 1}: {item.score}
+      <div
+        key={index}
+        onClick={() => setter(item.courseList)}
+        className="cursor-pointer px-2 hover:bg-accent hover:text-white">
+        Schedule {index + 1} - Perference Score: {item.score}
       </div>
     )
   })
 
   return (
-    <div className="grow border-2 border-accent">
-      <div className='flex items-center'>
+    <div className="h-full grow overflow-auto border-2 border-accent">
+      <div className="sticky top-0 z-10 flex items-center bg-white">
         <div className="m-1 w-fit bg-accent px-2 font-bold italic text-white">
           Smart Scheduler
         </div>
         <AutoFillFormInfo />
       </div>
+      <div className="px-2 font-medium">Courses to Schedule</div>
       {courseListForm}
       <button
         type="button"
@@ -319,10 +323,10 @@ function AutoFillForm({ isSemOne, setter }) {
             name="earlyTime"
             type="time"
             onChange={event => handleFormChange(event)}
-            className="font-light outline-none"
+            className="h-6 cursor-pointer border-2 border-accent pl-0.5 font-light outline-none"
           />
         </label>
-        <label className="-mt-1 flex justify-between">
+        <label className="flex justify-between">
           ↪ Violation Penalty
           <span className="font-light">{formContent.earlyScore}</span>
         </label>
@@ -349,13 +353,14 @@ function AutoFillForm({ isSemOne, setter }) {
         />
 
         <label className="mt-2 flex justify-between">
-          Max Gap Hours:
+          Max Gap Hours
           <input
             value={formContent.gapTime}
             name="gapTime"
             type="number"
+            max="9"
             onChange={event => handleFormChange(event)}
-            className="w-7 font-light outline-none"
+            className="w-8 border-2 border-accent pl-0.5 font-light outline-none hover:bg-accent hover:text-white"
           />
         </label>
         <label className="flex justify-between">
@@ -385,14 +390,21 @@ function AutoFillForm({ isSemOne, setter }) {
         />
       </div>
 
-      <button type="button" onClick={handleSubmit}>
-        Fill
+      <button
+        type="button"
+        onClick={handleSubmit}
+        className="mx-2 mt-2 w-[calc(100%-1rem)] bg-accent text-white transition-transform active:translate-y-1">
+        Get Schedule Recommendations
       </button>
 
-      <div className="possibleList">
-        <h4>Possible Course List</h4>
-        {renderPossibleList}
-      </div>
+      {possibleList.length > 0 && (
+        <>
+          <div className="sticky top-7 mt-2 px-2 font-medium backdrop-blur-lg">
+            Recommended Schedules
+          </div>
+          {renderPossibleList}
+        </>
+      )}
     </div>
   )
 }

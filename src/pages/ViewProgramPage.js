@@ -194,7 +194,7 @@ function ViewProgramPage() {
         )}
       </div>
       <div className="ml-5 mt-2 w-full min-w-[40rem] border-r-[1.25rem] border-white text-sm">
-        <div className="h-full overflow-scroll overscroll-y-contain border-2 border-accent">
+        <div className="h-full overflow-auto overscroll-y-contain border-2 border-accent">
           {program.name === '' ? (
             <div className="flex h-full items-center justify-center opacity-50">
               Click on a syllabus from the left to view its roadmap

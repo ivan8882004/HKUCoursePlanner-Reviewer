@@ -16,7 +16,7 @@ const Timetable = ({ selectedCourseList }) => {
     'h-full font-mono w-7 font-bold disabled:cursor-not-allowed disabled:opacity-25 enabled:hover:bg-accent enabled:hover:text-white active:opacity-25 transition-opacity'
 
   const tdClasses =
-    'border-accent border-2 text-center font-light overflow-scroll'
+    'border-accent border-2 text-center font-light overflow-scroll no-scrollbar'
 
   return (
     <table className="ml-5 mt-2 h-[calc(100%-0.5rem)] w-full min-w-[48rem] max-w-[60rem] table-fixed border-collapse border-2 border-accent text-sm">
