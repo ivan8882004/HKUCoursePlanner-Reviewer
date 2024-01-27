@@ -271,8 +271,8 @@ function AutoFillForm({ isSemOne, setter }) {
   })
 
   return (
-    <div className="h-full grow overflow-auto border-2 border-accent">
-      <div className="sticky top-0 z-10 flex items-center bg-white">
+    <div className="h-full  overflow-auto border-2 border-accent">
+      <div className="sticky top-0 z-10 flex items-center justify-between bg-white">
         <div className="m-1 w-fit bg-accent px-2 font-bold italic text-white">
           Smart Scheduler
         </div>
