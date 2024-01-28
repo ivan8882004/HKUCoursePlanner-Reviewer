@@ -12,38 +12,72 @@ function AutoFillFormInfo() {
     <>
       <div
         onClick={() => setOpen(true)}
-        className="mr-2 cursor-pointer text-xs font-normal opacity-50 transition hover:text-accent hover:opacity-100">
+        className="mr-1 cursor-pointer text-xs font-normal opacity-50 transition hover:text-accent hover:opacity-100">
         What is this?
       </div>
       <ReactModal
         isOpen={open}
         onRequestClose={handleClose}
-        ariaHideApp={false}>
-        <div className="font-poppins">
-          <span className="bg-accent px-2 font-bold italic text-white">
-            Smart Scheduler
-          </span>
-          helps you schedule courses Courses To Fill: The courses to
-          be auto fill. The program will find all possible courses by each input
-          term of each input field. For example COMP2119 possilbe course will be
-          [COMP2119-1A, COMP2119-1B, ...] (please notice that the auto fill will
-          just add course in the current sem determine by the buttons on the
-          left). You can type the course code with the sub class, i.e. if you
-          are a good CS student, you are supposed to take sub-class A instead of
-          B, then you can type COMP2119-1A to just search with sub-class A You
-          can also use "|" character to search with more than one course code
-          same time, i.e. COMP3322|COMP3329 possible course will be
-          [COMP3322..., COMP3329...] At last you can use just part of the course
-          code to search, i.e. COMP3 stand for all level 3 COMP course Day Off
-          Score: The score of when there is a day off, please notice that if you
-          have lesson on move than 6 days in a week, the day off score could be
-          negative. Early Time: The time that you think in too early. Early
-          Score: The score to be added when there is a lesson that start on or
-          before the early time, default negative Gap Hours: The lower bounder
-          of gap hours that you cannot accept. Gap Score: The score to be added
-          if the total hours of gap in a day is large than or equal to the gap
-          hours, if the gap hour is 3, and there is 4 gap hour in a day, the gap
-          score will be add twice for that day.
+        ariaHideApp={false}
+        style={{
+          overlay: {
+            zIndex: 100,
+          },
+        }}>
+        <div className="space-y-2 font-poppins font-light leading-relaxed">
+          <p>
+            <span className="bg-accent px-2 font-bold italic text-white">
+              Smart Scheduler
+            </span>{' '}
+            can help you schedule courses that you plan to take in a semester.
+            It works by gathering infomation about your perferences, then
+            calculating a perference score, and finally presenting the best
+            possible schedules in a ranked list for you to choose.
+          </p>
+
+          <p>To use it, you need to provide your perferences as follows:</p>
+
+          <p>
+            <span className="font-medium">Courses to Schedule:</span> You should
+            put the course codes of which you want to schedule here.
+          </p>
+          <p>
+            <span className="font-medium">Day-off Bonus:</span> How badly do you
+            want a day-off? If the answer is "YESSSS", adjust this setting all
+            the way up to give the schedules that offer a day-off a substantial
+            bonus score. Or, give less if this is not as much of a consideration
+            to you (We respect your dilligence)
+          </p>
+
+          <div>
+            <p>
+              <span className="font-medium">"Too Early!" Time:</span> How early
+              in the morning would you be uncomfortable having a lesson? We bet
+              most would say 8:30 so the default setting is 8:30, but you can
+              change it.
+            </p>
+            <p>
+              ↪ <span className="font-medium">Violation Penalty:</span>{' '}
+              Penalise the schedules that violates the above perference. If you
+              really don't like morning classes, put this all the way up!
+            </p>
+          </div>
+
+          <div>
+            <p>
+              <span className="font-medium">Maximum Gap Hours:</span> It can be
+              painful having to stay at campus the whole day because of improper
+              scheduling of one lesson at early morning and another at late
+              evening. How many hours in between lessons can you at most
+              tolerate? You can state it here.
+            </p>
+            <p>
+              ↪ <span className="font-medium">Violation Penalty:</span>{' '}
+              Penalise the schedules that violates the above perference. If you
+              really want to prevent huge gaps between lessons, turn the penalty
+              up!
+            </p>
+          </div>
         </div>
       </ReactModal>
     </>
