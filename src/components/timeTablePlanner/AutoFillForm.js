@@ -286,7 +286,7 @@ function AutoFillForm({ isSemOne, setter }) {
   })
 
   return (
-    <div className="no-scrollbar h-2/3 overflow-auto border-2 border-accent">
+    <div className="no-scrollbar h-2/3 overflow-auto border-2 border-accent bg-gradient-to-b from-transparent from-90% to-gray-200 bg-clip-padding">
       <div className="sticky top-0 z-10 flex items-center justify-between bg-white">
         <div className="m-1 w-fit bg-accent px-2 font-bold italic text-white">
           Smart Scheduler
@@ -338,7 +338,7 @@ function AutoFillForm({ isSemOne, setter }) {
             name="earlyTime"
             type="time"
             onChange={event => handleFormChange(event)}
-            className="h-6 cursor-pointer border-2 border-accent pl-0.5 font-light outline-none"
+            className="h-6 cursor-pointer border-2 border-accent font-light outline-none"
           />
         </label>
         <label className="flex justify-between">
@@ -416,13 +416,13 @@ function AutoFillForm({ isSemOne, setter }) {
         disabled={
           formContent.courseList.filter(course => course !== '').length === 0
         }
-        className="mx-2 mt-2 w-[calc(100%-1rem)] bg-accent text-white transition-transform enabled:active:translate-y-1 disabled:opacity-50">
+        className="mx-2 mt-2 w-[calc(100%-1rem)] bg-accent text-white transition-transform enabled:active:translate-y-1 disabled:opacity-25">
         Get Schedule Recommendations
       </button>
 
       {possibleList.length > 0 && (
         <>
-          <div className="sticky top-7 mt-2 px-2 font-medium backdrop-blur-lg">
+          <div className="sticky top-7 mt-2 px-2 font-medium backdrop-blur-lg ">
             Recommended Schedules
           </div>
           {renderPossibleList}
