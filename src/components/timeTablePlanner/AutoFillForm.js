@@ -49,33 +49,46 @@ function AutoFillForm({ isSemOne, setter }) {
   }
 
   const removeCourseList = index => {
-    if (formContent.courseList.length > 1) {
-      const toSet = {
-        ...formContent,
-        courseList: [
-          ...formContent.courseList.slice(0, index),
-          ...formContent.courseList.slice(index + 1),
-        ],
-      }
-
-      setFormContent(toSet)
-      localStorage.setItem(FORMCONTENT, JSON.stringify(toSet))
-    }
-  }
-
-  const handleFormChange = event => {
     const toSet = {
       ...formContent,
-      [event.target.name]: event.target.value,
+      courseList: [
+        ...formContent.courseList.slice(0, index),
+        ...formContent.courseList.slice(index + 1),
+      ],
     }
 
     setFormContent(toSet)
     localStorage.setItem(FORMCONTENT, JSON.stringify(toSet))
   }
 
+  const handleFormChange = event => {
+    const name = event.target.name
+    const toSet = {
+      ...formContent,
+      [name]:
+        name === 'earlyScore' || name === 'gapScore'
+          ? -event.target.value
+          : event.target.value,
+    }
+
+    setFormContent(toSet)
+    localStorage.setItem(FORMCONTENT, JSON.stringify(toSet))
+  }
+
+  const [isAnimateRemove, setIsAnimateRemove] = useState(-1)
   const courseListForm = formContent.courseList.map((item, index) => {
     return (
-      <div key={index} className="group flex">
+      <div
+        key={index}
+        className={
+          (isAnimateRemove === index
+            ? 'animate__animated animate__bounceOutLeft animate__faster '
+            : '') + 'group flex'
+        }
+        onAnimationEnd={() => {
+          setIsAnimateRemove(-1)
+          removeCourseList(index)
+        }}>
         <input
           value={item}
           onChange={event => editCourseList(event, index)}
@@ -84,7 +97,9 @@ function AutoFillForm({ isSemOne, setter }) {
         />
         <button
           type="button"
-          onClick={() => removeCourseList(index)}
+          onClick={() => {
+            if (formContent.courseList.length > 1) setIsAnimateRemove(index)
+          }}
           className="px-2 hover:font-bold group-hover:bg-accent group-hover:text-white">
           -
         </button>
@@ -271,7 +286,7 @@ function AutoFillForm({ isSemOne, setter }) {
   })
 
   return (
-    <div className="h-full  overflow-auto border-2 border-accent">
+    <div className="no-scrollbar h-2/3 overflow-auto border-2 border-accent">
       <div className="sticky top-0 z-10 flex items-center justify-between bg-white">
         <div className="m-1 w-fit bg-accent px-2 font-bold italic text-white">
           Smart Scheduler
@@ -283,7 +298,7 @@ function AutoFillForm({ isSemOne, setter }) {
       <button
         type="button"
         onClick={addCourseList}
-        className="w-full px-2 text-left font-normal text-accent transition-opacity hover:bg-accent hover:text-white active:opacity-25">
+        className="w-full px-2 text-left font-normal text-accent transition-transform hover:bg-accent hover:text-white active:translate-y-1">
         New Course
       </button>
 
@@ -328,12 +343,14 @@ function AutoFillForm({ isSemOne, setter }) {
         </label>
         <label className="flex justify-between">
           ↪ Violation Penalty
-          <span className="font-light">{formContent.earlyScore}</span>
+          <span className="font-light">{-formContent.earlyScore}</span>
         </label>
         <input
-          value={formContent.earlyScore}
+          value={-formContent.earlyScore}
           name="earlyScore"
           type="range"
+          min="0"
+          max="100"
           onChange={event => handleFormChange(event)}
           className="w-full -translate-y-1 cursor-pointer appearance-none bg-transparent focus:outline-none
           [&::-moz-range-thumb]:h-3
@@ -358,6 +375,7 @@ function AutoFillForm({ isSemOne, setter }) {
             value={formContent.gapTime}
             name="gapTime"
             type="number"
+            min="0"
             max="9"
             onChange={event => handleFormChange(event)}
             className="w-8 border-2 border-accent pl-0.5 font-light outline-none hover:bg-accent hover:text-white"
@@ -365,12 +383,14 @@ function AutoFillForm({ isSemOne, setter }) {
         </label>
         <label className="flex justify-between">
           ↪ Violation Penalty
-          <span className="font-light">{formContent.gapScore}</span>
+          <span className="font-light">{-formContent.gapScore}</span>
         </label>
         <input
-          value={formContent.gapScore}
+          value={-formContent.gapScore}
           name="gapScore"
           type="range"
+          min="0"
+          max="100"
           onChange={event => handleFormChange(event)}
           className="w-full -translate-y-1 cursor-pointer appearance-none bg-transparent focus:outline-none
             [&::-moz-range-thumb]:h-3
@@ -393,7 +413,10 @@ function AutoFillForm({ isSemOne, setter }) {
       <button
         type="button"
         onClick={handleSubmit}
-        className="mx-2 mt-2 w-[calc(100%-1rem)] bg-accent text-white transition-transform active:translate-y-1">
+        disabled={
+          formContent.courseList.filter(course => course !== '').length === 0
+        }
+        className="mx-2 mt-2 w-[calc(100%-1rem)] bg-accent text-white transition-transform enabled:active:translate-y-1 disabled:opacity-50">
         Get Schedule Recommendations
       </button>
 

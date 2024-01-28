@@ -82,7 +82,7 @@ function StudyPlanSem({ list, index }) {
       <div className="mx-2 h-full font-light">
         {courseList.length === 0 ? (
           <div className="flex h-full items-center justify-center border-2 border-dashed">
-            <div className="text-xs font-normal opacity-25 transition-opacity hover:opacity-50">
+            <div className="text-xs font-normal opacity-50">
               Drop here
             </div>
           </div>

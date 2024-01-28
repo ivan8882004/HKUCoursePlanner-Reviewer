@@ -252,7 +252,7 @@ function StudyPlanPage() {
 
         <div className="mt-0.5 flex justify-between">
           Courses{' '}
-          <div className="mb-1 flex items-end text-xs opacity-25 transition-opacity hover:opacity-50">
+          <div className="mb-1 flex items-end text-xs opacity-50">
             ↓ Drag and drop to plan
           </div>
         </div>
