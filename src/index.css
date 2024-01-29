@@ -19,3 +19,16 @@
     --color-accent: 22 101 52;
   }
 }
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}

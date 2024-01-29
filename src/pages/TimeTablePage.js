@@ -79,6 +79,14 @@ const TimeTablePage = () => {
       { ...course_to_be_inserted, isChecked: true },
     ]
 
+    const toSetCourseList = [
+      ...courseList.filter(
+        course => course.courseName !== course_to_be_inserted.courseName
+      ),
+      { ...course_to_be_inserted, isChecked: true },
+    ]
+
+    setCourseList(toSetCourseList)
     setSelectedCourseList(toSet)
   }
 

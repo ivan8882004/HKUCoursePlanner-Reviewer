@@ -338,7 +338,7 @@ function AutoFillForm({ isSemOne, setter }) {
         />
 
         <label className="mt-2 flex justify-between">
-          "Too Early!" Time
+          Earliest Class Time
           <input
             value={formContent.earlyTime}
             name="earlyTime"
@@ -422,9 +422,12 @@ function AutoFillForm({ isSemOne, setter }) {
         disabled={
           formContent.courseList.filter(course => course !== '').length === 0
         }
-        className="m-2 w-[calc(100%-1rem)] bg-accent text-white transition-transform enabled:active:translate-y-1 disabled:opacity-25">
+        className="m-2 mb-0 w-[calc(100%-1rem)] bg-accent font-normal text-white transition-transform enabled:active:translate-y-1 disabled:opacity-25">
         Get Schedule Recommendations
       </button>
+      <div className="mb-2 px-2 text-red-600">
+        ⚠️ This will clear your current timetable!
+      </div>
 
       {possibleList.length > 0 && (
         <>

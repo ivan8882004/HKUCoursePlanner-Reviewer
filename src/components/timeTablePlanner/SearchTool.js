@@ -124,6 +124,28 @@ function SearchTool({
         className="block w-full cursor-text appearance-none rounded-none border-2 border-accent p-0.5 pl-2 font-light outline-none placeholder:text-black hover:bg-accent hover:text-white placeholder:hover:text-white focus:bg-accent focus:text-white placeholder:focus:text-white"
       />
       <div className="no-scrollbar w-full grow overflow-scroll overscroll-contain border-2 border-t-0 border-accent bg-gradient-to-b from-transparent from-90% to-gray-200 bg-clip-padding py-1 text-sm font-light">
+        {!!selectedCourseList.filter(course => course.isChecked).length && (
+          <div>
+            <div className={headerClasses}>Added</div>
+            <div className="divide-y-2 divide-accent">
+              {selectedCourseList
+                .filter(course => course.isChecked)
+                .map((course, index) => (
+                  <CourseCard
+                    insertCourseByMouseEnter={insertCourseByMouseEnter}
+                    isSemOne={isSemOne}
+                    deleteCourseinLists={deleteCourseinLists}
+                    selectedCourseList={selectedCourseList}
+                    key={index}
+                    course={course}
+                    index={index}
+                    deleteCourse={deleteCourse}
+                    insertCourse={insertCourse}
+                  />
+                ))}
+            </div>
+          </div>
+        )}
         {!!importCourseList.length && (
           <div>
             <div className={headerClasses}>From Course Planner</div>
@@ -147,19 +169,21 @@ function SearchTool({
         <div>
           <div className={headerClasses}>All Courses</div>
           <div className="divide-y-2 divide-accent">
-            {courseList.map((course, index) => (
-              <CourseCard
-                insertCourseByMouseEnter={insertCourseByMouseEnter}
-                isSemOne={isSemOne}
-                deleteCourseinLists={deleteCourseinLists}
-                selectedCourseList={selectedCourseList}
-                key={index}
-                course={course}
-                index={index}
-                deleteCourse={deleteCourse}
-                insertCourse={insertCourse}
-              />
-            ))}
+            {courseList
+              .filter(course => !course.isChecked)
+              .map((course, index) => (
+                <CourseCard
+                  insertCourseByMouseEnter={insertCourseByMouseEnter}
+                  isSemOne={isSemOne}
+                  deleteCourseinLists={deleteCourseinLists}
+                  selectedCourseList={selectedCourseList}
+                  key={index}
+                  course={course}
+                  index={index}
+                  deleteCourse={deleteCourse}
+                  insertCourse={insertCourse}
+                />
+              ))}
           </div>
         </div>
       </div>

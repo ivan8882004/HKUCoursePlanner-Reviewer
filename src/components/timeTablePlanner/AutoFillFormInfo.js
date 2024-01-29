@@ -19,65 +19,76 @@ function AutoFillFormInfo() {
         isOpen={open}
         onRequestClose={handleClose}
         ariaHideApp={false}
+        closeTimeoutMS={300}
         style={{
+          content: {
+            borderRadius: 0,
+            height: 'fit-content',
+            width: '50%',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          },
           overlay: {
             zIndex: 100,
+            backdropFilter: 'blur(16px)',
+            WebkitBackdropFilter: 'blur(16px)',
           },
         }}>
-        <div className="space-y-2 font-poppins font-light leading-relaxed">
+        <div className="select-none space-y-2 font-poppins font-light">
           <p>
             <span className="bg-accent px-2 font-bold italic text-white">
               Smart Scheduler
             </span>{' '}
-            can help you schedule courses that you plan to take in a semester.
-            It works by gathering infomation about your perferences, then
-            calculating a perference score, and finally presenting the best
-            possible schedules in a ranked list for you to choose.
+            is a tool that helps you schedule your courses for a semester. It
+            takes into account your preferences and shows you the best possible
+            schedules.
           </p>
 
-          <p>To use it, you need to provide your perferences as follows:</p>
+          <p>To use it, you need to:</p>
 
           <p>
-            <span className="font-medium">Courses to Schedule:</span> You should
-            put the course codes of which you want to schedule here.
+            <span className="font-medium">Enter the course codes</span> of the
+            courses you want to take.
           </p>
           <p>
-            <span className="font-medium">Day-off Bonus:</span> How badly do you
-            want a day-off? If the answer is "YESSSS", adjust this setting all
-            the way up to give the schedules that offer a day-off a substantial
-            bonus score. Or, give less if this is not as much of a consideration
-            to you (We respect your dilligence)
+            <span className="font-medium">Adjust the day-off bonus</span> to
+            give extra points to schedules that have no classes on certain days.
           </p>
-
           <div>
             <p>
-              <span className="font-medium">"Too Early!" Time:</span> How early
-              in the morning would you be uncomfortable having a lesson? We bet
-              most would say 8:30 so the default setting is 8:30, but you can
-              change it.
+              <span className="font-medium">
+                Specify the earliest class time
+              </span>{' '}
+              to indicate the earliest time you are willing to have a class.
             </p>
             <p>
-              ↪ <span className="font-medium">Violation Penalty:</span>{' '}
-              Penalise the schedules that violates the above perference. If you
-              really don't like morning classes, put this all the way up!
+              ↪ <span className="font-medium">Set the violation penalty</span>{' '}
+              to deduct points from schedules that have classes before the
+              earliest class time.
             </p>
           </div>
 
           <div>
             <p>
-              <span className="font-medium">Maximum Gap Hours:</span> It can be
-              painful having to stay at campus the whole day because of improper
-              scheduling of one lesson at early morning and another at late
-              evening. How many hours in between lessons can you at most
-              tolerate? You can state it here.
+              <span className="font-medium">Specify the maximum gap hours</span>{' '}
+              to indicate the maximum number of hours you can tolerate between
+              classes in a day.
             </p>
             <p>
-              ↪ <span className="font-medium">Violation Penalty:</span>{' '}
-              Penalise the schedules that violates the above perference. If you
-              really want to prevent huge gaps between lessons, turn the penalty
-              up!
+              ↪ <span className="font-medium">Set the violation penalty</span>{' '}
+              to deduct points from schedules that have more gap hours than the
+              maximum.
             </p>
           </div>
+
+          <p>
+            After you have entered your preferences, you can click{' '}
+            <span className="bg-accent px-2 text-sm font-normal text-white">
+              Get Schedule Recommendations
+            </span>{' '}
+            to see the best schedules for you. You can choose the one that suits
+            you best.
+          </p>
         </div>
       </ReactModal>
     </>
