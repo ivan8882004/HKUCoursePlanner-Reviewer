@@ -100,6 +100,7 @@ function AutoFillForm({ isSemOne, setter }) {
           onClick={() => {
             if (formContent.courseList.length > 1) setIsAnimateRemove(index)
           }}
+          hidden={formContent.courseList.length === 1}
           className="px-2 hover:font-bold group-hover:bg-accent group-hover:text-white">
           -
         </button>
@@ -311,7 +312,7 @@ function AutoFillForm({ isSemOne, setter }) {
       <div className="px-2 font-medium">
         <label className="mt-2 flex justify-between">
           Day-off Bonus
-          <span className="font-light">{formContent.dayOffScore}</span>
+          <span className="font-light">+{formContent.dayOffScore}pt</span>
         </label>
         <input
           value={formContent.dayOffScore}
@@ -349,7 +350,7 @@ function AutoFillForm({ isSemOne, setter }) {
         </label>
         <label className="flex justify-between">
           ↪ Violation Penalty
-          <span className="font-light">{-formContent.earlyScore}</span>
+          <span className="font-light">-{-formContent.earlyScore}pt</span>
         </label>
         <input
           value={-formContent.earlyScore}
@@ -389,7 +390,7 @@ function AutoFillForm({ isSemOne, setter }) {
         </label>
         <label className="flex justify-between">
           ↪ Violation Penalty
-          <span className="font-light">{-formContent.gapScore}</span>
+          <span className="font-light">-{-formContent.gapScore}pt</span>
         </label>
         <input
           value={-formContent.gapScore}
@@ -422,12 +423,14 @@ function AutoFillForm({ isSemOne, setter }) {
         disabled={
           formContent.courseList.filter(course => course !== '').length === 0
         }
-        className="m-2 mb-0 w-[calc(100%-1rem)] bg-accent font-normal text-white transition-transform enabled:active:translate-y-1 disabled:opacity-25">
+        className="m-2 mb-1 w-[calc(100%-1rem)] bg-accent font-normal text-white transition-transform enabled:active:translate-y-1 disabled:opacity-25">
         Get Schedule Recommendations
       </button>
-      <div className="mb-2 px-2 text-red-600">
-        ⚠️ This will clear your current timetable!
-      </div>
+      {formContent.courseList.filter(course => course !== '').length !== 0 && (
+        <div className="mb-2 px-2 text-red-600">
+          ⚠️ This will override your existing timetable!
+        </div>
+      )}
 
       {possibleList.length > 0 && (
         <>

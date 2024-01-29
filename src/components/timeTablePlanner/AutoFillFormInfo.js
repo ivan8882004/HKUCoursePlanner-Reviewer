@@ -24,7 +24,8 @@ function AutoFillFormInfo() {
           content: {
             borderRadius: 0,
             height: 'fit-content',
-            width: '50%',
+            width: '75%',
+            maxWidth: '70rem',
             marginLeft: 'auto',
             marginRight: 'auto',
           },
@@ -32,27 +33,28 @@ function AutoFillFormInfo() {
             zIndex: 100,
             backdropFilter: 'blur(16px)',
             WebkitBackdropFilter: 'blur(16px)',
+            overflow: 'scroll',
           },
         }}>
         <div className="select-none space-y-2 font-poppins font-light">
           <p>
-            <span className="bg-accent px-2 font-bold italic text-white">
+            <span className="whitespace-nowrap bg-accent px-2 font-bold italic text-white">
               Smart Scheduler
             </span>{' '}
             is a tool that helps you schedule your courses for a semester. It
-            takes into account your preferences and shows you the best possible
-            schedules.
+            takes into account your preferences and shows you the best potential
+            schedules by calculating the perference score for each schedule.
           </p>
 
           <p>To use it, you need to:</p>
 
           <p>
             <span className="font-medium">Enter the course codes</span> of the
-            courses you want to take.
+            courses you want to take for a semester.
           </p>
           <p>
             <span className="font-medium">Adjust the day-off bonus</span> to
-            give extra points to schedules that have no classes on certain days.
+            give bonus points to schedules that have no classes on certain days.
           </p>
           <div>
             <p>
@@ -83,11 +85,19 @@ function AutoFillFormInfo() {
 
           <p>
             After you have entered your preferences, you can click{' '}
-            <span className="bg-accent px-2 text-sm font-normal text-white">
+            <span className="whitespace-nowrap bg-accent px-2 text-sm font-normal text-white">
               Get Schedule Recommendations
             </span>{' '}
             to see the best schedules for you. You can choose the one that suits
             you best.
+          </p>
+
+          <p className="text-red-600">
+            ⚠️ Beware that your existing timetable will be overrode once you
+            click{' '}
+            <span className="whitespace-nowrap bg-accent px-2 text-sm font-normal text-white">
+              Get Schedule Recommendations
+            </span>
           </p>
         </div>
       </ReactModal>

@@ -188,7 +188,7 @@ function ViewProgramPage() {
         <div>Minors</div>
         <div className={listClasses}>{minorsList}</div>
         {program.name !== '' && (
-          <div className="text-end text-xs opacity-25 transition-opacity hover:opacity-50">
+          <div className="text-end text-xs opacity-50">
             Protip: You can scroll around →
           </div>
         )}
