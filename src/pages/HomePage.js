@@ -9,7 +9,7 @@ function HomePage() {
       <div className="animate__animated animate__slideInDown animate__faster text-5xl max-md:text-3xl">
         Welcome to{' '}
       </div>
-      <div className="animate__animated animate__jackInTheBox mb-7 bg-accent p-3 text-6xl font-bold text-white animation-delay-300 max-md:text-4xl">
+      <div className="animate__animated animate__jackInTheBox mb-7 bg-accent p-3 text-6xl font-bold text-white animation-delay-300 max-md:text-4xl max-md:py-2">
         <u>
           <i>Course Planner</i>
         </u>{' '}

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 function TopBar() {
@@ -6,6 +7,8 @@ function TopBar() {
 
   const activeNavLinkClasses =
     'bg-accent text-white decoration-white cursor-default '
+
+  const [isDevMode, setIsDevMode] = useState(false)
 
   return (
     <div className="no-scrollbar animate-fade-in fixed z-50 flex w-screen select-none items-center overflow-scroll border-b bg-white py-2 font-light">
@@ -47,38 +50,64 @@ function TopBar() {
           Syllabus Roadmap
         </NavLink>
         <NavLink
-          to="/HKUCoursePlanner-Reviewer/add_course"
+          to="/HKUCoursePlanner-Reviewer/engg_best8"
           className={({ isActive }) =>
             (isActive ? activeNavLinkClasses : '') + navLinkClasses
           }>
-          Add Course
-        </NavLink>
-        <NavLink
-          to="/HKUCoursePlanner-Reviewer/add_degree"
-          className={({ isActive }) =>
-            (isActive ? activeNavLinkClasses : '') + navLinkClasses
-          }>
-          Add Degree
-        </NavLink>
-        <NavLink
-          to="/HKUCoursePlanner-Reviewer/add_major_minor"
-          className={({ isActive }) =>
-            (isActive ? activeNavLinkClasses : '') + navLinkClasses
-          }>
-          Add Major/Minor
+          Best-8 Calculator
         </NavLink>
         <NavLink
           to="/HKUCoursePlanner-Reviewer/upload_export_file"
           className={({ isActive }) =>
             (isActive ? activeNavLinkClasses : '') + navLinkClasses
           }>
-          Import/Export Config
+          Config
         </NavLink>
+        {isDevMode && (
+          <>
+            <NavLink
+              to="/HKUCoursePlanner-Reviewer/add_course"
+              className={({ isActive }) =>
+                (isActive ? activeNavLinkClasses : '') +
+                navLinkClasses +
+                ' opacity-50'
+              }>
+              Add Course
+            </NavLink>
+            <NavLink
+              to="/HKUCoursePlanner-Reviewer/add_degree"
+              className={({ isActive }) =>
+                (isActive ? activeNavLinkClasses : '') +
+                navLinkClasses +
+                ' opacity-50'
+              }>
+              Add Degree
+            </NavLink>
+            <NavLink
+              to="/HKUCoursePlanner-Reviewer/add_major_minor"
+              className={({ isActive }) =>
+                (isActive ? activeNavLinkClasses : '') +
+                navLinkClasses +
+                ' opacity-50'
+              }>
+              Add Major/Minor
+            </NavLink>
+          </>
+        )}
       </div>
-      <div className="ml-5 shrink-0 border-r-[1.25rem] border-white">
+      <div className="ml-5 flex shrink-0 border-r-[1.25rem] border-white">
+        <button
+          tabIndex="-1"
+          onClick={() => {
+            setIsDevMode(!isDevMode)
+          }}
+          className="opacity-50">
+          🚧
+        </button>
         <a
           href="https://github.com/ivan8882004/HKUCoursePlanner-Reviewer"
-          tabIndex="-1">
+          tabIndex="-1"
+          className="ml-5 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="16"
