@@ -64,20 +64,32 @@ function StudyPlanSem({ list, index }) {
   })
 
   const title = (
-    <span>
-      Year {Math.floor((index + 2) / 3)} Sem{' '}
-      {((index + 2) % 3) + 1 === 3 ? 'sum' : ((index + 2) % 3) + 1}
-    </span>
+    <div className="font-medium">
+      {((index + 2) % 3) + 1 === 3
+        ? 'Summer Semester'
+        : 'Semester ' + (((index + 2) % 3) + 1)}
+    </div>
   )
 
   return (
     <div
       className={
-        'StudyPlanSem' + (((index + 2) % 3) + 1 === 3 ? ' StudyPlanSemSum' : '')
+        'flex flex-shrink-0 flex-col' +
+        (((index + 2) % 3) + 1 === 3 ? ' basis-[20%]' : ' basis-[40%]')
       }
       ref={drop}>
-      <div className="Title">{title}</div>
-      <div className="Courses">{courseList}</div>
+      <div className="sticky top-0 pl-2 backdrop-blur-lg">{title}</div>
+      <div className="mx-2 h-full font-light">
+        {courseList.length === 0 ? (
+          <div className="flex h-full items-center justify-center border-2 border-dashed">
+            <div className="text-xs font-normal opacity-50">
+              Drop here
+            </div>
+          </div>
+        ) : (
+          courseList
+        )}
+      </div>
     </div>
   )
 }

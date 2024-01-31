@@ -29,16 +29,23 @@ function SemCourseListItem({ course, ind, index }) {
 
   if (dropDown) {
     courseContent = (
-      <div className="Content">
-        <div>{course.fullName}</div>
+      <>
+        <div className="font-medium italic">{course.fullName}</div>
         <div>
-          Prereg:{' '}
+          Prereq:{' '}
           {course.prereg
-            .map(list => '[' + list.map(item => item).join(' or ') + ']')
-            .join(' and ')}
+            .map(
+              list =>
+                '[' +
+                list
+                  .map(item => (item === 'M1/M2_2+' ? 'M1/M2>=Lv2' : item))
+                  .join(' or ') +
+                ']'
+            )
+            .join(' and ') || 'None'}
         </div>
-        <div>Exclusive: {course.exclusive.join(' & ')}</div>
-      </div>
+        <div>MuEx: {course.exclusive.join(', ') || 'None'}</div>
+      </>
     )
   } else {
     courseContent = ''
@@ -46,8 +53,10 @@ function SemCourseListItem({ course, ind, index }) {
 
   const handleDropDown = () => {
     setDropDown(!dropDown)
+    setIsDropdownActive(!isDropdownActive)
   }
 
+  const [isAnimateRemove, setIsAnimateRemove] = useState(false)
   const handleRemove = () => {
     if (parseInt(course.credit) === 6) {
       dispatch(removePlanItem({ index, course }))
@@ -56,39 +65,110 @@ function SemCourseListItem({ course, ind, index }) {
     }
   }
 
+  const courseListItemClasses =
+    'mb-1 cursor-pointer overflow-hidden hyphens-auto border-2 border-accent py-0.5 px-2 hover:bg-accent hover:text-white transition-opacity active:opacity-25'
+
+  const [isDropdownActive, setIsDropdownActive] = useState(false)
+  const hints = ['>', '×']
+
+  const removeBtnClasses = 'hover:font-bold pl-2 -mr-2 pr-2'
+
   if (!checkPrereg(course, index, plan)) {
     return (
-      <div key={ind} className="CoursePreregFail" ref={drag}>
-        <div className="ErrorMessage" onClick={handleDropDown}>
-          Prereg not filfull
-          <div className="ErrorCourse">
-            {course.prereg
-              .map(list => '[' + list.map(item => item).join(' or ') + ']')
-              .join(' and ')}
+      <div
+        key={ind}
+        className={
+          (isAnimateRemove
+            ? 'animate__animated animate__bounceOut animate__faster '
+            : '') + courseListItemClasses
+        }
+        ref={drag}
+        onClick={handleDropDown}
+        onAnimationEnd={() => {
+          setIsAnimateRemove(false)
+          handleRemove()
+        }}>
+        <div className="flex">
+          <div className="grow">
+            <div>
+              {course.name} {hints[isDropdownActive ? 1 : 0]}
+            </div>
+            <div>⚠️Prereq Not Met</div>
           </div>
+          <button
+            onClick={e => {
+              e.stopPropagation()
+              setIsAnimateRemove(true)
+            }}
+            className={removeBtnClasses}>
+            -
+          </button>
         </div>
-        <span onClick={handleDropDown}>{course.name}</span>
-        <button onClick={handleRemove}>X</button>
         {courseContent}
       </div>
     )
   } else if (checkExclusive(course, index, plan)) {
     return (
-      <div key={ind} className="CourseExclusive" ref={drag}>
-        <div className="ErrorMessage" onClick={handleDropDown}>
-          Have exclusive
-          <div className="ErrorCourse">{course.exclusive.join(' & ')}</div>
+      <div
+        key={ind}
+        className={
+          (isAnimateRemove
+            ? 'animate__animated animate__bounceOut animate__faster '
+            : '') + courseListItemClasses
+        }
+        ref={drag}
+        onClick={handleDropDown}
+        onAnimationEnd={() => {
+          setIsAnimateRemove(false)
+          handleRemove()
+        }}>
+        <div className="flex">
+          <div className="grow">
+            <div>
+              {course.name} {hints[isDropdownActive ? 1 : 0]}
+            </div>
+            <div>⚠️MuEx</div>
+          </div>
+          <button
+            onClick={e => {
+              e.stopPropagation()
+              setIsAnimateRemove(true)
+            }}
+            className={removeBtnClasses}>
+            -
+          </button>
         </div>
-        <span onClick={handleDropDown}>{course.name}</span>
-        <button onClick={handleRemove}>X</button>
         {courseContent}
       </div>
     )
   }
   return (
-    <div key={ind} className="NormalCourse" ref={drag}>
-      <span onClick={handleDropDown}>{course.name}</span>
-      <button onClick={handleRemove}>X</button>
+    <div
+      key={ind}
+      className={
+        (isAnimateRemove
+          ? 'animate__animated animate__bounceOut animate__faster '
+          : '') + courseListItemClasses
+      }
+      ref={drag}
+      onClick={handleDropDown}
+      onAnimationEnd={() => {
+        setIsAnimateRemove(false)
+        handleRemove()
+      }}>
+      <div className="flex">
+        <div className="grow">
+          {course.name} {hints[isDropdownActive ? 1 : 0]}
+        </div>
+        <button
+          onClick={e => {
+            e.stopPropagation()
+            setIsAnimateRemove(true)
+          }}
+          className={removeBtnClasses}>
+          -
+        </button>
+      </div>
       {courseContent}
     </div>
   )

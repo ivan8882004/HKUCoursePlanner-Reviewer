@@ -44,30 +44,34 @@ function StudyPlanCheckBoxs() {
     }
   }
 
+  const labelClasses =
+    'flex items-center focus-within:underline w-fit decoration-accent decoration-2 cursor-pointer group'
+  const checkboxClasses =
+    'ml-1 mr-2 outline-none appearance-none border-2 border-accent w-4 h-4 checked:bg-accent transition cursor-pointer group-active:opacity-25'
+
   return (
     <div>
-      <div>
-        <label>
-          DSE M1/M2 level 2 or above
-          <input
-            type="checkbox"
-            name="M1/M2_2+"
-            checked={checked['M1/M2_2+']}
-            onChange={handleCheckBoxChange}
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          DSE English level 5 or above
-          <input
-            type="checkbox"
-            name="DSEENG5+"
-            checked={checked['DSEENG5+']}
-            onChange={handleCheckBoxChange}
-          />
-        </label>
-      </div>
+      <label className={labelClasses}>
+        <input
+          type="checkbox"
+          name="M1/M2_2+"
+          checked={checked['M1/M2_2+']}
+          onChange={handleCheckBoxChange}
+          className={checkboxClasses}
+        />
+        DSE M1/M2 {'>'}= Lv2
+      </label>
+
+      <label className={labelClasses}>
+        <input
+          type="checkbox"
+          name="DSEENG5+"
+          checked={checked['DSEENG5+']}
+          onChange={handleCheckBoxChange}
+          className={checkboxClasses}
+        />
+        DSE English {'>'}= Lv5
+      </label>
     </div>
   )
 }

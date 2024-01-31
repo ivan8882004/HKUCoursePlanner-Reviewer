@@ -1,5 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { setDegree, setMajor, setMinor1, setMinor2, setPlan } from '../store'
+import {
+  setDegree,
+  setMajor,
+  setMinor1,
+  setMinor2,
+  setPlan,
+  setStudyPlan,
+} from '../store'
 import { useState } from 'react'
 import StudyPlanSem from '../components/studyPlanPage/StudyPlanSem'
 import CourseListItem from '../components/studyPlanPage/CourseListItem'
@@ -10,6 +17,12 @@ import ProgramChecker from '../components/studyPlanPage/ProgramChecker'
 import CreditCounter from '../components/studyPlanPage/CreditCounter'
 
 function StudyPlanPage() {
+  const inputClasses =
+    'rounded-none border-2 border-accent outline-none w-full p-0.5 pl-2 focus:bg-accent hover:bg-accent hover:text-white focus:text-white font-light block appearance-none cursor-pointer mb-2'
+  const header1Classes = 'sticky -top-1 px-2 font-bold bg-white z-10'
+  const header2Classes = 'sticky top-4 px-2 font-medium backdrop-blur-lg'
+  const optionClasses = 'bg-white text-black'
+
   const dispatch = useDispatch()
 
   const [searchBar, setSearchBar] = useState('')
@@ -28,7 +41,11 @@ function StudyPlanPage() {
 
   const degreesDropDown = degrees.map((item, index) => {
     return (
-      <option value={JSON.stringify(item)} key={index}>
+      <option
+        value={JSON.stringify(item)}
+        key={index}
+        className={optionClasses}
+        selected={item.name === degree.name.replace(/"/g, '')}>
         {item.name}
       </option>
     )
@@ -36,19 +53,31 @@ function StudyPlanPage() {
 
   const majorsDropDown = majors.map((item, index) => {
     return (
-      <option value={JSON.stringify(item)} key={index}>
+      <option
+        value={JSON.stringify(item)}
+        key={index}
+        className={optionClasses}
+        selected={item.name === major.name.replace(/"/g, '')}>
         {item.name}
       </option>
     )
   })
 
-  const minorsDropDown = minors.map((item, index) => {
-    return (
-      <option value={JSON.stringify(item)} key={index}>
-        {item.name}
-      </option>
-    )
-  })
+  const minorsDropDown = minorId =>
+    minors.map((item, index) => {
+      return (
+        <option
+          value={JSON.stringify(item)}
+          key={index}
+          className={optionClasses}
+          selected={
+            item.name ===
+            (minorId === 1 ? minor1 : minor2).name.replace(/"/g, '')
+          }>
+          {item.name}
+        </option>
+      )
+    })
 
   const semList = [...plan.slice(1)].map((list, index) => {
     return <StudyPlanSem index={index + 1} list={list} key={index} />
@@ -58,8 +87,11 @@ function StudyPlanPage() {
 
   for (let i = 0; i < semList.length / 3; i++) {
     orderedSemList.push(
-      <div key={i} className="StudyPlanSemBox">
-        {[...semList.slice(i * 3, i * 3 + 3)]}
+      <div key={i} className="flex h-full min-w-40 basis-1/4 flex-col pt-1">
+        <div className="px-2 font-bold">Year {i + 1}</div>
+        <div className="no-scrollbar flex grow flex-col overflow-scroll overscroll-contain pb-2">
+          {[...semList.slice(i * 3, i * 3 + 3)]}
+        </div>
       </div>
     )
   }
@@ -88,10 +120,9 @@ function StudyPlanPage() {
 
     return (
       <div key={index}>
-        <span className="Subtitle">
-          <span>{list.type}</span>
-          <span className="SubtitleAnnotate"> {list.credit} credits</span>
-        </span>
+        <div className={header2Classes}>
+          {list.type} - {list.credit} credits
+        </div>
         <div>{renderCourseList}</div>
       </div>
     )
@@ -116,7 +147,7 @@ function StudyPlanPage() {
   const toRenderCommonCoreList = []
 
   for (let i = 1; i <= parseInt(degree.ug5cc) / 6; i++) {
-    toRenderCommonCoreList.push('CCxxXXX' + i)
+    toRenderCommonCoreList.push('CCXX000' + i)
   }
 
   const commonCoreList = toRenderCommonCoreList.map((item, index) => {
@@ -130,21 +161,18 @@ function StudyPlanPage() {
     )
   })
 
-  const degreeLengCourseList = degree.ug5leng.map((item, index) => {
-    if (item === 'CAES1000') {
-      if (searchPlan('DSEENG5+', 1, plan)) {
-        return <div key={index}></div>
-      }
-    }
-    return (
+  const degreeLengCourseList = degree.ug5leng
+    .filter(item =>
+      item === 'CAES1000' && searchPlan('DSEENG5+', 1, plan) ? false : true
+    )
+    .map((item, index) => (
       <CourseListItem
         name={item}
         index={index}
         searchBar={searchBar}
         key={index}
       />
-    )
-  })
+    ))
 
   const allCourseList = courses.map((item, index) => {
     return (
@@ -158,135 +186,205 @@ function StudyPlanPage() {
   })
 
   return (
-    <div className="StudyPlanPage">
-      <div className="StudyPlanPageLeft">
+    <div className="animate-fade-in animate__animated animate__fadeIn animate__fast flex h-full min-w-fit select-none justify-center p-5 pt-14">
+      <div className="flex h-full min-w-80 max-w-80 flex-col">
         <div>
-          <div className="DropDownBox">
-            <div>Degree</div>
-            <div className="DropDown">
-              <select
-                onChange={event => {
-                  dispatch(setDegree(JSON.parse(event.target.value)))
-                }}>
-                <option value={JSON.stringify(degree)}>--</option>
-                {degreesDropDown}
-              </select>
-            </div>
-          </div>
-          <div className="DropDownBox">
-            <div>Major</div>
-            <div className="DropDown">
-              <select
-                onChange={event => {
-                  dispatch(setMajor(JSON.parse(event.target.value)))
-                }}>
-                <option value={JSON.stringify(major)}>--</option>
-                {majorsDropDown}
-              </select>
-            </div>
-          </div>
-          <div className="DropDownBox">
-            <div>Minor1</div>
-            <div className="DropDown">
-              <select
-                onChange={event => {
-                  dispatch(setMinor1(JSON.parse(event.target.value)))
-                }}>
-                <option value={JSON.stringify(minor1)}>--</option>
-                {minorsDropDown}
-              </select>
-            </div>
-          </div>
-          <div className="DropDownBox">
-            <div>Minor2</div>
-            <div className="DropDown">
-              <select
-                onChange={event => {
-                  dispatch(setMinor2(JSON.parse(event.target.value)))
-                }}>
-                <option value={JSON.stringify(minor2)}>--</option>
-                {minorsDropDown}
-              </select>
-            </div>
-          </div>
-          <div>
-            <StudyPlanCheckBoxs />
-          </div>
-          <div className="CourseList">
-            CourseList
-            <div>
-              <input
-                type="text"
-                value={searchBar}
-                onChange={event => setSearchBar(event.target.value)}
-                placeholder="Search"
-                className="InfoFormSearchBar"
-              />
-            </div>
-            <div className="CourseListContent">
-              <div>
-                <span className="Title">{degree.name}</span>
-                <div>
-                  <div>
-                    <span className="Subtitle">
-                      <span>Leng courses</span>
-                      <span className="SubtitleAnnotate">
-                        {' '}
-                        {!!searchPlan('DSEENG5+', 1, plan) ? 12 : 18} credits
-                      </span>
-                    </span>
-                    {degreeLengCourseList}
-                  </div>
-                  <div>
-                    <span className="Subtitle">
-                      <span>Common Core</span>
-                      <span className="SubtitleAnnotate">
-                        {' '}
-                        {degree.ug5cc} credits
-                      </span>
-                    </span>
-                    {commonCoreList}
-                  </div>
-                  {degreeCourseLists}
-                </div>
-              </div>
-              <div>
-                <span className="Title">{major.name}</span>
-                <div>{majorCourseLists}</div>
-              </div>
-              <div>
-                <span className="Title">{minor1.name}</span>
-                <div>{minor1CourseLists}</div>
-              </div>
-              <div>
-                <span className="Title">{minor2.name}</span>
-                <div>{minor2CourseLists}</div>
-              </div>
-              <div>
-                <span className="Title">All courses</span>
-                <div>{allCourseList}</div>
-              </div>
-            </div>
-          </div>
-          <div className="ClearButton">
-            <button
-              onClick={() =>
-                dispatch(
-                  setPlan([[], [], [], [], [], [], [], [], [], [], [], [], []])
-                )
-              }>
-              Clear Plan
-            </button>
+          <div>Degree</div>
+          <select
+            className={inputClasses}
+            onChange={event => {
+              event.target.blur()
+              dispatch(setDegree(JSON.parse(event.target.value)))
+            }}>
+            <option className={optionClasses} value={JSON.stringify(degree)}>
+              Select Degree
+            </option>
+            {degreesDropDown}
+          </select>
+        </div>
+
+        <div>
+          <div>2nd Major</div>
+          <select
+            className={inputClasses}
+            onChange={event => {
+              event.target.blur()
+              dispatch(setMajor(JSON.parse(event.target.value)))
+            }}>
+            <option className={optionClasses} value={JSON.stringify(major)}>
+              Select 2nd Major (If Any)
+            </option>
+            {majorsDropDown}
+          </select>
+        </div>
+
+        <div>
+          <div>Minor 1</div>
+          <select
+            className={inputClasses}
+            onChange={event => {
+              event.target.blur()
+              dispatch(setMinor1(JSON.parse(event.target.value)))
+            }}>
+            <option className={optionClasses} value={JSON.stringify(minor1)}>
+              Select Minor 1 (If Any)
+            </option>
+            {minorsDropDown(1)}
+          </select>
+        </div>
+
+        <div>
+          <div>Minor 2</div>
+          <select
+            className={inputClasses}
+            onChange={event => {
+              event.target.blur()
+              dispatch(setMinor2(JSON.parse(event.target.value)))
+            }}>
+            <option className={optionClasses} value={JSON.stringify(minor2)}>
+              Select Minor 2 (If Any)
+            </option>
+            {minorsDropDown(2)}
+          </select>
+        </div>
+
+        <StudyPlanCheckBoxs />
+
+        <div className="mt-0.5 flex justify-between">
+          Courses{' '}
+          <div className="mb-1 flex items-end text-xs opacity-50">
+            ↓ Drag and drop to plan
           </div>
         </div>
+        <input
+          type="text"
+          value={searchBar}
+          onChange={event => setSearchBar(event.target.value)}
+          placeholder="Search Courses..."
+          className="block w-full cursor-text appearance-none rounded-none border-2 border-accent p-0.5 pl-2 font-light outline-none placeholder:text-black hover:bg-accent hover:text-white placeholder:hover:text-white focus:bg-accent focus:text-white placeholder:focus:text-white"
+        />
+        <div className="no-scrollbar w-full grow overflow-scroll overscroll-contain border-2 border-t-0 border-accent bg-gradient-to-b from-transparent from-90% to-gray-200 bg-clip-padding py-1 text-sm font-light">
+          <div>
+            <div className={header1Classes}>{degree.name}</div>
+            {degree.name !== '' && (
+              <>
+                <div>
+                  <div className={header2Classes}>
+                    Language Courses -{' '}
+                    {!!searchPlan('DSEENG5+', 1, plan) ? 12 : 18} credits
+                  </div>
+                  {degreeLengCourseList}
+                </div>
+                <div>
+                  <div className={header2Classes}>
+                    Common Core Courses - {degree.ug5cc} credits
+                  </div>
+                  {commonCoreList}
+                </div>
+              </>
+            )}
+            {degreeCourseLists}
+          </div>
+
+          <div>
+            <div className={header1Classes}>{major.name}</div>
+            {majorCourseLists}
+          </div>
+
+          <div>
+            <div className={header1Classes}>{minor1.name}</div>
+            {minor1CourseLists}
+          </div>
+
+          <div>
+            <div className={header1Classes}>{minor2.name}</div>
+            {minor2CourseLists}
+          </div>
+
+          <div>
+            <div className="sticky -top-1 z-10 px-2 font-bold backdrop-blur-lg">
+              All Courses
+            </div>
+            {allCourseList}
+          </div>
+        </div>
+
+        <div className="flex space-x-2">
+          <button
+            onClick={() => {
+              dispatch(
+                setStudyPlan({
+                  plan: [[], [], [], [], [], [], [], [], [], [], [], [], []],
+                  degree: {
+                    name: '',
+                    ug5cc: 0,
+                    ug5leng: [],
+                    courseList: [],
+                    focus: [],
+                  },
+                  major: {
+                    name: '',
+                    type: '',
+                    courseList: [],
+                    doubleCount: [],
+                  },
+                  minor1: {
+                    name: '',
+                    type: '',
+                    courseList: [],
+                    doubleCount: [],
+                  },
+                  minor2: {
+                    name: '',
+                    type: '',
+                    courseList: [],
+                    doubleCount: [],
+                  },
+                })
+              )
+              setSearchBar('')
+            }}
+            className="mt-2 w-full border-2 border-accent p-0.5 text-accent outline-none transition-transform hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:translate-y-1">
+            RESET ALL
+          </button>
+          <button
+            onClick={() =>
+              dispatch(
+                setPlan([[], [], [], [], [], [], [], [], [], [], [], [], []])
+              )
+            }
+            className="mt-2 w-full border-2 border-accent p-0.5 text-accent outline-none transition-transform hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:translate-y-1">
+            CLEAR PLAN
+          </button>
+        </div>
       </div>
-      {orderedSemList}
-      <div className="CheckerBox">
-        {degree.name !== '' && <DegreeChecker degree={degree} />}
-        {major.name !== '' && <ProgramChecker program={major} />}
-        {minor1.name !== '' && <ProgramChecker program={minor1} />}
-        {minor2.name !== '' && <ProgramChecker program={minor2} />}
-        <CreditCounter />
+
+      <div className="ml-5 mt-2 flex max-w-[60rem] grow divide-x-2 divide-accent border-2 border-accent text-sm">
+        {orderedSemList}
+      </div>
+
+      <div className="no-scrollbar ml-5 mt-2 flex min-w-80 max-w-80 flex-col overflow-scroll overscroll-contain border-2 border-accent text-sm">
+        <div className="-mb-8 grow px-2 py-1">
+          {degree.name === '' &&
+          major.name === '' &&
+          minor1.name === '' &&
+          minor2.name === '' ? (
+            <div className="mx-5 flex h-full items-center justify-center text-center opacity-50">
+              Credit requirement will be displayed here once you select a
+              syllabus
+            </div>
+          ) : (
+            <>
+              {degree.name !== '' && <DegreeChecker degree={degree} />}
+              {major.name !== '' && <ProgramChecker program={major} />}
+              {minor1.name !== '' && <ProgramChecker program={minor1} />}
+              {minor2.name !== '' && <ProgramChecker program={minor2} />}
+            </>
+          )}
+        </div>
+        <div className="sticky bottom-0 border-t-2 border-accent bg-white px-2 py-1">
+          <CreditCounter />
+        </div>
       </div>
     </div>
   )

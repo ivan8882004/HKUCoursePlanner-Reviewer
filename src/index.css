@@ -1,49 +1,76 @@
-* {
-  padding: 0;
-  margin: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
-body {
-  font-family: Sans-serif;
-  padding: 0;
+@layer base {
+  :root {
+    --color-accent: 22 101 52;
+  }
 }
 
-.TopBar {
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+/* Old */
+
+.TopBar { all:revert;
   background-color: rgb(235, 235, 235);
   padding: 1%;
 }
 
-.TopBar a {
+.TopBar a { all:revert;
   text-decoration: none;
   margin: 1%;
   padding: 1%;
   color: black;
 }
 
-.TopBar a:hover {
+.TopBar a:hover { all:revert;
   background-color: rgb(192, 192, 192);
   box-shadow: 0 8px 8px 0 gray;
   border-style: solid;
   border-color: rgb(172, 172, 172);
 }
 
-.TopBar a.active {
+.TopBar a.active { all:revert;
   font-weight: bold;
   border-bottom: 3px solid black;
 }
 
-.TopBar a.active:hover {
+.TopBar a.active:hover { all:revert;
   background-color: rgb(235, 235, 235);
   box-shadow: 0 0 0 0;
   border-style: none;
   border-bottom: 3px solid black;
 }
 
-.HomePage {
+.HomePage { all:revert;
   padding: 1%;
 }
 
-.CourseForm {
+.CourseForm { all:revert;
   display: inline-block;
   border-style: solid;
   box-sizing: border-box;
@@ -51,42 +78,42 @@ body {
   margin-top: 5%;
 }
 
-.DropDownBox {
+.DropDownBox { all:revert;
   padding: 1%;
   border-style: solid;
 }
 
-.DropDown {
+.DropDown { all:revert;
   overflow: hidden;
 }
 
-.StudyPlanPage {
+.StudyPlanPage { all:revert;
   padding: 1%;
   display: flex;
 
-  .CourseList {
+  .CourseList { all:revert;
     padding: 1%;
     border-style: solid;
     width: max-content;
 
-    .Title {
+    .Title { all:revert;
       font-weight: bold;
       font-size: larger;
     }
   }
 
-  .CourseListContent {
+  .CourseListContent { all:revert;
     margin-top: 1%;
     overflow: auto;
     max-height: 50vh;
 
-    .CourseListItem {
+    .CourseListItem { all:revert;
       border-style: solid;
       border-color: black;
       background-color: grey;
       margin-top: 1%;
 
-      .Content {
+      .Content { all:revert;
         background-color: white;
         overflow: auto;
         max-width: 100%;
@@ -94,56 +121,56 @@ body {
     }
   }
 
-  .Subtitle {
+  .Subtitle { all:revert;
     font-weight: bold;
     width: 100%;
     white-space: nowrap;
   }
 
-  .SubtitleAnnotate {
+  .SubtitleAnnotate { all:revert;
     font-weight: normal;
     float: right;
   }
 
-  .CheckerBox {
+  .CheckerBox { all:revert;
     padding-left: 1%;
 
-    .ProgramChecker {
+    .ProgramChecker { all:revert;
       border-style: solid;
       margin-top: 1%;
       padding: 1%;
     }
 
-    .CreditCounter {
+    .CreditCounter { all:revert;
       border-style: solid;
       margin-top: 1%;
       padding: 1%;
     }
   }
 
-  .ClearButton {
+  .ClearButton { all:revert;
     padding: 1%;
   }
 }
 
-.StudyPlanPageLeft {
+.StudyPlanPageLeft { all:revert;
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
 
-.StudyPlanSemBox {
+.StudyPlanSemBox { all:revert;
   padding-left: 1%;
 }
 
-.StudyPlanSem {
+.StudyPlanSem { all:revert;
   padding: 1%;
   margin-top: 1%;
   margin-bottom: 1%;
   border-style: solid;
   width: max-content;
 
-  .Title {
+  .Title { all:revert;
     padding: 1%;
     background-color: #528080;
     border-style: solid;
@@ -151,13 +178,13 @@ body {
     font-weight: bold;
   }
 
-  .Courses {
+  .Courses { all:revert;
     height: 30vh;
     width: 20vh;
     overflow: auto;
   }
 
-  .Overlay {
+  .Overlay { all:revert;
     position: fixed;
     top: 0;
     left: 0;
@@ -166,7 +193,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .CoursePreregFail {
+  .CoursePreregFail { all:revert;
     background-color: #ff4238;
     border-style: solid;
     border-color: #ff1a0e;
@@ -174,7 +201,7 @@ body {
     margin-top: 1%;
   }
 
-  .CoursePreregFail:hover {
+  .CoursePreregFail:hover { all:revert;
     background-color: red;
     border-style: solid;
     border-color: brown;
@@ -183,7 +210,7 @@ body {
     box-shadow: 0 8px 8px 0 gray;
   }
 
-  .CourseExclusive {
+  .CourseExclusive { all:revert;
     background-color: #ff9d1a;
     border-style: solid;
     border-color: #e08000;
@@ -191,7 +218,7 @@ body {
     margin-top: 1%;
   }
 
-  .CourseExclusive:hover {
+  .CourseExclusive:hover { all:revert;
     background-color: darkorange;
     border-style: solid;
     border-color: orangered;
@@ -200,14 +227,14 @@ body {
     box-shadow: 0 8px 8px 0 gray;
   }
 
-  .NormalCourse {
+  .NormalCourse { all:revert;
     background-color: #a0dd72;
     border-style: solid;
     border-color: #7a9e5e;
     margin-top: 1%;
   }
 
-  .NormalCourse:hover {
+  .NormalCourse:hover { all:revert;
     background-color: greenyellow;
     border-style: solid;
     border-color: green;
@@ -215,11 +242,11 @@ body {
     box-shadow: 0 8px 8px 0 gray;
   }
 
-  .ErrorCourse {
+  .ErrorCourse { all:revert;
     font-size: smaller;
   }
 
-  .Content {
+  .Content { all:revert;
     background-color: white;
     color: black;
     overflow: auto;
@@ -227,36 +254,36 @@ body {
   }
 }
 
-.StudyPlanSemSum {
-  .Courses {
+.StudyPlanSemSum { all:revert;
+  .Courses { all:revert;
     height: 10vh;
     width: 20vh;
     overflow: auto;
   }
 }
 
-.AddCoursePage {
+.AddCoursePage { all:revert;
   padding: 1%;
 }
 
-.AddMajorMinorPage {
+.AddMajorMinorPage { all:revert;
   padding: 1%;
 }
 
-.AddDegreePage {
+.AddDegreePage { all:revert;
   padding: 1%;
 }
 
-.ViewProgramPage {
+.ViewProgramPage { all:revert;
   padding: 1%;
 }
 
-.UploadExportFilePage {
+.UploadExportFilePage { all:revert;
   padding: 1%;
   display: flex;
 }
 
-.InfoForm {
+.InfoForm { all:revert;
   display: inline-block;
   border-style: solid;
   box-sizing: border-box;
@@ -265,120 +292,120 @@ body {
   margin-top: 5%;
 }
 
-.InfoFormTitle {
+.InfoFormTitle { all:revert;
   font-size: x-large;
   font-weight: bold;
 }
 
-.InfoFormSubTitle {
+.InfoFormSubTitle { all:revert;
   font-size: large;
   font-weight: 600;
 }
 
-.InfoFormContent {
+.InfoFormContent { all:revert;
   display: flex;
 }
 
-.InfoFormLeft {
+.InfoFormLeft { all:revert;
   border-right-style: solid;
   max-height: 50vh;
   overflow: auto;
 }
 
-.InfoList {
+.InfoList { all:revert;
   flex-direction: row;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.InfoList:hover {
+.InfoList:hover { all:revert;
   background-color: rgb(235, 235, 235);
 }
 
-.ViewPageContent {
+.ViewPageContent { all:revert;
   display: flex;
 }
 
-.ViewPageLeft {
+.ViewPageLeft { all:revert;
   padding-right: 1%;
   border-right-style: solid;
 }
 
-.ViewPageRight {
+.ViewPageRight { all:revert;
   padding-left: 1%;
 }
 
-.ViewPageSubTitle {
+.ViewPageSubTitle { all:revert;
   font-size: large;
   font-weight: 600;
 }
 
-.CourseBox {
+.CourseBox { all:revert;
   display: flex;
   padding: 1%;
   align-items: center;
 }
 
-.CourseBoxCurrentCourse {
+.CourseBoxCurrentCourse { all:revert;
   border-style: solid;
   border-color: blue;
   border-radius: 5px;
 }
 
-.CourseBoxCurrentCourse:hover {
+.CourseBoxCurrentCourse:hover { all:revert;
   box-shadow: 0 8px 8px 0 gray;
 }
 
-.CourseBoxName {
+.CourseBoxName { all:revert;
   background-color: #6aabab;
 }
 
-.CourseBoxFullName {
+.CourseBoxFullName { all:revert;
   background-color: #6ad1d1;
 }
 
-.CourseBoxSubTitle {
+.CourseBoxSubTitle { all:revert;
   background-color: #e08000;
 }
 
-.CourseBoxPrereg {
+.CourseBoxPrereg { all:revert;
   background-color: #ff9d1a;
 }
 
-.CourseBoxIsPrereg {
+.CourseBoxIsPrereg { all:revert;
   border-style: solid;
 }
 
-.TimeTableMain {
+.TimeTableMain { all:revert;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   gap: 0 10px;
   justify-items: center;
   padding: 1%;
 
-  .Info {
+  .Info { all:revert;
     padding: 1%;
     font-size: large;
   }
 
-  .table {
+  .table { all:revert;
     display: table;
     table-layout: fixed;
     width: 100%;
     max-height: 80vh;
   }
 
-  .scroll-box {
+  .scroll-box { all:revert;
     border-style: solid;
     padding: 1%;
     margin-top: 1%;
   }
 
-  .row {
+  .row { all:revert;
     display: table-row;
   }
 
-  .TimeSlotConflict {
+  .TimeSlotConflict { all:revert;
     background-color: #eb6f7e;
     color: #52000a;
     border: solid #67000c;
@@ -391,7 +418,7 @@ body {
     border-radius: 10%;
   }
 
-  .TimeSlotEmpty {
+  .TimeSlotEmpty { all:revert;
     display: table-cell;
     border: 1px #0f3737;
     border-style: dashed;
@@ -403,7 +430,7 @@ body {
     font-size: small;
   }
 
-  .TimeSlotFilled {
+  .TimeSlotFilled { all:revert;
     background-color: #9bc7df;
     border: solid #186086;
     color: #022d44;
@@ -417,22 +444,22 @@ body {
     border-radius: 10%;
   }
 
-  .TimeSlotFilled:hover {
+  .TimeSlotFilled:hover { all:revert;
     box-shadow: 0 10px 10px 0 gray;
   }
 
-  .details {
+  .details { all:revert;
     font-size: smaller;
   }
 
-  .header {
+  .header { all:revert;
     display: table-cell;
     text-align: center;
     padding: 1vh;
     height: 4vh;
     box-sizing: border-box;
 
-    .content {
+    .content { all:revert;
       background-color: #528080;
       border-style: solid;
       border-color: #3f5959;
@@ -441,11 +468,11 @@ body {
       font-weight: 600;
     }
 
-    .on:hover {
+    .on:hover { all:revert;
       display: none;
     }
 
-    .hide {
+    .hide { all:revert;
       display: none;
       border-style: solid;
       font-size: large;
@@ -454,14 +481,14 @@ body {
       box-shadow: 0 4px 4px 0 gray;
     }
 
-    .on:hover + .hide {
+    .on:hover + .hide { all:revert;
       display: block;
     }
 
-    .buttons {
+    .buttons { all:revert;
       display: flex;
 
-      .changeHour {
+      .changeHour { all:revert;
         width: 3vh;
         background-color: #7ca9bd;
         border-style: solid;
@@ -472,7 +499,7 @@ body {
         margin-right: 1%;
       }
 
-      .changeHour:hover {
+      .changeHour:hover { all:revert;
         border-style: solid;
         background-color: #99d9f5;
         border-color: #01a7ef;
@@ -481,7 +508,7 @@ body {
     }
   }
 
-  .headerOff {
+  .headerOff { all:revert;
     display: table-cell;
     text-align: center;
     height: 4vh;
@@ -489,7 +516,7 @@ body {
     padding-left: 1%;
     width: 3.5vh;
 
-    .off {
+    .off { all:revert;
       background-color: #7ca9bd;
       border-style: solid;
       border-color: #0c425a;
@@ -497,21 +524,21 @@ body {
       font-weight: 600;
     }
 
-    .off:hover {
+    .off:hover { all:revert;
       background-color: #99d9f5;
       border-color: #01a7ef;
       box-shadow: 0 4px 4px 0 gray;
     }
   }
 
-  .showDays {
+  .showDays { all:revert;
     display: flex;
   }
 
-  .showSem {
+  .showSem { all:revert;
     display: flex;
 
-    .off {
+    .off { all:revert;
       background-color: #528080;
       border-style: solid;
       border-color: #3f5959;
@@ -521,13 +548,13 @@ body {
       margin-right: 1%;
     }
 
-    .off:hover {
+    .off:hover { all:revert;
       background-color: #77d5d5;
       border-color: #168c8c;
       box-shadow: 0 4px 4px 0 gray;
     }
 
-    .on {
+    .on { all:revert;
       background-color: #7ca9bd;
       border-style: solid;
       border-color: #0c425a;
@@ -538,69 +565,69 @@ body {
     }
   }
 
-  .scroll-container {
+  .scroll-container { all:revert;
     max-height: 55vh;
     min-height: 45vh;
     overflow: auto;
   }
 
-  .courseCard {
+  .courseCard { all:revert;
     border: 1px solid rgb(38, 221, 221);
   }
 
-  .courseContainer {
+  .courseContainer { all:revert;
     display: grid;
     grid-template-columns: 1fr 6fr;
     margin-bottom: 1%;
   }
 
-  .checkbox {
+  .checkbox { all:revert;
     transform: scale(0.4);
     margin-right: 5px;
   }
 
-  .cardColumn {
+  .cardColumn { all:revert;
     display: flex;
     border: solid black;
     background-color: gray;
     justify-content: space-between;
 
-    .fullName {
+    .fullName { all:revert;
       font-size: small;
     }
 
-    .deleteButton {
+    .deleteButton { all:revert;
       align-self: flex-end;
       font-size: x-large;
     }
 
-    .deleteButton:hover {
+    .deleteButton:hover { all:revert;
       color: #fff;
     }
   }
 
-  .cardColumn:hover {
+  .cardColumn:hover { all:revert;
     background-color: #aaa;
     box-shadow: 0 8px 8px 0 gray;
   }
 
-  .listContainer {
+  .listContainer { all:revert;
     display: grid;
     grid-template-columns: 6fr 1fr;
     margin-bottom: 1%;
   }
 
-  .courseDetail {
+  .courseDetail { all:revert;
     border-style: solid;
     padding: 1%;
   }
 
-  .selectedCourse {
+  .selectedCourse { all:revert;
     border-style: solid;
     padding: 1%;
     margin-top: 1%;
 
-    .dropDownTitle {
+    .dropDownTitle { all:revert;
       padding-left: 1%;
       padding-right: 1%;
       border-style: solid;
@@ -608,25 +635,25 @@ body {
       display: flex;
       justify-content: space-between;
 
-      .dropDownText {
+      .dropDownText { all:revert;
         align-self: flex-start;
       }
 
-      .dropDownArrow {
+      .dropDownArrow { all:revert;
         align-self: flex-end;
       }
     }
 
-    .dropDownContent {
+    .dropDownContent { all:revert;
       padding: 1%;
     }
   }
 
-  .importSettingButton {
-    .buttons {
+  .importSettingButton { all:revert;
+    .buttons { all:revert;
       display: flex;
 
-      .off {
+      .off { all:revert;
         width: 3vh;
         background-color: #528080;
         border-style: solid;
@@ -637,13 +664,13 @@ body {
         margin-right: 1%;
       }
 
-      .off:hover {
+      .off:hover { all:revert;
         background-color: #77d5d5;
         border-color: #168c8c;
         box-shadow: 0 4px 4px 0 gray;
       }
 
-      .on {
+      .on { all:revert;
         width: 3vh;
         background-color: #7ca9bd;
         border-style: solid;
@@ -656,44 +683,44 @@ body {
     }
   }
 
-  .autoFillForm {
-    .formContent {
+  .autoFillForm { all:revert;
+    .formContent { all:revert;
       padding: 1%;
       margin-top: 1%;
       font-size: smaller;
       border-style: solid;
 
-      .courseInput {
+      .courseInput { all:revert;
         white-space: nowrap;
       }
     }
 
-    .possibleList {
+    .possibleList { all:revert;
       margin-top: 1%;
       border-style: solid;
       padding: 1%;
       overflow: auto;
       max-height: 30vh;
 
-      .list:hover {
+      .list:hover { all:revert;
         background-color: #ccc;
         cursor: pointer;
       }
     }
   }
 
-  .uploadXlsx {
+  .uploadXlsx { all:revert;
     margin-top: 1%;
     border-style: solid;
     padding: 1%;
   }
 
-  .track {
+  .track { all:revert;
     background-color: #a5b7d1;
     height: 6px;
   }
 
-  .thumb {
+  .thumb { all:revert;
     width: 18px;
     height: 18px;
     background-color: #007bff;
@@ -702,15 +729,15 @@ body {
     cursor: pointer;
   }
 
-  .thumb:hover {
+  .thumb:hover { all:revert;
     box-shadow: 0 2px 2px 0 gray;
   }
 
-  .thumb:active {
+  .thumb:active { all:revert;
     background-color: #0056b3;
   }
 
-  .horizontal-slider {
+  .horizontal-slider { all:revert;
     width: 300px;
     margin-bottom: 20px;
   }

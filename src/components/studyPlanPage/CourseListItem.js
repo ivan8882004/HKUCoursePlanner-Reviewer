@@ -18,20 +18,28 @@ function CourseListItem({ name, index, searchBar }) {
 
   let courseContent
 
-  if (dropDown) { //set the drop down content
+  if (dropDown) {
+    //set the drop down content
     const courseInfo = getCourses(name, courses)
 
     courseContent = (
-      <div className="Content">
-        <div>{courseInfo.fullName}</div>
+      <>
+        <div className="font-medium italic">{courseInfo.fullName}</div>
         <div>
-          Prereg:{' '}
+          Prereq:{' '}
           {courseInfo.prereg
-            .map(list => '[' + list.map(item => item).join(' or ') + ']')
-            .join(' and ')}
+            .map(
+              list =>
+                '[' +
+                list
+                  .map(item => (item === 'M1/M2_2+' ? 'M1/M2>=Lv2' : item))
+                  .join(' or ') +
+                ']'
+            )
+            .join(' and ') || 'None'}
         </div>
-        <div>Exclusive: {courseInfo.exclusive.join(' & ')}</div>
-      </div>
+        <div>MuEx: {courseInfo.exclusive.join(', ') || 'None'}</div>
+      </>
     )
   } else {
     courseContent = ''
@@ -45,20 +53,29 @@ function CourseListItem({ name, index, searchBar }) {
     }),
   }))
 
-  if (  //filter course with search term
+  const [isDropdownActive, setIsDropdownActive] = useState(false)
+  const hints = ['>', '×']
+
+  if (
+    //filter course with search term
     (name.includes(searchBar.toUpperCase()) || searchBar === '') &&
     !searchPlan(name, plan.length, plan)
   ) {
     return (
-      <div key={index} ref={drag} className="CourseListItem">
-        <div onClick={() => setDropDown(!dropDown)} className="Name">
-          {name}
-          <div>{courseContent}</div>
-        </div>
+      <div
+        key={index}
+        ref={drag}
+        onClick={() => {
+          setDropDown(!dropDown)
+          setIsDropdownActive(!isDropdownActive)
+        }}
+        className="mx-2 mb-1 cursor-pointer overflow-hidden hyphens-auto border-2 border-accent px-2 py-0.5 transition-opacity hover:bg-accent hover:text-white active:opacity-25">
+        {name} {hints[isDropdownActive ? 1 : 0]}
+        {courseContent}
       </div>
     )
   } else {
-    return <div key={index} ref={drag}></div>
+    return false
   }
 }
 

@@ -62,25 +62,47 @@ function AutoFillForm({ isSemOne, setter }) {
   }
 
   const handleFormChange = event => {
+    const name = event.target.name
     const toSet = {
       ...formContent,
-      [event.target.name]: event.target.value,
+      [name]:
+        name === 'earlyScore' || name === 'gapScore'
+          ? -event.target.value
+          : event.target.value,
     }
 
     setFormContent(toSet)
     localStorage.setItem(FORMCONTENT, JSON.stringify(toSet))
   }
 
+  const [isAnimateRemove, setIsAnimateRemove] = useState(-1)
   const courseListForm = formContent.courseList.map((item, index) => {
     return (
-      <div key={index} className="courseInput">
+      <div
+        key={index}
+        className={
+          (isAnimateRemove === index
+            ? 'animate__animated animate__fadeOutLeft animate__faster '
+            : '') + 'group flex'
+        }
+        onAnimationEnd={() => {
+          setIsAnimateRemove(-1)
+          removeCourseList(index)
+        }}>
         <input
           value={item}
           onChange={event => editCourseList(event, index)}
-          placeholder="code 1|code 2|code 3"
+          placeholder="Enter Course Code..."
+          className="grow px-2 font-mono outline-none placeholder:font-poppins placeholder:text-black/50 group-focus-within:bg-accent group-focus-within:text-white group-focus-within:placeholder:text-white group-hover:bg-accent group-hover:text-white placeholder:group-hover:text-white"
         />
-        <button type="button" onClick={() => removeCourseList(index)}>
-          X
+        <button
+          type="button"
+          onClick={() => {
+            if (formContent.courseList.length > 1) setIsAnimateRemove(index)
+          }}
+          hidden={formContent.courseList.length === 1}
+          className="px-2 outline-none hover:font-bold focus:font-bold group-focus-within:bg-accent group-focus-within:text-white group-focus-within:placeholder:text-white group-hover:bg-accent group-hover:text-white">
+          -
         </button>
       </div>
     )
@@ -88,7 +110,10 @@ function AutoFillForm({ isSemOne, setter }) {
 
   const handleSubmit = () => {
     const output = []
-    const data = (JSON.parse(localStorage.getItem('timeTable')) || [courseDataSem1, courseDataSem2])[isSemOne ? 0 : 1]
+    const data = (JSON.parse(localStorage.getItem('timeTable')) || [
+      courseDataSem1,
+      courseDataSem2,
+    ])[isSemOne ? 0 : 1]
     const possibleCourse = formContent.courseList.map(item => {
       let temp = []
       item.split('|').forEach(name => {
@@ -252,112 +277,171 @@ function AutoFillForm({ isSemOne, setter }) {
 
   const renderPossibleList = possibleList.map((item, index) => {
     return (
-      <div key={index} onClick={() => setter(item.courseList)} className="list">
-        List {index + 1}: {item.score}
+      <div
+        key={index}
+        onClick={() => setter(item.courseList)}
+        className="cursor-pointer px-2 hover:bg-accent hover:text-white">
+        Schedule {index + 1} - Perference Score: {item.score}
       </div>
     )
   })
 
   return (
-    <div className="autoFillForm">
-      <form className="formContent">
-        <table>
-          <tbody>
-            <tr>
-              <td>Courses To Fill:</td>
-              <td>{courseListForm}</td>
-            </tr>
-            <tr>
-              <td>
-                <button type="button" onClick={addCourseList}>
-                  Add course
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Day Off score:</label>
-              </td>
-              <td>
-                <input
-                  value={formContent.dayOffScore}
-                  name="dayOffScore"
-                  type="text"
-                  onChange={event => handleFormChange(event)}
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Early Time:</label>
-              </td>
-              <td>
-                <input
-                  value={formContent.earlyTime}
-                  name="earlyTime"
-                  type="text"
-                  onChange={event => handleFormChange(event)}
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Early Score:</label>
-              </td>
-              <td>
-                <input
-                  value={formContent.earlyScore}
-                  name="earlyScore"
-                  type="number"
-                  onChange={event => handleFormChange(event)}
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Gap Hours:</label>
-              </td>
-              <td>
-                <input
-                  value={formContent.gapTime}
-                  name="gapTime"
-                  type="number"
-                  onChange={event => handleFormChange(event)}
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Gap Score:</label>
-              </td>
-              <td>
-                <input
-                  value={formContent.gapScore}
-                  name="gapScore"
-                  type="number"
-                  onChange={event => handleFormChange(event)}
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <button type="button" onClick={handleSubmit}>
-                  Fill
-                </button>
-              </td>
-              <td>
-                <div className="Info">
-                  <AutoFillFormInfo />
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </form>
-      <div className="possibleList">
-        <h4>Possible Course List</h4>
-        {renderPossibleList}
+    <div
+      className={
+        'no-scrollbar h-2/3 overflow-auto border-2 border-accent' +
+        (possibleList.length > 0
+          ? ' bg-gradient-to-b from-transparent from-90% to-gray-200 bg-clip-padding'
+          : '')
+      }>
+      <div className="sticky top-0 z-10 flex items-center justify-between bg-white">
+        <div className="m-1 mb-0 w-fit bg-accent px-2 font-bold italic text-white">
+          Smart Scheduler
+        </div>
+        <AutoFillFormInfo />
       </div>
+      <div className="px-2 font-medium">Courses to Schedule</div>
+      {courseListForm}
+      <button
+        type="button"
+        onClick={addCourseList}
+        className="w-full px-2 text-left font-normal text-accent outline-none transition-transform hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:translate-y-1">
+        New Course
+      </button>
+
+      <div className="px-2 font-medium">
+        <label className="mt-2 flex justify-between">
+          Day-off Bonus
+          <span className="font-light">+{formContent.dayOffScore}pt</span>
+        </label>
+        <input
+          value={formContent.dayOffScore}
+          name="dayOffScore"
+          type="range"
+          min="0"
+          max="100"
+          onChange={event => handleFormChange(event)}
+          className="w-full -translate-y-1 cursor-pointer appearance-none bg-transparent outline-2 outline-accent focus:outline
+          [&::-moz-range-thumb]:h-3
+          [&::-moz-range-thumb]:w-3
+          [&::-moz-range-thumb]:appearance-none
+          [&::-moz-range-thumb]:bg-accent
+          [&::-moz-range-track]:h-2
+          [&::-moz-range-track]:bg-black/10
+
+          [&::-webkit-slider-runnable-track]:h-1
+          [&::-webkit-slider-runnable-track]:bg-black/10
+          [&::-webkit-slider-thumb]:-mt-1
+          [&::-webkit-slider-thumb]:h-3
+          [&::-webkit-slider-thumb]:w-3
+          [&::-webkit-slider-thumb]:appearance-none
+          [&::-webkit-slider-thumb]:bg-accent"
+        />
+
+        <label className="mt-2 flex justify-between">
+          Earliest Class Time
+          <input
+            value={formContent.earlyTime}
+            name="earlyTime"
+            type="time"
+            onChange={event => handleFormChange(event)}
+            className="h-6 cursor-pointer border-2 border-accent font-light outline-none
+            [&::-webkit-datetime-edit-hour-field]:rounded-none
+            [&::-webkit-datetime-edit-minute-field]:rounded-none"
+          />
+        </label>
+        <label className="flex justify-between">
+          ↪ Violation Penalty
+          <span className="font-light">-{-formContent.earlyScore}pt</span>
+        </label>
+        <input
+          value={-formContent.earlyScore}
+          name="earlyScore"
+          type="range"
+          min="0"
+          max="100"
+          onChange={event => handleFormChange(event)}
+          className="w-full -translate-y-1 cursor-pointer appearance-none bg-transparent outline-2 outline-accent focus:outline
+          [&::-moz-range-thumb]:h-3
+          [&::-moz-range-thumb]:w-3
+          [&::-moz-range-thumb]:appearance-none
+          [&::-moz-range-thumb]:bg-accent
+          [&::-moz-range-track]:h-2
+          [&::-moz-range-track]:bg-black/10
+
+          [&::-webkit-slider-runnable-track]:h-1
+          [&::-webkit-slider-runnable-track]:bg-black/10
+          [&::-webkit-slider-thumb]:-mt-1
+          [&::-webkit-slider-thumb]:h-3
+          [&::-webkit-slider-thumb]:w-3
+          [&::-webkit-slider-thumb]:appearance-none
+          [&::-webkit-slider-thumb]:bg-accent"
+        />
+
+        <label className="mt-2 flex justify-between">
+          Max Gap Hours
+          <input
+            value={formContent.gapTime}
+            name="gapTime"
+            type="number"
+            min="0"
+            max="9"
+            onChange={event => handleFormChange(event)}
+            className="w-9 border-2 border-accent pl-0.5 font-light outline-none hover:bg-accent hover:text-white focus:bg-accent focus:text-white"
+          />
+        </label>
+        <label className="flex justify-between">
+          ↪ Violation Penalty
+          <span className="font-light">-{-formContent.gapScore}pt</span>
+        </label>
+        <input
+          value={-formContent.gapScore}
+          name="gapScore"
+          type="range"
+          min="0"
+          max="100"
+          onChange={event => handleFormChange(event)}
+          className="w-full -translate-y-1 cursor-pointer appearance-none bg-transparent outline-2 outline-accent focus:outline
+            [&::-moz-range-thumb]:h-3
+            [&::-moz-range-thumb]:w-3
+            [&::-moz-range-thumb]:appearance-none
+            [&::-moz-range-thumb]:bg-accent
+            [&::-moz-range-track]:h-2
+            [&::-moz-range-track]:bg-black/10
+
+            [&::-webkit-slider-runnable-track]:h-1
+            [&::-webkit-slider-runnable-track]:bg-black/10
+            [&::-webkit-slider-thumb]:-mt-1
+            [&::-webkit-slider-thumb]:h-3
+            [&::-webkit-slider-thumb]:w-3
+            [&::-webkit-slider-thumb]:appearance-none
+            [&::-webkit-slider-thumb]:bg-accent"
+        />
+      </div>
+
+      <button
+        type="button"
+        onClick={handleSubmit}
+        disabled={
+          formContent.courseList.filter(course => course !== '').length === 0
+        }
+        className="m-2 mb-1 w-[calc(100%-1rem)] bg-accent font-normal text-white outline-none transition-transform focus:opacity-50 enabled:active:translate-y-1 disabled:opacity-25">
+        Get Schedule Recommendations
+      </button>
+      {formContent.courseList.filter(course => course !== '').length !== 0 && (
+        <div className="mb-2 px-2 text-red-600">
+          ⚠️ This will override your existing timetable!
+        </div>
+      )}
+
+      {possibleList.length > 0 && (
+        <>
+          <div className="sticky top-6 px-2 font-medium backdrop-blur-lg ">
+            Recommended Schedules
+          </div>
+          {renderPossibleList}
+        </>
+      )}
     </div>
   )
 }

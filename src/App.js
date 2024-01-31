@@ -22,6 +22,7 @@ import { STUDYPLAN } from './store/slices/studyPlanSlice'
 import { TimeTableProvider } from './context/SettingsProvider'
 import TimeTablePage from './pages/TimeTablePage'
 import defaultConfig from './config.json'
+import Best8CalPage from './pages/Best8CalPage'
 
 function App() {
   const dispatch = useDispatch()
@@ -63,7 +64,7 @@ function App() {
   }, [dispatch, location, navigate])
 
   return (
-    <div className="App">
+    <div className="h-dvh min-h-[40rem] w-screen font-poppins">
       <TopBar />
       <Routes>
         <Route
@@ -94,6 +95,9 @@ function App() {
               <TimeTablePage />
             </TimeTableProvider>
           }></Route>
+        <Route
+          path="/HKUCoursePlanner-Reviewer/engg_best8"
+          element={<Best8CalPage />}></Route>
       </Routes>
     </div>
   )

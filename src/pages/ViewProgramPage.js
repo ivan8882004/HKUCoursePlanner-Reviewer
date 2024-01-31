@@ -3,6 +3,9 @@ import { useSelector } from 'react-redux'
 import PreregGraph from '../components/PreregGraph'
 
 function ViewProgramPage() {
+  const listItemClasses =
+    'py-0.5 pl-2 hover:bg-accent hover:text-white cursor-pointer'
+
   const [program, setProgram] = useState({
     name: '',
     courseList: [],
@@ -26,24 +29,48 @@ function ViewProgramPage() {
 
   const degreesList = degrees.map((item, index) => {
     return (
-      <div key={index} className="InfoList">
-        <span onClick={() => setProgram(item)}>{item.name}</span>
+      <div
+        key={index}
+        className={
+          listItemClasses +
+          (program.name === item.name
+            ? ' cursor-default bg-accent text-white'
+            : '')
+        }
+        onClick={() => setProgram(item)}>
+        {item.name}
       </div>
     )
   })
 
   const majorsList = majors.map((item, index) => {
     return (
-      <div key={index} className="InfoList">
-        <span onClick={() => setProgram(item)}>{item.name}</span>
+      <div
+        key={index}
+        className={
+          listItemClasses +
+          (program.name === item.name
+            ? ' cursor-default bg-accent text-white'
+            : '')
+        }
+        onClick={() => setProgram(item)}>
+        {item.name}
       </div>
     )
   })
 
   const minorsList = minors.map((item, index) => {
     return (
-      <div key={index} className="InfoList">
-        <span onClick={() => setProgram(item)}>{item.name}</span>
+      <div
+        key={index}
+        className={
+          listItemClasses +
+          (program.name === item.name
+            ? ' cursor-default bg-accent text-white'
+            : '')
+        }
+        onClick={() => setProgram(item)}>
+        {item.name}
       </div>
     )
   })
@@ -79,7 +106,7 @@ function ViewProgramPage() {
     }
   })
 
-  let graph;
+  let graph
 
   if (!notFind.length) {
     for (let i = toProcessList.length - 1; i >= 0; i--) {
@@ -114,13 +141,13 @@ function ViewProgramPage() {
                       ...courseDetail.prereg[ii][jj]
                         .split('&')
                         .filter(item => item !== name),
-                    ].join('and')
+                    ].join(' and ')
                   )
                   break
                 }
               }
               if (!find) {
-                extraMessage.push([...courseDetail.prereg[ii]].join('or'))
+                extraMessage.push([...courseDetail.prereg[ii]].join(' or '))
               }
             }
             toProcessList[k].isPrereg.unshift({
@@ -144,24 +171,42 @@ function ViewProgramPage() {
     })
   } else {
     graph = notFind.map((item, index) => {
-      return <div key={index}>
-        Not find {item}
-      </div>
-    }) 
+      return <div key={index}>Not Found: {item}</div>
+    })
   }
 
+  const listClasses =
+    'border-2 border-accent divide-accent font-light divide-y-2 mb-2 transition-transform z-10 bg-white'
+
   return (
-    <div className="ViewProgramPage">
-      <div className="ViewPageContent">
-        <div className="ViewPageLeft">
-          <div className="ViewPageSubTitle">Degrees</div>
-          {degreesList}
-          <div className="ViewPageSubTitle">Majors</div>
-          {majorsList}
-          <div className="ViewPageSubTitle">Minors</div>
-          {minorsList}
+    <div className="animate__animated animate__fadeIn animate__fast mx-auto flex h-full max-w-[160rem] select-none pb-5 pt-14">
+      <div className="ml-5 flex min-w-80 max-w-80 flex-col">
+        <div>Degrees</div>
+        <div className={listClasses}>{degreesList}</div>
+        <div>Majors</div>
+        <div className={listClasses}>{majorsList}</div>
+        <div>Minors</div>
+        <div className={listClasses}>{minorsList}</div>
+        <div
+          className={
+            'text-end text-xs opacity-50' +
+            (program.name === ''
+              ? ' hidden'
+              : ' animate__animated animate__slideInDown animate__faster')
+          }>
+          Protip: You can scroll around →
         </div>
-        <div className="ViewPageRight">{graph}</div>
+      </div>
+      <div className="ml-5 mt-2 w-full min-w-[40rem] border-r-[1.25rem] border-white text-sm">
+        <div className="h-full overflow-auto overscroll-y-contain border-2 border-accent">
+          {program.name === '' ? (
+            <div className="flex h-full items-center justify-center opacity-50">
+              Click on a syllabus from the left to view its roadmap
+            </div>
+          ) : (
+            <div className="min-w-fit">{graph}</div>
+          )}
+        </div>
       </div>
     </div>
   )

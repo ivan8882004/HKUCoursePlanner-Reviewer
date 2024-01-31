@@ -24,8 +24,13 @@ function ExportFile() {
   }
 
   return (
-    <div>
-      <button onClick={exportAsJSON}>Export</button>
+    <div className="flex w-40 flex-col">
+      Download Config
+      <button
+        onClick={exportAsJSON}
+        className="cursor-pointer border-2 border-accent p-0.5 px-2 text-accent outline-none transition-opacity hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:opacity-50">
+        DOWNLOAD
+      </button>
     </div>
   )
 }

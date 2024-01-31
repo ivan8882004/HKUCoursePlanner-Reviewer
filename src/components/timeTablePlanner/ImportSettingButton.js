@@ -18,19 +18,24 @@ function ImportSettingButton() {
   for (let i = 0; i < numberOfYear; i++) {
     content.push(
       <div
-        className={importSetting === i + 1 ? 'on' : 'off'}
+        className={
+          'flex w-8 justify-center border-2 border-accent p-0.5 font-light' +
+          (importSetting === i + 1
+            ? ' bg-accent text-white'
+            : ' cursor-pointer hover:bg-accent hover:text-white')
+        }
         onClick={() => setImportSetting(i + 1)}
         key={i}>
-        Y{i + 1}
+        {i + 1}
       </div>
     )
   }
 
   return (
-    <div className="importSettingButton">
-      Import Year from Course Planner:
-      <div className="buttons">{content}</div>
-    </div>
+    <>
+      <div>Year</div>
+      <div className="mb-2 flex space-x-2">{content}</div>
+    </>
   )
 }
 

@@ -28,49 +28,49 @@ function TimeSlot({ time, day, selectedCourseList }) {
     })
 
     if (filtered_courses.length > 1) {
-      const conflicted_course = filtered_courses
-        .map(course => course.courseName)
-        .join('/')
+      const conflicted_course = filtered_courses.map(course => (
+        <div key={course.courseName}>{course.courseName.split('-')[0]}</div>
+      ))
 
       return (
-        <div className="TimeSlotConflict" title={conflicted_course}>
-          <p>
-            Courses Conflicted<br></br>
-            <span className="details">{conflicted_course}</span>
-          </p>
+        <div className="relative my-auto flex h-full justify-center" title={conflicted_course}>
+          <div className="absolute">
+            <div className="sticky top-0 font-medium backdrop-blur-lg">
+              ⚠️Conflict
+            </div>
+            <div className="text-xs">{conflicted_course}</div>
+          </div>
         </div>
       )
     } else if (filtered_courses.length === 1) {
       const course = filtered_courses[0]
-      const venues = course.lectures
-        .filter(lecture => {
-          const lecture_hours = [
-            parseInt(lecture.time.slice(0, 2)),
-            parseInt(lecture.time.slice(6, 8)),
-          ]
-          return (
-            lecture.day === day &&
-            timeslot_hours[0] >= lecture_hours[0] &&
-            timeslot_hours[1] <= lecture_hours[1]
-          )
-        })
-        .map(lecture => lecture.venue)
-        .join('/')
+      // const venues = course.lectures
+      //   .filter(lecture => {
+      //     const lecture_hours = [
+      //       parseInt(lecture.time.slice(0, 2)),
+      //       parseInt(lecture.time.slice(6, 8)),
+      //     ]
+      //     return (
+      //       lecture.day === day &&
+      //       timeslot_hours[0] >= lecture_hours[0] &&
+      //       timeslot_hours[1] <= lecture_hours[1]
+      //     )
+      //   })
+      //   .map(lecture => lecture.venue)
+      //   .join(' or ')
 
       return (
         <div
-          className="TimeSlotFilled"
+          className="flex h-full w-full cursor-pointer flex-col justify-center overflow-hidden transition-opacity hover:bg-accent hover:text-white active:opacity-25"
           title={course.courseTitle}
           onClick={() => setDetail(course)}>
-          <p>
-            {course.courseName}
-            <br></br>
-            <span className="details">{venues}</span>
-          </p>
+          <div className="font-medium">{course.courseName.split('-')[0]}</div>
+          Class {course.courseName.split('-')[1]}
+          {/* {venues} */}
         </div>
       )
     } else {
-      return <div className="TimeSlotEmpty"></div>
+      return <div></div>
     }
   }
 

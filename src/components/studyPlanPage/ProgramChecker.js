@@ -23,18 +23,20 @@ function ProgramChecker({ program }) {
     })
 
     return (
-      <div key={index}>
-        {item.type}
-        <div>
-          {takenCredits}/{item.credit}
+      <div className="mb-2">
+        <div key={index} className="font-medium">
+          {item.type}
+        </div>
+        <div className="font-light">
+          {takenCredits}/{item.credit} Credits Planned
         </div>
       </div>
     )
   })
 
   return (
-    <div className="ProgramChecker">
-      {program.name}
+    <div className="mb-8">
+      <div className="font-bold">{program.name}</div>
       {courseListResult}
     </div>
   )

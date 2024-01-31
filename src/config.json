@@ -512,8 +512,8 @@
             "credit": 6
         },
         {
-            "name": "CCxxXXX1",
-            "fullName": "common core1",
+            "name": "CCXX0001",
+            "fullName": "Common Core 1",
             "prereg": [],
             "isPrereg": [],
             "exclusive": [],
@@ -521,8 +521,8 @@
             "credit": 6
         },
         {
-            "name": "CCxxXXX2",
-            "fullName": "common core2",
+            "name": "CCXX0002",
+            "fullName": "Common Core 2",
             "prereg": [],
             "isPrereg": [],
             "exclusive": [],
@@ -530,8 +530,8 @@
             "credit": 6
         },
         {
-            "name": "CCxxXXX3",
-            "fullName": "common core3",
+            "name": "CCXX0003",
+            "fullName": "Common Core 3",
             "prereg": [],
             "isPrereg": [],
             "exclusive": [],
@@ -539,8 +539,8 @@
             "credit": 6
         },
         {
-            "name": "CCxxXXX4",
-            "fullName": "common core4",
+            "name": "CCXX0004",
+            "fullName": "Common Core 4",
             "prereg": [],
             "isPrereg": [],
             "exclusive": [],
@@ -548,8 +548,8 @@
             "credit": 6
         },
         {
-            "name": "CCxxXXX5",
-            "fullName": "common core5",
+            "name": "CCXX0005",
+            "fullName": "Common Core 5",
             "prereg": [],
             "isPrereg": [],
             "exclusive": [],
@@ -557,8 +557,8 @@
             "credit": 6
         },
         {
-            "name": "CCxxXXX6",
-            "fullName": "common core6",
+            "name": "CCXX0006",
+            "fullName": "Common Core 6",
             "prereg": [],
             "isPrereg": [],
             "exclusive": [],
@@ -1245,7 +1245,7 @@
         },
         {
             "name": "COMP3231",
-            "fullName": "Principles of operating systems",
+            "fullName": "Computer Architecture",
             "prereg": [
                 [
                     "COMP2120"
