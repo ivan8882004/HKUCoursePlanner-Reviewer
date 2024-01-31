@@ -186,7 +186,7 @@ function StudyPlanPage() {
   })
 
   return (
-    <div className="flex h-full min-w-fit animate-fade-in select-none justify-center p-5 pt-14 animate__animated animate__fadeIn animate__fast">
+    <div className="animate-fade-in animate__animated animate__fadeIn animate__fast flex h-full min-w-fit select-none justify-center p-5 pt-14">
       <div className="flex h-full min-w-80 max-w-80 flex-col">
         <div>
           <div>Degree</div>
@@ -344,7 +344,7 @@ function StudyPlanPage() {
               )
               setSearchBar('')
             }}
-            className="mt-2 w-full border-2 border-accent p-0.5 text-accent transition-transform hover:bg-accent hover:text-white active:translate-y-1">
+            className="mt-2 w-full border-2 border-accent p-0.5 text-accent outline-none transition-transform hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:translate-y-1">
             RESET ALL
           </button>
           <button
@@ -353,7 +353,7 @@ function StudyPlanPage() {
                 setPlan([[], [], [], [], [], [], [], [], [], [], [], [], []])
               )
             }
-            className="mt-2 w-full border-2 border-accent p-0.5 text-accent transition-transform hover:bg-accent hover:text-white active:translate-y-1">
+            className="mt-2 w-full border-2 border-accent p-0.5 text-accent outline-none transition-transform hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:translate-y-1">
             CLEAR PLAN
           </button>
         </div>

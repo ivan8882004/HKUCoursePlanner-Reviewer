@@ -100,8 +100,7 @@ function TopBar() {
           tabIndex="-1"
           onClick={() => {
             setIsDevMode(!isDevMode)
-          }}
-          className="opacity-50">
+          }}>
           🚧
         </button>
         <a

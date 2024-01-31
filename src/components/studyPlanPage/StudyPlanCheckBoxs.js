@@ -23,8 +23,6 @@ function StudyPlanCheckBoxs() {
   }, [plan])
 
   const handleCheckBoxChange = event => {
-    event.target.blur()
-
     const course = {
       name: event.target.name,
       fullName: '',

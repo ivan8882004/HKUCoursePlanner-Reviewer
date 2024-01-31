@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { PiArrowFatRightFill } from 'react-icons/pi'
 import { useSelector } from 'react-redux'
 
 function PreregGraph({ listItem }) {
@@ -60,11 +59,7 @@ function PreregGraph({ listItem }) {
         <div className="font-medium italic">{listItem.fullName}</div>
         {dropDown && dropDownContent}
       </div>
-      {listItem.isPrereg.length !== 0 && (
-        <div className="ml-5">
-          <PiArrowFatRightFill />
-        </div>
-      )}
+      {listItem.isPrereg.length !== 0 && <div className="ml-5 text-xl">➠</div>}
       {listItem.isPrereg.length !== 0 && <div>{content}</div>}
     </div>
   )

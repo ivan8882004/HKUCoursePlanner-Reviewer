@@ -93,7 +93,7 @@ function AutoFillForm({ isSemOne, setter }) {
           value={item}
           onChange={event => editCourseList(event, index)}
           placeholder="Enter Course Code..."
-          className="grow px-2 font-mono outline-none placeholder:text-black/50 group-hover:bg-accent group-hover:text-white placeholder:group-hover:text-white"
+          className="grow px-2 font-mono outline-none placeholder:font-poppins placeholder:text-black/50 group-focus-within:bg-accent group-focus-within:text-white group-focus-within:placeholder:text-white group-hover:bg-accent group-hover:text-white placeholder:group-hover:text-white"
         />
         <button
           type="button"
@@ -101,7 +101,7 @@ function AutoFillForm({ isSemOne, setter }) {
             if (formContent.courseList.length > 1) setIsAnimateRemove(index)
           }}
           hidden={formContent.courseList.length === 1}
-          className="px-2 hover:font-bold group-hover:bg-accent group-hover:text-white">
+          className="px-2 outline-none hover:font-bold focus:font-bold group-focus-within:bg-accent group-focus-within:text-white group-focus-within:placeholder:text-white group-hover:bg-accent group-hover:text-white">
           -
         </button>
       </div>
@@ -305,7 +305,7 @@ function AutoFillForm({ isSemOne, setter }) {
       <button
         type="button"
         onClick={addCourseList}
-        className="w-full px-2 text-left font-normal text-accent transition-transform hover:bg-accent hover:text-white active:translate-y-1">
+        className="w-full px-2 text-left font-normal text-accent outline-none transition-transform hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:translate-y-1">
         New Course
       </button>
 
@@ -321,7 +321,7 @@ function AutoFillForm({ isSemOne, setter }) {
           min="0"
           max="100"
           onChange={event => handleFormChange(event)}
-          className="w-full -translate-y-1 cursor-pointer appearance-none bg-transparent focus:outline-none
+          className="w-full -translate-y-1 cursor-pointer appearance-none bg-transparent outline-2 outline-accent focus:outline
           [&::-moz-range-thumb]:h-3
           [&::-moz-range-thumb]:w-3
           [&::-moz-range-thumb]:appearance-none
@@ -345,7 +345,9 @@ function AutoFillForm({ isSemOne, setter }) {
             name="earlyTime"
             type="time"
             onChange={event => handleFormChange(event)}
-            className="h-6 cursor-pointer border-2 border-accent font-light outline-none"
+            className="h-6 cursor-pointer border-2 border-accent font-light outline-none
+            [&::-webkit-datetime-edit-hour-field]:rounded-none
+            [&::-webkit-datetime-edit-minute-field]:rounded-none"
           />
         </label>
         <label className="flex justify-between">
@@ -359,7 +361,7 @@ function AutoFillForm({ isSemOne, setter }) {
           min="0"
           max="100"
           onChange={event => handleFormChange(event)}
-          className="w-full -translate-y-1 cursor-pointer appearance-none bg-transparent focus:outline-none
+          className="w-full -translate-y-1 cursor-pointer appearance-none bg-transparent outline-2 outline-accent focus:outline
           [&::-moz-range-thumb]:h-3
           [&::-moz-range-thumb]:w-3
           [&::-moz-range-thumb]:appearance-none
@@ -385,7 +387,7 @@ function AutoFillForm({ isSemOne, setter }) {
             min="0"
             max="9"
             onChange={event => handleFormChange(event)}
-            className="w-8 border-2 border-accent pl-0.5 font-light outline-none hover:bg-accent hover:text-white"
+            className="w-9 border-2 border-accent pl-0.5 font-light outline-none hover:bg-accent hover:text-white focus:bg-accent focus:text-white"
           />
         </label>
         <label className="flex justify-between">
@@ -399,7 +401,7 @@ function AutoFillForm({ isSemOne, setter }) {
           min="0"
           max="100"
           onChange={event => handleFormChange(event)}
-          className="w-full -translate-y-1 cursor-pointer appearance-none bg-transparent focus:outline-none
+          className="w-full -translate-y-1 cursor-pointer appearance-none bg-transparent outline-2 outline-accent focus:outline
             [&::-moz-range-thumb]:h-3
             [&::-moz-range-thumb]:w-3
             [&::-moz-range-thumb]:appearance-none
@@ -423,7 +425,7 @@ function AutoFillForm({ isSemOne, setter }) {
         disabled={
           formContent.courseList.filter(course => course !== '').length === 0
         }
-        className="m-2 mb-1 w-[calc(100%-1rem)] bg-accent font-normal text-white transition-transform enabled:active:translate-y-1 disabled:opacity-25">
+        className="m-2 mb-1 w-[calc(100%-1rem)] bg-accent font-normal text-white outline-none transition-transform focus:opacity-50 enabled:active:translate-y-1 disabled:opacity-25">
         Get Schedule Recommendations
       </button>
       {formContent.courseList.filter(course => course !== '').length !== 0 && (

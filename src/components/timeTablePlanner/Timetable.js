@@ -13,14 +13,14 @@ const Timetable = ({ selectedCourseList }) => {
   }
 
   const buttonClasses =
-    'h-full font-mono w-7 font-bold disabled:cursor-not-allowed disabled:opacity-25 enabled:hover:bg-accent enabled:hover:text-white active:opacity-25 transition-opacity'
+    'h-full outline-none focus:bg-accent focus:text-white font-mono w-7 font-bold disabled:cursor-not-allowed disabled:opacity-25 enabled:hover:bg-accent enabled:hover:text-white active:opacity-25 transition-opacity'
 
   const tdClasses =
     'border-accent border-2 text-center font-light overflow-scroll no-scrollbar'
 
   return (
-    <div className='ml-5 mt-2 h-[calc(100%-0.5rem)] w-full overflow-scroll min-w-[48rem] max-w-[60rem] no-scrollbar'>
-      <table className="w-full h-full table-fixed border-collapse border-2 border-accent text-sm">
+    <div className="no-scrollbar ml-5 mt-2 h-[calc(100%-0.5rem)] w-full min-w-[48rem] max-w-[60rem] overflow-scroll">
+      <table className="h-full w-full table-fixed border-collapse border-2 border-accent text-sm">
         <colgroup>
           <col className="w-[12.5%]" />
           <col className="w-[12.5%]" />
@@ -56,7 +56,7 @@ const Timetable = ({ selectedCourseList }) => {
                     <button
                       key={day}
                       onClick={() => add_drop_day(day)}
-                      className="group w-full font-bold transition-opacity hover:bg-accent hover:text-white active:opacity-25">
+                      className="group w-full font-bold outline-none transition-opacity hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:opacity-25">
                       <span className="group-hover:hidden">{day}</span>
                       <span className="hidden group-hover:block">-</span>
                     </button>
@@ -70,7 +70,7 @@ const Timetable = ({ selectedCourseList }) => {
                     <button
                       key={day}
                       onClick={() => add_drop_day(day)}
-                      className="w-full font-bold transition-opacity hover:bg-accent hover:text-white active:opacity-25">
+                      className="w-full font-bold outline-none transition-opacity hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:opacity-25">
                       +
                     </button>
                   </th>

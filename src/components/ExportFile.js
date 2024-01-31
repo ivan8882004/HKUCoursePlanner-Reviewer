@@ -28,7 +28,7 @@ function ExportFile() {
       Download Config
       <button
         onClick={exportAsJSON}
-        className="cursor-pointer border-2 border-accent p-0.5 px-2 text-accent transition-opacity hover:bg-accent hover:text-white active:opacity-50">
+        className="cursor-pointer border-2 border-accent p-0.5 px-2 text-accent outline-none transition-opacity hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:opacity-50">
         DOWNLOAD
       </button>
     </div>

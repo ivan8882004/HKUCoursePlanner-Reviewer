@@ -2,14 +2,14 @@ import { NavLink } from 'react-router-dom'
 
 function HomePage() {
   const hoverFocusClasses =
-    'hover:bg-accent hover:text-white focus:bg-accent focus:text-white outline-none'
+    'hover:bg-accent hover:text-white focus:bg-accent focus:text-white outline-none active:opacity-25 transition-opacity'
 
   return (
     <div className="animate__animated animate__fadeIn animate__fast flex h-full select-none flex-col items-center justify-center text-center">
       <div className="animate__animated animate__slideInDown animate__faster text-5xl max-md:text-3xl">
         Welcome to{' '}
       </div>
-      <div className="animate__animated animate__jackInTheBox mb-7 bg-accent p-3 text-6xl font-bold text-white animation-delay-300 max-md:text-4xl max-md:py-2">
+      <div className="animate__animated animate__jackInTheBox mb-7 bg-accent p-3 text-6xl font-bold text-white animation-delay-300 max-md:py-2 max-md:text-4xl">
         <u>
           <i>Course Planner</i>
         </u>{' '}

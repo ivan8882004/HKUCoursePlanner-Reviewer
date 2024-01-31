@@ -176,7 +176,7 @@ function ViewProgramPage() {
   }
 
   const listClasses =
-    'border-2 border-accent divide-accent font-light divide-y-2 mb-2 transition-transform'
+    'border-2 border-accent divide-accent font-light divide-y-2 mb-2 transition-transform z-10 bg-white'
 
   return (
     <div className="animate__animated animate__fadeIn animate__fast mx-auto flex h-full max-w-[160rem] select-none pb-5 pt-14">
@@ -187,11 +187,15 @@ function ViewProgramPage() {
         <div className={listClasses}>{majorsList}</div>
         <div>Minors</div>
         <div className={listClasses}>{minorsList}</div>
-        {program.name !== '' && (
-          <div className="text-end text-xs opacity-50">
-            Protip: You can scroll around →
-          </div>
-        )}
+        <div
+          className={
+            'text-end text-xs opacity-50' +
+            (program.name === ''
+              ? ' hidden'
+              : ' animate__animated animate__slideInDown animate__faster')
+          }>
+          Protip: You can scroll around →
+        </div>
       </div>
       <div className="ml-5 mt-2 w-full min-w-[40rem] border-r-[1.25rem] border-white text-sm">
         <div className="h-full overflow-auto overscroll-y-contain border-2 border-accent">

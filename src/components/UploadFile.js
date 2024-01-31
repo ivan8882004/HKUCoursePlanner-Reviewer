@@ -44,7 +44,7 @@ function UploadFile() {
         {uploadFile && (
           <button
             onClick={handleUpload}
-            className="animate__animated animate__fadeInLeft animate__faster cursor-pointer border-2 border-accent p-0.5 px-2 text-accent transition-opacity animation-delay-150 hover:bg-accent hover:text-white active:opacity-50">
+            className="animate__animated animate__fadeInLeft animate__faster cursor-pointer border-2 border-accent p-0.5 px-2 text-accent outline-none transition-opacity animation-delay-150 hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:opacity-50">
             UPLOAD
           </button>
         )}
