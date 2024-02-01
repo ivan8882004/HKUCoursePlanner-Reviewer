@@ -5,7 +5,15 @@ Visualise and plan your academic journey
 
 [Click me to start planning today!](https://ivan8882004.github.io/HKUCoursePlanner-Reviewer/)
 
-<!-- ## :rocket: Features -->
+## :rocket: Features
+
+### Syllabus Roadmap - A Visual Guide through Your Syllabus
+
+<img src="screenshot/syllabus-roadmap.png" alt="Syllabus Roadmap">
+
+### Best-8 GPA Calculator for First Year Engineering Students
+
+<img src="screenshot/best-8.png" alt="Best-8 Calculator">
 
 ## :handshake: Contributing
 
