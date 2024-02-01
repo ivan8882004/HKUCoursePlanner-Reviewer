@@ -58,6 +58,23 @@ function HomePage() {
         if you find it useful 🚀🚀🚀
       </div>
 
+      <div className="fixed bottom-0 w-full bg-white pt-2 font-mono text-xs">
+        <div>Encounter any problem?</div>
+        <button
+          onClick={() => {
+            localStorage.clear()
+            setTimeout(() => {
+              window.location.reload()
+            }, 500)
+          }}
+          className={
+            'mb-10 w-40 border-2 border-accent p-0.5 text-accent transition-transform active:translate-y-1 ' +
+            hoverFocusClasses
+          }>
+          RESET APP
+        </button>
+      </div>
+
       {/* <div className="w-[30rem] max-md:w-[26rem] max-md:text-sm">
         Disclaimer: Degree and course information provided on{' '}
         <i>Course Planner</i> was manually entered and is currently maintained
