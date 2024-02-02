@@ -3,23 +3,35 @@
 
 Visualise and plan your academic journey
 
-[Click me to start planning today!](https://ivan8882004.github.io/HKUCoursePlanner-Reviewer/)
+Developed by HKU students, for HKU students.
+
+*[Click me to start planning today!](https://ivan8882004.github.io/HKUCoursePlanner-Reviewer/)*
 
 ## :rocket: Features
 
-### Syllabus Roadmap - A Visual Guide through Your Syllabus
+### Timetable - *Schedule Your Semester*
+
+<img src="screenshot/timetable.gif" alt="Timetable">
+
+### Course Planner - *Create a Study Plan*
+
+<img src="screenshot/course-planner.gif" alt="Course Planner">
+
+### Syllabus Roadmap - *A Visual Guide through Your Syllabus*
 
 <img src="screenshot/syllabus-roadmap.png" alt="Syllabus Roadmap">
 
-### Best-8 GPA Calculator for First Year Engineering Students
+### Best-8 GPA Calculator - *For First Year Engineering Students :heart:*
 
-<img src="screenshot/best-8.png" alt="Best-8 Calculator">
+<img src="screenshot/best-8.gif" alt="Best-8 Calculator">
+
+#### What are you waiting for? [Give it a try!]((https://ivan8882004.github.io/HKUCoursePlanner-Reviewer/))
 
 ## :handshake: Contributing
 
 If you find any bugs or have suggestions for improvement, please feel free to create an issue.
 
-_p.s. Star this project & share it with your friends if it helped!_ 😉
+*p.s. Star this project & share it with your friends if it helped!* :wink:
 
 ## 💻 Devs
 
@@ -29,4 +41,4 @@ _p.s. Star this project & share it with your friends if it helped!_ 😉
   - Config editing pages
   - Preview of courses on Timetable
 - [**ivan8882004**](https://github.com/ivan8882004) - timetable page
-- [**kennethkn**](https://github.com/kennethkn) - UI/UX redesign & feature refinements
+- [**kennethkn**](https://github.com/kennethkn) - UI/UX redesign, feature refinements & branding
