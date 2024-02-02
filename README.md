@@ -40,5 +40,5 @@ If you find any bugs or have suggestions for improvement, please feel free to cr
   - Course Planner page
   - Config editing pages
   - Preview of courses on Timetable
-- [**ivan8882004**](https://github.com/ivan8882004) - timetable page
+- [**ivan8882004**](https://github.com/ivan8882004) - Timetable page
 - [**kennethkn**](https://github.com/kennethkn) - UI/UX redesign, feature refinements & branding
