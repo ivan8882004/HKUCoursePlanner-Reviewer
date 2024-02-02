@@ -27,7 +27,7 @@ Developed by HKU students, for HKU students.
 
 #### What are you waiting for?
 
-[*Give it a try!*]((https://ivan8882004.github.io/HKUCoursePlanner-Reviewer/))
+[*Give it a try!*](https://ivan8882004.github.io/HKUCoursePlanner-Reviewer/)
 
 ## :handshake: Contributing
 
