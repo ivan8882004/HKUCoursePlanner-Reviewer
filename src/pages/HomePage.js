@@ -59,7 +59,7 @@ function HomePage() {
       </div>
 
       <div className="fixed bottom-0 w-full bg-white pt-2 font-mono text-xs">
-        <div>Encounter any problem?</div>
+        <div>Encounter any issue?</div>
         <button
           onClick={() => {
             localStorage.clear()
@@ -71,7 +71,7 @@ function HomePage() {
             'mb-10 w-40 border-2 border-accent p-0.5 text-accent transition-transform active:translate-y-1 ' +
             hoverFocusClasses
           }>
-          RESET APP
+          RELOAD APP
         </button>
       </div>
 
