@@ -19,7 +19,7 @@ Developed by HKU students, for HKU students.
 
 ### Syllabus Roadmap - *A Visual Guide through Your Syllabus*
 
-<img src="screenshot/syllabus-roadmap.png" width=800 height=541 alt="Syllabus Roadmap">
+<img src="screenshot/syllabus-roadmap.png" width=800 alt="Syllabus Roadmap">
 
 ### Best-8 GPA Calculator - *For First Year Engineering Students :heart:*
 
