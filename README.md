@@ -9,11 +9,11 @@ Developed by HKU students, for HKU students.
 
 ## :rocket: Features
 
-### Timetable - *Schedule Your Semester*
+### Sem Timetable - *Schedule Your Semester*
 
 <img src="screenshot/timetable.gif" alt="Timetable">
 
-### Course Planner - *Create a Study Plan*
+### Create Study Plan - *Plan Your Courses*
 
 <img src="screenshot/course-planner.gif" alt="Course Planner">
 
