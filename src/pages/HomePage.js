@@ -19,7 +19,7 @@ function HomePage() {
         Plan your academic journey.
       </div>
       <NavLink
-        to="/HKUCoursePlanner-Reviewer/study_plan"
+        to="/HKUCoursePlanner-Reviewer/time_table"
         className={
           'animate__animated animate__pulse animate__infinite mb-10 w-80 border-2 border-accent p-0.5 text-accent transition-opacity animation-delay-[2s] active:opacity-25 ' +
           hoverFocusClasses

@@ -19,7 +19,7 @@ function UploadExportFilePage() {
         <NavLink
           to="/HKUCoursePlanner-Reviewer/study_plan"
           className="whitespace-nowrap font-poppins font-light underline outline-none transition-opacity hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:opacity-25">
-          Course Planner
+          Study Plan
         </NavLink>{' '}
         and{' '}
         <NavLink

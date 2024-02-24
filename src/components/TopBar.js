@@ -33,14 +33,14 @@ function TopBar() {
           className={({ isActive }) =>
             (isActive ? activeNavLinkClasses : '') + navLinkClasses
           }>
-          Course Planner
+          Create Study Plan
         </NavLink>
         <NavLink
           to="/HKUCoursePlanner-Reviewer/time_table"
           className={({ isActive }) =>
             (isActive ? activeNavLinkClasses : '') + navLinkClasses
           }>
-          Timetable
+          Sem Timetable
         </NavLink>
         <NavLink
           to="/HKUCoursePlanner-Reviewer/view_program"

@@ -110,7 +110,7 @@ function SearchTool({
 
   return (
     <div className="flex h-full min-w-80 max-w-80 flex-col">
-      <ImportSettingButton />
+      {/* <ImportSettingButton /> */}
 
       <div>Semester</div>
       <SemButton isSemOne={isSemOne} setIsSemOne={setIsSemOne} />
@@ -146,7 +146,7 @@ function SearchTool({
             </div>
           </div>
         )}
-        {!!importCourseList.length && (
+        {/* {!!importCourseList.length && (
           <div>
             <div className={headerClasses}>From Course Planner</div>
             <div className="divide-y-2 divide-accent">
@@ -165,7 +165,7 @@ function SearchTool({
               ))}
             </div>
           </div>
-        )}
+        )} */}
         <div>
           <div className={headerClasses}>All Courses</div>
           <div className="divide-y-2 divide-accent">
