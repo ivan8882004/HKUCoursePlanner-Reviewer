@@ -15,6 +15,8 @@ function AutoFillForm({ isSemOne, setter }) {
     gapScore: -10,
   })
 
+  const [errorMsg, setErrorMsg] = useState("")
+
   useEffect(() => {
     const storageFormContent = localStorage.getItem(FORMCONTENT)
     if (storageFormContent) {
@@ -124,6 +126,12 @@ function AutoFillForm({ isSemOne, setter }) {
       })
       return temp
     })
+
+    if (possibleCourse.some(ele => ele.length === 0)) {
+      setErrorMsg("No possible list")
+      return
+    }
+
     for (const i of possibleCourse) {
       if (i.length === 0) {
         return
@@ -271,8 +279,20 @@ function AutoFillForm({ isSemOne, setter }) {
         getGap(copyTable, formContent.gapTime) * parseInt(formContent.gapScore)
       output.push({ score, courseList: JSON.parse(JSON.stringify(courseList)) })
     }
-    setPossibleList(output.sort((a, b) => b.score - a.score))
-    setter(output[0]?.courseList || [])
+
+    const filtered_output = output.filter(ele => ele.courseList.map(e => e.courseName.substring(0, 8)).length === new Set(ele.courseList.map(e => e.courseName.substring(0, 8))).size)
+
+    console.log(filtered_output)
+
+    if (filtered_output.length === 0) {
+      setErrorMsg("Some Course are repeated so no possible list")
+      return
+    }
+
+    setPossibleList(filtered_output.sort((a, b) => b.score - a.score))
+    setter(filtered_output[0]?.courseList || [])
+
+    setErrorMsg("")
   }
 
   const renderPossibleList = possibleList.map((item, index) => {
@@ -434,14 +454,14 @@ function AutoFillForm({ isSemOne, setter }) {
         </div>
       )}
 
-      {possibleList.length > 0 && (
+      {possibleList.length > 0 ? (
         <>
           <div className="sticky top-6 px-2 font-medium backdrop-blur-lg ">
             Recommended Schedules
           </div>
           {renderPossibleList}
         </>
-      )}
+      ) : <div className="sticky top-6 px-2 font-medium backdrop-blur-lg ">{errorMsg}</div>}
     </div>
   )
 }
