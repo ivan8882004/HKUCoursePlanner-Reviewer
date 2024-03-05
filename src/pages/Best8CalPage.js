@@ -128,7 +128,7 @@ function Best8CalPage() {
             <select
               value={ele[1]}
               onChange={event => handleChange(event, ind, 1)}
-              className="w-52 cursor-pointer appearance-none rounded-none border-2 border-accent p-0.5 pl-2 font-light outline-none placeholder:text-black hover:bg-accent hover:text-white hover:placeholder:text-white focus:bg-accent focus:text-white placeholder:focus:text-white">
+              className="w-52 cursor-pointer appearance-none rounded-none border-2 border-accent bg-white p-0.5 pl-2 font-light outline-none placeholder:text-black hover:bg-accent hover:text-white hover:placeholder:text-white focus:bg-accent focus:text-white placeholder:focus:text-white">
               <option className={optionClasses}>Select Grade</option>
               <option className={optionClasses} value="A+">
                 A+

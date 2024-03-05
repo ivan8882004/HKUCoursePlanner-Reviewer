@@ -9,7 +9,7 @@ function AutoFillForm({ isSemOne, setter }) {
   const [formContent, setFormContent] = useState({
     courseList: [''],
     dayOffScore: 30,
-    earlyTime: '8:30',
+    earlyTime: '08:30',
     earlyScore: -10,
     gapTime: 3,
     gapScore: -10,
@@ -345,7 +345,7 @@ function AutoFillForm({ isSemOne, setter }) {
             name="earlyTime"
             type="time"
             onChange={event => handleFormChange(event)}
-            className="h-6 cursor-pointer border-2 border-accent font-light outline-none
+            className="h-6 cursor-pointer rounded-none border-2 border-accent bg-white font-light outline-none
             [&::-webkit-datetime-edit-hour-field]:rounded-none
             [&::-webkit-datetime-edit-minute-field]:rounded-none"
           />
@@ -387,7 +387,7 @@ function AutoFillForm({ isSemOne, setter }) {
             min="0"
             max="9"
             onChange={event => handleFormChange(event)}
-            className="w-9 border-2 border-accent pl-0.5 font-light outline-none hover:bg-accent hover:text-white focus:bg-accent focus:text-white"
+            className="w-9 rounded-none border-2 border-accent text-center font-light outline-none hover:bg-accent hover:text-white focus:bg-accent focus:text-white"
           />
         </label>
         <label className="flex justify-between">

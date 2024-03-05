@@ -106,7 +106,7 @@ function CourseCard({
       onMouseLeave={handleMouseLeave}>
       <input
         type="checkbox"
-        className="mr-2 h-4 w-4 shrink-0 cursor-pointer appearance-none border-2 border-accent outline-none transition checked:bg-accent group-active:opacity-25"
+        className="mr-2 h-4 w-4 shrink-0 cursor-pointer appearance-none rounded-none border-2 border-accent outline-none transition checked:bg-accent group-active:opacity-25"
         checked={isChecked}
         onChange={handleChange}
         tabIndex={-1}

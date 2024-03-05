@@ -18,7 +18,7 @@ import CreditCounter from '../components/studyPlanPage/CreditCounter'
 
 function StudyPlanPage() {
   const inputClasses =
-    'rounded-none border-2 border-accent outline-none w-full p-0.5 pl-2 focus:bg-accent hover:bg-accent hover:text-white focus:text-white font-light block appearance-none cursor-pointer mb-2'
+    'rounded-none border-2 bg-white border-accent outline-none w-full p-0.5 pl-2 focus:bg-accent hover:bg-accent hover:text-white focus:text-white font-light block appearance-none cursor-pointer mb-2'
   const header1Classes = 'sticky -top-1 px-2 font-bold bg-white z-10'
   const header2Classes = 'sticky top-4 px-2 font-medium backdrop-blur-lg'
   const optionClasses = 'bg-white text-black'
