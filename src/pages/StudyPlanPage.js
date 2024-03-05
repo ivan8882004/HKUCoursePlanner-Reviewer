@@ -261,7 +261,7 @@ function StudyPlanPage() {
           value={searchBar}
           onChange={event => setSearchBar(event.target.value)}
           placeholder="Search Courses..."
-          className="block w-full cursor-text appearance-none rounded-none border-2 border-accent p-0.5 pl-2 font-light outline-none placeholder:text-black hover:bg-accent hover:text-white placeholder:hover:text-white focus:bg-accent focus:text-white placeholder:focus:text-white"
+          className="block w-full cursor-text appearance-none rounded-none border-2 border-accent p-0.5 pl-2 font-mono font-light uppercase outline-none placeholder:font-poppins placeholder:normal-case placeholder:text-black hover:bg-accent hover:text-white placeholder:hover:text-white focus:bg-accent focus:text-white placeholder:focus:text-white"
         />
         <div className="no-scrollbar w-full grow overflow-scroll overscroll-contain border-2 border-t-0 border-accent bg-gradient-to-b from-transparent from-90% to-gray-200 bg-clip-padding py-1 text-sm font-light">
           <div>

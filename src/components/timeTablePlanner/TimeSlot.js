@@ -33,7 +33,9 @@ function TimeSlot({ time, day, selectedCourseList }) {
       ))
 
       return (
-        <div className="relative my-auto flex h-full justify-center" title={conflicted_course}>
+        <div
+          className="relative my-auto flex h-full justify-center"
+          title={conflicted_course}>
           <div className="absolute">
             <div className="sticky top-0 font-medium backdrop-blur-lg">
               ⚠️Conflict
@@ -64,7 +66,9 @@ function TimeSlot({ time, day, selectedCourseList }) {
           className="flex h-full w-full cursor-pointer flex-col justify-center overflow-hidden transition-opacity hover:bg-accent hover:text-white active:opacity-25"
           title={course.courseTitle}
           onClick={() => setDetail(course)}>
-          <div className="font-medium">{course.courseName.split('-')[0]}</div>
+          <div className="font-mono font-medium">
+            {course.courseName.split('-')[0]}
+          </div>
           Class {course.courseName.split('-')[1]}
           {/* {venues} */}
         </div>

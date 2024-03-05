@@ -33,18 +33,48 @@ function SemCourseListItem({ course, ind, index }) {
         <div className="font-medium italic">{course.fullName}</div>
         <div>
           Prereq:{' '}
-          {course.prereg
-            .map(
-              list =>
-                '[' +
-                list
-                  .map(item => (item === 'M1/M2_2+' ? 'M1/M2>=Lv2' : item))
-                  .join(' or ') +
-                ']'
-            )
-            .join(' and ') || 'None'}
+          {course.prereg.length > 0
+            ? course.prereg
+                .map((list, listIndex) => (
+                  <span key={listIndex}>
+                    {course.prereg.length > 1 && list.length > 1 ? '[ ' : ''}
+                    {list
+                      .map((item, itemIndex) =>
+                        item === 'M1/M2_2+' ? (
+                          <span key={itemIndex}>M1/M2{'>'}=Lv2</span>
+                        ) : (
+                          <span key={itemIndex} className="font-mono">
+                            {item}
+                          </span>
+                        )
+                      )
+                      .reduce((prev, curr, index) => [
+                        prev,
+                        index > 0 ? ' / ' : '',
+                        curr,
+                      ])}
+                    {course.prereg.length > 1 && list.length > 1 ? ' ]' : ''}
+                  </span>
+                ))
+                .reduce((prev, curr, index) => [
+                  prev,
+                  index > 0 ? ' & ' : '',
+                  curr,
+                ])
+            : 'None'}
         </div>
-        <div>MuEx: {course.exclusive.join(', ') || 'None'}</div>
+        <div>
+          MuEx:{' '}
+          {course.exclusive.length > 0
+            ? course.exclusive
+                .map((item, index) => (
+                  <span key={index} className="font-mono">
+                    {item}
+                  </span>
+                ))
+                .reduce((prev, curr) => [prev, ' / ', curr])
+            : 'None'}
+        </div>
       </>
     )
   } else {
@@ -66,7 +96,7 @@ function SemCourseListItem({ course, ind, index }) {
   }
 
   const courseListItemClasses =
-    'mb-1 cursor-pointer overflow-hidden hyphens-auto border-2 border-accent py-0.5 px-2 hover:bg-accent hover:text-white transition-opacity active:opacity-25'
+    'mb-1 cursor-pointer break-words border-2 border-accent py-0.5 px-2 hover:bg-accent hover:text-white transition-opacity active:opacity-25'
 
   const [isDropdownActive, setIsDropdownActive] = useState(false)
   const hints = ['>', '×']
@@ -91,7 +121,8 @@ function SemCourseListItem({ course, ind, index }) {
         <div className="flex">
           <div className="grow">
             <div>
-              {course.name} {hints[isDropdownActive ? 1 : 0]}
+              <span className="font-mono">{course.name}</span>{' '}
+              {hints[isDropdownActive ? 1 : 0]}
             </div>
             <div>⚠️Prereq Not Met</div>
           </div>
@@ -125,7 +156,8 @@ function SemCourseListItem({ course, ind, index }) {
         <div className="flex">
           <div className="grow">
             <div>
-              {course.name} {hints[isDropdownActive ? 1 : 0]}
+              <span className="font-mono">{course.name}</span>{' '}
+              {hints[isDropdownActive ? 1 : 0]}
             </div>
             <div>⚠️MuEx</div>
           </div>
@@ -158,7 +190,8 @@ function SemCourseListItem({ course, ind, index }) {
       }}>
       <div className="flex">
         <div className="grow">
-          {course.name} {hints[isDropdownActive ? 1 : 0]}
+          <span className="font-mono">{course.name}</span>{' '}
+          {hints[isDropdownActive ? 1 : 0]}
         </div>
         <button
           onClick={e => {

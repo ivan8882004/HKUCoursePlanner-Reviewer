@@ -101,7 +101,7 @@ function CourseCard({
 
   return (
     <label
-      className="group mx-2 flex cursor-pointer items-center overflow-hidden hyphens-auto px-2 py-0.5 will-change-transform "
+      className="group mx-2 flex cursor-pointer items-center break-words px-2 py-0.5 will-change-transform "
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}>
       <input
@@ -112,7 +112,7 @@ function CourseCard({
         tabIndex={-1}
       />
       <div className="w-full pl-2 transition-opacity hover:bg-accent hover:text-white group-active:opacity-25">
-        {course.courseName}
+        <span className="font-mono">{course.courseName}</span>
         <div className="font-medium italic">{course.courseTitle}</div>
       </div>
     </label>
