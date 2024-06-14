@@ -122,7 +122,7 @@ function Best8CalPage() {
             />
             <div className="w-5">
               {/^[A-Za-z]{4}\d{4}$/.test(ele[0]) || ele[0].length === 0
-                ? '➠'
+                ? '➡️'
                 : '❓'}
             </div>
             <select

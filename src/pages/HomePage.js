@@ -19,7 +19,7 @@ function HomePage() {
         Plan your academic journey.
       </div>
       <NavLink
-        to="/HKUCoursePlanner-Reviewer/time_table"
+        to="/HKUCoursePlanner-Reviewer/timetable"
         className={
           'animate__animated animate__pulse animate__infinite mb-10 w-72 border-2 border-accent p-0.5 text-accent transition-opacity animation-delay-[2s] active:opacity-25 sm:w-80 ' +
           hoverFocusClasses
@@ -56,7 +56,7 @@ function HomePage() {
           className={'underline ' + hoverFocusClasses}>
           GitHub
         </a>{' '}
-        if you find it useful 🚀🚀🚀
+        if you find it useful 🚀
         <div className="font-bold sm:hidden">
           <br />
           Course Planner is best viewed on desktop.
