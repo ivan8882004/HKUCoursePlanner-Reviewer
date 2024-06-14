@@ -3714,7 +3714,8 @@
             "exclusive": [],
             "recommendYear": 0,
             "credit": 6
-        },{
+        },
+        {
             "name": "LLAW3255",
             "fullName": "LITE Lab: Emerging Technology and Business Models (Undergraduate)",
             "prereg": [],
@@ -7328,6 +7329,115 @@
             "exclusive": [],
             "recommendYear": 0,
             "credit": 6
+        },
+        {
+            "name": "SOWK3136",
+            "fullName": "Application of big data analytics in social sciences",
+            "prereg": [],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
+            "name": "COMP3312",
+            "fullName": "Law and ethics in data science",
+            "prereg": [],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
+            "name": "COMP3510",
+            "fullName": "Internship",
+            "prereg": [],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 0
+        },
+        {
+            "name": "COMP3513",
+            "fullName": "Big data systems",
+            "prereg": [
+                [
+                    "COMP2501"
+                ],
+                [
+                    "COMP3278"
+                ]
+            ],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
+            "name": "COMP3520",
+            "fullName": "Special topics in data science",
+            "prereg": [
+                [
+                    "COMP2501"
+                ],
+                [
+                    "COMP3278"
+                ],
+                [
+                    "COMP3314"
+                ]
+            ],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
+            "name": "COMP3521",
+            "fullName": "Visualization for data analytics",
+            "prereg": [
+                [
+                    "COMP2119",
+                    "COMP2502",
+                    "ELEC2543",
+                    "FITE2000"
+                ]
+            ],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
+            "name": "COMP3522",
+            "fullName": "Real-life data science",
+            "prereg": [
+                [
+                    "ENGG1330"
+                ]
+            ],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
+            "name": "COMP4501",
+            "fullName": "Data science in discipline project",
+            "prereg": [],
+            "isPrereg": [],
+            "exclusive": ["COMP4502"],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
+            "name": "COMP4502",
+            "fullName": "Final year project",
+            "prereg": [],
+            "isPrereg": [],
+            "exclusive": ["COMP4501"],
+            "recommendYear": 0,
+            "credit": 6
         }
     ],
     "degrees": [
@@ -8233,6 +8343,83 @@
                     "credit": "12",
                     "courses": [
                         "IMSE4175"
+                    ],
+                    "type": "Capstone Experience and Internship"
+                }
+            ],
+            "focus": []
+        },
+        {
+            "name": "BEng(DS&E)23-24",
+            "ug5cc": "36",
+            "ug5leng": [
+                "CAES1000",
+                "CAES9542",
+                "CENG9001"
+            ],
+            "courseList": [
+                {
+                    "credit": "24",
+                    "courses": [
+                        "MATH1013",
+                        "ENGG1320",
+                        "ENGG1330",
+                        "ENGG1340"
+                    ],
+                    "type": "Engineering Core Courses"
+                },
+                {
+                    "credit": "30",
+                    "courses": [
+                        "COMP2119",
+                        "COMP2501",
+                        "MATH2014",
+                        "STAT2601",
+                        "STAT2602"
+                    ],
+                    "type": "Discipline Core Courses"
+                },
+                {
+                    "credit": "18",
+                    "courses": [
+                        "COMP3278",
+                        "COMP3314",
+                        "COMP3312"
+                    ],
+                    "type": "Advanced Courses"
+                },
+                {
+                    "credit": "30",
+                    "courses": [
+                        "COMP3270",
+                        "COMP3317",
+                        "COMP3323|FITE3010",
+                        "COMP3340",
+                        "COMP3353",
+                        "COMP3355",
+                        "COMP3361",
+                        "COMP3362",
+                        "COMP3407",
+                        "COMP3513",
+                        "COMP3516",
+                        "COMP3520",
+                        "COMP3521",
+                        "FITE2010",
+                        "SOWK3136",
+                        "STAT3600",
+                        "STAT3612",
+                        "STAT3621",
+                        "STAT4601",
+                        "STAT4602"
+                    ],
+                    "type": "Discipline Elective Courses"
+                },
+                {
+                    "credit": "12",
+                    "courses": [
+                        "COMP3510",
+                        "COMP3522",
+                        "COMP4501|COMP4502"
                     ],
                     "type": "Capstone Experience and Internship"
                 }

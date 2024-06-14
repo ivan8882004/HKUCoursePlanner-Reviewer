@@ -1,20 +1,24 @@
-COMP3278 Introduction to database management systems 6
-COMP3314 /
-ELEC4544
-COMP3320 Electronic commerce technology 6
-COMP3322 Modern technologies on World Wide Web 6
+COMP3270 Artificial intelligence 6
+COMP3317 Computer vision 6
+COMP3323 /
+FITE3010
+Advanced database systems /
+Big data and data mining
+6
 COMP3340 Applied deep learning 6
+COMP3353 Bioinformatics 6
 COMP3355 Cyber security 6
+COMP3361 Natural language processing 6
 COMP3362 Hands-on AI: experimentation and applications 6
-FINA2320 Investments and portfolio analysis 6
-FINA2322 Derivatives 6
-FINA3350 Mathematical finance 6
-FINA3353 Regulatory, operational and valuation issues in finance
-institutions
-FINA4350 Text analytics and natural language processing in finance and
-fintech
-FITE3010 Big data and data mining 6
-FITE3012 E-payment and crypto-currency 6
-FITE3013 Financial computing 6
-ENGL1015 Introduction to English linguistics 6
-ENGL2050 English corpus linguistics 6
+COMP3407 Scientific computing 6
+COMP3513 Big data systems 6
+COMP3516 Data analytics for IoT 6
+COMP3520 Special topics in data science 6
+COMP3521 Visualization for data analytics 6
+FITE2010 Distributed ledger and blockchain 6
+SOWK3136 Application of big data analytics in social sciences 6
+STAT3600 Linear statistical analysis 6
+STAT3612 Statistical machine learning 6
+STAT3621 Statistical data analysis 6
+STAT4601 Time-series analysis 6
+STAT4602 Multivariate data analysis 6
