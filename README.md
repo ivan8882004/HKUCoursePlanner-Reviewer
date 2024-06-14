@@ -9,7 +9,7 @@ Developed by HKU students, for HKU students.
 
 ## :rocket: Features
 
-### Sem Timetable - *Schedule Your Semester*
+### Semester Timetable - *Schedule Your Semester*
 
 <img src="screenshot/timetable.gif" alt="Timetable">
 
@@ -43,4 +43,4 @@ If you find any bugs or have suggestions for improvement, please feel free to cr
   - Config editing pages
   - Preview of courses on Timetable
 - [**ivan8882004**](https://github.com/ivan8882004) - Timetable page
-- [**kennethkn**](https://github.com/kennethkn) - UI/UX redesign, feature refinements & branding
+- [**kennethkn**](https://github.com/kennethkn) - UI/UX redesign and feature refinement
