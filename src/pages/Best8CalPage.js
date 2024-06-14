@@ -111,7 +111,7 @@ function Best8CalPage() {
         A calculator for first-year engineering students who are going to choose
         a major with the best-8 GPA.
       </p>
-      <div className="flex flex-col space-y-2 max-sm:w-full max-sm:px-2">
+      <div className="flex flex-col space-y-2 max-sm:w-full max-sm:px-10">
         {courses.map((ele, ind) => (
           <div key={ind} className="flex items-center space-x-2">
             <input
