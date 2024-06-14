@@ -47,9 +47,9 @@ function CourseDetail({ course }) {
 
   return (
     <div className="no-scrollbar mb-5 h-1/3 space-y-2 overflow-scroll overscroll-contain border-2 border-accent pb-1">
-      <div className="sticky top-0 px-2 py-1 backdrop-blur-lg">
-        <div className="font-bold">{course.courseName}</div>
-        <div className="font-medium">{course.courseTitle}</div>
+      <div className="sticky top-0 px-2 py-1 backdrop-blur-lg font-medium">
+        <div className="font-mono">{course.courseName}</div>
+        <div>{course.courseTitle}</div>
       </div>
       <div className="px-2"> {lectures}</div>
     </div>

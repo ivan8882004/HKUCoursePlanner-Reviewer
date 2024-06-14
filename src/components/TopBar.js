@@ -29,35 +29,35 @@ function TopBar() {
           Home
         </NavLink>
         <NavLink
-          to="/HKUCoursePlanner-Reviewer/study_plan"
-          className={({ isActive }) =>
-            (isActive ? activeNavLinkClasses : '') + navLinkClasses
-          }>
-          Course Planner
-        </NavLink>
-        <NavLink
-          to="/HKUCoursePlanner-Reviewer/time_table"
+          to="/HKUCoursePlanner-Reviewer/timetable"
           className={({ isActive }) =>
             (isActive ? activeNavLinkClasses : '') + navLinkClasses
           }>
           Timetable
         </NavLink>
         <NavLink
-          to="/HKUCoursePlanner-Reviewer/view_program"
+          to="/HKUCoursePlanner-Reviewer/study-plan"
           className={({ isActive }) =>
             (isActive ? activeNavLinkClasses : '') + navLinkClasses
           }>
-          Syllabus Roadmap
+          Study Plan
         </NavLink>
         <NavLink
-          to="/HKUCoursePlanner-Reviewer/engg_best8"
+          to="/HKUCoursePlanner-Reviewer/degree-roadmap"
+          className={({ isActive }) =>
+            (isActive ? activeNavLinkClasses : '') + navLinkClasses
+          }>
+          Degree Roadmap
+        </NavLink>
+        <NavLink
+          to="/HKUCoursePlanner-Reviewer/best-8-calculator"
           className={({ isActive }) =>
             (isActive ? activeNavLinkClasses : '') + navLinkClasses
           }>
           Best-8 Calculator
         </NavLink>
         <NavLink
-          to="/HKUCoursePlanner-Reviewer/upload_export_file"
+          to="/HKUCoursePlanner-Reviewer/config"
           className={({ isActive }) =>
             (isActive ? activeNavLinkClasses : '') + navLinkClasses
           }>

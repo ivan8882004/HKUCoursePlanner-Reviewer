@@ -25,16 +25,31 @@ function PreregGraph({ listItem }) {
   const dropDownContent = (
     <>
       Prereq:{' '}
-      {courseInfo.prereg
-        .map(
-          list =>
-            '[' +
-            list
-              .map(item => (item === 'M1/M2_2+' ? 'M1/M2>=Lv2' : item))
-              .join(' or ') +
-            ']'
-        )
-        .join(' and ') || 'None'}
+      {courseInfo.prereg.length > 0
+        ? courseInfo.prereg
+            .map((list, listIndex) => (
+              <span key={listIndex}>
+                {courseInfo.prereg.length > 1 && list.length > 1 ? '[ ' : ''}
+                {list
+                  .map((item, itemIndex) =>
+                    item === 'M1/M2_2+' ? (
+                      <span key={itemIndex}>M1/M2{'>'}=Lv2</span>
+                    ) : (
+                      <span key={itemIndex} className="font-mono">
+                        {item}
+                      </span>
+                    )
+                  )
+                  .reduce((prev, curr, index) => [
+                    prev,
+                    index > 0 ? ' / ' : '',
+                    curr,
+                  ])}
+                {courseInfo.prereg.length > 1 && list.length > 1 ? ' ]' : ''}
+              </span>
+            ))
+            .reduce((prev, curr, index) => [prev, index > 0 ? ' & ' : '', curr])
+        : 'None'}
     </>
   )
 
@@ -48,14 +63,15 @@ function PreregGraph({ listItem }) {
     <div className="m-5 flex w-fit items-center whitespace-nowrap border-2 border-dotted border-accent p-2">
       {listItem.extraMessage.length !== 0 && (
         <div className="mr-5">
-          <div className="text-xs">with </div>
-          {listItem.extraMessage.map(item => '[' + item + ']').join(' and ')}
+          <div className="text-xs">with</div>
+          {listItem.extraMessage.map(item => '[ ' + item + ' ]').join(' & ')}
         </div>
       )}
       <div
         className="cursor-pointer transition-opacity will-change-transform hover:bg-accent hover:text-white active:opacity-25"
         onClick={handleClick}>
-        {listItem.name} {hints[dropDown ? 1 : 0]}
+        <span className="font-mono">{listItem.name}</span>{' '}
+        {hints[dropDown ? 1 : 0]}
         <div className="font-medium italic">{listItem.fullName}</div>
         {dropDown && dropDownContent}
       </div>

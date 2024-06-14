@@ -141,13 +141,13 @@ function ViewProgramPage() {
                       ...courseDetail.prereg[ii][jj]
                         .split('&')
                         .filter(item => item !== name),
-                    ].join(' and ')
+                    ].join(' & ')
                   )
                   break
                 }
               }
               if (!find) {
-                extraMessage.push([...courseDetail.prereg[ii]].join(' or '))
+                extraMessage.push([...courseDetail.prereg[ii]].join(' / '))
               }
             }
             toProcessList[k].isPrereg.unshift({

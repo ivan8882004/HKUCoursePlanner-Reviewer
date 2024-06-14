@@ -47,7 +47,7 @@ function StudyPlanCheckBoxs() {
   const labelClasses =
     'flex items-center focus-within:underline w-fit decoration-accent decoration-2 cursor-pointer group'
   const checkboxClasses =
-    'ml-1 mr-2 outline-none appearance-none border-2 border-accent w-4 h-4 checked:bg-accent transition cursor-pointer group-active:opacity-25'
+    'ml-1 mr-2 outline-none appearance-none border-2 border-accent w-4 h-4 checked:bg-accent transition cursor-pointer group-active:opacity-25 rounded-none'
 
   return (
     <div>

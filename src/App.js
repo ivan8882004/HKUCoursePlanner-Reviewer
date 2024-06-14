@@ -1,9 +1,19 @@
-import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
-import HomePage from './pages/HomePage'
-import TopBar from './components/TopBar'
-import AddCoursePage from './pages/AddCoursePage'
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
+import TopBar from './components/TopBar'
+import defaultConfig from './config.json'
+import { TimeTableProvider } from './context/SettingsProvider'
+import AddCoursePage from './pages/AddCoursePage'
+import AddDegreePage from './pages/AddDegreePage'
+import AddMajorMinorPage from './pages/AddMajorMinorPage'
+import Best8CalPage from './pages/Best8CalPage'
+import HomePage from './pages/HomePage'
+import StudyPlanPage from './pages/StudyPlanPage'
+import TimeTablePage from './pages/TimeTablePage'
+import UploadExportFilePage from './pages/UploadExportFilePage'
+import ViewProgramPage from './pages/ViewProgramPage'
+import { setCourses, setDegrees, setStudyPlan } from './store/index'
 import { COURSES } from './store/slices/coursesSlice'
 import {
   DEGREES,
@@ -12,17 +22,7 @@ import {
   setMajors,
   setMinors,
 } from './store/slices/programsSlice'
-import { setCourses, setDegrees, setStudyPlan } from './store/index'
-import AddDegreePage from './pages/AddDegreePage'
-import AddMajorMinorPage from './pages/AddMajorMinorPage'
-import ViewProgramPage from './pages/ViewProgramPage'
-import UploadExportFilePage from './pages/UploadExportFilePage'
-import StudyPlanPage from './pages/StudyPlanPage'
 import { STUDYPLAN } from './store/slices/studyPlanSlice'
-import { TimeTableProvider } from './context/SettingsProvider'
-import TimeTablePage from './pages/TimeTablePage'
-import defaultConfig from './config.json'
-import Best8CalPage from './pages/Best8CalPage'
 
 function App() {
   const dispatch = useDispatch()
@@ -71,10 +71,10 @@ function App() {
           path="/HKUCoursePlanner-Reviewer/"
           element={<HomePage />}></Route>
         <Route
-          path="/HKUCoursePlanner-Reviewer/study_plan"
+          path="/HKUCoursePlanner-Reviewer/study-plan"
           element={<StudyPlanPage />}></Route>
         <Route
-          path="/HKUCoursePlanner-Reviewer/view_program"
+          path="/HKUCoursePlanner-Reviewer/degree-roadmap"
           element={<ViewProgramPage />}></Route>
         <Route
           path="/HKUCoursePlanner-Reviewer/add_course"
@@ -86,17 +86,17 @@ function App() {
           path="/HKUCoursePlanner-Reviewer/add_major_minor"
           element={<AddMajorMinorPage />}></Route>
         <Route
-          path="/HKUCoursePlanner-Reviewer/upload_export_file"
+          path="/HKUCoursePlanner-Reviewer/config"
           element={<UploadExportFilePage />}></Route>
         <Route
-          path="/HKUCoursePlanner-Reviewer/time_table"
+          path="/HKUCoursePlanner-Reviewer/timetable"
           element={
             <TimeTableProvider>
               <TimeTablePage />
             </TimeTableProvider>
           }></Route>
         <Route
-          path="/HKUCoursePlanner-Reviewer/engg_best8"
+          path="/HKUCoursePlanner-Reviewer/best-8-calculator"
           element={<Best8CalPage />}></Route>
       </Routes>
     </div>

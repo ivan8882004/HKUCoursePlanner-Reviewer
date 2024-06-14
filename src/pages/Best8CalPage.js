@@ -103,32 +103,32 @@ function Best8CalPage() {
   const [isPlayGpaAnimation, setIsPlayGpaAnimation] = useState(false)
 
   return (
-    <div className="animate__animated animate__fadeIn animate__fast flex h-full min-h-[52rem] select-none flex-col items-center justify-center space-y-4 text-center">
+    <div className="animate__animated animate__fadeIn animate__fast flex select-none flex-col items-center space-y-4 pb-4 pt-20 text-center">
       <div className="w-fit bg-accent px-2 py-1 text-3xl font-bold text-white underline">
         Best-8 Calculator
       </div>
-      <p className="w-[26rem]">
+      <p className="w-80 sm:w-[26rem]">
         A calculator for first-year engineering students who are going to choose
         a major with the best-8 GPA.
       </p>
-      <div className="flex flex-col space-y-2">
+      <div className="flex flex-col space-y-2 max-sm:w-full max-sm:px-10">
         {courses.map((ele, ind) => (
           <div key={ind} className="flex items-center space-x-2">
             <input
               value={ele[0]}
               onChange={event => handleChange(event, ind, 0)}
               placeholder="Enter Course Code"
-              className="w-52 appearance-none rounded-none border-2 border-accent p-0.5 pl-2 font-mono font-light outline-none placeholder:font-poppins placeholder:text-black hover:bg-accent hover:text-white hover:placeholder:text-white focus:bg-accent focus:text-white placeholder:focus:text-white"
+              className="w-full appearance-none rounded-none border-2 border-accent p-0.5 pl-2 font-mono font-light outline-none placeholder:font-poppins placeholder:text-black hover:bg-accent hover:text-white hover:placeholder:text-white focus:bg-accent focus:text-white placeholder:focus:text-white sm:w-52"
             />
             <div className="w-5">
               {/^[A-Za-z]{4}\d{4}$/.test(ele[0]) || ele[0].length === 0
-                ? '➠'
+                ? '➡️'
                 : '❓'}
             </div>
             <select
               value={ele[1]}
               onChange={event => handleChange(event, ind, 1)}
-              className="w-52 cursor-pointer appearance-none rounded-none border-2 border-accent p-0.5 pl-2 font-light outline-none placeholder:text-black hover:bg-accent hover:text-white hover:placeholder:text-white focus:bg-accent focus:text-white placeholder:focus:text-white">
+              className="w-52 cursor-pointer appearance-none rounded-none border-2 border-accent bg-white p-0.5 pl-2 font-light outline-none placeholder:text-black hover:bg-accent hover:text-white hover:placeholder:text-white focus:bg-accent focus:text-white placeholder:focus:text-white">
               <option className={optionClasses}>Select Grade</option>
               <option className={optionClasses} value="A+">
                 A+

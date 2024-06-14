@@ -1,6 +1,6 @@
-import UploadFile from '../components/UploadFile'
-import ExportFile from '../components/ExportFile'
 import { NavLink } from 'react-router-dom'
+import ExportFile from '../components/ExportFile'
+import UploadFile from '../components/UploadFile'
 
 function UploadExportFilePage() {
   return (
@@ -13,31 +13,32 @@ function UploadExportFilePage() {
       </div>
       <ExportFile />
       <UploadFile />
-      <p className="w-[36rem] font-serif text-sm max-md:w-[28rem]">
+      <p className="mt-5 w-full px-10 text-sm max-sm:text-left sm:w-[600px]">
+        <br />
         <b>Hello there 👋 </b>As you may have noticed, the current list of
-        syllabuses supported in the{' '}
+        syllabuses supported in{' '}
         <NavLink
-          to="/HKUCoursePlanner-Reviewer/study_plan"
+          to="/HKUCoursePlanner-Reviewer/study-plan"
           className="whitespace-nowrap font-poppins font-light underline outline-none transition-opacity hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:opacity-25">
-          Course Planner
+          Study Plan
         </NavLink>{' '}
         and{' '}
         <NavLink
-          to="/HKUCoursePlanner-Reviewer/view_program"
+          to="/HKUCoursePlanner-Reviewer/degree-roadmap"
           className="whitespace-nowrap font-poppins font-light underline outline-none transition-opacity hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:opacity-25">
           Syllabus Roadmap
         </NavLink>{' '}
         is quite limited. We would greatly appreciate your assistance in adding
         more syllabuses. If you are knowledgeable in JSON or interested in
         learning it, and believe in the value of this project, you can help by
-        downloading the config and modifying it. After making modifications, you
-        can test it by uploading your custom config. If everything works well,
-        we would be delighted to hear from you on our{' '}
+        downloading the config and modifying it for your major. After making
+        modifications, you can test it by uploading your custom config. If
+        everything works well, we would be delighted to hear from you on our{' '}
         <a
           href="https://github.com/Walter-Tong/Course_Planner_Config"
-          className="cursor-pointer whitespace-nowrap underline outline-none transition-opacity hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:opacity-25">
-          dedicated GitHub page for the config
-        </a>
+          className="cursor-pointer underline outline-none transition-opacity hover:bg-accent hover:text-white focus:bg-accent focus:text-white active:opacity-25">
+          config GitHub repo
+        </a>{' '}
         , or via{' '}
         <a
           href="mailto:walter19@connect.hku.hk"

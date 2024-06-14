@@ -27,18 +27,52 @@ function CourseListItem({ name, index, searchBar }) {
         <div className="font-medium italic">{courseInfo.fullName}</div>
         <div>
           Prereq:{' '}
-          {courseInfo.prereg
-            .map(
-              list =>
-                '[' +
-                list
-                  .map(item => (item === 'M1/M2_2+' ? 'M1/M2>=Lv2' : item))
-                  .join(' or ') +
-                ']'
-            )
-            .join(' and ') || 'None'}
+          {courseInfo.prereg.length > 0
+            ? courseInfo.prereg
+                .map((list, listIndex) => (
+                  <span key={listIndex}>
+                    {courseInfo.prereg.length > 1 && list.length > 1
+                      ? '[ '
+                      : ''}
+                    {list
+                      .map((item, itemIndex) =>
+                        item === 'M1/M2_2+' ? (
+                          <span key={itemIndex}>M1/M2{'>'}=Lv2</span>
+                        ) : (
+                          <span key={itemIndex} className="font-mono">
+                            {item}
+                          </span>
+                        )
+                      )
+                      .reduce((prev, curr, index) => [
+                        prev,
+                        index > 0 ? ' / ' : '',
+                        curr,
+                      ])}
+                    {courseInfo.prereg.length > 1 && list.length > 1
+                      ? ' ]'
+                      : ''}
+                  </span>
+                ))
+                .reduce((prev, curr, index) => [
+                  prev,
+                  index > 0 ? ' & ' : '',
+                  curr,
+                ])
+            : 'None'}
         </div>
-        <div>MuEx: {courseInfo.exclusive.join(', ') || 'None'}</div>
+        <div>
+          MuEx:{' '}
+          {courseInfo.exclusive.length > 0
+            ? courseInfo.exclusive
+                .map((item, index) => (
+                  <span key={index} className="font-mono">
+                    {item}
+                  </span>
+                ))
+                .reduce((prev, curr) => [prev, ' / ', curr])
+            : 'None'}
+        </div>
       </>
     )
   } else {
@@ -69,8 +103,9 @@ function CourseListItem({ name, index, searchBar }) {
           setDropDown(!dropDown)
           setIsDropdownActive(!isDropdownActive)
         }}
-        className="mx-2 mb-1 cursor-pointer overflow-hidden hyphens-auto border-2 border-accent px-2 py-0.5 transition-opacity hover:bg-accent hover:text-white active:opacity-25">
-        {name} {hints[isDropdownActive ? 1 : 0]}
+        className="mx-2 mb-1 cursor-pointer overflow-hidden break-words border-2 border-accent px-2 py-0.5 transition-opacity hover:bg-accent hover:text-white active:opacity-25">
+        <span className="font-mono">{name}</span>{' '}
+        {hints[isDropdownActive ? 1 : 0]}
         {courseContent}
       </div>
     )

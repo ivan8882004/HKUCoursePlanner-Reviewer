@@ -13,13 +13,13 @@ Developed by HKU students, for HKU students.
 
 <img src="screenshot/timetable.gif" alt="Timetable">
 
-### Course Planner - *Create a Study Plan*
+### Study Plan - *Plan Your Courses*
 
 <img src="screenshot/course-planner.gif" alt="Course Planner">
 
-### Syllabus Roadmap - *A Visual Guide through Your Syllabus*
+### Degree Roadmap - *A Visual Guide through Your Degree*
 
-<img src="screenshot/syllabus-roadmap.png" width=800 height=541 alt="Syllabus Roadmap">
+<img src="screenshot/syllabus-roadmap.png" width=800 alt="Syllabus Roadmap">
 
 ### Best-8 GPA Calculator - *For First Year Engineering Students :heart:*
 
@@ -39,8 +39,8 @@ If you find any bugs or have suggestions for improvement, please feel free to cr
 
 - [**Walter-Tong**](https://github.com/Walter-Tong)
   - Visualization of prerequisite relationships among courses
-  - Course Planner page
+  - Study plan page
   - Config editing pages
   - Preview of courses on Timetable
 - [**ivan8882004**](https://github.com/ivan8882004) - Timetable page
-- [**kennethkn**](https://github.com/kennethkn) - UI/UX redesign, feature refinements & branding
+- [**kennethkn**](https://github.com/kennethkn) - UI/UX redesign and feature refinement
