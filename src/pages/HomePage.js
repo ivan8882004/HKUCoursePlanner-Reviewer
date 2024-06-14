@@ -6,29 +6,29 @@ function HomePage() {
 
   return (
     <div className="animate__animated animate__fadeIn animate__fast flex h-full select-none flex-col items-center justify-center text-center">
-      <div className="animate__animated animate__slideInDown animate__faster text-5xl max-md:text-3xl">
+      <div className="animate__animated animate__slideInDown animate__faster text-2xl sm:text-3xl md:text-5xl">
         Welcome to{' '}
       </div>
-      <div className="animate__animated animate__jackInTheBox mb-7 bg-accent p-3 text-6xl font-bold text-white animation-delay-300 max-md:py-2 max-md:text-4xl">
+      <div className="animate__animated animate__jackInTheBox mb-7 bg-accent p-3 text-3xl font-bold text-white animation-delay-300 max-md:py-2 max-sm:py-1 sm:text-4xl md:text-6xl">
         <u>
           <i>Course Planner</i>
         </u>{' '}
         📚🗓️
       </div>
-      <div className="mb-10 font-mono text-2xl max-md:text-xl">
+      <div className="mb-10 font-mono text-lg sm:text-xl md:text-2xl">
         Plan your academic journey.
       </div>
       <NavLink
         to="/HKUCoursePlanner-Reviewer/time_table"
         className={
-          'animate__animated animate__pulse animate__infinite mb-10 w-80 border-2 border-accent p-0.5 text-accent transition-opacity animation-delay-[2s] active:opacity-25 ' +
+          'animate__animated animate__pulse animate__infinite mb-10 w-72 border-2 border-accent p-0.5 text-accent transition-opacity animation-delay-[2s] active:opacity-25 sm:w-80 ' +
           hoverFocusClasses
         }>
         GET STARTED
       </NavLink>
 
       <div className="max-md:text-sm">
-        Made with ❤️ by{' '}
+        Made with ❤️ by <br className="sm:hidden" />
         <a
           href="https://github.com/Walter-Tong"
           className={'underline ' + hoverFocusClasses}>
@@ -49,6 +49,7 @@ function HomePage() {
       </div>
 
       <div className="mb-10 max-md:text-sm">
+        <br className="sm:hidden" />
         Please star on{' '}
         <a
           href="https://github.com/ivan8882004/HKUCoursePlanner-Reviewer"
@@ -56,6 +57,10 @@ function HomePage() {
           GitHub
         </a>{' '}
         if you find it useful 🚀🚀🚀
+        <div className="font-bold sm:hidden">
+          <br />
+          Course Planner is best viewed on desktop.
+        </div>
       </div>
 
       <div className="fixed bottom-0 w-full bg-white pt-2 font-mono text-xs">

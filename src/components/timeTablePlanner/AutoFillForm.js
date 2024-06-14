@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
+import AutoFillFormInfo from './AutoFillFormInfo'
 import courseDataSem1 from './data/courseDataSem1.json'
 import courseDataSem2 from './data/courseDataSem2.json'
-import AutoFillFormInfo from './AutoFillFormInfo'
 
 const FORMCONTENT = 'formContent'
 
@@ -93,7 +93,7 @@ function AutoFillForm({ isSemOne, setter }) {
           value={item}
           onChange={event => editCourseList(event, index)}
           placeholder="Enter Course Code..."
-          className="grow px-2 font-mono outline-none placeholder:font-poppins placeholder:text-black/50 group-focus-within:bg-accent group-focus-within:text-white group-focus-within:placeholder:text-white group-hover:bg-accent group-hover:text-white placeholder:group-hover:text-white"
+          className="grow rounded-none px-2 font-mono outline-none placeholder:font-poppins placeholder:text-black/50 group-focus-within:bg-accent group-focus-within:text-white group-focus-within:placeholder:text-white group-hover:bg-accent group-hover:text-white placeholder:group-hover:text-white"
         />
         <button
           type="button"

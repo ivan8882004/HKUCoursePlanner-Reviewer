@@ -1,6 +1,6 @@
-import UploadFile from '../components/UploadFile'
-import ExportFile from '../components/ExportFile'
 import { NavLink } from 'react-router-dom'
+import ExportFile from '../components/ExportFile'
+import UploadFile from '../components/UploadFile'
 
 function UploadExportFilePage() {
   return (
@@ -13,7 +13,8 @@ function UploadExportFilePage() {
       </div>
       <ExportFile />
       <UploadFile />
-      <p className="w-[36rem] font-serif text-sm max-md:w-[28rem]">
+      <p className="mt-5 w-full px-10 font-serif text-sm max-md:w-[28rem] max-sm:text-left sm:w-[36rem]">
+        <br />
         <b>Hello there 👋 </b>As you may have noticed, the current list of
         syllabuses supported in the{' '}
         <NavLink
