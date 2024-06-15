@@ -1,8 +1,10 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
+import ConfigUpdateModal from './components/ConfigUpdateModal'
 import TopBar from './components/TopBar'
 import defaultConfig from './config.json'
+import { LATEST_CONFIG_VERSION } from './configVersion'
 import { TimeTableProvider } from './context/SettingsProvider'
 import AddCoursePage from './pages/AddCoursePage'
 import AddDegreePage from './pages/AddDegreePage'
@@ -51,6 +53,7 @@ function App() {
       dispatch(setStudyPlan(JSON.parse(storageStudyPlan)))
     }
     if (storageCourses + storageDegree + storageMajor + storageMinor === 0) {
+      localStorage.setItem('configVersion', '2024.06')
       dispatch(setCourses(defaultConfig.courses))
       dispatch(setDegrees(defaultConfig.degrees))
       dispatch(setMajors(defaultConfig.majors))
@@ -61,11 +64,24 @@ function App() {
       console.log(toGo)
       navigate(toGo.slice(2))
     }
+    if (localStorage.getItem('configVersion') !== LATEST_CONFIG_VERSION) {
+      localStorage.setItem('configVersion', 'outdated')
+    }
   }, [dispatch, location, navigate])
+
+  const [isModalOpen, setIsModalOpen] = useState(
+    localStorage.getItem('configVersion') !== LATEST_CONFIG_VERSION
+      ? true
+      : false
+  )
 
   return (
     <div className="h-dvh min-h-[40rem] w-screen font-poppins">
       <TopBar />
+      <ConfigUpdateModal
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+      />
       <Routes>
         <Route
           path="/HKUCoursePlanner-Reviewer/"

@@ -1,7 +1,7 @@
 {
   "homepage": "https://ivan8882004.github.io/HKUCoursePlanner-Reviewer",
   "name": "course-planner",
-  "version": "0.1.0",
+  "version": "2024.06",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",

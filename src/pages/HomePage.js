@@ -1,8 +1,14 @@
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import ConfigUpdateModal from '../components/ConfigUpdateModal'
+import { LATEST_CONFIG_VERSION } from '../configVersion'
 
 function HomePage() {
   const hoverFocusClasses =
     'hover:bg-accent hover:text-white focus:bg-accent focus:text-white outline-none active:opacity-25 transition-opacity'
+
+  const configVersion = localStorage.getItem('configVersion')
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
     <div className="animate__animated animate__fadeIn animate__fast flex h-full select-none flex-col items-center justify-center text-center">
@@ -15,7 +21,7 @@ function HomePage() {
         </u>{' '}
         📚🗓️
       </div>
-      <div className="mb-10 font-mono text-lg sm:text-xl md:text-2xl">
+      <div className="mb-10 text-lg sm:text-xl md:text-2xl">
         Plan your academic journey.
       </div>
       <NavLink
@@ -42,7 +48,7 @@ function HomePage() {
         </a>{' '}
         •{' '}
         <a
-          href="https://github.com/kennethkn"
+          href="https://kennethkn.github.io/kennethkn/"
           className={'underline ' + hoverFocusClasses}>
           kennethkn
         </a>
@@ -63,8 +69,8 @@ function HomePage() {
         </div>
       </div>
 
-      <div className="fixed bottom-0 w-full bg-white pt-2 font-mono text-xs">
-        <div>Encounter any issue?</div>
+      <div className="absolute bottom-0 flex w-full flex-col items-center bg-white pt-2 font-mono text-xs">
+        Encounter any issue?
         <button
           onClick={() => {
             localStorage.clear()
@@ -78,6 +84,31 @@ function HomePage() {
           }>
           RELOAD APP
         </button>
+        <button
+          onClick={
+            configVersion === LATEST_CONFIG_VERSION
+              ? () => false
+              : () => setIsModalOpen(true)
+          }
+          className={
+            'pb-2 font-sans text-sm ' +
+            (configVersion === LATEST_CONFIG_VERSION ? 'cursor-default' : '')
+          }>
+          Config Version:{' '}
+          <span
+            className={
+              configVersion !== LATEST_CONFIG_VERSION ? 'text-red-600' : ''
+            }>
+            {configVersion}{' '}
+            {configVersion !== LATEST_CONFIG_VERSION
+              ? '(click me)'
+              : '(latest)'}
+          </span>
+        </button>
+        <ConfigUpdateModal
+          isModalOpen={isModalOpen}
+          setIsModalOpen={setIsModalOpen}
+        />
       </div>
 
       {/* <div className="w-[30rem] max-md:w-[26rem] max-md:text-sm">

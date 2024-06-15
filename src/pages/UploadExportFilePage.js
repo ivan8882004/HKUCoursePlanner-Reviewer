@@ -1,15 +1,48 @@
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import ConfigUpdateModal from '../components/ConfigUpdateModal'
 import ExportFile from '../components/ExportFile'
 import UploadFile from '../components/UploadFile'
+import { LATEST_CONFIG_VERSION } from '../configVersion'
 
 function UploadExportFilePage() {
+  const configVersion = localStorage.getItem('configVersion')
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <div className="animate__animated animate__fadeIn animate__fast flex h-full select-none flex-col items-center justify-center space-y-4 text-center">
-      <div className="bg-accent px-2 py-1 text-3xl font-bold text-white">
-        <u>
-          <i>Course Planner</i>
-        </u>{' '}
-        📚🗓️
+      <div>
+        <div className="bg-accent px-2 py-1 text-3xl font-bold text-white">
+          <u>
+            <i>Course Planner</i>
+          </u>{' '}
+          📚🗓️
+        </div>
+        <button
+          onClick={
+            configVersion === LATEST_CONFIG_VERSION
+              ? () => false
+              : () => setIsModalOpen(true)
+          }
+          className={
+            'pb-2 text-sm ' +
+            (configVersion === LATEST_CONFIG_VERSION ? 'cursor-default' : '')
+          }>
+          Config Version:{' '}
+          <span
+            className={
+              configVersion !== LATEST_CONFIG_VERSION ? 'text-red-600' : ''
+            }>
+            {configVersion}{' '}
+            {configVersion !== LATEST_CONFIG_VERSION
+              ? '(click me)'
+              : '(latest)'}
+          </span>
+        </button>
+        <ConfigUpdateModal
+          isModalOpen={isModalOpen}
+          setIsModalOpen={setIsModalOpen}
+        />
       </div>
       <ExportFile />
       <UploadFile />
