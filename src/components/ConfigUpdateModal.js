@@ -51,9 +51,18 @@ function ConfigUpdateModal({ isModalOpen, setIsModalOpen }) {
           <div className="font-mono text-xl">
             {LATEST_CONFIG_VERSION} Update Available!
           </div>
-          <div>
+          <div className="max-w-[40rem] rounded-3xl text-left font-poppins sm:bg-black sm:bg-opacity-5 sm:p-10">
             A new version of the config has been released, including support for
-            additional degrees.
+            the below degrees:
+            <ul className="my-2 list-inside list-disc">
+              <li>BEng(IELM) 23-24</li>
+              <li>BEng in Engineering Science (Systems Analytics) 23-24</li>
+              <li>BEng(DS&E) 23-24</li>
+              <li>BASc(FinTech) 23-24</li>
+              <li>BSC(QFIN) 23-24</li>
+            </ul>
+            This update will not affect your current plans. You can update
+            safely.
           </div>
           <div className="flex flex-col space-y-2">
             <button
