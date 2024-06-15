@@ -43,4 +43,4 @@ If you find any bugs or have suggestions for improvement, please feel free to cr
   - Config editing pages
   - Preview of courses on Timetable
 - [**ivan8882004**](https://github.com/ivan8882004) - Timetable page
-- [**kennethkn**](https://github.com/kennethkn) - UI/UX redesign and feature refinement
+- [**kennethkn**](https://github.com/kennethkn) - UI/UX redesign, app update logic, code refactoring
