@@ -7,10 +7,7 @@ function TimeSlot({ time, day, selectedCourseList }) {
   const getRenderedTimeSlot = selectedCourseList => {
     const courses = selectedCourseList
 
-    const timeslot_hours = [
-      parseInt(time.slice(0, 2)),
-      parseInt(time.slice(6, 8)),
-    ]
+    const timeslot_hours = time.split("-").map(ele => parseInt(ele.split(":")[0]))
 
     const filtered_courses = courses.filter(course => {
       const lecture = course.lectures.find(lecture => {
