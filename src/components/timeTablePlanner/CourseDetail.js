@@ -30,12 +30,19 @@ function CourseDetail({ course }) {
   const lectures = course.lectures.map((item, index) => {
     let venue = item.venue
 
+    let changed = false
+
     Object.entries(pos).forEach(([key, value]) => {
       //for the venue of each lecture
-      if (item.venue.substring(0, key.length) === key) {
+      if (item.venue != null && item.venue.substring(0, key.length) === key) {
+        changed = true
         venue = value + item.venue.substring(key.length)
       }
     })
+
+    if (!changed) {
+      venue = "No venue"
+    } 
 
     return (
       <div key={index} className="mb-2">

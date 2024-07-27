@@ -7,10 +7,9 @@ function TimeSlot({ time, day, selectedCourseList }) {
   const getRenderedTimeSlot = selectedCourseList => {
     const courses = selectedCourseList
 
-    const timeslot_hours = [
-      parseInt(time.slice(0, 2)),
-      parseInt(time.slice(6, 8)),
-    ]
+    // const [sTime, eTime] = time.split('-').map(ele => parseInt(ele.split(':')))
+
+    const timeslot_hours = time.split('-').map(ele => parseInt(ele.split(':')))
 
     const filtered_courses = courses.filter(course => {
       const lecture = course.lectures.find(lecture => {
@@ -24,6 +23,7 @@ function TimeSlot({ time, day, selectedCourseList }) {
           timeslot_hours[1] <= lecture_hours[1]
         )
       })
+      console.log(timeslot_hours, time, course)
       return lecture !== undefined
     })
 
