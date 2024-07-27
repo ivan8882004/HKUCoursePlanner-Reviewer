@@ -566,6 +566,60 @@
             "credit": 6
         },
         {
+            "name": "CCXX0001",
+            "fullName": "common core1",
+            "prereg": [],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
+            "name": "CCXX0002",
+            "fullName": "common core2",
+            "prereg": [],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
+            "name": "CCXX0003",
+            "fullName": "common core3",
+            "prereg": [],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
+            "name": "CCXX0004",
+            "fullName": "common core4",
+            "prereg": [],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
+            "name": "CCXX0005",
+            "fullName": "common core5",
+            "prereg": [],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
+            "name": "CCXX0006",
+            "fullName": "common core6",
+            "prereg": [],
+            "isPrereg": [],
+            "exclusive": [],
+            "recommendYear": 0,
+            "credit": 6
+        },
+        {
             "name": "CENG9001",
             "fullName": "Practical Chinese for engineering students",
             "prereg": [],

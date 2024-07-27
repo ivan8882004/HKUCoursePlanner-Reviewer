@@ -39,6 +39,8 @@ function StudyPlanPage() {
     return state.courses
   })
 
+  console.log(degree)
+
   const degreesDropDown = degrees.map((item, index) => {
     return (
       <option
