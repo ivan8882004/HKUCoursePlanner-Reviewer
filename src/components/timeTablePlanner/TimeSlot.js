@@ -21,7 +21,7 @@ function TimeSlot({ time, day, selectedCourseList }) {
           timeslot_hours[1] <= lecture_hours[1]
         )
       })
-      console.log(timeslot_hours, time, course)
+      // console.log(timeslot_hours, time, course)
       return lecture !== undefined
     })
 
@@ -76,7 +76,7 @@ function TimeSlot({ time, day, selectedCourseList }) {
     }
   }
 
-  console.log('render')
+  // console.log('render')
   return getRenderedTimeSlot(selectedCourseList)
 }
 

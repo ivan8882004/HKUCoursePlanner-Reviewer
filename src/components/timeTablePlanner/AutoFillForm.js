@@ -20,9 +20,11 @@ function AutoFillForm({ isSemOne, setter }) {
     if (storageFormContent) {
       setFormContent(JSON.parse(storageFormContent))
     }
+    setShowWarning(false)
   }, [])
 
   const [possibleList, setPossibleList] = useState([])
+  const [showWarning, setShowWarning] = useState(false)
 
   const addCourseList = () => {
     const toSet = {
@@ -124,10 +126,21 @@ function AutoFillForm({ isSemOne, setter }) {
       })
       return temp
     })
+    let invalidCourseFound = false;
     for (const i of possibleCourse) {
       if (i.length === 0) {
-        return
+        invalidCourseFound = true;
+        break;
       }
+    }
+
+    if (invalidCourseFound) {
+      setShowWarning(true);
+      setPossibleList([]); // Clear previous list
+      setter([]); // Clear timetable
+      return;
+    } else {
+      setShowWarning(false);
     }
     const indexs = possibleCourse.map(() => {
       return 0
@@ -177,7 +190,7 @@ function AutoFillForm({ isSemOne, setter }) {
           dayOff++
         }
       }
-      console.log(dayOff)
+      // console.log(dayOff)
       return dayOff
     }
     const getEarlyTime = (table, time) => {
@@ -190,7 +203,7 @@ function AutoFillForm({ isSemOne, setter }) {
           }
         }
       }
-      console.log(earlyTime)
+      // console.log(earlyTime)
       return earlyTime
     }
     const getGap = (table, time) => {
@@ -214,7 +227,7 @@ function AutoFillForm({ isSemOne, setter }) {
           }
         }
       }
-      console.log(gap)
+      // console.log(gap)
       return gap
     }
     while (JSON.stringify(endPoint) !== JSON.stringify(indexs)) {
@@ -223,20 +236,30 @@ function AutoFillForm({ isSemOne, setter }) {
       })
       const copyTable = JSON.parse(JSON.stringify(timeTable))
       let toAdd = true
+
+      const uniqueCourse = new Set()
+
       for (let i = 0; i < indexs.length; i++) {
         if (addToTable(courseList[i], copyTable)) {
           toAdd = false
           break
         }
+
+        if (uniqueCourse.has(courseList[i].courseName.split("-")[0])) {
+          console.log('repeat course found')
+          toAdd = false
+          break
+        }
+        uniqueCourse.add(courseList[i].courseName.split("-")[0])
       }
       let score = 0
       if (toAdd) {
         score +=
           getDayOff(copyTable) * parseInt(formContent.dayOffScore) +
           getEarlyTime(copyTable, formContent.earlyTime) *
-            parseInt(formContent.earlyScore) +
+          parseInt(formContent.earlyScore) +
           getGap(copyTable, formContent.gapTime) *
-            parseInt(formContent.gapScore)
+          parseInt(formContent.gapScore)
         output.push({
           score,
           courseList: JSON.parse(JSON.stringify(courseList)),
@@ -256,18 +279,28 @@ function AutoFillForm({ isSemOne, setter }) {
     })
     const copyTable = JSON.parse(JSON.stringify(timeTable))
     let toAdd = true
+
+    const uniqueCourse = new Set()
+
     for (let i = 0; i < indexs.length; i++) {
       if (addToTable(courseList[i], copyTable)) {
         toAdd = false
         break
       }
+
+      if (uniqueCourse.has(courseList[i].courseName.split("-")[0])) {
+        console.log('repeat course found')
+        toAdd = false
+        break
+      }
+      uniqueCourse.add(courseList[i].courseName.split("-")[0])
     }
     let score = 0
     if (toAdd) {
       score +=
         getDayOff(copyTable) * parseInt(formContent.dayOffScore) +
         getEarlyTime(copyTable, formContent.earlyTime) *
-          parseInt(formContent.earlyScore) +
+        parseInt(formContent.earlyScore) +
         getGap(copyTable, formContent.gapTime) * parseInt(formContent.gapScore)
       output.push({ score, courseList: JSON.parse(JSON.stringify(courseList)) })
     }
@@ -441,6 +474,11 @@ function AutoFillForm({ isSemOne, setter }) {
           </div>
           {renderPossibleList}
         </>
+      )}
+      {showWarning && (
+        <div className="mt-2 px-2 text-center font-medium text-red-500">
+          Invalid course code entered, or no matching courses found. Please check your input.
+        </div>
       )}
     </div>
   )
