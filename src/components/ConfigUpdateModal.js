@@ -12,7 +12,7 @@ function ConfigUpdateModal({ isModalOpen, setIsModalOpen }) {
 
   const dispatch = useDispatch()
   function updateConfig() {
-    localStorage.setItem('configVersion', '2024.06')
+    localStorage.setItem('configVersion', '2025.07')
     dispatch(setCourses(defaultConfig.courses))
     dispatch(setDegrees(defaultConfig.degrees))
     dispatch(setMajors(defaultConfig.majors))
@@ -52,17 +52,13 @@ function ConfigUpdateModal({ isModalOpen, setIsModalOpen }) {
             {LATEST_CONFIG_VERSION} Update Available!
           </div>
           <div className="max-w-[40rem] rounded-3xl text-left font-poppins sm:bg-black sm:bg-opacity-5 sm:p-10">
-            A new version of the config has been released, including support for
-            the below degrees:
-            <ul className="my-2 list-inside list-disc">
-              <li>BEng(IELM) 23-24</li>
-              <li>BEng in Engineering Science (Systems Analytics) 23-24</li>
-              <li>BEng(DS&E) 23-24</li>
-              <li>BASc(FinTech) 23-24</li>
-              <li>BSC(QFIN) 23-24</li>
-            </ul>
-            This update will not affect your current plans. You can update
-            safely.
+            A new version of the Course Planner is available! 
+            <br />
+            This update handling of new timetable that start with 9:00 AM,
+            <br />
+            You should clear cache before using the new timetable planner.
+            <br />
+            Click update will clear your local storage and reload the page.
           </div>
           <div className="flex flex-col space-y-2">
             <button

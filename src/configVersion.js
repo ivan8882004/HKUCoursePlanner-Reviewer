@@ -1,1 +1,1 @@
-export const LATEST_CONFIG_VERSION = '2024.06'
+export const LATEST_CONFIG_VERSION = '2025.07'

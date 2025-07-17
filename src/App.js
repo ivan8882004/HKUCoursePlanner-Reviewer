@@ -9,7 +9,6 @@ import { TimeTableProvider } from './context/SettingsProvider'
 import AddCoursePage from './pages/AddCoursePage'
 import AddDegreePage from './pages/AddDegreePage'
 import AddMajorMinorPage from './pages/AddMajorMinorPage'
-import Best8CalPage from './pages/Best8CalPage'
 import HomePage from './pages/HomePage'
 import StudyPlanPage from './pages/StudyPlanPage'
 import TimeTablePage from './pages/TimeTablePage'
@@ -111,9 +110,6 @@ function App() {
               <TimeTablePage />
             </TimeTableProvider>
           }></Route>
-        <Route
-          path="/HKUCoursePlanner-Reviewer/best-8-calculator"
-          element={<Best8CalPage />}></Route>
       </Routes>
     </div>
   )

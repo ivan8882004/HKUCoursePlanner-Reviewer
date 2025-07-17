@@ -50,13 +50,6 @@ function TopBar() {
           Degree Roadmap
         </NavLink>
         <NavLink
-          to="/HKUCoursePlanner-Reviewer/best-8-calculator"
-          className={({ isActive }) =>
-            (isActive ? activeNavLinkClasses : '') + navLinkClasses
-          }>
-          Best-8 Calculator
-        </NavLink>
-        <NavLink
           to="/HKUCoursePlanner-Reviewer/config"
           className={({ isActive }) =>
             (isActive ? activeNavLinkClasses : '') + navLinkClasses

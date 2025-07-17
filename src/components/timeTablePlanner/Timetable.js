@@ -9,7 +9,7 @@ const Timetable = ({ selectedCourseList }) => {
 
   const times = []
   for (let i = hour[0]; i < hour[1]; i++) {
-    times.push(`${i}:30-${i + 1}:20`)
+    times.push(`${i}:00-${i}:50`)
   }
 
   const buttonClasses =
